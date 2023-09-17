@@ -2,13 +2,17 @@
 	import LL from '$i18n/i18n-svelte';
 	import LocaleSwitcher from '$lib/LocaleSwitcher.svelte';
 	import SectionSize from '$lib/generalComponents/SectionSize.svelte';
+	import TopMainNav from '$lib/nav/TopMainNav.svelte';
 	import { currentAppLang } from '$lib/stores/store';
 	import { pageDirection } from '$lib/stores/store';
 
 	import { LightSwitch } from '@skeletonlabs/skeleton';
 </script>
 
-<div class="p-12">
+<section>
+	<TopMainNav />
+</section>
+<!-- <div class="p-12">
 	<div class="w-full flex justify-between">
 		<div>
 			<LocaleSwitcher />
@@ -20,10 +24,12 @@
 		</div>
 	</div>
 </div>
+-->
 
+<!-- 
 <div dir={$pageDirection} class="h-[2000px]">
 	<SectionSize />
 	<p class="heading-{$currentAppLang}-1 p-12 text-surface-900-50-token text-center">
 		{$LL.title()}
 	</p>
-</div>
+</div> -->

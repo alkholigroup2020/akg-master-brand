@@ -18,6 +18,12 @@ type RootTranslation = {
 	 * E​n​g​l​i​s​h​ ​T​i​t​l​e
 	 */
 	title: string
+	nav: {
+		/**
+		 * W​e​l​c​o​m​e​ ​T​o​ ​A​L​K​H​O​L​I
+		 */
+		welcomeMsg: string
+	}
 }
 
 export type TranslationFunctions = {
@@ -25,6 +31,12 @@ export type TranslationFunctions = {
 	 * English Title
 	 */
 	title: () => LocalizedString
+	nav: {
+		/**
+		 * Welcome To ALKHOLI
+		 */
+		welcomeMsg: () => LocalizedString
+	}
 }
 
 export type Formatters = {}

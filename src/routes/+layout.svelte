@@ -18,6 +18,7 @@
 	import LL from '$i18n/i18n-svelte';
 
 	import WindowSize from '$lib/generalComponents/WindowSize.svelte';
+	import Nav from '$lib/generalComponents/Nav.svelte';
 
 	$: devOrProduction = process.env.NODE_ENV === 'development' ? true : false;
 </script>
@@ -31,6 +32,9 @@
 {#if devOrProduction}
 	<WindowSize />
 {/if}
+<div class="max-sm:hidden">
+	<Nav />
+</div>
 
 <slot />
 
