@@ -2,7 +2,7 @@
 	import LL from '$i18n/i18n-svelte';
 	import LocaleSwitcher from '$lib/LocaleSwitcher.svelte';
 	import SectionSize from '$lib/generalComponents/SectionSize.svelte';
-	import TopMainNav from '$lib/nav/TopMainNav.svelte';
+	import HeroSection from '$lib/homePage/HeroSection.svelte';
 	import { currentAppLang } from '$lib/stores/store';
 	import { pageDirection } from '$lib/stores/store';
 
@@ -10,7 +10,7 @@
 </script>
 
 <section>
-	<TopMainNav />
+	<HeroSection />
 </section>
 <!-- <div class="p-12">
 	<div class="w-full flex justify-between">

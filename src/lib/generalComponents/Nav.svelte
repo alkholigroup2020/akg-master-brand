@@ -2,13 +2,14 @@
 	import LL from '$i18n/i18n-svelte';
 	import LocaleSwitcher from '$lib/LocaleSwitcher.svelte';
 	import { currentAppLang } from '$lib/stores/store';
+	import { LightSwitch } from '@skeletonlabs/skeleton';
 	import { AppBar } from '@skeletonlabs/skeleton';
 </script>
 
 <AppBar
 	background="bg-primary-500"
 	padding="py-0"
-	regionRowMain="h-20 container mx-auto text-white"
+	regionRowMain="h-20 container mx-auto px-3  text-white"
 >
 	<svelte:fragment slot="lead">
 		<div class="flex space-x-4 items-center">
@@ -16,8 +17,8 @@
 			<div class="-mt-1">
 				<img
 					loading="lazy"
-					src="/white_140x50.webp"
-					srcset="/white_80x35.webp 1024w, /white_140x50.webp 8000w"
+					src="/images/nav/white_140x50.webp"
+					srcset="/images/nav/white_80x35.webp 1024w, /images/nav/white_140x50.webp 8000w"
 					alt="company's logo"
 					class="w-[80px] h-[35px] lg:w-[140px] lg:h-[50px] aspect-[16/7] lg:aspect-[14/5]"
 				/>
@@ -157,6 +158,12 @@
 			<!-- login -->
 			<div class="border-l-2">
 				<p class="pl-3 sub-main-en-text">Login / Sign Up</p>
+			</div>
+			<!-- Light Switcher -->
+			<div>
+				<div dir="ltr">
+					<LightSwitch width="w-10" height="h-5" />
+				</div>
 			</div>
 		</div>
 	</svelte:fragment>

@@ -24,6 +24,24 @@ type RootTranslation = {
 		 */
 		welcomeMsg: string
 	}
+	hero: {
+		/**
+		 * B​U​I​L​D​.
+		 */
+		build: string
+		/**
+		 * O​P​T​I​M​I​Z​E​.
+		 */
+		optimize: string
+		/**
+		 * C​O​N​N​E​C​T​.
+		 */
+		connect: string
+		/**
+		 * L​E​A​R​N​ ​M​O​R​E
+		 */
+		more: string
+	}
 }
 
 export type TranslationFunctions = {
@@ -36,6 +54,24 @@ export type TranslationFunctions = {
 		 * Welcome To ALKHOLI
 		 */
 		welcomeMsg: () => LocalizedString
+	}
+	hero: {
+		/**
+		 * BUILD.
+		 */
+		build: () => LocalizedString
+		/**
+		 * OPTIMIZE.
+		 */
+		optimize: () => LocalizedString
+		/**
+		 * CONNECT.
+		 */
+		connect: () => LocalizedString
+		/**
+		 * LEARN MORE
+		 */
+		more: () => LocalizedString
 	}
 }
 
