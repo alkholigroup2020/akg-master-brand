@@ -7,10 +7,19 @@
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
 
+	import LoadingSpinner from '$lib/generalComponents/LoadingSpinner.svelte';
+	import { navigating } from '$app/stores';
+
 	import { setLocale } from '$i18n/i18n-svelte';
 	import HeadHrefLangs from '$lib/HeadHrefLangs.svelte';
 
 	export let data;
+
+	// let waitingIsDone = false;
+
+	// setTimeout(() => {
+	// 	waitingIsDone = true;
+	// }, 200);
 
 	// at the very top, set the locale before you access the store and before the actual rendering takes place
 	setLocale(data.locale);
@@ -32,11 +41,16 @@
 {#if devOrProduction}
 	<WindowSize />
 {/if}
-<div class="max-sm:hidden">
-	<Nav />
-</div>
 
-<slot />
+{#if $navigating}
+	<LoadingSpinner />
+{:else}
+	<div class="max-sm:hidden">
+		<Nav />
+	</div>
+
+	<slot />
+{/if}
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');

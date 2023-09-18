@@ -9,7 +9,7 @@ const en: BaseTranslation = {
 		build: 'BUILD.',
 		optimize: 'OPTIMIZE.',
 		connect: 'CONNECT.',
-		more: 'LEARN MORE'
+		more: 'Learn More'
 	},
 	home: {
 		aboutSection: {

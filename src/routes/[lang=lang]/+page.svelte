@@ -8,6 +8,8 @@
 	import { pageDirection } from '$lib/stores/store';
 
 	import { LightSwitch } from '@skeletonlabs/skeleton';
+
+	export let data;
 </script>
 
 <section>
@@ -15,7 +17,7 @@
 </section>
 
 <section>
-	<AboutUs />
+	<AboutUs sectionData={data.data.aboutSectionData} />
 </section>
 <!-- <div class="p-12">
 	<div class="w-full flex justify-between">

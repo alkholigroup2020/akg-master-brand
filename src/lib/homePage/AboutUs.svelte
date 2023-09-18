@@ -2,11 +2,50 @@
 	import LL from '$i18n/i18n-svelte';
 	import { currentAppLang } from '$lib/stores/store';
 	import { pageDirection } from '$lib/stores/store';
+
 	// Define a reactive variable to track the currently selected section.
 	// Let's initialize it with 'about' as default.
 	let selected = 'about';
+
 	// Import the fade function from svelte/transition.
 	import { slide } from 'svelte/transition';
+
+	export let sectionData: any;
+
+	let theSectionData = {
+		aboutTitle: '',
+		aboutParagraph: '',
+		visionTitle: '',
+		visionParagraph: '',
+		missionTitle: '',
+		missionParagraph: ''
+	};
+
+	if ($currentAppLang === 'en') {
+		theSectionData.aboutTitle = sectionData.data.attributes.aboutTitle;
+		theSectionData.aboutParagraph = sectionData.data.attributes.aboutParagraph;
+
+		theSectionData.visionTitle = sectionData.data.attributes.visionTitle;
+		theSectionData.visionParagraph = sectionData.data.attributes.visionParagraph;
+
+		theSectionData.missionTitle = sectionData.data.attributes.missionTitle;
+		theSectionData.missionParagraph = sectionData.data.attributes.missionParagraph;
+	} else {
+		theSectionData.aboutTitle =
+			sectionData.data.attributes.localizations.data[0].attributes.aboutTitle;
+		theSectionData.aboutParagraph =
+			sectionData.data.attributes.localizations.data[0].attributes.aboutParagraph;
+
+		theSectionData.visionTitle =
+			sectionData.data.attributes.localizations.data[0].attributes.visionTitle;
+		theSectionData.visionParagraph =
+			sectionData.data.attributes.localizations.data[0].attributes.visionParagraph;
+
+		theSectionData.missionTitle =
+			sectionData.data.attributes.localizations.data[0].attributes.missionTitle;
+		theSectionData.missionParagraph =
+			sectionData.data.attributes.localizations.data[0].attributes.missionParagraph;
+	}
 </script>
 
 <section class="max-w-[1920px] mx-auto">
@@ -74,17 +113,10 @@
 					<p
 						class="heading-{$currentAppLang}-2 px-3 lg:px-8 2xl:px-16 my-8 text-primary-500 font-bold"
 					>
-						ABOUT US
+						{theSectionData.aboutTitle}
 					</p>
 					<p class="main-{$currentAppLang}-text px-3 lg:px-8 2xl:px-16 leading-8 text-justify">
-						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non inventore voluptas aliquam
-						tenetur tempora autem quisquam a quam magnam expedita! Voluptas explicabo fuga
-						perferendis nesciunt assumenda dolores facere omnis quis, quam quae id maxime.
-						Laudantium, assumenda unde exercitationem quod tenetur ratione ducimus amet in iusto
-						dignissimos asperiores reiciendis deserunt. Excepturi similique adipisci ipsa corporis
-						possimus ut ea, alias aliquam dolor, voluptate voluptatibus. Nemo cumque, architecto,
-						doloribus aut nobis nam, pariatur quas earum consequuntur fuga nulla. Adipisci corrupti
-						rerum reprehenderit quo?
+						{theSectionData.aboutParagraph}
 					</p>
 				</div>
 			{:else if selected === 'vision'}
@@ -92,17 +124,10 @@
 					<p
 						class="heading-{$currentAppLang}-2 px-3 lg:px-8 2xl:px-16 my-8 text-primary-500 font-bold"
 					>
-						OUR VISION
+						{theSectionData.visionTitle}
 					</p>
 					<p class="main-{$currentAppLang}-text px-3 lg:px-8 2xl:px-16 leading-8 text-justify">
-						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non inventore voluptas aliquam
-						tenetur tempora autem quisquam a quam magnam expedita! Voluptas explicabo fuga
-						perferendis nesciunt assumenda dolores facere omnis quis, quam quae id maxime.
-						Laudantium, assumenda unde exercitationem quod tenetur ratione ducimus amet in iusto
-						dignissimos asperiores reiciendis deserunt. Excepturi similique adipisci ipsa corporis
-						possimus ut ea, alias aliquam dolor, voluptate voluptatibus. Nemo cumque, architecto,
-						doloribus aut nobis nam, pariatur quas earum consequuntur fuga nulla. Adipisci corrupti
-						rerum reprehenderit quo?
+						{theSectionData.visionParagraph}
 					</p>
 				</div>
 			{:else if selected === 'mission'}
@@ -110,17 +135,10 @@
 					<p
 						class="heading-{$currentAppLang}-2 px-3 lg:px-8 2xl:px-16 my-8 text-primary-500 font-bold"
 					>
-						OUR MISSION
+						{theSectionData.missionTitle}
 					</p>
 					<p class="main-{$currentAppLang}-text px-3 lg:px-8 2xl:px-16 leading-8 text-justify">
-						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non inventore voluptas aliquam
-						tenetur tempora autem quisquam a quam magnam expedita! Voluptas explicabo fuga
-						perferendis nesciunt assumenda dolores facere omnis quis, quam quae id maxime.
-						Laudantium, assumenda unde exercitationem quod tenetur ratione ducimus amet in iusto
-						dignissimos asperiores reiciendis deserunt. Excepturi similique adipisci ipsa corporis
-						possimus ut ea, alias aliquam dolor, voluptate voluptatibus. Nemo cumque, architecto,
-						doloribus aut nobis nam, pariatur quas earum consequuntur fuga nulla. Adipisci corrupti
-						rerum reprehenderit quo?
+						{theSectionData.missionParagraph}
 					</p>
 				</div>
 			{/if}

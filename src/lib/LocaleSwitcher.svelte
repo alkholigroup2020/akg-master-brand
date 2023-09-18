@@ -7,7 +7,6 @@
 	// import { locales } from '$i18n/i18n-util';
 	import { loadLocaleAsync } from '$i18n/i18n-util.async';
 	import { replaceLocaleInUrl } from '../utils';
-
 	import { currentAppLang } from '$lib/stores/store.js';
 
 	// let currentLang: string; // my addition
@@ -33,7 +32,7 @@
 		invalidateAll();
 
 		// to solve the title lang issue above
-		// location.reload();
+		location.reload();
 	};
 
 	// update `lang` attribute
@@ -45,12 +44,12 @@
 	// update locale when page store changes
 	$: if (browser) {
 		const lang = $page.params.lang as Locales;
-		switchLocale(lang, false);
 		history.replaceState(
 			{ ...history.state, locale: lang },
 			'',
 			replaceLocaleInUrl($page.url, lang)
 		);
+		switchLocale(lang, false);
 	}
 </script>
 

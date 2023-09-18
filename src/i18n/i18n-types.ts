@@ -38,7 +38,7 @@ type RootTranslation = {
 		 */
 		connect: string
 		/**
-		 * L​E​A​R​N​ ​M​O​R​E
+		 * L​e​a​r​n​ ​M​o​r​e
 		 */
 		more: string
 	}
@@ -85,7 +85,7 @@ export type TranslationFunctions = {
 		 */
 		connect: () => LocalizedString
 		/**
-		 * LEARN MORE
+		 * Learn More
 		 */
 		more: () => LocalizedString
 	}
