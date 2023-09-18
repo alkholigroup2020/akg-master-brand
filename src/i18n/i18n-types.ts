@@ -42,6 +42,22 @@ type RootTranslation = {
 		 */
 		more: string
 	}
+	home: {
+		aboutSection: {
+			/**
+			 * A​b​o​u​t​ ​U​s
+			 */
+			about: string
+			/**
+			 * O​u​r​ ​V​i​s​i​o​n
+			 */
+			vision: string
+			/**
+			 * O​u​r​ ​M​i​s​s​i​o​n
+			 */
+			mission: string
+		}
+	}
 }
 
 export type TranslationFunctions = {
@@ -72,6 +88,22 @@ export type TranslationFunctions = {
 		 * LEARN MORE
 		 */
 		more: () => LocalizedString
+	}
+	home: {
+		aboutSection: {
+			/**
+			 * About Us
+			 */
+			about: () => LocalizedString
+			/**
+			 * Our Vision
+			 */
+			vision: () => LocalizedString
+			/**
+			 * Our Mission
+			 */
+			mission: () => LocalizedString
+		}
 	}
 }
 

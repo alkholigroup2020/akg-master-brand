@@ -8,7 +8,7 @@
 	let navOpen = false;
 </script>
 
-<section>
+<section class="max-w-[1920px] mx-auto">
 	<div class="relative" dir={$pageDirection}>
 		<!-- <div class="absolute inset-0 bg-black opacity-0" /> -->
 

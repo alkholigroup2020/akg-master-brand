@@ -2,12 +2,13 @@
 	import LL from '$i18n/i18n-svelte';
 	import LocaleSwitcher from '$lib/LocaleSwitcher.svelte';
 	import { currentAppLang } from '$lib/stores/store';
-	import { LightSwitch } from '@skeletonlabs/skeleton';
+	// import { LightSwitch } from '@skeletonlabs/skeleton';
 	import { AppBar } from '@skeletonlabs/skeleton';
 </script>
 
 <AppBar
 	background="bg-primary-500"
+	class="max-w-[1920px] mx-auto"
 	padding="py-0"
 	regionRowMain="h-20 container mx-auto px-3  text-white"
 >
@@ -160,11 +161,11 @@
 				<p class="pl-3 sub-main-en-text">Login / Sign Up</p>
 			</div>
 			<!-- Light Switcher -->
-			<div>
+			<!-- <div>
 				<div dir="ltr">
 					<LightSwitch width="w-10" height="h-5" />
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</svelte:fragment>
 </AppBar>

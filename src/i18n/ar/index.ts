@@ -10,6 +10,13 @@ const en: BaseTranslation = {
 		optimize: 'نُحســن.',
 		connect: 'نتواصــل.',
 		more: 'إعرف المزيد'
+	},
+	home: {
+		aboutSection: {
+			about: 'عن الشركة',
+			vision: 'رؤيتنا',
+			mission: 'مهمتنا'
+		}
 	}
 };
 

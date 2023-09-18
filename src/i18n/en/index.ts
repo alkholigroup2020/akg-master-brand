@@ -10,6 +10,13 @@ const en: BaseTranslation = {
 		optimize: 'OPTIMIZE.',
 		connect: 'CONNECT.',
 		more: 'LEARN MORE'
+	},
+	home: {
+		aboutSection: {
+			about: 'About Us',
+			vision: 'Our Vision',
+			mission: 'Our Mission'
+		}
 	}
 };
 
