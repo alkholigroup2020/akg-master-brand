@@ -4,6 +4,7 @@
 	import SectionSize from '$lib/generalComponents/SectionSize.svelte';
 	import AboutUs from '$lib/homePage/AboutUs.svelte';
 	import HeroSection from '$lib/homePage/HeroSection.svelte';
+	import IntroSection from '$lib/homePage/IntroSection.svelte';
 	import { currentAppLang } from '$lib/stores/store';
 	import { pageDirection } from '$lib/stores/store';
 
@@ -12,13 +13,12 @@
 	export let data;
 </script>
 
-<section>
-	<HeroSection />
-</section>
+<HeroSection />
+<AboutUs sectionData={data.data.aboutSectionData} />
+<IntroSection />
 
-<section>
-	<AboutUs sectionData={data.data.aboutSectionData} />
-</section>
+<div class="h-96 w-full" />
+
 <!-- <div class="p-12">
 	<div class="w-full flex justify-between">
 		<div>

@@ -15,18 +15,13 @@
 
 	export let data;
 
-	// let waitingIsDone = false;
-
-	// setTimeout(() => {
-	// 	waitingIsDone = true;
-	// }, 200);
-
 	// at the very top, set the locale before you access the store and before the actual rendering takes place
 	setLocale(data.locale);
 
 	import LL from '$i18n/i18n-svelte';
 
 	import WindowSize from '$lib/generalComponents/WindowSize.svelte';
+
 	import Nav from '$lib/generalComponents/Nav.svelte';
 
 	$: devOrProduction = process.env.NODE_ENV === 'development' ? true : false;
@@ -54,6 +49,4 @@
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
-	/* #000049 ==> Blue */
-	/* #27c071 ==> Green */
 </style>

@@ -48,6 +48,7 @@
 				</div>
 				<!-- hamburger -->
 				<button
+					aria-label="an open and close menu button"
 					on:click={() => {
 						navOpen = !navOpen;
 					}}
@@ -119,57 +120,120 @@
 				{/if}
 			</div>
 
-			<!-- main title on xs & sm -->
-			<div
-				class="absolute right-0 bottom-0 space-y-2 min-[300px]:space-y-4 p-6 min-[300px]:p-10 min-[550px]:p-20 sm:p-20 sm:space-y-8 md:hidden"
-			>
-				<div
-					class="space-y-2 min-[300px]:space-y-4 min-[400px]:space-y-0 min-[400px]:flex min-[400px]:space-x-3"
-				>
-					<div>
-						<p class="text-white font-bold heading-{$currentAppLang}-3">{$LL.hero.build()}</p>
-					</div>
-					<div>
-						<p class="text-white font-bold heading-{$currentAppLang}-3">{$LL.hero.optimize()}</p>
-					</div>
-				</div>
-
+			{#if $currentAppLang === 'en'}
+				<!-- main title on xs & sm -->
 				<div>
-					<p class="text-white font-bold heading-{$currentAppLang}-3">{$LL.hero.connect()}</p>
-				</div>
-				<div>
-					<a
-						href="/"
-						class="btn !bg-transparent text-white border rounded-none font-bold sub-main-{$currentAppLang}-text px-3 py-1"
-						>{$LL.hero.more()}</a
+					<div
+						class="absolute right-0 bottom-0 space-y-2 min-[300px]:space-y-4 p-6 min-[300px]:p-10 min-[550px]:p-20 sm:p-20 sm:space-y-8 md:hidden"
 					>
-				</div>
-			</div>
+						<div
+							class="space-y-2 min-[300px]:space-y-4 min-[400px]:space-y-0 min-[400px]:flex min-[400px]:space-x-3"
+						>
+							<div>
+								<p class="text-white font-bold heading-en-3">{$LL.hero.build()}</p>
+							</div>
+							<div>
+								<p class="text-white font-bold heading-en-3">{$LL.hero.optimize()}</p>
+							</div>
+						</div>
 
-			<!-- main title on md to 2xl -->
-			<div
-				class="absolute right-0 bottom-0 space-y-10 xl:space-y-16 2xl:space-y-24 p-10 lg:p-16 xl:p-24 max-md:hidden"
-			>
-				<div class="flex space-x-5">
-					<div>
-						<p class="text-white font-bold heading-{$currentAppLang}-1">{$LL.hero.build()}</p>
-					</div>
-					<div>
-						<p class="text-white font-bold heading-{$currentAppLang}-1">{$LL.hero.optimize()}</p>
+						<div>
+							<p class="text-white font-bold heading-en-3">{$LL.hero.connect()}</p>
+						</div>
+						<div>
+							<a
+								href="/"
+								class="btn !bg-transparent text-white border rounded-none font-bold sub-main-en-text px-3 py-1"
+								>{$LL.hero.more()}</a
+							>
+						</div>
 					</div>
 				</div>
 
+				<!-- main title on md to 2xl -->
 				<div>
-					<p class="text-white font-bold heading-{$currentAppLang}-1">{$LL.hero.connect()}</p>
-				</div>
-				<div>
-					<a
-						href="/"
-						class="btn !bg-transparent text-white border rounded-none font-bold main-{$currentAppLang}-text px-5 py-3"
-						>{$LL.hero.more()}</a
+					<div
+						class="absolute right-0 bottom-0 space-y-10 xl:space-y-16 2xl:space-y-24 p-10 lg:p-16 xl:p-24 max-md:hidden"
 					>
+						<div class="flex space-x-5">
+							<div>
+								<p class="text-white font-bold heading-en-1">{$LL.hero.build()}</p>
+							</div>
+							<div>
+								<p class="text-white font-bold heading-en-1">{$LL.hero.optimize()}</p>
+							</div>
+						</div>
+
+						<div>
+							<p class="text-white font-bold heading-en-1">{$LL.hero.connect()}</p>
+						</div>
+						<div>
+							<a
+								href="/"
+								class="btn !bg-transparent text-white border rounded-none font-bold main-en-text px-5 py-3"
+								>{$LL.hero.more()}</a
+							>
+						</div>
+					</div>
 				</div>
-			</div>
+			{:else}
+				<!-- ARABIC -->
+				<!-- main title on xs & sm -->
+				<div>
+					<div
+						class="absolute right-0 bottom-0 space-y-2 min-[300px]:space-y-4 p-6 min-[300px]:p-10 min-[550px]:p-20 sm:p-20 sm:space-y-8 md:hidden"
+					>
+						<div
+							class="space-y-2 min-[300px]:space-y-4 min-[400px]:space-y-0 min-[400px]:flex min-[400px]:space-x-3"
+						>
+							<div>
+								<p class="text-white font-bold heading-ar-3 ml-2">{$LL.hero.build()}</p>
+							</div>
+							<div>
+								<p class="text-white font-bold heading-ar-3">{$LL.hero.optimize()}</p>
+							</div>
+						</div>
+
+						<div>
+							<p class="text-white font-bold heading-ar-3">{$LL.hero.connect()}</p>
+						</div>
+						<div>
+							<a
+								href="/"
+								class="btn !bg-transparent text-white border rounded-none font-bold sub-main-ar-text px-3 py-1"
+								>{$LL.hero.more()}</a
+							>
+						</div>
+					</div>
+				</div>
+
+				<!-- main title on md to 2xl -->
+				<div>
+					<div
+						class="absolute right-0 bottom-0 space-y-10 sm:space-y-16 2xl:space-y-24 p-10 lg:p-16 xl:p-24 max-md:hidden"
+					>
+						<div class="flex space-x-12">
+							<div>
+								<p class="text-white font-bold heading-ar-1 ml-5">{$LL.hero.build()}</p>
+							</div>
+							<div>
+								<p class="text-white font-bold heading-ar-1">{$LL.hero.optimize()}</p>
+							</div>
+						</div>
+
+						<div>
+							<p class="text-white font-bold heading-ar-1">{$LL.hero.connect()}</p>
+						</div>
+						<div>
+							<a
+								href="/"
+								class="btn !bg-transparent text-white border rounded-none font-bold main-ar-text px-5 py-3"
+								>{$LL.hero.more()}</a
+							>
+						</div>
+					</div>
+				</div>
+			{/if}
 		</div>
 	</div>
 </section>

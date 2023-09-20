@@ -32,7 +32,7 @@
 		invalidateAll();
 
 		// to solve the title lang issue above
-		location.reload();
+		// location.reload();
 	};
 
 	// update `lang` attribute
@@ -44,16 +44,17 @@
 	// update locale when page store changes
 	$: if (browser) {
 		const lang = $page.params.lang as Locales;
+		switchLocale(lang, false);
 		history.replaceState(
 			{ ...history.state, locale: lang },
 			'',
 			replaceLocaleInUrl($page.url, lang)
 		);
-		switchLocale(lang, false);
 	}
 </script>
 
 <svelte:window on:popstate={handlePopStateEvent} />
+
 {#if $currentAppLang === 'en'}
 	<button type="button" class="btn !bg-transparent px-0 sub-main-ar-text text-white">
 		<a href={`${replaceLocaleInUrl($page.url, 'ar')}`} aria-label="language switch link"
