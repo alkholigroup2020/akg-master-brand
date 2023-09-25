@@ -6,7 +6,7 @@
 </script>
 
 <section>
-	<div class="md:container md:mx-auto md:px-3 py-12">
+	<div class="md:container md:mx-auto md:px-3 py-20">
 		<div class="flex flex-col lg:flex-row bg-primary-500">
 			<!-- image -->
 			<div class="lg:w-[50%]">
@@ -60,8 +60,20 @@
 				<!-- more -->
 				<div>
 					<a href="/" class="btn !bg-transparent text-white text-xs sm:text-sm md:text-base px-0"
-						>VIEW MORE ></a
-					>
+						>VIEW MORE
+						<span class="mx-3">
+							<svg
+								viewBox="0 0 1024 1024"
+								class="icon w-4 h-4"
+								version="1.1"
+								xmlns="http://www.w3.org/2000/svg"
+								><path
+									d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z"
+									fill="#FFF"
+								/></svg
+							>
+						</span>
+					</a>
 				</div>
 			</div>
 			<!-- image -->

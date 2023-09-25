@@ -11,7 +11,7 @@
 </script>
 
 <section class="max-w-[1920px] mx-auto">
-	<div class="grid sm:grid-cols-3 lg:grid-cols-4 py-5 sm:py-10">
+	<div class="grid sm:grid-cols-3 lg:grid-cols-4 py-8 sm:py-16">
 		{#if $currentAppLang === 'en'}
 			<!-- Buttons Section before sm -->
 			<div class="w-screen flex sm:hidden text-lg sm:text-2xl lg:text-2xl xl:text-3xl text-white">

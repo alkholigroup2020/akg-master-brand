@@ -86,6 +86,33 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- view more button -->
+		<div class="text-center pt-8">
+			<div>
+				<a
+					href="/"
+					class="btn !bg-transparent flex-col text-primary-500 border-0 text-xs sm:text-sm md:text-base font-semibold px-2 py-1"
+				>
+					<span>
+						<p>VIEW MORE</p>
+					</span>
+					<span class="mt-1"
+						><svg
+							viewBox="0 0 1024 1024"
+							class="icon w-3 md:w-5 h-3 md:h-5"
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							><path
+								d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z"
+								fill="#000000"
+							/></svg
+						>
+					</span>
+				</a>
+			</div>
+			<div />
+		</div>
 	</div>
 
 	<div class="sm:hidden">
