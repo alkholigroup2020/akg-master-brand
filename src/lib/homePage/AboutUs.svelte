@@ -76,7 +76,7 @@
 				{#if selected === 'about'}
 					<div>
 						<p
-							class="heading-en-2 px-3 lg:px-8 2xl:px-16 my-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold"
+							class="heading-en-2 px-3 lg:px-8 2xl:px-16 my-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-bold"
 						>
 							{sectionData.data.attributes.aboutTitle}
 						</p>
@@ -89,7 +89,7 @@
 				{:else if selected === 'vision'}
 					<div>
 						<p
-							class="heading-en-2 px-3 lg:px-8 2xl:px-16 my-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold"
+							class="heading-en-2 px-3 lg:px-8 2xl:px-16 my-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-bold"
 						>
 							{sectionData.data.attributes.visionTitle}
 						</p>
@@ -102,7 +102,7 @@
 				{:else if selected === 'mission'}
 					<div>
 						<p
-							class="heading-en-2 px-3 lg:px-8 2xl:px-16 my-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold"
+							class="heading-en-2 px-3 lg:px-8 2xl:px-16 my-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-bold"
 						>
 							{sectionData.data.attributes.missionTitle}
 						</p>
@@ -176,7 +176,7 @@
 				{#if selected === 'about'}
 					<div>
 						<p
-							class="heading-ar-2 px-3 lg:px-8 2xl:px-16 my-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold"
+							class="heading-ar-2 px-3 lg:px-8 2xl:px-16 my-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-bold"
 						>
 							{sectionData.data.attributes.localizations.data[0].attributes.aboutTitle}
 						</p>
@@ -187,7 +187,7 @@
 				{:else if selected === 'vision'}
 					<div>
 						<p
-							class="heading-ar-2 px-3 lg:px-8 2xl:px-16 my-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold"
+							class="heading-ar-2 px-3 lg:px-8 2xl:px-16 my-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-bold"
 						>
 							{sectionData.data.attributes.localizations.data[0].attributes.visionTitle}
 						</p>
@@ -198,7 +198,7 @@
 				{:else if selected === 'mission'}
 					<div>
 						<p
-							class="heading-ar-2 px-3 lg:px-8 2xl:px-16 my-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold"
+							class="heading-ar-2 px-3 lg:px-8 2xl:px-16 my-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-bold"
 						>
 							{sectionData.data.attributes.localizations.data[0].attributes.missionTitle}
 						</p>

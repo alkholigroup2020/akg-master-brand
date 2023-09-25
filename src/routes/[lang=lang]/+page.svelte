@@ -3,6 +3,7 @@
 	import LocaleSwitcher from '$lib/LocaleSwitcher.svelte';
 	import SectionSize from '$lib/generalComponents/SectionSize.svelte';
 	import AboutUs from '$lib/homePage/AboutUs.svelte';
+	import ClientsTestimonials from '$lib/homePage/ClientsTestimonials.svelte';
 	import HeroSection from '$lib/homePage/HeroSection.svelte';
 	import IntroSection from '$lib/homePage/IntroSection.svelte';
 	import ProjectsSection from '$lib/homePage/ProjectsSection.svelte';
@@ -20,6 +21,7 @@
 <IntroSection />
 <ServicesSection />
 <ProjectsSection />
+<ClientsTestimonials />
 
 <div class="h-96 w-full" />
 
