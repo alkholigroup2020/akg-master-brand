@@ -26,13 +26,13 @@
 			</div>
 
 			<!-- welcome message -->
-			<p class="sub-main-{$currentAppLang}-text border-l pl-4 max-lg:hidden">
+			<p class="text-sm sm:text-base md:text-lg border-l pl-4 max-lg:hidden">
 				{$LL.nav.welcomeMsg()}
 			</p>
 
 			<!-- social media links -->
 			<div class="flex items-center border-l pl-4">
-				<p class="sub-main-en-text font-bold pr-3">Follow:</p>
+				<p class="text-sm sm:text-base md:text-lg font-bold pr-3">Follow:</p>
 				<div class="flex items-center space-x-3">
 					<!-- facebook icon -->
 					<div>
@@ -154,11 +154,12 @@
 		<div class="flex items-center space-x-5">
 			<!-- language switcher -->
 			<div>
-				<LocaleSwitcher />
+				<!-- <LocaleSwitcher /> -->
 			</div>
 			<!-- login -->
-			<div class="border-l-2">
-				<p class="pl-3 sub-main-en-text">Login / Sign Up</p>
+			<!-- class="border-l-2" -->
+			<div>
+				<p class="pl-3 text-sm sm:text-base md:text-lg">Login / Sign Up</p>
 			</div>
 			<!-- Light Switcher -->
 			<!-- <div>

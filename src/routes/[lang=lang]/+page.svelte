@@ -5,6 +5,7 @@
 	import AboutUs from '$lib/homePage/AboutUs.svelte';
 	import HeroSection from '$lib/homePage/HeroSection.svelte';
 	import IntroSection from '$lib/homePage/IntroSection.svelte';
+	import ServicesSection from '$lib/homePage/ServicesSection.svelte';
 	import { currentAppLang } from '$lib/stores/store';
 	import { pageDirection } from '$lib/stores/store';
 
@@ -16,6 +17,7 @@
 <HeroSection />
 <AboutUs sectionData={data.data.aboutSectionData} />
 <IntroSection />
+<ServicesSection />
 
 <div class="h-96 w-full" />
 

@@ -23,7 +23,7 @@
 			<button
 				hidden={y > 800 ? false : true}
 				aria-label="a move to the top of the screen button"
-				class="bg-initial border-[5px] border-[#d63030] rounded-full bg-primary-500"
+				class="bg-initial border-[5px] border-primary-500 rounded-full bg-primary-500"
 				on:click={scrollToTop}
 			>
 				<div class="flex justify-center">

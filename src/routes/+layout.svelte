@@ -48,5 +48,11 @@
 {/if}
 
 <style>
-	@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+	/* @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap'); */
+
+	/* h1: text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl */
+	/* h2: text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl */
+	/* h3: text-lg sm:text-2xl lg:text-2xl xl:text-3xl */
+	/* normal: text-sm sm:text-base md:text-lg */
+	/* sub-normal: text-xs sm:text-sm md:text-base */
 </style>

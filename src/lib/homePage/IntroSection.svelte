@@ -1,9 +1,3 @@
-<script lang="ts">
-	import LL from '$i18n/i18n-svelte';
-	import { currentAppLang } from '$lib/stores/store';
-	import { pageDirection } from '$lib/stores/store';
-</script>
-
 <section class="max-w-[1920px] mx-auto">
 	<div class="max-sm:hidden">
 		<div class="relative">
@@ -22,7 +16,7 @@
 		<div class="relative container mx-auto px-3 -mt-24 xl:-mt-40">
 			<div class="grid grid-cols-3 gap-4">
 				<div
-					class="flex flex-col items-center py-3 bg-tertiary-50-900-token w-full aspect-[1/1.15] md:aspect-[1/1] xl:aspect-[1/0.8]"
+					class="flex flex-col items-center py-3 bg-tertiary-50-900-token w-full aspect-[1/1.38] md:aspect-[1/1] xl:aspect-[1/0.8]"
 				>
 					<!-- icon -->
 					<img
@@ -38,12 +32,14 @@
 						2100
 					</p>
 					<!-- text -->
-					<p class="text-xl lg:text-2xl 2xl:text-3xl font-bold text-primary-500 px-1">
+					<p
+						class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold text-primary-500 px-1 text-center"
+					>
 						Group Manpower
 					</p>
 				</div>
 				<div
-					class="flex flex-col items-center py-3 bg-tertiary-50-900-token w-full aspect-[1/1.15] md:aspect-[1/1] xl:aspect-[1/0.8]"
+					class="flex flex-col items-center py-3 bg-tertiary-50-900-token w-full aspect-[1/1.38] md:aspect-[1/1] xl:aspect-[1/0.8]"
 				>
 					<!-- icon -->
 					<img
@@ -59,12 +55,14 @@
 						21
 					</p>
 					<!-- text -->
-					<p class="text-xl lg:text-2xl 2xl:text-3xl font-bold text-center text-primary-500 px-1">
+					<p
+						class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold text-center text-primary-500 px-1"
+					>
 						Companies Founded By AKG
 					</p>
 				</div>
 				<div
-					class="flex flex-col items-center py-3 bg-tertiary-50-900-token w-full aspect-[1/1.15] md:aspect-[1/1] xl:aspect-[1/0.8]"
+					class="flex flex-col items-center py-3 bg-tertiary-50-900-token w-full aspect-[1/1.38] md:aspect-[1/1] xl:aspect-[1/0.8]"
 				>
 					<!-- icon -->
 					<img
@@ -80,7 +78,9 @@
 						450
 					</p>
 					<!-- text -->
-					<p class="text-xl lg:text-2xl 2xl:text-3xl font-bold text-primary-500 px-1">
+					<p
+						class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold text-primary-500 px-1 text-center"
+					>
 						Saudi Employees
 					</p>
 				</div>
@@ -113,7 +113,11 @@
 								2100
 							</p>
 							<!-- text -->
-							<p class="text-md px-2 font-bold text-primary-500">Group Manpower</p>
+							<p
+								class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold text-primary-500 text-center"
+							>
+								Group Manpower
+							</p>
 						</div>
 					</div>
 					<div class="flex items-center p-1 bg-tertiary-50-900-token w-full">
@@ -129,7 +133,11 @@
 								2100
 							</p>
 							<!-- text -->
-							<p class="text-md px-2 font-bold text-primary-500">Companies Founded By AKG</p>
+							<p
+								class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold text-primary-500 text-center"
+							>
+								Companies Founded By AKG
+							</p>
 						</div>
 					</div>
 					<div class="flex items-center p-1 bg-tertiary-50-900-token w-full">
@@ -145,7 +153,11 @@
 								2100
 							</p>
 							<!-- text -->
-							<p class="text-md px-2 font-bold text-primary-500">Saudi Employees</p>
+							<p
+								class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold text-primary-500 text-center"
+							>
+								Saudi Employees
+							</p>
 						</div>
 					</div>
 				</div>

@@ -14,7 +14,7 @@
 	<div class="grid sm:grid-cols-3 lg:grid-cols-4 py-5 sm:py-10">
 		{#if $currentAppLang === 'en'}
 			<!-- Buttons Section before sm -->
-			<div class="w-screen flex sm:hidden main-en-text text-white">
+			<div class="w-screen flex sm:hidden text-lg sm:text-2xl lg:text-2xl xl:text-3xl text-white">
 				<button
 					class="path-small w-1/3 h-16 mx-2 hover:cursor-pointer {selected === 'about'
 						? 'bg-success-500'
@@ -42,7 +42,9 @@
 			</div>
 
 			<!-- Buttons Section after sm -->
-			<div class="sm:pr-5 lg:pr-8 py-2 text-white heading-en-3 max-sm:hidden">
+			<div
+				class="sm:pr-5 lg:pr-8 py-2 text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl max-sm:hidden"
+			>
 				<button
 					class="path w-full h-24 my-1 hover:cursor-pointer {selected === 'about'
 						? 'bg-success-500'
@@ -73,28 +75,40 @@
 			<div class="sm:col-span-2 lg:col-span-3 pt-3 sm:pt-4">
 				{#if selected === 'about'}
 					<div>
-						<p class="heading-en-2 px-3 lg:px-8 2xl:px-16 my-8 text-primary-500 font-bold">
+						<p
+							class="heading-en-2 px-3 lg:px-8 2xl:px-16 my-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold"
+						>
 							{sectionData.data.attributes.aboutTitle}
 						</p>
-						<p class="main-en-text px-3 lg:px-8 2xl:px-16 leading-8 text-justify">
+						<p
+							class="text-sm sm:text-base md:text-lg px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
+						>
 							{sectionData.data.attributes.aboutParagraph}
 						</p>
 					</div>
 				{:else if selected === 'vision'}
 					<div>
-						<p class="heading-en-2 px-3 lg:px-8 2xl:px-16 my-8 text-primary-500 font-bold">
+						<p
+							class="heading-en-2 px-3 lg:px-8 2xl:px-16 my-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold"
+						>
 							{sectionData.data.attributes.visionTitle}
 						</p>
-						<p class="main-en-text px-3 lg:px-8 2xl:px-16 leading-8 text-justify">
+						<p
+							class="text-sm sm:text-base md:text-lg px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
+						>
 							{sectionData.data.attributes.visionParagraph}
 						</p>
 					</div>
 				{:else if selected === 'mission'}
 					<div>
-						<p class="heading-en-2 px-3 lg:px-8 2xl:px-16 my-8 text-primary-500 font-bold">
+						<p
+							class="heading-en-2 px-3 lg:px-8 2xl:px-16 my-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold"
+						>
 							{sectionData.data.attributes.missionTitle}
 						</p>
-						<p class="main-en-text px-3 lg:px-8 2xl:px-16 leading-8 text-justify">
+						<p
+							class="text-sm sm:text-base md:text-lg px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
+						>
 							{sectionData.data.attributes.missionParagraph}
 						</p>
 					</div>
@@ -130,7 +144,7 @@
 			</div>
 
 			<!-- Buttons Section after sm -->
-			<div class="sm:pr-5 lg:pr-8 py-2 text-white heading-ar-3 max-sm:hidden">
+			<div class="sm:pr-5 lg:pr-8 py-2 text-white max-sm:hidden">
 				<button
 					class="path w-full h-24 my-1 hover:cursor-pointer {selected === 'about'
 						? 'bg-success-500'
@@ -161,7 +175,9 @@
 			<div class="sm:col-span-2 lg:col-span-3 pt-3 sm:pt-4" dir={$pageDirection}>
 				{#if selected === 'about'}
 					<div>
-						<p class="heading-ar-2 px-3 lg:px-8 2xl:px-16 my-8 text-primary-500 font-bold">
+						<p
+							class="heading-ar-2 px-3 lg:px-8 2xl:px-16 my-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold"
+						>
 							{sectionData.data.attributes.localizations.data[0].attributes.aboutTitle}
 						</p>
 						<p class="main-ar-text px-3 lg:px-8 2xl:px-16 leading-8 text-justify">
@@ -170,7 +186,9 @@
 					</div>
 				{:else if selected === 'vision'}
 					<div>
-						<p class="heading-ar-2 px-3 lg:px-8 2xl:px-16 my-8 text-primary-500 font-bold">
+						<p
+							class="heading-ar-2 px-3 lg:px-8 2xl:px-16 my-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold"
+						>
 							{sectionData.data.attributes.localizations.data[0].attributes.visionTitle}
 						</p>
 						<p class="main-ar-text px-3 lg:px-8 2xl:px-16 leading-8 text-justify">
@@ -179,7 +197,9 @@
 					</div>
 				{:else if selected === 'mission'}
 					<div>
-						<p class="heading-ar-2 px-3 lg:px-8 2xl:px-16 my-8 text-primary-500 font-bold">
+						<p
+							class="heading-ar-2 px-3 lg:px-8 2xl:px-16 my-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold"
+						>
 							{sectionData.data.attributes.localizations.data[0].attributes.missionTitle}
 						</p>
 						<p class="main-ar-text px-3 lg:px-8 2xl:px-16 leading-8 text-justify">
