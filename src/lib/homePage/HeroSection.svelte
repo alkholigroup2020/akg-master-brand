@@ -1,11 +1,10 @@
 <script lang="ts">
 	import LL from '$i18n/i18n-svelte';
 	import LocaleSwitcher from '$lib/LocaleSwitcher.svelte';
+	import Menu from '$lib/generalComponents/Menu.svelte';
 	import SectionSize from '$lib/generalComponents/SectionSize.svelte';
 	import { currentAppLang } from '$lib/stores/store';
 	import { pageDirection } from '$lib/stores/store';
-
-	let navOpen = false;
 </script>
 
 <section class="max-w-[1920px] mx-auto">
@@ -20,11 +19,10 @@
 			alt="main hero section background"
 			src="/images/home/heroSection/asset-01_2000x800.webp"
 			srcset="/images/home/heroSection/asset-01_700x560.webp 640w, 
-			/images/home/heroSection/asset-01_800x560.webp 768w, 
 			/images/home/heroSection/asset-01_1200x720.webp 1024w, 
 			/images/home/heroSection/asset-01_1600x800.webp 1536w, 
 			/images/home/heroSection/asset-01_2000x800.webp 9000w"
-			class="w-full aspect-[1/0.8] sm:aspect-[1/0.7] md:aspect-[1/0.6] lg:aspect-[1/0.5] 2xl:aspect-[1/0.4] 2xl:max-h-[1400px]"
+			class="w-full aspect-[1/0.8] md:aspect-[1/0.6] lg:aspect-[1/0.5] 2xl:aspect-[1/0.4] 2xl:max-h-[1400px]"
 		/>
 
 		<div class="absolute inset-0 container mx-auto px-3">
@@ -35,89 +33,19 @@
 				</div>
 			</div>
 
-			<!-- hamburger & logo -->
-			<div class="absolute left-0 top-0 m-3 min-[370px]:m-5 sm:m-3 sm:mt-10" dir="ltr">
-				<!-- logo on xs -->
-				<div class="sm:hidden my-3">
-					<img
-						loading="lazy"
-						src="/images/nav/white_80x35.webp"
-						alt="company's logo"
-						class="w-[80px] h-[35px] aspect-[16/7]"
-					/>
-				</div>
-				<!-- hamburger -->
-				<button
-					aria-label="an open and close menu button"
-					on:click={() => {
-						navOpen = !navOpen;
-					}}
-				>
-					<span>
-						{#if !navOpen}
-							<svg
-								class="w-6 sm:w-10 h-6 sm:h-10"
-								viewBox="0 0 24 24"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<g id="Menu / Hamburger_LG">
-									<path
-										id="Vector"
-										d="M3 17H21M3 12H21M3 7H21"
-										stroke="#FFF"
-										stroke-width="2"
-										stroke-linecap="round"
-										stroke-linejoin="round"
-									/>
-								</g>
-							</svg>
-						{:else}
-							<svg
-								class="w-6 sm:w-10 h-6 sm:h-10"
-								viewBox="0 0 24 24"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									d="M14.5 9.50002L9.5 14.5M9.49998 9.5L14.5 14.5"
-									stroke="#FFF"
-									stroke-width="1.5"
-									stroke-linecap="round"
-								/>
-								<path
-									d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7"
-									stroke="#FFF"
-									stroke-width="1.5"
-									stroke-linecap="round"
-								/>
-							</svg>
-						{/if}
-					</span>
-				</button>
+			<!-- logo on xs -->
+			<div class="sm:hidden my-3">
+				<img
+					loading="lazy"
+					src="/images/nav/white_80x35.webp"
+					alt="company's logo"
+					class="w-[80px] h-[35px] aspect-[16/7]"
+				/>
+			</div>
 
-				<!-- hero nav list -->
-				{#if navOpen}
-					<nav class="list-nav bg-surface-50-900-token rounded-sm">
-						<ul class="w-[120px] text-sm sm:text-base md:text-lg">
-							<li>
-								<a href="/elements/lists" style="border-radius:0px">
-									<span class="flex-auto">Home</span>
-								</a>
-							</li>
-							<li>
-								<a href="/elements/lists" style="border-radius:0px">
-									<span class="flex-auto">About</span>
-								</a>
-							</li>
-							<li>
-								<a href="/elements/lists" style="border-radius:0px">
-									<span class="flex-auto">Services</span>
-								</a>
-							</li>
-						</ul>
-					</nav>
-				{/if}
+			<!-- hamburger & logo -->
+			<div class="absolute left-0 top-12 sm:top-0 m-3 min-[370px]:m-5 sm:m-3 sm:mt-10" dir="ltr">
+				<Menu />
 			</div>
 
 			{#if $currentAppLang === 'en'}

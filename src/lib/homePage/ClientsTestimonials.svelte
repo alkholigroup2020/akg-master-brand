@@ -94,7 +94,7 @@
 							{testimonial.testimonial}
 						</p>
 
-						<div class="py-3">
+						<div class="pt-3 pb-12">
 							<Ratings value={testimonial.stars} max={5}>
 								<svelte:fragment slot="empty">
 									{@html icons.starEmpty}

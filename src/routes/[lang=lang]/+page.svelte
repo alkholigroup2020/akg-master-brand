@@ -1,6 +1,7 @@
 <script lang="ts">
 	import LL from '$i18n/i18n-svelte';
 	import LocaleSwitcher from '$lib/LocaleSwitcher.svelte';
+	import MainFooter from '$lib/footers/MainFooter.svelte';
 	import SectionSize from '$lib/generalComponents/SectionSize.svelte';
 	import AboutUs from '$lib/homePage/AboutUs.svelte';
 	import ClientsTestimonials from '$lib/homePage/ClientsTestimonials.svelte';
@@ -22,8 +23,9 @@
 <ServicesSection />
 <ProjectsSection />
 <ClientsTestimonials />
+<MainFooter />
 
-<div class="h-96 w-full" />
+<!-- <div class="h-96 w-full" /> -->
 
 <!-- <div class="p-12">
 	<div class="w-full flex justify-between">
