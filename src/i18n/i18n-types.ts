@@ -58,6 +58,22 @@ type RootTranslation = {
 			mission: string
 		}
 	}
+	about: {
+		aboutSection: {
+			/**
+			 * A​b​o​u​t​ ​U​s
+			 */
+			about: string
+			/**
+			 * O​u​r​ ​H​i​s​t​o​r​y
+			 */
+			story: string
+			/**
+			 * O​u​r​ ​V​a​l​u​e​s
+			 */
+			values: string
+		}
+	}
 }
 
 export type TranslationFunctions = {
@@ -103,6 +119,22 @@ export type TranslationFunctions = {
 			 * Our Mission
 			 */
 			mission: () => LocalizedString
+		}
+	}
+	about: {
+		aboutSection: {
+			/**
+			 * About Us
+			 */
+			about: () => LocalizedString
+			/**
+			 * Our History
+			 */
+			story: () => LocalizedString
+			/**
+			 * Our Values
+			 */
+			values: () => LocalizedString
 		}
 	}
 }

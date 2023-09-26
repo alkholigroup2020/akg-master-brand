@@ -17,6 +17,13 @@ const en: BaseTranslation = {
 			vision: 'Our Vision',
 			mission: 'Our Mission'
 		}
+	},
+	about: {
+		aboutSection: {
+			about: 'About Us',
+			story: 'Our History',
+			values: 'Our Values'
+		}
 	}
 };
 
