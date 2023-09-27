@@ -10,9 +10,15 @@
 
 		<img
 			alt="a section background"
-			src="/asset-03.png"
-			class="w-full aspect-[1/0.9] min-[450px]:aspect-[1/0.8] sm:aspect-[1/0.7]
-			md:aspect-[1/0.6] lg:aspect-[1/0.5] xl:aspect-[1/0.45] 2xl:aspect-[1/0.4]"
+			src="/images/about/timeLine/asset-03_2000x800.webp"
+			srcset="/images/about/timeLine/asset-03_500x450.webp 450w,
+			/images/about/timeLine/asset-03_700x560.webp 640w,
+			/images/about/timeLine/asset-03_800x560.webp 768w,
+			/images/about/timeLine/asset-03_1100x660.webp 1024w,
+			/images/about/timeLine/asset-03_1400x700.webp 1280w,
+			/images/about/timeLine/asset-03_1800x810.webp 1536w,
+			/images/about/timeLine/asset-03_2000x800.webp 2000w"
+			class="w-full aspect-[1/0.9] min-[450px]:aspect-[1/0.8] sm:aspect-[1/0.7] md:aspect-[1/0.6] lg:aspect-[1/0.5] xl:aspect-[1/0.45] 2xl:aspect-[1/0.4]"
 		/>
 
 		<div class=" absolute inset-0 w-[100%] flex">
