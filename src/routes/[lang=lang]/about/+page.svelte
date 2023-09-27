@@ -3,6 +3,7 @@
 	import AboutUs from '$lib/aboutPage/AboutUs.svelte';
 	import HeroSection from '$lib/aboutPage/HeroSection.svelte';
 	import MissionAndVision from '$lib/aboutPage/MissionAndVision.svelte';
+	import TeamMembers from '$lib/aboutPage/TeamMembers.svelte';
 	import Timeline from '$lib/aboutPage/Timeline.svelte';
 	import TimelineImage from '$lib/aboutPage/TimelineImage.svelte';
 	import SectionSize from '$lib/generalComponents/SectionSize.svelte';
@@ -20,5 +21,7 @@
 <TimelineImage />
 
 <MissionAndVision />
+
+<TeamMembers />
 
 <div class="h-96 w-full bg-tertiary-50" />
