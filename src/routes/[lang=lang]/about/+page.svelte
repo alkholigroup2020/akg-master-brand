@@ -3,9 +3,11 @@
 	import AboutUs from '$lib/aboutPage/AboutUs.svelte';
 	import HeroSection from '$lib/aboutPage/HeroSection.svelte';
 	import MissionAndVision from '$lib/aboutPage/MissionAndVision.svelte';
+	import PartnersSection from '$lib/aboutPage/PartnersSection.svelte';
 	import TeamMembers from '$lib/aboutPage/TeamMembers.svelte';
 	import Timeline from '$lib/aboutPage/Timeline.svelte';
 	import TimelineImage from '$lib/aboutPage/TimelineImage.svelte';
+	import MainFooter from '$lib/footers/MainFooter.svelte';
 	import SectionSize from '$lib/generalComponents/SectionSize.svelte';
 	import { currentAppLang } from '$lib/stores/store';
 	import { pageDirection } from '$lib/stores/store';
@@ -24,4 +26,6 @@
 
 <TeamMembers />
 
-<div class="h-96 w-full bg-tertiary-50" />
+<PartnersSection />
+
+<MainFooter />

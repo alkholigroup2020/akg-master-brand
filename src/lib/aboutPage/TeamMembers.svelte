@@ -14,7 +14,7 @@
 		<!-- chairman level -->
 		<div class="flex justify-center py-12">
 			<div class="flex flex-col items-center">
-				<div class="rounded-full">
+				<div>
 					<img
 						src="/images/about/team/asset-16_180x180.webp"
 						srcset="/images/about/team/asset-16_120x120.webp 768w, /images/about/team/asset-16_180x180.webp 2000w"
@@ -31,7 +31,7 @@
 			class="grid grid-cols-2 md:flex justify-center md:space-x-6 lg:space-x-16 xl:space-x-20 2xl:space-x-24 py-3 min-[400px]:px-10 min-[550px]:px-24 min-[650px]:px-32 md:px-0"
 		>
 			<div class="flex flex-col items-center">
-				<div class="rounded-full">
+				<div>
 					<img
 						src="/images/about/team/asset-17_180x180.webp"
 						srcset="/images/about/team/asset-17_120x120.webp 768w, /images/about/team/asset-17_180x180.webp 2000w"
@@ -42,7 +42,7 @@
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg">FAISAL AL KHOLI</p>
 			</div>
 			<div class="flex flex-col items-center">
-				<div class="rounded-full">
+				<div>
 					<img
 						src="/images/about/team/asset-18_180x180.webp"
 						srcset="/images/about/team/asset-18_120x120.webp 768w, /images/about/team/asset-18_180x180.webp 2000w"
@@ -59,7 +59,7 @@
 			class="grid grid-cols-2 gap-y-10 md:flex justify-center md:space-x-6 lg:space-x-16 xl:space-x-20 2xl:space-x-24 py-8 min-[400px]:px-10 min-[550px]:px-24 min-[650px]:px-32 md:px-0"
 		>
 			<div class="flex flex-col items-center">
-				<div class="rounded-full">
+				<div>
 					<img
 						src="/images/about/team/asset-20_180x180.webp"
 						srcset="/images/about/team/asset-20_120x120.webp 768w, /images/about/team/asset-20_180x180.webp 2000w"
@@ -70,7 +70,7 @@
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg">DARKO MACURA</p>
 			</div>
 			<div class="flex flex-col items-center">
-				<div class="rounded-full">
+				<div>
 					<img
 						src="/images/about/team/asset-21_180x180.webp"
 						srcset="/images/about/team/asset-21_120x120.webp 768w, /images/about/team/asset-21_180x180.webp 2000w"
@@ -81,7 +81,7 @@
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg">DARKO MACURA</p>
 			</div>
 			<div class="flex flex-col items-center">
-				<div class="rounded-full">
+				<div>
 					<img
 						src="/images/about/team/asset-22_180x180.webp"
 						srcset="/images/about/team/asset-22_120x120.webp 768w, /images/about/team/asset-22_180x180.webp 2000w"
@@ -92,7 +92,7 @@
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg">DARKO MACURA</p>
 			</div>
 			<div class="flex flex-col items-center">
-				<div class="rounded-full">
+				<div>
 					<img
 						src="/images/about/team/asset-23_180x180.webp"
 						srcset="/images/about/team/asset-23_120x120.webp 768w, /images/about/team/asset-23_180x180.webp 2000w"
@@ -109,7 +109,7 @@
 			class="grid grid-cols-2 gap-y-10 md:flex justify-center md:space-x-6 lg:space-x-16 xl:space-x-20 2xl:space-x-24 py-8 min-[400px]:px-10 min-[550px]:px-24 min-[650px]:px-32 md:px-0"
 		>
 			<div class="flex flex-col items-center">
-				<div class="rounded-full">
+				<div>
 					<img
 						src="/images/about/team/asset-24_180x180.webp"
 						srcset="/images/about/team/asset-24_120x120.webp 768w, /images/about/team/asset-24_180x180.webp 2000w"
@@ -120,7 +120,7 @@
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg">DARKO MACURA</p>
 			</div>
 			<div class="flex flex-col items-center">
-				<div class="rounded-full">
+				<div>
 					<img
 						src="/images/about/team/asset-25_180x180.webp"
 						srcset="/images/about/team/asset-25_120x120.webp 768w, /images/about/team/asset-25_180x180.webp 2000w"
@@ -131,7 +131,7 @@
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg">DARKO MACURA</p>
 			</div>
 			<div class="flex flex-col items-center">
-				<div class="rounded-full">
+				<div>
 					<img
 						src="/images/about/team/asset-26_180x180.webp"
 						srcset="/images/about/team/asset-26_120x120.webp 768w, /images/about/team/asset-26_180x180.webp 2000w"
@@ -142,7 +142,7 @@
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg">DARKO MACURA</p>
 			</div>
 			<div class="flex flex-col items-center">
-				<div class="rounded-full">
+				<div>
 					<img
 						src="/images/about/team/asset-27_180x180.webp"
 						srcset="/images/about/team/asset-27_120x120.webp 768w, /images/about/team/asset-27_180x180.webp 2000w"
@@ -159,7 +159,7 @@
 			class="grid grid-cols-2 gap-y-10 md:flex justify-center md:space-x-6 lg:space-x-16 xl:space-x-20 2xl:space-x-24 py-8 min-[400px]:px-10 min-[550px]:px-24 min-[650px]:px-32 md:px-0"
 		>
 			<div class="flex flex-col items-center">
-				<div class="rounded-full">
+				<div>
 					<img
 						src="/images/about/team/asset-19_180x180.webp"
 						srcset="/images/about/team/asset-19_120x120.webp 768w, /images/about/team/asset-19_180x180.webp 2000w"
@@ -170,7 +170,7 @@
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg">DARKO MACURA</p>
 			</div>
 			<div class="flex flex-col items-center">
-				<div class="rounded-full">
+				<div>
 					<img
 						src="/images/about/team/asset-28_180x180.webp"
 						srcset="/images/about/team/asset-28_120x120.webp 768w, /images/about/team/asset-28_180x180.webp 2000w"
@@ -181,7 +181,7 @@
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg">DARKO MACURA</p>
 			</div>
 			<div class="flex flex-col items-center">
-				<div class="rounded-full">
+				<div>
 					<img
 						src="/images/about/team/asset-29_180x180.webp"
 						srcset="/images/about/team/asset-29_120x120.webp 768w, /images/about/team/asset-29_180x180.webp 2000w"

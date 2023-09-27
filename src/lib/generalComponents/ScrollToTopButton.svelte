@@ -14,7 +14,7 @@
 	};
 </script>
 
-<div class="fixed bottom-6 right-1 md:right-3 z-50">
+<div class="fixed bottom-6 right-0 md:right-3 z-50">
 	<!-- go up -->
 	<div>
 		<div
