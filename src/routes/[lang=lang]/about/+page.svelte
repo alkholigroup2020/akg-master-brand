@@ -3,6 +3,7 @@
 	import AboutUs from '$lib/aboutPage/AboutUs.svelte';
 	import HeroSection from '$lib/aboutPage/HeroSection.svelte';
 	import Timeline from '$lib/aboutPage/Timeline.svelte';
+	import TimelineImage from '$lib/aboutPage/TimelineImage.svelte';
 	import SectionSize from '$lib/generalComponents/SectionSize.svelte';
 	import { currentAppLang } from '$lib/stores/store';
 	import { pageDirection } from '$lib/stores/store';
@@ -14,5 +15,7 @@
 <AboutUs sectionData={data.aboutSectionData} />
 
 <Timeline />
+
+<TimelineImage />
 
 <div class="h-96 w-full" />

@@ -4,7 +4,7 @@
 	import { pageDirection } from '$lib/stores/store';
 </script>
 
-<section class="container px-3 mx-auto py-5 2xl:py-8">
+<section class="container px-3 mx-auto pt-5 pb-10 2xl:pt-8 2xl:pb-16">
 	<!-- title -->
 	<div class="text-center">
 		<h2
