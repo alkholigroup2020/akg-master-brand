@@ -8,7 +8,7 @@
 	<!-- title -->
 	<div class="text-center">
 		<h2
-			class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-semibold text-primary-500 mb-8 xl:mb-12"
+			class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] pt-5 xl:pt-8 font-semibold text-primary-500 mb-8 xl:mb-12"
 		>
 			PARTNERS
 		</h2>
@@ -30,17 +30,17 @@
       md:space-x-6 lg:space-x-16 xl:space-x-20 2xl:space-x-24
       py-8 min-[400px]:px-8 min-[550px]:px-24 min-[650px]:px-12 md:px-0"
 		>
-			<div class="flex flex-col items-center">
+			<div class="flex flex-col items-center justify-center">
 				<div>
 					<img
 						src="/images/about/partners/image-1_180x180.webp"
 						srcset="/images/about/partners/image-1_120x120.webp 768w, /images/about/partners/image-1_180x180.webp 2000w"
 						alt="chairman"
-						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
+						class="aspect-[1/1] w-24 h-20 md:w-32 md:h-24 xl:w-36 xl:h-28"
 					/>
 				</div>
 			</div>
-			<div class="flex flex-col items-center">
+			<div class="flex flex-col items-center justify-center">
 				<div>
 					<img
 						src="/images/about/partners/image-2_180x180.webp"
@@ -50,7 +50,7 @@
 					/>
 				</div>
 			</div>
-			<div class="flex flex-col items-center">
+			<div class="flex flex-col items-center justify-center">
 				<div>
 					<img
 						src="/images/about/partners/image-3_180x180.webp"
@@ -60,7 +60,7 @@
 					/>
 				</div>
 			</div>
-			<div class="flex flex-col items-center">
+			<div class="flex flex-col items-center justify-center">
 				<div>
 					<img
 						src="/images/about/partners/image-4_180x180.webp"
@@ -70,13 +70,13 @@
 					/>
 				</div>
 			</div>
-			<div class="flex flex-col items-center">
+			<div class="flex flex-col items-center justify-center">
 				<div>
 					<img
 						src="/images/about/partners/image-5_180x180.webp"
 						srcset="/images/about/partners/image-5_120x120.webp 768w, /images/about/partners/image-5_180x180.webp 2000w"
 						alt="chairman"
-						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
+						class="aspect-[1/1] w-24 h-20 md:w-32 md:h-24 xl:w-36 xl:h-28"
 					/>
 				</div>
 			</div>

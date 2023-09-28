@@ -4,7 +4,7 @@
 	let navOpen = false;
 </script>
 
-<div>
+<div class="absolute z-50">
 	<!-- hamburger -->
 	<button
 		aria-label="an open and close menu button"
@@ -57,21 +57,41 @@
 
 	<!-- hero nav list -->
 	{#if navOpen}
-		<nav class="list-nav bg-surface-50-900-token rounded-sm">
-			<ul class="w-[120px] text-sm sm:text-base md:text-lg">
-				<li>
+		<nav class="list-nav bg-surface-50-900-token rounded-lg">
+			<ul class="w-fit text-sm sm:text-base md:text-lg text-primary-500">
+				<li class="border-b" style="margin-top: 0px !important;">
 					<a href={`/`} style="border-radius:0px">
-						<span class="flex-auto">Home</span>
+						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center">HOME</span>
 					</a>
 				</li>
-				<li>
-					<a href={`${$currentAppLang}/about`} style="border-radius:0px">
-						<span class="flex-auto">About</span>
+				<li class="border-b" style="margin-top: 0px !important;">
+					<a href={`/${$currentAppLang}/about`} style="border-radius:0px">
+						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center">ABOUT US</span>
 					</a>
 				</li>
-				<li>
-					<a href="/elements/lists" style="border-radius:0px">
-						<span class="flex-auto">Services</span>
+				<li class="border-b" style="margin-top: 0px !important;">
+					<a href="/" style="border-radius:0px">
+						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center">DIVISIONS</span>
+					</a>
+				</li>
+				<li class="border-b" style="margin-top: 0px !important;">
+					<a href="/" style="border-radius:0px">
+						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center">COMPANIES</span>
+					</a>
+				</li>
+				<li class="border-b" style="margin-top: 0px !important;">
+					<a href="/" style="border-radius:0px">
+						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center">PROJECTS</span>
+					</a>
+				</li>
+				<li class="border-b" style="margin-top: 0px !important;">
+					<a href="/" style="border-radius:0px">
+						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center">PARTNERS</span>
+					</a>
+				</li>
+				<li style="margin-top: 0px !important;">
+					<a href="/" style="border-radius:0px">
+						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center">CONTACT US</span>
 					</a>
 				</li>
 			</ul>
