@@ -70,7 +70,7 @@
 					</a>
 				</li>
 				<li class="border-b" style="margin-top: 0px !important;">
-					<a href="/" style="border-radius:0px">
+					<a href={`/${$currentAppLang}/divisions`} style="border-radius:0px">
 						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center">DIVISIONS</span>
 					</a>
 				</li>
