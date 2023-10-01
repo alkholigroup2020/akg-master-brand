@@ -2,17 +2,42 @@
 	import LL from '$i18n/i18n-svelte';
 	import { currentAppLang } from '$lib/stores/store';
 	import { pageDirection } from '$lib/stores/store';
+	import { onMount } from 'svelte';
 
-	export let sectionData: any;
+	import { ConicGradient } from '@skeletonlabs/skeleton';
+	import type { ConicStop } from '@skeletonlabs/skeleton';
+	const conicStops: ConicStop[] = [
+		{ color: 'transparent', start: 0, end: 25 },
+		{ color: 'rgb(var(--color-primary-500))', start: 75, end: 100 }
+	];
 
-	const sortedData = [...sectionData].sort((a, b) => {
-		if (a.attributes.divisionOrder < b.attributes.divisionOrder) {
-			return -1;
+	let divisions: any;
+
+	const getDivisionsData = async () => {
+		try {
+			const response = await fetch('/api/divisions/');
+
+			const divisionsData = await response.json();
+
+			divisions = divisionsData.divisions.data.sort(
+				(
+					a: { attributes: { divisionOrder: number } },
+					b: { attributes: { divisionOrder: number } }
+				) => {
+					return a.attributes.divisionOrder - b.attributes.divisionOrder;
+				}
+			);
+
+			if (!response.ok) {
+				throw new Error();
+			}
+		} catch (error) {
+			console.error('🚀 Error:', error);
 		}
-		if (a.attributes.divisionOrder > b.attributes.divisionOrder) {
-			return 1;
-		}
-		return 0;
+	};
+
+	onMount(() => {
+		getDivisionsData();
 	});
 </script>
 
@@ -28,8 +53,14 @@
 		</div>
 
 		<!-- divisions -->
-		<div class="pb-16">
-			{#each sortedData as division}
+		{#if !divisions}
+			<div class="w-full h-[750px] flex justify-center items-top">
+				<div class="mt-32">
+					<ConicGradient stops={conicStops} width="w-8 md:w-16 2xl:w-20" spin />
+				</div>
+			</div>
+		{:else}
+			{#each divisions as division}
 				<div class="grid sm:grid-cols-2 xl:grid-cols-6 sm:gap-6 lg:gap-12 xl:gap-12 pb-12">
 					<div
 						class="xl:col-span-2 {division.attributes.divisionOrder % 2 === 0
@@ -40,7 +71,7 @@
 							<img
 								src={`https://cms.alkholi.com${division.attributes.divisionImage_620x620.data.attributes.url}`}
 								srcset={`https://cms.alkholi.com${division.attributes.divisionImage_620x310.data.attributes.url} 640w,
-              https://cms.alkholi.com${division.attributes.divisionImage_620x620.data.attributes.url} 2000w`}
+								https://cms.alkholi.com${division.attributes.divisionImage_620x620.data.attributes.url} 2000w`}
 								alt="division"
 								class="w-full aspect-[1/0.5] sm:aspect-[1/1]"
 							/>
@@ -54,7 +85,7 @@
 						>
 							<div>
 								<p
-									class=" sm:mt-0 text-primary-500 text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-bold"
+									class=" sm:mt-0 text-primary-500 uppercase text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-bold"
 								>
 									{division.attributes.divisionTitle}
 								</p>
@@ -68,13 +99,14 @@
 								<a
 									href="/"
 									class="btn bg-secondary-500 rounded-sm text-white text-sm sm:text-base md:text-lg font-bold
-                px-5 py-2 min-[450px]:px-5 min-[450px]:py-3 md:px-8">{$LL.hero.more()}</a
+						px-5 py-2 min-[450px]:px-5 min-[450px]:py-3 md:px-8">{$LL.hero.more()}</a
 								>
 							</div>
 						</div>
 					</div>
 				</div>
 			{/each}
-		</div>
+		{/if}
+		<div class="pb-16" />
 	</div>
 </section>
