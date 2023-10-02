@@ -75,22 +75,22 @@
 					</a>
 				</li>
 				<li class="border-b" style="margin-top: 0px !important;">
-					<a href="/" style="border-radius:0px">
+					<a href={`/${$currentAppLang}/companies`} style="border-radius:0px">
 						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center">COMPANIES</span>
 					</a>
 				</li>
 				<li class="border-b" style="margin-top: 0px !important;">
-					<a href="/" style="border-radius:0px">
+					<a href={`/${$currentAppLang}/projects`} style="border-radius:0px">
 						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center">PROJECTS</span>
 					</a>
 				</li>
 				<li class="border-b" style="margin-top: 0px !important;">
-					<a href="/" style="border-radius:0px">
+					<a href={`/${$currentAppLang}/partners`} style="border-radius:0px">
 						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center">PARTNERS</span>
 					</a>
 				</li>
 				<li style="margin-top: 0px !important;">
-					<a href="/" style="border-radius:0px">
+					<a href={`/${$currentAppLang}/contact-us`} style="border-radius:0px">
 						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center">CONTACT US</span>
 					</a>
 				</li>
