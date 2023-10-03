@@ -75,6 +75,7 @@
 			{#if navOpen}
 				<nav class="list-nav bg-surface-50-900-token rounded-lg">
 					<ul class="w-full text-sm sm:text-base md:text-lg text-primary-500">
+						<!-- svelte-ignore a11y-click-events-have-key-events -->
 						<li
 							class="border-b hover:cursor-pointer"
 							style="margin-top: 0px !important;"
@@ -87,6 +88,7 @@
 								<span>All</span>
 							</div>
 						</li>
+						<!-- svelte-ignore a11y-click-events-have-key-events -->
 						<li
 							class="border-b hover:cursor-pointer"
 							style="margin-top: 0px !important;"
@@ -99,6 +101,7 @@
 								<span>Education</span>
 							</div>
 						</li>
+						<!-- svelte-ignore a11y-click-events-have-key-events -->
 						<li
 							class="border-b hover:cursor-pointer"
 							style="margin-top: 0px !important;"
@@ -111,6 +114,7 @@
 								<span>Construction</span>
 							</div>
 						</li>
+						<!-- svelte-ignore a11y-click-events-have-key-events -->
 						<li
 							class="border-b hover:cursor-pointer"
 							style="margin-top: 0px !important;"
@@ -123,6 +127,7 @@
 								<span>Healthcare</span>
 							</div>
 						</li>
+						<!-- svelte-ignore a11y-click-events-have-key-events -->
 						<li
 							class="border-b hover:cursor-pointer"
 							style="margin-top: 0px !important;"
@@ -135,6 +140,7 @@
 								<span>Hospitality</span>
 							</div>
 						</li>
+						<!-- svelte-ignore a11y-click-events-have-key-events -->
 						<li
 							class="border-b hover:cursor-pointer"
 							style="margin-top: 0px !important;"

@@ -8,15 +8,15 @@
 
 <section class="max-w-[1920px] mx-auto">
 	<div class="relative" dir={$pageDirection}>
-		<div class="absolute inset-0 bg-black opacity-10" />
+		<div class="absolute inset-0 bg-black opacity-0" />
 
 		<img
 			alt="main hero section background"
-			src="/images/about/heroSection/Banner-about_2000x800.webp"
-			srcset="/images/about/heroSection/Banner-about_700x560.webp 640w, 	 
-			/images/about/heroSection/Banner-about_1200x720.webp 1024w, 
-			/images/about/heroSection/Banner-about_1600x800.webp 1536w, 
-			/images/about/heroSection/Banner-about_2000x800.webp 9000w"
+			src="/images/companies/heroSection/banner-companies_1920x768.webp"
+			srcset="/images/companies/heroSection/banner-companies_700x560.webp 640w, 	 
+			/images/companies/heroSection/banner-companies_1200x720.webp 1024w, 
+			/images/companies/heroSection/banner-companies_1600x800.webp 1536w, 
+			/images/companies/heroSection/banner-companies_1920x768.webp 9000w"
 			class="w-full aspect-[1/0.8] md:aspect-[1/0.6] lg:aspect-[1/0.5] 2xl:aspect-[1/0.4] 2xl:max-h-[1400px]"
 		/>
 

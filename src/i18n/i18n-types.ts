@@ -15,7 +15,7 @@ export type Translations = RootTranslation
 
 type RootTranslation = {
 	/**
-	 * E​n​g​l​i​s​h​ ​T​i​t​l​e
+	 * A​l​k​h​o​l​i​ ​G​r​o​u​p
 	 */
 	title: string
 	nav: {
@@ -78,7 +78,7 @@ type RootTranslation = {
 
 export type TranslationFunctions = {
 	/**
-	 * English Title
+	 * Alkholi Group
 	 */
 	title: () => LocalizedString
 	nav: {
