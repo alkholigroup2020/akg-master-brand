@@ -1,7 +1,27 @@
 <script lang="ts">
+	import { createEventDispatcher } from 'svelte';
 	import { currentAppLang } from '$lib/stores/store';
 
 	let navOpen = false;
+
+	export let outsideClicked: boolean;
+
+	$: {
+		if (outsideClicked) {
+			navOpen = false;
+			notifyParent();
+		}
+	}
+
+	// Create a dispatch function with the built-in Svelte method
+	const dispatch = createEventDispatcher();
+
+	// This function will be triggered on a button click
+	function notifyParent() {
+		const message = 'Menu Closed';
+		// Dispatch an event 'message' with the specified data
+		dispatch('message', message);
+	}
 </script>
 
 <div class="absolute z-50">

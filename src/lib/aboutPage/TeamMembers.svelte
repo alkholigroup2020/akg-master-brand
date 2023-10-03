@@ -5,7 +5,7 @@
 </script>
 
 <section class="max-w-[1920px] mx-auto">
-	<div class="text-white bg-primary-500 flex flex-col py-8 xl:py-12">
+	<div class="text-white bg-primary-500 flex flex-col py-8 xl:py-12 uppercase">
 		<!-- title -->
 		<div class="py-3">
 			<p class="text-center text-lg sm:text-2xl lg:text-2xl xl:text-3xl">MEET THE TEAM</p>
@@ -67,18 +67,18 @@
 						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
 					/>
 				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg">DARKO MACURA</p>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg">Mohamed Ghoniem</p>
 			</div>
 			<div class="flex flex-col items-center">
 				<div>
+					<!-- srcset="/images/about/team/asset-21_120x120.webp 768w, /images/about/team/asset-21_180x180.webp 2000w" -->
 					<img
-						src="/images/about/team/asset-21_180x180.webp"
-						srcset="/images/about/team/asset-21_120x120.webp 768w, /images/about/team/asset-21_180x180.webp 2000w"
+						src="/images/profile.png"
 						alt="chairman"
-						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
+						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36 rounded-full"
 					/>
 				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg">DARKO MACURA</p>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg">Unknown</p>
 			</div>
 			<div class="flex flex-col items-center">
 				<div>
@@ -89,7 +89,7 @@
 						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
 					/>
 				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg">DARKO MACURA</p>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg">Nasser Al-Dowsary</p>
 			</div>
 			<div class="flex flex-col items-center">
 				<div>
@@ -100,7 +100,7 @@
 						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
 					/>
 				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg">FAISAL AL KHOLI</p>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg">Saeed Al-Ghamdy</p>
 			</div>
 		</div>
 
@@ -117,18 +117,18 @@
 						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
 					/>
 				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg">DARKO MACURA</p>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg">Waleed Jaafar</p>
 			</div>
 			<div class="flex flex-col items-center">
 				<div>
+					<!-- srcset="/images/about/team/asset-25_120x120.webp 768w, /images/about/team/asset-25_180x180.webp 2000w" -->
 					<img
-						src="/images/about/team/asset-25_180x180.webp"
-						srcset="/images/about/team/asset-25_120x120.webp 768w, /images/about/team/asset-25_180x180.webp 2000w"
+						src="/images/profile.png"
 						alt="chairman"
-						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
+						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36 rounded-full"
 					/>
 				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg">DARKO MACURA</p>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg">Unknown</p>
 			</div>
 			<div class="flex flex-col items-center">
 				<div>
@@ -139,7 +139,7 @@
 						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
 					/>
 				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg">DARKO MACURA</p>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg">Amr Bahi ElDeen</p>
 			</div>
 			<div class="flex flex-col items-center">
 				<div>
@@ -150,7 +150,7 @@
 						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
 					/>
 				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg">FAISAL AL KHOLI</p>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg">George</p>
 			</div>
 		</div>
 
@@ -167,29 +167,29 @@
 						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
 					/>
 				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg">DARKO MACURA</p>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg">Ayman Elgabbar</p>
 			</div>
 			<div class="flex flex-col items-center">
 				<div>
+					<!-- srcset="/images/about/team/asset-28_120x120.webp 768w, /images/about/team/asset-28_180x180.webp 2000w" -->
 					<img
-						src="/images/about/team/asset-28_180x180.webp"
-						srcset="/images/about/team/asset-28_120x120.webp 768w, /images/about/team/asset-28_180x180.webp 2000w"
+						src="/images/profile.png"
 						alt="chairman"
-						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
+						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36 rounded-full"
 					/>
 				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg">DARKO MACURA</p>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg">Unknown</p>
 			</div>
 			<div class="flex flex-col items-center">
 				<div>
+					<!-- srcset="/images/about/team/asset-29_120x120.webp 768w, /images/about/team/asset-29_180x180.webp 2000w" -->
 					<img
-						src="/images/about/team/asset-29_180x180.webp"
-						srcset="/images/about/team/asset-29_120x120.webp 768w, /images/about/team/asset-29_180x180.webp 2000w"
+						src="/images/profile.png"
 						alt="chairman"
-						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
+						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36 rounded-full"
 					/>
 				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg">FAISAL AL KHOLI</p>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg">Unknown</p>
 			</div>
 		</div>
 	</div>

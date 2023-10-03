@@ -4,11 +4,25 @@
 	import SectionSize from '$lib/generalComponents/SectionSize.svelte';
 	import { currentAppLang } from '$lib/stores/store';
 	import { pageDirection } from '$lib/stores/store';
+
+	function handleMessage(event: { detail: any }) {
+		// Log or use the data sent from the child component
+		if (event.detail === 'Menu Closed') {
+			outsideClicked = false;
+		}
+	}
+	let outsideClicked = false;
 </script>
 
 <section class="max-w-[1920px] mx-auto">
 	<div class="relative" dir={$pageDirection}>
-		<div class="absolute inset-0 bg-black opacity-10" />
+		<!-- svelte-ignore a11y-click-events-have-key-events -->
+		<div
+			class="absolute inset-0 z-50 bg-black opacity-10"
+			on:click={() => {
+				outsideClicked = true;
+			}}
+		/>
 
 		<img
 			alt="main hero section background"
@@ -33,7 +47,7 @@
 		<div class="absolute inset-0 container mx-auto px-3">
 			<!-- hamburger & logo -->
 			<div class="absolute left-0 top-12 sm:top-0 m-3 min-[370px]:m-5 sm:m-3 sm:mt-10" dir="ltr">
-				<Menu />
+				<Menu {outsideClicked} on:message={handleMessage} />
 			</div>
 		</div>
 	</div>
