@@ -1,9 +1,22 @@
 <script lang="ts">
+	import ConnectForm from '$lib/contact-us/ConnectForm.svelte';
+	import ContactInfo from '$lib/contact-us/ContactInfo.svelte';
+	import HeroSection from '$lib/contact-us/HeroSection.svelte';
+	import MainFooter from '$lib/footers/MainFooter.svelte';
+	import Intro from '$lib/partners/Intro.svelte';
+	import PartnersLogos from '$lib/partners/PartnersLogos.svelte';
+
+	export let data;
+
+	let formData = data;
 </script>
 
-<section>
-	<h1 class="h2 font-extrabold uppercase p-40">Contact Us</h1>
-	<a href={`/`} style="border-radius:0px">
-		<span class="border m-40 py-1 sm:py-2 sm:px-8 text-center">HOME</span>
-	</a>
-</section>
+<HeroSection />
+
+<ContactInfo />
+
+<ConnectForm {formData} />
+
+<div class="h-96 w-full" />
+
+<MainFooter />
