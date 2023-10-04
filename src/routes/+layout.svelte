@@ -34,7 +34,7 @@
 </svelte:head>
 
 {#if devOrProduction}
-	<!-- <WindowSize /> -->
+	<WindowSize />
 {/if}
 
 {#if $navigating}

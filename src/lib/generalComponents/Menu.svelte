@@ -75,12 +75,15 @@
 		</span>
 	</button>
 
-	<!-- hero nav list -->
+	<!-- hero nav list " -->
 	{#if navOpen}
 		<nav class="list-nav bg-surface-50-900-token rounded-lg">
 			<ul class="w-fit text-sm sm:text-base md:text-lg text-primary-500">
-				<li class="border-b" style="margin-top: 0px !important;">
-					<a href={`/`} style="border-radius:0px">
+				<li class="border-b">
+					<a
+						href={`/`}
+						style="border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;"
+					>
 						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center">HOME</span>
 					</a>
 				</li>
@@ -110,7 +113,10 @@
 					</a>
 				</li>
 				<li style="margin-top: 0px !important;">
-					<a href={`/${$currentAppLang}/contact-us`} style="border-radius:0px">
+					<a
+						href={`/${$currentAppLang}/contact-us`}
+						style="border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"
+					>
 						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center">CONTACT US</span>
 					</a>
 				</li>
