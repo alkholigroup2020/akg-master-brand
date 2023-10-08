@@ -6,12 +6,14 @@
 
 <section>
 	<div class="container mx-auto px-3 uppercase">
-		<div class="grid sm:grid-cols-3 py-16">
-			<div class="flex items-center space-x-8">
+		<div
+			class="grid gap-4 sm:gap-2 md:gap-4 min-[420px]:grid-cols-2 sm:grid-cols-3 pt-8 md:pt-16 2xl:pt-20 max-[420px]:space-y-4"
+		>
+			<div class="flex space-x-2 lg:space-x-6">
 				<div>
 					<img
 						src="/images/contact-us/info/asset-53.png"
-						class="rounded-full w-24 h-24"
+						class="rounded-full w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 xl:w-20 xl:h-20"
 						alt="phone"
 					/>
 				</div>
@@ -24,14 +26,15 @@
 				</div>
 			</div>
 
-			<div class="flex items-center space-x-8">
+			<div class="flex space-x-2 lg:space-x-6">
 				<div>
 					<img
 						src="/images/contact-us/info/asset-54.png"
-						class="rounded-full w-24 h-24"
+						class="rounded-full w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 xl:w-20 xl:h-20"
 						alt="phone"
 					/>
 				</div>
+
 				<div>
 					<div class="flex flex-col capitalize">
 						<p class="pb-1 text-sm sm:text-base md:text-lg font-bold uppercase">Location</p>
@@ -41,11 +44,11 @@
 				</div>
 			</div>
 
-			<div class="flex items-center space-x-8">
+			<div class="flex space-x-2 lg:space-x-6">
 				<div>
 					<img
 						src="/images/contact-us/info/asset-55.png"
-						class="rounded-full w-24 h-24"
+						class="rounded-full w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 xl:w-20 xl:h-20"
 						alt="phone"
 					/>
 				</div>

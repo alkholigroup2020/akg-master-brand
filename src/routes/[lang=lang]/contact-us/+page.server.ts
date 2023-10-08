@@ -3,8 +3,11 @@ import { z } from 'zod';
 import { superValidate } from 'sveltekit-superforms/server';
 
 const schema = z.object({
-	name: z.string().default('Hello world!'),
-	email: z.string().email()
+	name: z.string(),
+	mobile: z.string().min(10).max(10).optional(),
+	email: z.string().email(),
+	project: z.string().optional(),
+	textArea: z.string().min(3).max(500)
 });
 
 export const load = async () => {
