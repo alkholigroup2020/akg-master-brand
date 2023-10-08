@@ -11,7 +11,7 @@
 	export let formData;
 
 	// Client API:
-	const { form, errors, constraints, enhance } = superForm(formData.form, {
+	const { form, errors, constraints, enhance } = superForm(formData, {
 		validators: {
 			name: (value) => {
 				const nameFormat = /^[\u0621-\u064Aa-zA-Z\s]+$/; // Regex for a string containing only English and Arabic alphabets and spaces
@@ -145,7 +145,7 @@
 			</div>
 		</div>
 
-		<div class="sm:flex lg:grid grid-cols-2 gap-8 xl:gap-12 py-10">
+		<div class="sm:flex lg:grid grid-cols-2 gap-8 xl:gap-12 pt-8">
 			<div class="w-full">
 				<!-- agree check mark -->
 				<div class="h-full flex items-center">
@@ -167,7 +167,9 @@
 				<div>
 					<button
 						disabled={!isChecked}
-						class="btn bg-primary-500 rounded-sm px-12 py-3 disabled text-white">Submit</button
+						style="opacity: 1!important;"
+						class="btn bg-primary-500 rounded-sm px-12 py-3 text-white text-sm sm:text-base md:text-lg"
+						>Submit</button
 					>
 				</div>
 			</div>

@@ -10,19 +10,27 @@ const schema = z.object({
 	textArea: z.string().min(3).max(500)
 });
 
+const joinUsSchema = z.object({
+	name: z.string(),
+	mobile: z.string().min(10).max(10).optional(),
+	email: z.string().email(),
+	position: z.string(),
+	textArea: z.string().min(3).max(500),
+	employeeCV: z.any()
+});
+
 export const load = async () => {
 	// Server API:
 	const form = await superValidate(schema);
+	const joinUsForm = await superValidate(joinUsSchema);
 
 	// Always return { form } in load and form actions.
-	return { form };
+	return { form, joinUsForm };
 };
 
 export const actions = {
-	default: async ({ request }) => {
+	form: async ({ request }) => {
 		const form = await superValidate(request, schema);
-		console.log('POST', form);
-
 		if (!form.valid) {
 			return fail(400, { form });
 		}
@@ -30,5 +38,31 @@ export const actions = {
 		// TODO: Do something with the validated data
 
 		return { form };
+	},
+	joinUsForm: async ({ request }) => {
+		const joinUsForm = await superValidate(request, joinUsSchema);
+		if (!joinUsForm.valid) {
+			return fail(400, { joinUsForm });
+		}
+
+		// TODO: Do something with the validated data
+		const formData = await request.formData();
+		const file: any = formData.get('employeeCV');
+
+		// Specify interface/type for attachment
+		interface Attachment {
+			filename: string;
+			content: Buffer;
+		}
+
+		// Convert file to buffer
+		const buffer = await file.arrayBuffer();
+		const attachment: Attachment = {
+			filename: file.name,
+			content: Buffer.from(buffer)
+		};
+		console.log('🚀 attachment:', attachment);
+
+		return { joinUsForm };
 	}
 };
