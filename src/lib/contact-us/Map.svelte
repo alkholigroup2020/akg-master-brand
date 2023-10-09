@@ -14,3 +14,42 @@
 		</div>
 	</div>
 </section>
+
+<!-- <section>
+	<table
+		align="center"
+		cellpadding="0"
+		cellspacing="0"
+		width="888"
+		style="border-collapse: collapse; border: 1px solid #cccccc; margin-bottom: 25px;"
+	>
+		<tr style="background-color: rgb(96 165 250 / 2;">
+			<td style="padding: 40px 30px 40px 30px;">
+				<h1 style="color: rgb(255 255 255 ); font-size: 1.8rem; line-height: 1.4; font-weight:600">
+					Message From The Contact Us Section
+				</h1>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding: 40px 30px 40px 30px;">
+				<p style="font-size: 18px;"><strong>Name:</strong> FAWZY</p>
+				<p style="font-size: 18px;">
+					<strong>Email:</strong> email@domain.com
+				</p>
+				<p style="font-size: 18px;">
+					<strong>Mobile:</strong> 03434848888
+				</p>
+				<p style="font-size: 18px;">
+					<strong>Project:</strong> AKG - MSN
+				</p>
+				<p style="font-size: 18px;"><strong>Message:</strong> Hello!</p>
+			</td>
+		</tr>
+		<tr style="background-color: rgb(96 165 250 / 2;">
+			<td style="padding: 20px 20px; color: white;">
+				<p style="color: rgb(255 255 255 ); font-size: 1.2rem;">AKG Website.</p>
+			</td>
+		</tr>
+	</table>
+	<div style="width: 50px; height: 50px;" />
+</section> -->

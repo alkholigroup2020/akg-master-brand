@@ -2,6 +2,7 @@
 	import LL from '$i18n/i18n-svelte';
 	import { currentAppLang } from '$lib/stores/store';
 	import { pageDirection } from '$lib/stores/store';
+	import Toast from '$lib/generalComponents/Toast.svelte';
 
 	import { superForm } from 'sveltekit-superforms/client';
 	import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte';
@@ -71,6 +72,12 @@
 		resumeFileName = file.name;
 	}
 
+	let formSubmitMessage = {
+		show: false,
+		message: '',
+		color: ''
+	};
+
 	const { form, errors, constraints, enhance } = superForm(joinUsForm, {
 		validators: {
 			name: (value) => {
@@ -116,6 +123,14 @@
 		onResult: ({ result }) => {
 			if (result.status === 200) {
 				resumeFileName = '';
+				isChecked = false;
+				formSubmitMessage.show = true;
+				formSubmitMessage.message = 'Thank You!';
+				formSubmitMessage.color = 'variant-filled-secondary';
+			} else {
+				formSubmitMessage.show = true;
+				formSubmitMessage.message = 'Something Went Wrong!';
+				formSubmitMessage.color = 'variant-filled-error';
 			}
 		}
 	});
@@ -144,7 +159,12 @@
 			<!-- <div>
 				<SuperDebug data={$form} />
 			</div> -->
-			<form method="POST" use:enhance class="py-5 md:py-8 2xl:py-12 text-primary-500 font-bold">
+			<form
+				method="POST"
+				action="?/joinUsForm"
+				use:enhance
+				class="py-5 md:py-8 2xl:py-12 text-primary-500 font-bold"
+			>
 				<div class="grid lg:grid-cols-2 gap-8 lg:gap-12">
 					<!-- left -->
 					<div class="space-y-8">
@@ -196,11 +216,11 @@
 							<FileDropzone
 								on:change={onChangeHandler}
 								name="employeeCV"
+								required
 								rounded="rounded-sm"
 								border="border-none"
 								class="w-full h-14 text-sm sm:text-base md:text-lg bg-[#f6f6f9]"
 								padding="py-1"
-								required
 								accept=".pdf,.docx,.doc"
 								maxSize={10 * 1024 * 1024}
 							>
@@ -289,6 +309,9 @@
 					</div>
 				</div>
 			</form>
+			{#if formSubmitMessage.show}
+				<Toast msg={formSubmitMessage.message} color={formSubmitMessage.color} />
+			{/if}
 		</div>
 	</div>
 </section>

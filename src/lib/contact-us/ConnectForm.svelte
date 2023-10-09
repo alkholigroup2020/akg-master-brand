@@ -1,5 +1,6 @@
 <script lang="ts">
 	import LL from '$i18n/i18n-svelte';
+	import Toast from '$lib/generalComponents/Toast.svelte';
 	import { currentAppLang } from '$lib/stores/store';
 	import { pageDirection } from '$lib/stores/store';
 
@@ -9,6 +10,12 @@
 	$: isChecked = false;
 
 	export let formData;
+
+	let formSubmitMessage = {
+		show: false,
+		message: '',
+		color: ''
+	};
 
 	// Client API:
 	const { form, errors, constraints, enhance } = superForm(formData, {
@@ -58,6 +65,18 @@
 			if (!isChecked) {
 				cancel();
 			}
+		},
+		onResult: ({ result }) => {
+			if (result.status === 200) {
+				isChecked = false;
+				formSubmitMessage.show = true;
+				formSubmitMessage.message = 'Thank You!';
+				formSubmitMessage.color = 'variant-filled-secondary';
+			} else {
+				formSubmitMessage.show = true;
+				formSubmitMessage.message = 'Something Went Wrong!';
+				formSubmitMessage.color = 'variant-filled-error';
+			}
 		}
 	});
 </script>
@@ -65,7 +84,7 @@
 <section class="container px-3 mx-auto">
 	<!-- <SuperDebug data={$form} /> -->
 
-	<form method="POST" use:enhance class="py-8 md:py-16 2xl:py-20">
+	<form method="POST" action="?/form" use:enhance class="py-8 md:py-16 2xl:py-20">
 		<div class="grid lg:grid-cols-2 gap-8 xl:gap-12 text-primary-500 font-bold">
 			<!-- left -->
 			<div class="space-y-8">
@@ -175,6 +194,10 @@
 			</div>
 		</div>
 	</form>
+
+	{#if formSubmitMessage.show}
+		<Toast msg={formSubmitMessage.message} color={formSubmitMessage.color} />
+	{/if}
 </section>
 
 <style>
