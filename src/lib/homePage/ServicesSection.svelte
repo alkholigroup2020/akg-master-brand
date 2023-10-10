@@ -18,48 +18,78 @@
 				/>
 			</div>
 			<!-- text -->
-			<div class="lg:w-[50%] p-3 sm:p-8 xl:p-12 space-y-3">
+			<div class="lg:w-[50%] p-3 sm:p-8 xl:p-12 space-y-3" dir={$pageDirection}>
 				<!-- title -->
-				<p class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl text-secondary-500 xl:mb-5">
-					OUR SERVICES
+				<p
+					class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl text-secondary-500 xl:mb-5 {$currentAppLang ===
+					'ar'
+						? 'ar-font'
+						: ''}"
+				>
+					{$LL.home.services.title()}
 				</p>
 				<!-- paragraph -->
 				<p
-					class="normal-thin text-sm sm:text-base md:text-lg xl:leading-8 font-extralight text-white"
+					class="{$currentAppLang === 'ar'
+						? 'ar-font'
+						: 'normal-thin'} text-sm sm:text-base md:text-lg xl:text-xl xl:leading-8 text-white"
 				>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit totam officia asperiores
-					inventore voluptas consequuntur odit quia commodi quae maiores! Lorem, ipsum dolor.
+					{$LL.home.services.p1()}
 				</p>
 				<!-- list -->
-				<ul class="space-y-1 xl:space-y-3 text-sm sm:text-base md:text-lg text-white">
-					<li>1. Lorem, ipsum.</li>
-					<li>2. Lorem, ipsum.</li>
-					<li>3. Lorem, ipsum.</li>
+				<ul
+					class="space-y-1 xl:space-y-5 text-sm sm:text-base md:text-lg xl:text-xl text-white {$currentAppLang ===
+					'ar'
+						? 'ar-font'
+						: 'normal-thin'}"
+				>
+					<li>{$LL.home.services.li1()}</li>
+					<li>{$LL.home.services.li2()}</li>
+					<li>{$LL.home.services.li3()}</li>
 				</ul>
 			</div>
 		</div>
 
 		<div class="flex flex-col-reverse lg:flex-row bg-primary-500">
 			<!-- text -->
-			<div class="lg:w-[50%] p-3 sm:p-8 xl:p-12 space-y-3">
+			<div class="lg:w-[50%] p-3 sm:p-8 xl:p-12 space-y-5" dir={$pageDirection}>
 				<!-- title -->
-				<p class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl text-secondary-500 xl:mb-5">
-					AT AL KHOLI GROUP
+				<p
+					class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl text-secondary-500 xl:mb-5 {$currentAppLang ===
+					'ar'
+						? 'ar-font'
+						: ''}"
+				>
+					{$LL.home.atAlkholi.title()}
 				</p>
 				<!-- paragraph -->
 				<p
-					class="normal-thin text-sm sm:text-base md:text-lg xl:leading-8 font-extralight text-white"
+					class="normal-thin text-sm sm:text-base md:text-lg xl:text-xl xl:leading-8 text-white {$currentAppLang ===
+					'ar'
+						? 'ar-font'
+						: ''}"
 				>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit totam officia asperiores
-					inventore voluptas consequuntur odit quia commodi quae maiores! Lorem, ipsum dolor. Lorem
-					ipsum, dolor sit amet consectetur adipisicing elit. Deleniti quo rerum modi dicta
-					repudiandae repellat officiis soluta ratione fugiat quibusdam! Lorem ipsum dolor, sit amet
-					consectetur adipisicing elit. A quia iste inventore ratione molestias tempora ipsam eos
-					porro aperiam voluptatem!
+					{$LL.home.atAlkholi.q1()}
+				</p>
+				<p
+					class="normal-thin text-sm sm:text-base md:text-lg xl:text-xl xl:leading-8 text-white {$currentAppLang ===
+					'ar'
+						? 'ar-font'
+						: ''}"
+				>
+					{$LL.home.atAlkholi.p1()}
+				</p>
+				<p
+					class="normal-thin text-sm sm:text-base md:text-lg xl:text-xl xl:leading-8 text-white {$currentAppLang ===
+					'ar'
+						? 'ar-font'
+						: ''}"
+				>
+					{$LL.home.atAlkholi.p2()}
 				</p>
 				<!-- more -->
-				<div>
-					<a href="/" class="btn !bg-transparent text-white text-xs sm:text-sm md:text-base px-0"
+				<!-- <div>
+					<button class="btn !bg-transparent text-white text-xs sm:text-sm md:text-base px-0"
 						>VIEW MORE
 						<span class="mx-3">
 							<svg
@@ -73,8 +103,8 @@
 								/></svg
 							>
 						</span>
-					</a>
-				</div>
+					</button>
+				</div> -->
 			</div>
 			<!-- image -->
 			<div class="lg:w-[50%]">

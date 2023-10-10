@@ -91,14 +91,14 @@
 								</p>
 							</div>
 							<div>
-								<p class=" text-sm sm:text-base md:text-lg line-clamp-5 sm:line-clamp-4">
+								<p class=" text-sm sm:text-base md:text-lg xl:text-xl line-clamp-5 sm:line-clamp-4">
 									{division.attributes.divisionParagraph}
 								</p>
 							</div>
 							<div>
 								<a
 									href="/"
-									class="btn bg-secondary-500 rounded-sm text-white text-sm sm:text-base md:text-lg font-bold
+									class="btn bg-secondary-500 rounded-sm text-white text-sm sm:text-base md:text-lg xl:text-xl font-bold
 						px-5 py-2 min-[450px]:px-5 min-[450px]:py-3 md:px-8">{$LL.hero.more()}</a
 								>
 							</div>

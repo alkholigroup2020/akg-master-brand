@@ -10,7 +10,7 @@
 
 	<div>
 		<p
-			class="text-sm sm:text-base md:text-lg lg:px-8 2xl:px-24 leading-8 text-justify md:text-center pb-2 sm:pb-16"
+			class="text-sm sm:text-base md:text-lg xl:text-xl lg:px-8 2xl:px-24 leading-8 text-justify md:text-center pb-2 sm:pb-16"
 		>
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, praesentium, inventore
 			vel, aspernatur ab velit laborum rem dolorum rerum commodi facere sequi iusto tempora?

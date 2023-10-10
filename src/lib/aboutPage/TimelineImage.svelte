@@ -5,7 +5,7 @@
 </script>
 
 <section class="max-w-[1920px] mx-auto">
-	<div class="relative" dir={$pageDirection}>
+	<div class="relative">
 		<div class="absolute inset-0 bg-black opacity-10" />
 
 		<img
@@ -21,7 +21,7 @@
 			class="w-full aspect-[1/0.9] min-[450px]:aspect-[1/0.8] sm:aspect-[1/0.7] md:aspect-[1/0.6] lg:aspect-[1/0.5] xl:aspect-[1/0.45] 2xl:aspect-[1/0.4]"
 		/>
 
-		<div class=" absolute inset-0 w-[100%] flex">
+		<div class=" absolute inset-0 w-[100%] flex" dir="ltr">
 			<div class="w-[80%] h-full">
 				<div
 					class="flex flex-col justify-center text-right w-full h-full pr-2 min-[450px]:pr-8 xl:pr-24 2xl:pr-36 text-primary-500"

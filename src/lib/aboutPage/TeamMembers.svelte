@@ -8,7 +8,14 @@
 	<div class="text-white bg-primary-500 flex flex-col py-8 xl:py-12 uppercase">
 		<!-- title -->
 		<div class="py-3">
-			<p class="text-center text-lg sm:text-2xl lg:text-2xl xl:text-3xl">MEET THE TEAM</p>
+			<p
+				class="text-center text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-semibold {$currentAppLang ===
+				'ar'
+					? 'ar-font '
+					: ''}"
+			>
+				{$LL.about.team.title()}
+			</p>
 		</div>
 
 		<!-- chairman level -->
@@ -22,7 +29,7 @@
 						class="aspect-[1/1] w-28 h-28 md:w-36 md:h-36 xl:w-40 xl:h-40"
 					/>
 				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg">DR. HAMZA AL KHOLI</p>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">DR. HAMZA AL KHOLI</p>
 			</div>
 		</div>
 
@@ -39,7 +46,7 @@
 						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
 					/>
 				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg">FAISAL AL KHOLI</p>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">FAISAL AL KHOLI</p>
 			</div>
 			<div class="flex flex-col items-center">
 				<div>
@@ -50,7 +57,7 @@
 						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
 					/>
 				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg">DARKO MACURA</p>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">DARKO MACURA</p>
 			</div>
 		</div>
 
@@ -67,7 +74,7 @@
 						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
 					/>
 				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg">Mohamed Ghoniem</p>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Mohamed Ghoniem</p>
 			</div>
 			<div class="flex flex-col items-center">
 				<div>
@@ -78,7 +85,7 @@
 						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36 rounded-full"
 					/>
 				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg">Unknown</p>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Unknown</p>
 			</div>
 			<div class="flex flex-col items-center">
 				<div>
@@ -89,7 +96,7 @@
 						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
 					/>
 				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg">Nasser Al-Dowsary</p>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Nasser Al-Dowsary</p>
 			</div>
 			<div class="flex flex-col items-center">
 				<div>
@@ -100,7 +107,7 @@
 						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
 					/>
 				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg">Saeed Al-Ghamdy</p>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Saeed Al-Ghamdy</p>
 			</div>
 		</div>
 
@@ -117,7 +124,7 @@
 						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
 					/>
 				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg">Waleed Jaafar</p>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Waleed Jaafar</p>
 			</div>
 			<div class="flex flex-col items-center">
 				<div>
@@ -128,7 +135,7 @@
 						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36 rounded-full"
 					/>
 				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg">Unknown</p>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Unknown</p>
 			</div>
 			<div class="flex flex-col items-center">
 				<div>
@@ -139,7 +146,7 @@
 						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
 					/>
 				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg">Amr Bahi ElDeen</p>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Amr Bahi ElDeen</p>
 			</div>
 			<div class="flex flex-col items-center">
 				<div>
@@ -150,7 +157,7 @@
 						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
 					/>
 				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg">George</p>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">George</p>
 			</div>
 		</div>
 
@@ -167,7 +174,7 @@
 						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
 					/>
 				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg">Ayman Elgabbar</p>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Ayman Elgabbar</p>
 			</div>
 			<div class="flex flex-col items-center">
 				<div>
@@ -178,7 +185,7 @@
 						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36 rounded-full"
 					/>
 				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg">Unknown</p>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Unknown</p>
 			</div>
 			<div class="flex flex-col items-center">
 				<div>
@@ -189,7 +196,7 @@
 						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36 rounded-full"
 					/>
 				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg">Unknown</p>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Unknown</p>
 			</div>
 		</div>
 	</div>

@@ -10,7 +10,7 @@
 	background="bg-primary-500"
 	class="max-w-[1920px] mx-auto"
 	padding="py-0"
-	regionRowMain="h-20 container mx-auto px-3  text-white"
+	regionRowMain="h-20 container mx-auto px-3 text-white"
 >
 	<svelte:fragment slot="lead">
 		<div class="flex space-x-4 items-center">
@@ -26,13 +26,18 @@
 			</div>
 
 			<!-- welcome message -->
-			<p class="text-sm sm:text-base md:text-lg border-l pl-4 max-lg:hidden">
+			<p
+				class="text-sm sm:text-base md:text-lg xl:text-xl border-l pl-4 max-lg:hidden {$currentAppLang ===
+				'ar'
+					? 'ar-font'
+					: ''}"
+			>
 				{$LL.nav.welcomeMsg()}
 			</p>
 
 			<!-- social media links -->
 			<div class="flex items-center border-l pl-4">
-				<p class="text-sm sm:text-base md:text-lg font-bold pr-3">Follow:</p>
+				<p class="text-sm sm:text-base md:text-lg xl:text-xl font-bold pr-3">Follow:</p>
 				<div class="flex items-center space-x-3">
 					<!-- facebook icon -->
 					<div>
@@ -154,13 +159,13 @@
 		<div class="flex items-center space-x-5">
 			<!-- language switcher -->
 			<div>
-				<!-- <LocaleSwitcher /> -->
+				<LocaleSwitcher />
 			</div>
 			<!-- login -->
 			<!-- class="border-l-2" -->
-			<div>
-				<p class="pl-3 text-sm sm:text-base md:text-lg">Login / Sign Up</p>
-			</div>
+			<!-- <div>
+				<p class="pl-3 text-sm sm:text-base md:text-lg xl:text-xl">Login / Sign Up</p>
+			</div> -->
 			<!-- Light Switcher -->
 			<!-- <div>
 				<div dir="ltr">

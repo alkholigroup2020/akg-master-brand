@@ -24,7 +24,7 @@
 					</div>
 					<div class="py-3 sm:py-5 text-center space-y-2 sm:space-y-3">
 						<div>
-							<p class="text-sm sm:text-base md:text-lg font-semibold">
+							<p class="text-sm sm:text-base md:text-lg xl:text-xl font-semibold">
 								{project.attributes.projectYear}
 							</p>
 						</div>

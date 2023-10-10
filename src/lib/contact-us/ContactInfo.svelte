@@ -19,7 +19,7 @@
 				</div>
 				<div>
 					<div class="flex flex-col">
-						<p class="pb-1 text-sm sm:text-base md:text-lg font-bold">Phone</p>
+						<p class="pb-1 text-sm sm:text-base md:text-lg xl:text-xl font-bold">Phone</p>
 						<p class="text-xs sm:text-sm md:text-base">+2423423423423</p>
 						<p class="text-xs sm:text-sm md:text-base">+2342934237878</p>
 					</div>
@@ -37,7 +37,9 @@
 
 				<div>
 					<div class="flex flex-col capitalize">
-						<p class="pb-1 text-sm sm:text-base md:text-lg font-bold uppercase">Location</p>
+						<p class="pb-1 text-sm sm:text-base md:text-lg xl:text-xl font-bold uppercase">
+							Location
+						</p>
 						<p class="text-xs sm:text-sm md:text-base">Address ...</p>
 						<p class="text-xs sm:text-sm md:text-base">+2342934237878</p>
 					</div>
@@ -54,7 +56,7 @@
 				</div>
 				<div>
 					<div class="flex flex-col">
-						<p class="pb-1 text-sm sm:text-base md:text-lg font-bold uppercase">email</p>
+						<p class="pb-1 text-sm sm:text-base md:text-lg xl:text-xl font-bold uppercase">email</p>
 						<p class="text-xs sm:text-sm md:text-base capitalize">info@alkholi.com</p>
 					</div>
 				</div>

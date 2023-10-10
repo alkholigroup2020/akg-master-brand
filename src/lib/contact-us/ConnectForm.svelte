@@ -95,7 +95,7 @@
 						type="text"
 						name="name"
 						placeholder="Full Name*"
-						class="w-full h-16 rounded-sm text-sm sm:text-base md:text-lg bg-[#f6f6f9] border-none"
+						class="w-full h-16 rounded-sm text-sm sm:text-base md:text-lg xl:text-xl bg-[#f6f6f9] border-none"
 						aria-invalid={$errors.name ? 'true' : undefined}
 						bind:value={$form.name}
 						{...$constraints.name}
@@ -107,7 +107,7 @@
 				<div>
 					<input
 						bind:value={$form.mobile}
-						class="w-full h-16 rounded-sm text-sm sm:text-base md:text-lg bg-[#f6f6f9] border-none"
+						class="w-full h-16 rounded-sm text-sm sm:text-base md:text-lg xl:text-xl bg-[#f6f6f9] border-none"
 						type="tel"
 						title="Input (number)"
 						name="mobile"
@@ -123,7 +123,7 @@
 						type="email"
 						name="email"
 						placeholder="Email*"
-						class="w-full h-16 rounded-sm text-sm sm:text-base md:text-lg bg-[#f6f6f9] border-none"
+						class="w-full h-16 rounded-sm text-sm sm:text-base md:text-lg xl:text-xl bg-[#f6f6f9] border-none"
 						aria-invalid={$errors.email ? 'true' : undefined}
 						bind:value={$form.email}
 						{...$constraints.email}
@@ -138,7 +138,7 @@
 						name="project"
 						placeholder="Type of Project"
 						aria-invalid={$errors.project ? 'true' : undefined}
-						class="w-full h-16 rounded-sm text-sm sm:text-base md:text-lg bg-[#f6f6f9] border-none"
+						class="w-full h-16 rounded-sm text-sm sm:text-base md:text-lg xl:text-xl bg-[#f6f6f9] border-none"
 						bind:value={$form.project}
 						{...$constraints.project}
 					/>
@@ -151,7 +151,7 @@
 				<!-- text area -->
 				<div>
 					<textarea
-						class="w-full rounded-sm text-sm sm:text-base md:text-lg bg-[#f6f6f9] border-none p-5"
+						class="w-full rounded-sm text-sm sm:text-base md:text-lg xl:text-xl bg-[#f6f6f9] border-none p-5"
 						rows="11"
 						{...$constraints.textArea}
 						placeholder={$LL.form.textAreaPlaceholder()}
@@ -187,7 +187,7 @@
 					<button
 						disabled={!isChecked}
 						style="opacity: 1!important;"
-						class="btn bg-primary-500 rounded-sm px-12 py-3 text-white text-sm sm:text-base md:text-lg"
+						class="btn bg-primary-500 rounded-sm px-12 py-3 text-white text-sm sm:text-base md:text-lg xl:text-xl"
 						>Submit</button
 					>
 				</div>

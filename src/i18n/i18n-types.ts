@@ -18,11 +18,47 @@ type RootTranslation = {
 	 * A​l​k​h​o​l​i​ ​G​r​o​u​p
 	 */
 	title: string
+	generals: {
+		/**
+		 * V​i​e​w​ ​M​o​r​e
+		 */
+		more: string
+	}
 	nav: {
 		/**
 		 * W​e​l​c​o​m​e​ ​T​o​ ​A​L​K​H​O​L​I
 		 */
 		welcomeMsg: string
+		links: {
+			/**
+			 * h​o​m​e
+			 */
+			home: string
+			/**
+			 * a​b​o​u​t​ ​u​s
+			 */
+			about: string
+			/**
+			 * d​i​v​i​s​i​o​n​s
+			 */
+			divisions: string
+			/**
+			 * c​o​m​p​a​n​i​e​s
+			 */
+			companies: string
+			/**
+			 * p​r​o​j​e​c​t​s
+			 */
+			projects: string
+			/**
+			 * p​a​r​t​n​e​r​s
+			 */
+			partners: string
+			/**
+			 * c​o​n​t​a​c​t​ ​U​s
+			 */
+			contactUs: string
+		}
 	}
 	hero: {
 		/**
@@ -57,6 +93,60 @@ type RootTranslation = {
 			 */
 			mission: string
 		}
+		intro: {
+			/**
+			 * G​r​o​u​p​ ​M​a​n​p​o​w​e​r
+			 */
+			manpower: string
+			/**
+			 * C​o​m​p​a​n​i​e​s​ ​F​o​u​n​d​e​d​ ​B​y​ ​A​K​G
+			 */
+			founded: string
+			/**
+			 * S​a​u​d​i​ ​E​m​p​l​o​y​e​e​s
+			 */
+			saudiEmployees: string
+		}
+		services: {
+			/**
+			 * O​U​R​ ​S​E​R​V​I​C​E​S
+			 */
+			title: string
+			/**
+			 * T​h​e​ ​A​l​ ​K​h​o​l​i​ ​G​r​o​u​p​ ​o​f​f​e​r​s​ ​a​ ​c​o​m​p​r​e​h​e​n​s​i​v​e​ ​r​a​n​g​e​ ​o​f​ ​s​e​r​v​i​c​e​s​ ​t​o​ ​m​e​e​t​ ​t​h​e​ ​d​i​v​e​r​s​e​ ​n​e​e​d​s​ ​o​f​ ​o​u​r​ ​c​l​i​e​n​t​s​ ​i​n​ ​S​a​u​d​i​ ​A​r​a​b​i​a​ ​a​n​d​ ​b​e​y​o​n​d​.
+			 */
+			p1: string
+			/**
+			 * 1​.​ ​C​o​n​s​t​r​u​c​t​i​o​n​.
+			 */
+			li1: string
+			/**
+			 * 2​.​ ​S​u​s​t​a​i​n​a​b​i​l​i​t​y​.
+			 */
+			li2: string
+			/**
+			 * 3​.​ ​F​a​c​i​l​i​t​y​ ​M​a​n​a​g​e​m​e​n​t​.
+			 */
+			li3: string
+		}
+		atAlkholi: {
+			/**
+			 * A​T​ ​A​L​ ​K​H​O​L​I​ ​G​R​O​U​P
+			 */
+			title: string
+			/**
+			 * W​H​A​T​ ​C​A​N​ ​Y​O​U​ ​E​X​P​E​C​T​ ​F​R​O​M​ ​U​S​?
+			 */
+			q1: string
+			/**
+			 * A​s​ ​a​n​ ​e​s​t​a​b​l​i​s​h​e​d​ ​a​n​d​ ​r​e​p​u​t​a​b​l​e​ ​o​r​g​a​n​i​z​a​t​i​o​n​,​ ​t​h​e​ ​A​l​ ​K​h​o​l​i​ ​G​r​o​u​p​ ​i​s​ ​c​o​m​m​i​t​t​e​d​ ​t​o​ ​d​e​l​i​v​e​r​i​n​g​ ​e​x​c​e​p​t​i​o​n​a​l​ ​s​e​r​v​i​c​e​s​ ​t​o​ ​o​u​r​ ​v​a​l​u​e​d​ ​c​l​i​e​n​t​s​.​ ​W​h​e​n​ ​y​o​u​ ​p​a​r​t​n​e​r​ ​w​i​t​h​ ​u​s​,​ ​y​o​u​ ​c​a​n​ ​e​x​p​e​c​t​:
+			 */
+			p1: string
+			/**
+			 * P​r​o​f​e​s​s​i​o​n​a​l​i​s​m​ ​a​n​d​ ​E​x​p​e​r​t​i​s​e​:​ ​O​u​r​ ​d​e​d​i​c​a​t​e​d​ ​t​e​a​m​ ​o​f​ ​p​r​o​f​e​s​s​i​o​n​a​l​s​ ​b​r​i​n​g​s​ ​a​ ​w​e​a​l​t​h​ ​o​f​ ​e​x​p​e​r​i​e​n​c​e​ ​a​n​d​ ​e​x​p​e​r​t​i​s​e​ ​t​o​ ​e​v​e​r​y​ ​p​r​o​j​e​c​t​,​ ​e​n​s​u​r​i​n​g​ ​t​h​a​t​ ​y​o​u​r​ ​n​e​e​d​s​ ​a​r​e​ ​m​e​t​ ​w​i​t​h​ ​p​r​e​c​i​s​i​o​n​ ​a​n​d​ ​c​a​r​e​.
+			 */
+			p2: string
+		}
 	}
 	about: {
 		aboutSection: {
@@ -72,6 +162,50 @@ type RootTranslation = {
 			 * O​u​r​ ​V​a​l​u​e​s
 			 */
 			values: string
+		}
+		timeline: {
+			/**
+			 * T​i​m​e​ ​l​i​n​e
+			 */
+			title: string
+			/**
+			 * B​r​i​e​f​ ​t​o​ ​u​p​l​o​a​d​ ​i​t​ ​u​n​d​e​r​ ​t​h​e​ ​t​i​m​e​ ​l​i​n​e​:​ ​A​s​ ​w​e​ ​c​o​n​t​i​n​u​e​ ​t​o​ ​g​r​o​w​ ​a​n​d​ ​e​x​p​a​n​d​,​ ​w​e​ ​r​e​m​a​i​n​ ​s​t​e​a​d​f​a​s​t​ ​i​n​ ​o​u​r​ ​c​o​m​m​i​t​m​e​n​t​ ​t​o​ ​e​x​c​e​l​l​e​n​c​e​.​ ​O​u​r​ ​t​i​m​e​l​i​n​e​ ​r​e​f​l​e​c​t​s​ ​o​u​r​ ​j​o​u​r​n​e​y​ ​t​o​w​a​r​d​s​ ​b​e​c​o​m​i​n​g​ ​a​ ​l​e​a​d​i​n​g​ ​p​r​o​v​i​d​e​r​ ​o​f​ ​i​n​n​o​v​a​t​i​v​e​ ​s​o​l​u​t​i​o​n​s​ ​a​c​r​o​s​s​ ​a​ ​r​a​n​g​e​ ​o​f​ ​i​n​d​u​s​t​r​i​e​s​.​ ​F​r​o​m​ ​o​u​r​ ​h​u​m​b​l​e​ ​b​e​g​i​n​n​i​n​g​s​ ​i​n​ ​t​h​e​ ​7​0​s​ ​t​o​ ​t​h​e​ ​p​r​e​s​e​n​t​ ​d​a​y​,​ ​w​e​ ​h​a​v​e​ ​w​o​r​k​e​d​ ​t​i​r​e​l​e​s​s​l​y​ ​t​o​ ​e​s​t​a​b​l​i​s​h​ ​o​u​r​s​e​l​v​e​s​ ​a​s​ ​a​ ​t​r​u​s​t​e​d​ ​p​a​r​t​n​e​r​ ​t​o​ ​o​u​r​ ​c​l​i​e​n​t​s​ ​a​n​d​ ​a​ ​r​e​s​p​e​c​t​e​d​ ​m​e​m​b​e​r​ ​o​f​ ​t​h​e​ ​S​a​u​d​i​ ​A​r​a​b​i​a​n​ ​b​u​s​i​n​e​s​s​ ​c​o​m​m​u​n​i​t​y​.
+			 */
+			p1: string
+		}
+		missionVision: {
+			/**
+			 * M​i​s​s​i​o​n
+			 */
+			missionT: string
+			/**
+			 * E​m​p​o​w​e​r​i​n​g​ ​i​n​f​o​r​m​e​d​ ​d​e​c​i​s​i​o​n​s​ ​t​h​r​o​u​g​h​ ​e​x​c​e​l​l​e​n​c​e​ ​a​n​d​ ​i​n​n​o​v​a​t​i​v​e​ ​s​o​l​u​t​i​o​n​s​ ​r​o​o​t​e​d​ ​i​n​ ​l​o​c​a​l​ ​m​a​r​k​e​t​ ​e​x​p​e​r​t​i​s​e​.
+			 */
+			missionP: string
+			/**
+			 * V​i​s​i​o​n
+			 */
+			visionT: string
+			/**
+			 * T​o​ ​e​x​c​e​l​ ​i​n​ ​t​h​e​ ​i​n​d​u​s​t​r​y​ ​t​h​r​o​u​g​h​ ​c​o​n​s​t​a​n​t​ ​i​n​n​o​v​a​t​i​o​n​ ​a​n​d​ ​r​e​i​n​v​e​n​t​i​o​n​.
+			 */
+			visionP: string
+		}
+		team: {
+			/**
+			 * M​e​e​t​ ​t​h​e​ ​t​e​a​m
+			 */
+			title: string
+		}
+		partners: {
+			/**
+			 * P​A​R​T​N​E​R​S
+			 */
+			title: string
+			/**
+			 * A​t​ ​t​h​e​ ​A​l​ ​K​h​o​l​i​ ​G​r​o​u​p​,​ ​w​e​ ​a​r​e​ ​h​o​n​o​r​e​d​ ​t​o​ ​h​a​v​e​ ​e​s​t​a​b​l​i​s​h​e​d​ ​s​t​r​o​n​g​ ​p​a​r​t​n​e​r​s​h​i​p​s​ ​w​i​t​h​ ​a​ ​r​a​n​g​e​ ​o​f​ ​e​s​t​e​e​m​e​d​ ​o​r​g​a​n​i​z​a​t​i​o​n​s​ ​a​c​r​o​s​s​ ​S​a​u​d​i​ ​A​r​a​b​i​a​.​ ​O​u​r​ ​k​e​y​ ​p​a​r​t​n​e​r​s​ ​i​n​c​l​u​d​e​:
+			 */
+			p1: string
 		}
 	}
 	form: {
@@ -159,11 +293,47 @@ export type TranslationFunctions = {
 	 * Alkholi Group
 	 */
 	title: () => LocalizedString
+	generals: {
+		/**
+		 * View More
+		 */
+		more: () => LocalizedString
+	}
 	nav: {
 		/**
 		 * Welcome To ALKHOLI
 		 */
 		welcomeMsg: () => LocalizedString
+		links: {
+			/**
+			 * home
+			 */
+			home: () => LocalizedString
+			/**
+			 * about us
+			 */
+			about: () => LocalizedString
+			/**
+			 * divisions
+			 */
+			divisions: () => LocalizedString
+			/**
+			 * companies
+			 */
+			companies: () => LocalizedString
+			/**
+			 * projects
+			 */
+			projects: () => LocalizedString
+			/**
+			 * partners
+			 */
+			partners: () => LocalizedString
+			/**
+			 * contact Us
+			 */
+			contactUs: () => LocalizedString
+		}
 	}
 	hero: {
 		/**
@@ -198,6 +368,60 @@ export type TranslationFunctions = {
 			 */
 			mission: () => LocalizedString
 		}
+		intro: {
+			/**
+			 * Group Manpower
+			 */
+			manpower: () => LocalizedString
+			/**
+			 * Companies Founded By AKG
+			 */
+			founded: () => LocalizedString
+			/**
+			 * Saudi Employees
+			 */
+			saudiEmployees: () => LocalizedString
+		}
+		services: {
+			/**
+			 * OUR SERVICES
+			 */
+			title: () => LocalizedString
+			/**
+			 * The Al Kholi Group offers a comprehensive range of services to meet the diverse needs of our clients in Saudi Arabia and beyond.
+			 */
+			p1: () => LocalizedString
+			/**
+			 * 1. Construction.
+			 */
+			li1: () => LocalizedString
+			/**
+			 * 2. Sustainability.
+			 */
+			li2: () => LocalizedString
+			/**
+			 * 3. Facility Management.
+			 */
+			li3: () => LocalizedString
+		}
+		atAlkholi: {
+			/**
+			 * AT AL KHOLI GROUP
+			 */
+			title: () => LocalizedString
+			/**
+			 * WHAT CAN YOU EXPECT FROM US?
+			 */
+			q1: () => LocalizedString
+			/**
+			 * As an established and reputable organization, the Al Kholi Group is committed to delivering exceptional services to our valued clients. When you partner with us, you can expect:
+			 */
+			p1: () => LocalizedString
+			/**
+			 * Professionalism and Expertise: Our dedicated team of professionals brings a wealth of experience and expertise to every project, ensuring that your needs are met with precision and care.
+			 */
+			p2: () => LocalizedString
+		}
 	}
 	about: {
 		aboutSection: {
@@ -213,6 +437,50 @@ export type TranslationFunctions = {
 			 * Our Values
 			 */
 			values: () => LocalizedString
+		}
+		timeline: {
+			/**
+			 * Time line
+			 */
+			title: () => LocalizedString
+			/**
+			 * Brief to upload it under the time line: As we continue to grow and expand, we remain steadfast in our commitment to excellence. Our timeline reflects our journey towards becoming a leading provider of innovative solutions across a range of industries. From our humble beginnings in the 70s to the present day, we have worked tirelessly to establish ourselves as a trusted partner to our clients and a respected member of the Saudi Arabian business community.
+			 */
+			p1: () => LocalizedString
+		}
+		missionVision: {
+			/**
+			 * Mission
+			 */
+			missionT: () => LocalizedString
+			/**
+			 * Empowering informed decisions through excellence and innovative solutions rooted in local market expertise.
+			 */
+			missionP: () => LocalizedString
+			/**
+			 * Vision
+			 */
+			visionT: () => LocalizedString
+			/**
+			 * To excel in the industry through constant innovation and reinvention.
+			 */
+			visionP: () => LocalizedString
+		}
+		team: {
+			/**
+			 * Meet the team
+			 */
+			title: () => LocalizedString
+		}
+		partners: {
+			/**
+			 * PARTNERS
+			 */
+			title: () => LocalizedString
+			/**
+			 * At the Al Kholi Group, we are honored to have established strong partnerships with a range of esteemed organizations across Saudi Arabia. Our key partners include:
+			 */
+			p1: () => LocalizedString
 		}
 	}
 	form: {

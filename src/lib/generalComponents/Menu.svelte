@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte';
 	import { currentAppLang } from '$lib/stores/store';
+	import LL from '$i18n/i18n-svelte';
 
 	let navOpen = false;
 
@@ -77,39 +78,55 @@
 
 	<!-- hero nav list " -->
 	{#if navOpen}
-		<nav class="list-nav bg-surface-50-900-token rounded-lg">
-			<ul class="w-fit text-sm sm:text-base md:text-lg text-primary-500">
+		<nav
+			class="list-nav bg-surface-50-900-token rounded-lg uppercase {$currentAppLang === 'ar'
+				? 'ar-font'
+				: ''}"
+		>
+			<ul class="w-fit text-sm sm:text-base md:text-lg xl:text-xl text-primary-500">
 				<li class="border-b">
 					<a
 						href={`/`}
 						style="border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;"
 					>
-						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center">HOME</span>
+						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center"
+							>{$LL.nav.links.home()}</span
+						>
 					</a>
 				</li>
 				<li class="border-b" style="margin-top: 0px !important;">
 					<a href={`/${$currentAppLang}/about`} style="border-radius:0px">
-						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center">ABOUT US</span>
+						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center"
+							>{$LL.nav.links.about()}</span
+						>
 					</a>
 				</li>
 				<li class="border-b" style="margin-top: 0px !important;">
 					<a href={`/${$currentAppLang}/divisions`} style="border-radius:0px">
-						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center">DIVISIONS</span>
+						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center"
+							>{$LL.nav.links.divisions()}</span
+						>
 					</a>
 				</li>
 				<li class="border-b" style="margin-top: 0px !important;">
 					<a href={`/${$currentAppLang}/companies`} style="border-radius:0px">
-						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center">COMPANIES</span>
+						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center"
+							>{$LL.nav.links.companies()}</span
+						>
 					</a>
 				</li>
 				<li class="border-b" style="margin-top: 0px !important;">
 					<a href={`/${$currentAppLang}/projects`} style="border-radius:0px">
-						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center">PROJECTS</span>
+						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center"
+							>{$LL.nav.links.projects()}</span
+						>
 					</a>
 				</li>
 				<li class="border-b" style="margin-top: 0px !important;">
 					<a href={`/${$currentAppLang}/partners`} style="border-radius:0px">
-						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center">PARTNERS</span>
+						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center"
+							>{$LL.nav.links.partners()}</span
+						>
 					</a>
 				</li>
 				<li style="margin-top: 0px !important;">
@@ -117,7 +134,9 @@
 						href={`/${$currentAppLang}/contact-us`}
 						style="border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"
 					>
-						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center">CONTACT US</span>
+						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center"
+							>{$LL.nav.links.contactUs()}</span
+						>
 					</a>
 				</li>
 			</ul>

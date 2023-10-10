@@ -8,19 +8,23 @@
 	<!-- title -->
 	<div class="text-center">
 		<h2
-			class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] pt-5 xl:pt-8 font-semibold text-primary-500 mb-8 xl:mb-12"
+			class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] pt-5 xl:pt-8 font-semibold text-primary-500 mb-8 xl:mb-12 {$currentAppLang ===
+			'ar'
+				? 'ar-font'
+				: ''}"
 		>
-			PARTNERS
+			{$LL.about.partners.title()}
 		</h2>
 	</div>
 
-	<div>
+	<div dir={$pageDirection}>
 		<p
-			class="text-sm sm:text-base md:text-lg lg:px-8 2xl:px-24 leading-8 text-justify md:text-center"
+			class="text-sm sm:text-base md:text-lg xl:text-xl lg:px-8 2xl:px-24 leading-8 text-justify md:text-center {$currentAppLang ===
+			'ar'
+				? 'ar-font'
+				: ''}"
 		>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, praesentium, inventore
-			vel, aspernatur ab velit laborum rem dolorum rerum commodi facere sequi iusto tempora?
-			Necessitatibus, architecto.
+			{$LL.about.partners.p1()}
 		</p>
 	</div>
 

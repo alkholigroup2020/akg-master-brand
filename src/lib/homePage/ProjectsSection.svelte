@@ -38,7 +38,7 @@
 						</h4>
 
 						<p
-							class="p-2 min-[480px]:p-4 md:p-6 2xl:py-6 2xl:px-16 text-sm sm:text-base md:text-lg"
+							class="p-2 min-[480px]:p-4 md:p-6 2xl:py-6 2xl:px-16 text-sm sm:text-base md:text-lg xl:text-xl"
 						>
 							<span class="line-clamp-4">
 								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nisi fugiat
@@ -74,7 +74,7 @@
 						</h4>
 
 						<p
-							class="p-2 min-[480px]:p-4 md:p-6 2xl:py-6 2xl:px-16 text-sm sm:text-base md:text-lg"
+							class="p-2 min-[480px]:p-4 md:p-6 2xl:py-6 2xl:px-16 text-sm sm:text-base md:text-lg xl:text-xl"
 						>
 							<span class="line-clamp-4">
 								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nisi fugiat
@@ -110,7 +110,7 @@
 						</h4>
 
 						<p
-							class="p-2 min-[480px]:p-4 md:p-6 2xl:py-6 2xl:px-16 text-sm sm:text-base md:text-lg"
+							class="p-2 min-[480px]:p-4 md:p-6 2xl:py-6 2xl:px-16 text-sm sm:text-base md:text-lg xl:text-xl"
 						>
 							<span class="line-clamp-4">
 								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nisi fugiat
@@ -125,16 +125,15 @@
 		</div>
 	</div>
 	<!-- view more button -->
-	<div class="text-center pt-8">
+	<div class="text-center pt-10">
 		<div>
-			<a
-				href="/"
+			<button
 				class="btn !bg-transparent flex-col text-primary-500 border-0 text-xs sm:text-sm md:text-base font-semibold px-2 py-1"
 			>
 				<span>
-					<p>VIEW MORE</p>
+					<p>{$LL.generals.more()}</p>
 				</span>
-				<span class="mt-1"
+				<span class="mt-2"
 					><svg
 						viewBox="0 0 1024 1024"
 						class="icon w-3 md:w-5 h-3 md:h-5"
@@ -146,7 +145,7 @@
 						/></svg
 					>
 				</span>
-			</a>
+			</button>
 		</div>
 		<div />
 	</div>

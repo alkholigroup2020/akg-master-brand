@@ -4,25 +4,27 @@
 	import { pageDirection } from '$lib/stores/store';
 </script>
 
-<section class="container px-3 mx-auto pt-5 pb-10 2xl:pt-8 2xl:pb-16">
+<section class="container px-3 mx-auto pt-5 pb-10 2xl:pt-8 2xl:pb-16" dir={$pageDirection}>
 	<!-- title -->
 	<div class="text-center">
 		<h2
-			class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-semibold text-primary-500 mb-8 xl:mb-12"
+			class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-semibold text-primary-500 mb-8 xl:mb-12 uppercase {$currentAppLang ===
+			'ar'
+				? 'ar-font'
+				: ''}"
 		>
-			TIMELINE
+			{$LL.about.timeline.title()}
 		</h2>
 	</div>
 
 	<div>
 		<p
-			class="text-sm sm:text-base md:text-lg lg:px-8 2xl:px-24 leading-8 text-justify md:text-center"
+			class="text-sm sm:text-base md:text-lg xl:text-xl lg:px-8 2xl:px-24 leading-8 text-justify md:text-center {$currentAppLang ===
+			'ar'
+				? 'ar-font'
+				: ''}"
 		>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, praesentium, inventore
-			vel, aspernatur ab velit laborum rem dolorum rerum commodi facere sequi iusto tempora?
-			Necessitatibus, architecto. Quos hic atque totam similique perspiciatis impedit eum deleniti
-			quas nemo, dolore assumenda ex soluta ipsam quam eligendi rem, dolor praesentium illum esse
-			voluptatum velit voluptatibus illo, culpa ipsa. Nihil dicta assumenda reiciendis incidunt.
+			{$LL.about.timeline.p1()}
 		</p>
 	</div>
 </section>

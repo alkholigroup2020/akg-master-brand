@@ -148,7 +148,7 @@
 
 			<div>
 				<p
-					class="text-sm sm:text-base md:text-lg lg:px-8 2xl:px-24 leading-8 text-center py-3 md:py-5 xl:py-8"
+					class="text-sm sm:text-base md:text-lg xl:text-xl lg:px-8 2xl:px-24 leading-8 text-center py-3 md:py-5 xl:py-8"
 				>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
 				</p>
@@ -174,7 +174,7 @@
 								type="text"
 								name="name"
 								placeholder="Full Name*"
-								class="w-full h-16 rounded-sm text-sm sm:text-base md:text-lg bg-[#f6f6f9] border-none"
+								class="w-full h-16 rounded-sm text-sm sm:text-base md:text-lg xl:text-xl bg-[#f6f6f9] border-none"
 								aria-invalid={$errors.name ? 'true' : undefined}
 								bind:value={$form.name}
 								{...$constraints.name}
@@ -186,7 +186,7 @@
 						<div>
 							<input
 								bind:value={$form.mobile}
-								class="w-full h-16 rounded-sm text-sm sm:text-base md:text-lg bg-[#f6f6f9] border-none"
+								class="w-full h-16 rounded-sm text-sm sm:text-base md:text-lg xl:text-xl bg-[#f6f6f9] border-none"
 								type="tel"
 								title="Input (number)"
 								name="mobile"
@@ -202,7 +202,7 @@
 								type="email"
 								name="email"
 								placeholder="Email*"
-								class="w-full h-14 rounded-sm text-sm sm:text-base md:text-lg bg-[#f6f6f9] border-none"
+								class="w-full h-14 rounded-sm text-sm sm:text-base md:text-lg xl:text-xl bg-[#f6f6f9] border-none"
 								aria-invalid={$errors.email ? 'true' : undefined}
 								bind:value={$form.email}
 								{...$constraints.email}
@@ -219,7 +219,7 @@
 								required
 								rounded="rounded-sm"
 								border="border-none"
-								class="w-full h-14 text-sm sm:text-base md:text-lg bg-[#f6f6f9]"
+								class="w-full h-14 text-sm sm:text-base md:text-lg xl:text-xl bg-[#f6f6f9]"
 								padding="py-1"
 								accept=".pdf,.docx,.doc"
 								maxSize={10 * 1024 * 1024}
@@ -255,7 +255,7 @@
 								required
 								name="position"
 								bind:value={$form.position}
-								class="w-full h-16 rounded-sm text-sm sm:text-base md:text-lg bg-[#f6f6f9] border-none"
+								class="w-full h-16 rounded-sm text-sm sm:text-base md:text-lg xl:text-xl bg-[#f6f6f9] border-none"
 							>
 								<option class="mb-3" value="">Select Position</option>
 								<option class="mb-3" value="Sales Rep">Sales Rep</option>
@@ -271,7 +271,7 @@
 						<!-- text area -->
 						<div>
 							<textarea
-								class="w-full rounded-sm text-sm sm:text-base md:text-lg bg-[#f6f6f9] border-none p-[24px]"
+								class="w-full rounded-sm text-sm sm:text-base md:text-lg xl:text-xl bg-[#f6f6f9] border-none p-[24px]"
 								rows="4"
 								{...$constraints.textArea}
 								placeholder={$LL.form.textAreaPlaceholder()}
@@ -301,7 +301,7 @@
 								<button
 									disabled={!isChecked}
 									style="opacity: 1!important;"
-									class="btn bg-success-500 rounded-sm px-12 py-3 text-white text-sm sm:text-base md:text-lg"
+									class="btn bg-success-500 rounded-sm px-12 py-3 text-white text-sm sm:text-base md:text-lg xl:text-xl"
 									>Submit</button
 								>
 							</div>

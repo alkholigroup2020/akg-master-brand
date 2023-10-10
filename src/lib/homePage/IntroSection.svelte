@@ -1,3 +1,7 @@
+<script lang="ts">
+	import LL from '$i18n/i18n-svelte';
+</script>
+
 <section class="max-w-[1920px] mx-auto">
 	<div class="max-sm:hidden">
 		<div class="relative">
@@ -35,7 +39,7 @@
 					<p
 						class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold text-primary-500 px-1 text-center"
 					>
-						Group Manpower
+						{$LL.home.intro.manpower()}
 					</p>
 				</div>
 				<div
@@ -58,7 +62,7 @@
 					<p
 						class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold text-center text-primary-500 px-1"
 					>
-						Companies Founded By AKG
+						{$LL.home.intro.founded()}
 					</p>
 				</div>
 				<div
@@ -81,23 +85,22 @@
 					<p
 						class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold text-primary-500 px-1 text-center"
 					>
-						Saudi Employees
+						{$LL.home.intro.saudiEmployees()}
 					</p>
 				</div>
 			</div>
 		</div>
 
 		<!-- view more button -->
-		<div class="text-center pt-8">
+		<div class="text-center pt-10">
 			<div>
-				<a
-					href="/"
+				<button
 					class="btn !bg-transparent flex-col text-primary-500 border-0 text-xs sm:text-sm md:text-base font-semibold px-2 py-1"
 				>
 					<span>
-						<p>VIEW MORE</p>
+						<p>{$LL.generals.more()}</p>
 					</span>
-					<span class="mt-1"
+					<span class="mt-2"
 						><svg
 							viewBox="0 0 1024 1024"
 							class="icon w-3 md:w-5 h-3 md:h-5"
@@ -109,7 +112,7 @@
 							/></svg
 						>
 					</span>
-				</a>
+				</button>
 			</div>
 			<div />
 		</div>
@@ -143,7 +146,7 @@
 							<p
 								class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold text-primary-500 text-center"
 							>
-								Group Manpower
+								{$LL.home.intro.manpower()}
 							</p>
 						</div>
 					</div>
@@ -163,7 +166,7 @@
 							<p
 								class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold text-primary-500 text-center"
 							>
-								Companies Founded By AKG
+								{$LL.home.intro.founded()}
 							</p>
 						</div>
 					</div>
@@ -183,7 +186,7 @@
 							<p
 								class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold text-primary-500 text-center"
 							>
-								Saudi Employees
+								{$LL.home.intro.saudiEmployees()}
 							</p>
 						</div>
 					</div>

@@ -43,13 +43,24 @@
 			</div>
 
 			<!-- logo on xs -->
-			<div class="sm:hidden my-3">
-				<img
-					loading="lazy"
-					src="/images/nav/white_80x35.webp"
-					alt="company's logo"
-					class="w-[80px] h-[35px] aspect-[16/7]"
-				/>
+			<div
+				class="absolute inset-0 sm:hidden bg-primary-500 px-3 min-[370px]:px-5 h-12 z-50"
+				dir="ltr"
+			>
+				<div class="flex justify-between items-center">
+					<div>
+						<img
+							loading="lazy"
+							src="/images/nav/white_80x35.webp"
+							alt="company's logo"
+							class="  mt-1 w-[80px] h-[35px] aspect-[16/7]"
+						/>
+					</div>
+
+					<div>
+						<LocaleSwitcher />
+					</div>
+				</div>
 			</div>
 
 			<!-- hamburger & logo -->
@@ -107,7 +118,7 @@
 						<div>
 							<a
 								href="/"
-								class="btn !bg-transparent text-white border rounded-none text-sm sm:text-base md:text-lg px-5 py-3"
+								class="btn !bg-transparent text-white border rounded-none text-sm sm:text-base md:text-lg xl:text-xl px-5 py-3"
 								>{$LL.hero.more()}</a
 							>
 						</div>

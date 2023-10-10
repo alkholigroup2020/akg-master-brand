@@ -1,5 +1,6 @@
 <script lang="ts">
 	import LL from '$i18n/i18n-svelte';
+	import LocaleSwitcher from '$lib/LocaleSwitcher.svelte';
 	import Menu from '$lib/generalComponents/Menu.svelte';
 	import SectionSize from '$lib/generalComponents/SectionSize.svelte';
 	import { currentAppLang } from '$lib/stores/store';
@@ -35,13 +36,24 @@
 		/>
 
 		<!-- logo on xs -->
-		<div class="absolute inset-0 sm:hidden bg-primary-500 h-12">
-			<img
-				loading="lazy"
-				src="/images/nav/white_80x35.webp"
-				alt="company's logo"
-				class="mx-3 min-[370px]:mx-5 mt-1 w-[80px] h-[35px] aspect-[16/7]"
-			/>
+		<div
+			class="absolute inset-0 sm:hidden bg-primary-500 px-3 min-[370px]:px-5 h-12 z-50"
+			dir="ltr"
+		>
+			<div class="flex justify-between items-center">
+				<div>
+					<img
+						loading="lazy"
+						src="/images/nav/white_80x35.webp"
+						alt="company's logo"
+						class="  mt-1 w-[80px] h-[35px] aspect-[16/7]"
+					/>
+				</div>
+
+				<div>
+					<LocaleSwitcher />
+				</div>
+			</div>
 		</div>
 
 		<div class="absolute inset-0 container mx-auto px-3">

@@ -59,7 +59,7 @@
 
 	<div>
 		<p
-			class="text-sm sm:text-base md:text-lg lg:px-8 2xl:px-24 leading-8 text-justify md:text-center pb-2 sm:pb-16"
+			class="text-sm sm:text-base md:text-lg xl:text-xl lg:px-8 2xl:px-24 leading-8 text-justify md:text-center pb-2 sm:pb-16"
 		>
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, praesentium, inventore
 			vel, aspernatur ab velit laborum rem dolorum rerum commodi facere sequi iusto tempora?
@@ -82,7 +82,9 @@
 					alt="company logo"
 				/>
 			</div>
-			<div class="flex items-center justify-center bg-primary-500 text-sm sm:text-base md:text-lg">
+			<div
+				class="flex items-center justify-center bg-primary-500 text-sm sm:text-base md:text-lg xl:text-xl"
+			>
 				<p
 					class="px-3 min-[350px]:px-6 min-[500px]:px-8 py-5 min-[350px]:py-8 sm:p-5 md:p-8 lg:p-12 xl:px-12 xl:py-20 2xl:py-28 text-white"
 				>
