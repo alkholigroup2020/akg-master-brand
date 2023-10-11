@@ -164,7 +164,7 @@
 					</div>
 					<div class="col-span-3">
 						<div class="flex flex-col space-y-4">
-							<a type="button" href="tel:00114041919" aria-label="Riyadh branch mobile number">
+							<a type="button" href="tel:00966114041919" aria-label="Riyadh branch mobile number">
 								<div class="flex items-center space-x-2">
 									<div>
 										<span>
@@ -186,7 +186,7 @@
 									</div>
 
 									<div>
-										<p class="p-0 m-0">+114041919</p>
+										<p class="p-0 m-0">+966 11 404 1919</p>
 									</div>
 								</div>
 							</a>

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { currentAppLang } from '$lib/stores/store';
 	import LL from '$i18n/i18n-svelte';
 </script>
 
@@ -37,7 +38,10 @@
 					</p>
 					<!-- text -->
 					<p
-						class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold text-primary-500 px-1 text-center"
+						class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold text-primary-500 px-1 text-center {$currentAppLang ===
+						'ar'
+							? 'ar-font'
+							: ''}"
 					>
 						{$LL.home.intro.manpower()}
 					</p>
@@ -60,7 +64,10 @@
 					</p>
 					<!-- text -->
 					<p
-						class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold text-center text-primary-500 px-1"
+						class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold text-center text-primary-500 px-1 {$currentAppLang ===
+						'ar'
+							? 'ar-font'
+							: ''}"
 					>
 						{$LL.home.intro.founded()}
 					</p>
@@ -83,7 +90,10 @@
 					</p>
 					<!-- text -->
 					<p
-						class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold text-primary-500 px-1 text-center"
+						class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold text-primary-500 px-1 text-center {$currentAppLang ===
+						'ar'
+							? 'ar-font'
+							: ''}"
 					>
 						{$LL.home.intro.saudiEmployees()}
 					</p>
@@ -92,7 +102,7 @@
 		</div>
 
 		<!-- view more button -->
-		<div class="text-center pt-10">
+		<div class="text-center pt-10 {$currentAppLang === 'ar' ? 'ar-font' : ''}">
 			<div>
 				<button
 					class="btn !bg-transparent flex-col text-primary-500 border-0 text-xs sm:text-sm md:text-base font-semibold px-2 py-1"
@@ -128,6 +138,7 @@
 					class="w-full aspect-[1/0.75]"
 				/>
 			</div>
+
 			<div class="absolute top-3 right-5 max-[380px]:hidden h-[90%]">
 				<div class="flex flex-col justify-evenly h-full">
 					<div class="flex items-center p-1 bg-tertiary-50-900-token w-full">
@@ -144,7 +155,10 @@
 							</p>
 							<!-- text -->
 							<p
-								class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold text-primary-500 text-center"
+								class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold text-primary-500 text-center {$currentAppLang ===
+								'ar'
+									? 'ar-font'
+									: ''}"
 							>
 								{$LL.home.intro.manpower()}
 							</p>
@@ -164,7 +178,10 @@
 							</p>
 							<!-- text -->
 							<p
-								class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold text-primary-500 text-center"
+								class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold text-primary-500 text-center {$currentAppLang ===
+								'ar'
+									? 'ar-font'
+									: ''}"
 							>
 								{$LL.home.intro.founded()}
 							</p>
@@ -184,7 +201,10 @@
 							</p>
 							<!-- text -->
 							<p
-								class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold text-primary-500 text-center"
+								class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold text-primary-500 text-center {$currentAppLang ===
+								'ar'
+									? 'ar-font'
+									: ''}"
 							>
 								{$LL.home.intro.saudiEmployees()}
 							</p>

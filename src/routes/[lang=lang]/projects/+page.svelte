@@ -8,6 +8,6 @@
 
 <TheProjects />
 
-<div class="h-80 w-full" />
+<div class="h-28 md:h-40 w-full" />
 
 <MainFooter />

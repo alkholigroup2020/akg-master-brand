@@ -46,15 +46,19 @@
 	let navOpen = false;
 
 	let tabSet: string = 'All';
+	$: btnText = `${$LL.projects.all()}`;
 </script>
 
 <section class="max-w-[1920px] mx-auto">
 	<!-- title -->
 	<div class="text-center">
 		<p
-			class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-semibold text-primary-500 py-12 xl:py-16"
+			class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-semibold text-primary-500 py-12 xl:py-16 uppercase {$currentAppLang ===
+			'ar'
+				? 'ar-font'
+				: ''}"
 		>
-			OUR PROJECTS
+			{$LL.projects.title()}
 		</p>
 	</div>
 
@@ -69,11 +73,19 @@
 					navOpen = !navOpen;
 				}}
 			>
-				<span class="text-primary-500 text-sm sm:text-base md:text-lg">{tabSet}</span>
+				<span
+					class="text-primary-500 text-sm sm:text-base md:text-lg {$currentAppLang === 'ar'
+						? 'ar-font'
+						: ''}">{btnText}</span
+				>
 			</button>
 
 			{#if navOpen}
-				<nav class="list-nav bg-surface-50-900-token rounded-lg">
+				<nav
+					class="list-nav bg-surface-50-900-token rounded-lg {$currentAppLang === 'ar'
+						? 'ar-font'
+						: ''}"
+				>
 					<ul class="w-full text-sm sm:text-base md:text-lg text-primary-500">
 						<!-- svelte-ignore a11y-click-events-have-key-events -->
 						<li
@@ -81,11 +93,12 @@
 							style="margin-top: 0px !important;"
 							on:click={() => {
 								tabSet = 'All';
+								btnText = `${$LL.projects.all()}`;
 								navOpen = !navOpen;
 							}}
 						>
 							<div style="border-radius:0px" class="py-3 text-center">
-								<span>All</span>
+								<span>{$LL.projects.all()}</span>
 							</div>
 						</li>
 						<!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -94,11 +107,12 @@
 							style="margin-top: 0px !important;"
 							on:click={() => {
 								tabSet = 'Education';
+								btnText = `${$LL.projects.education()}`;
 								navOpen = !navOpen;
 							}}
 						>
 							<div style="border-radius:0px" class="py-3 text-center">
-								<span>Education</span>
+								<span>{$LL.projects.education()}</span>
 							</div>
 						</li>
 						<!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -107,11 +121,12 @@
 							style="margin-top: 0px !important;"
 							on:click={() => {
 								tabSet = 'Construction';
+								btnText = `${$LL.projects.construction()}`;
 								navOpen = !navOpen;
 							}}
 						>
 							<div style="border-radius:0px" class="py-3 text-center">
-								<span>Construction</span>
+								<span>{$LL.projects.construction()}</span>
 							</div>
 						</li>
 						<!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -120,11 +135,12 @@
 							style="margin-top: 0px !important;"
 							on:click={() => {
 								tabSet = 'Healthcare';
+								btnText = `${$LL.projects.healthcare()}`;
 								navOpen = !navOpen;
 							}}
 						>
 							<div style="border-radius:0px" class="py-3 text-center">
-								<span>Healthcare</span>
+								<span>{$LL.projects.healthcare()}</span>
 							</div>
 						</li>
 						<!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -133,11 +149,12 @@
 							style="margin-top: 0px !important;"
 							on:click={() => {
 								tabSet = 'Hospitality';
+								btnText = `${$LL.projects.hospitality()}`;
 								navOpen = !navOpen;
 							}}
 						>
 							<div style="border-radius:0px" class="py-3 text-center">
-								<span>Hospitality</span>
+								<span>{$LL.projects.hospitality()}</span>
 							</div>
 						</li>
 						<!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -146,11 +163,12 @@
 							style="margin-top: 0px !important;"
 							on:click={() => {
 								tabSet = 'Government';
+								btnText = `${$LL.projects.government()}`;
 								navOpen = !navOpen;
 							}}
 						>
 							<div style="border-radius:0px" class="py-3 text-center">
-								<span>Government</span>
+								<span>{$LL.projects.government()}</span>
 							</div>
 						</li>
 					</ul>
@@ -174,49 +192,60 @@
 	</div>
 
 	<!-- tabs bar on sm sizes and above -->
-	<div class="container mx-auto px-3 hidden sm:block">
+	<div class="container mx-auto px-3 hidden sm:block" dir={$pageDirection}>
 		<TabGroup justify="justify-center" regionList="border-b-0" active="bg-primary-500 text-white ">
 			<Tab
 				bind:group={tabSet}
 				rounded="rounded-none"
 				class="py-2 sm:px-3  md:px-10 text-sm sm:text-base md:text-lg"
 				name="tab1"
-				value={'All'}><span>All</span></Tab
+				value={'All'}
+				><span class={$currentAppLang === 'ar' ? 'ar-font' : ''}>{$LL.projects.all()}</span></Tab
 			>
 			<Tab
 				bind:group={tabSet}
 				rounded="rounded-none"
 				class="py-2 sm:px-2 md:px-4 lg:px-10 text-sm sm:text-base md:text-lg"
 				name="tab2"
-				value={'Education'}><span>Education</span></Tab
+				value={'Education'}
+				><span class={$currentAppLang === 'ar' ? 'ar-font' : ''}>{$LL.projects.education()}</span
+				></Tab
 			>
 			<Tab
 				bind:group={tabSet}
 				rounded="rounded-none"
 				class="py-2 sm:px-2 md:px-3 lg:px-6 text-sm sm:text-base md:text-lg"
 				name="tab3"
-				value={'Construction'}><span>Construction</span></Tab
+				value={'Construction'}
+				><span class={$currentAppLang === 'ar' ? 'ar-font' : ''}>{$LL.projects.construction()}</span
+				></Tab
 			>
 			<Tab
 				bind:group={tabSet}
 				rounded="rounded-none"
 				class="py-2 sm:px-2 md:px-3 lg:px-6 text-sm sm:text-base md:text-lg"
 				name="tab4"
-				value={'Healthcare'}><span>Healthcare</span></Tab
+				value={'Healthcare'}
+				><span class={$currentAppLang === 'ar' ? 'ar-font' : ''}>{$LL.projects.healthcare()}</span
+				></Tab
 			>
 			<Tab
 				bind:group={tabSet}
 				rounded="rounded-none"
 				class="py-2 sm:px-2 md:px-3 lg:px-6 text-sm sm:text-base md:text-lg"
 				name="tab5"
-				value={'Hospitality'}><span>Hospitality</span></Tab
+				value={'Hospitality'}
+				><span class={$currentAppLang === 'ar' ? 'ar-font' : ''}>{$LL.projects.hospitality()}</span
+				></Tab
 			>
 			<Tab
 				bind:group={tabSet}
 				rounded="rounded-none"
 				class="py-2 sm:px-2 md:px-3 lg:px-6 text-sm sm:text-base md:text-lg"
 				name="tab6"
-				value={'Government'}><span>Government</span></Tab
+				value={'Government'}
+				><span class={$currentAppLang === 'ar' ? 'ar-font' : ''}>{$LL.projects.government()}</span
+				></Tab
 			>
 
 			<!-- Tab Panels --->
@@ -236,17 +265,16 @@
 		</TabGroup>
 	</div>
 
-	<!-- view more -->
-	<div class="text-center pt-8">
+	<!-- view more button -->
+	<div class="text-center pt-10 {$currentAppLang === 'ar' ? 'ar-font' : ''}">
 		<div>
-			<a
-				href="/"
+			<button
 				class="btn !bg-transparent flex-col text-primary-500 border-0 text-xs sm:text-sm md:text-base font-semibold px-2 py-1"
 			>
 				<span>
-					<p>VIEW MORE</p>
+					<p>{$LL.generals.more()}</p>
 				</span>
-				<span class="mt-1"
+				<span class="mt-2"
 					><svg
 						viewBox="0 0 1024 1024"
 						class="icon w-3 md:w-5 h-3 md:h-5"
@@ -258,7 +286,7 @@
 						/></svg
 					>
 				</span>
-			</a>
+			</button>
 		</div>
 		<div />
 	</div>

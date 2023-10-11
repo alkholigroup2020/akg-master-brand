@@ -125,11 +125,11 @@
 				resumeFileName = '';
 				isChecked = false;
 				formSubmitMessage.show = true;
-				formSubmitMessage.message = 'Thank You!';
+				formSubmitMessage.message = `${$LL.joinUsForm.successFeedback()}`;
 				formSubmitMessage.color = 'variant-filled-secondary';
 			} else {
 				formSubmitMessage.show = true;
-				formSubmitMessage.message = 'Something Went Wrong!';
+				formSubmitMessage.message = `${$LL.joinUsForm.errorFeedback()}`;
 				formSubmitMessage.color = 'variant-filled-error';
 			}
 		}
@@ -137,12 +137,16 @@
 </script>
 
 <section class="max-w-[1920px] mx-auto">
-	<div class="bg-primary-500 text-white pb-36 px-3">
+	<div
+		class="bg-primary-500 text-white pb-36 px-3 {$currentAppLang === 'ar'
+			? 'ar-font font-medium'
+			: ''}"
+	>
 		<!-- title -->
 		<div>
 			<div class="text-center pt-20">
 				<h2 class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] uppercase">
-					Want to join our team?
+					{$LL.joinUsForm.title()}
 				</h2>
 			</div>
 
@@ -155,7 +159,7 @@
 			</div>
 		</div>
 		<!-- form -->
-		<div class="container mx-auto">
+		<div class="container mx-auto" dir={$pageDirection}>
 			<!-- <div>
 				<SuperDebug data={$form} />
 			</div> -->
@@ -173,13 +177,13 @@
 							<input
 								type="text"
 								name="name"
-								placeholder="Full Name*"
+								placeholder={$LL.joinUsForm.fullName()}
 								class="w-full h-16 rounded-sm text-sm sm:text-base md:text-lg xl:text-xl bg-[#f6f6f9] border-none"
 								aria-invalid={$errors.name ? 'true' : undefined}
 								bind:value={$form.name}
 								{...$constraints.name}
 							/>
-							{#if $errors.name}<span class="invalid">{$errors.name}</span>{/if}
+							{#if $errors.name}<span class="invalid text-warning-500">{$errors.name}</span>{/if}
 						</div>
 
 						<!-- mobile number -->
@@ -190,10 +194,11 @@
 								type="tel"
 								title="Input (number)"
 								name="mobile"
-								placeholder="Mobile Number"
+								placeholder={$LL.joinUsForm.mobilePlaceholder()}
 								{...$constraints.mobile}
 							/>
-							{#if $errors.mobile}<span class="invalid">{$errors.mobile}</span>{/if}
+							{#if $errors.mobile}<span class="invalid text-warning-500">{$errors.mobile}</span
+								>{/if}
 						</div>
 
 						<!-- email -->
@@ -201,13 +206,13 @@
 							<input
 								type="email"
 								name="email"
-								placeholder="Email*"
+								placeholder={$LL.joinUsForm.emailPlaceholder()}
 								class="w-full h-14 rounded-sm text-sm sm:text-base md:text-lg xl:text-xl bg-[#f6f6f9] border-none"
 								aria-invalid={$errors.email ? 'true' : undefined}
 								bind:value={$form.email}
 								{...$constraints.email}
 							/>
-							{#if $errors.email}<span class="invalid">{$errors.email}</span>{/if}
+							{#if $errors.email}<span class="invalid text-warning-500">{$errors.email}</span>{/if}
 						</div>
 
 						<!-- resume attachment -->
@@ -225,7 +230,7 @@
 								maxSize={10 * 1024 * 1024}
 							>
 								<svelte:fragment slot="message">
-									<span>Attach your CV ...</span>
+									<span>{$LL.joinUsForm.resumeAttachment()}</span>
 								</svelte:fragment>
 							</FileDropzone>
 
@@ -257,16 +262,33 @@
 								bind:value={$form.position}
 								class="w-full h-16 rounded-sm text-sm sm:text-base md:text-lg xl:text-xl bg-[#f6f6f9] border-none"
 							>
-								<option class="mb-3" value="">Select Position</option>
-								<option class="mb-3" value="Sales Rep">Sales Rep</option>
-								<option class="mb-3" value="Sales Engineer">Sales Engineer</option>
-								<option class="mb-3" value="Technician">Technician</option>
-								<option class="mb-3" value="Project Engineer">Project Engineer</option>
-								<option class="mb-3" value="Accountant">Accountant</option>
-								<option class="mb-3" value="HR">HR</option>
-								<option class="mb-3" value="Labor">Labor</option>
+								<option class="mb-3" value="">{$LL.joinUsForm.positionPlaceholder()}</option>
+								<option class="mb-3" value={$LL.joinUsForm.position1()}
+									>{$LL.joinUsForm.position1()}</option
+								>
+								<option class="mb-3" value={$LL.joinUsForm.position2()}
+									>{$LL.joinUsForm.position2()}</option
+								>
+								<option class="mb-3" value={$LL.joinUsForm.position3()}
+									>{$LL.joinUsForm.position3()}</option
+								>
+								<option class="mb-3" value={$LL.joinUsForm.position4()}
+									>{$LL.joinUsForm.position4()}</option
+								>
+								<option class="mb-3" value={$LL.joinUsForm.position5()}
+									>{$LL.joinUsForm.position5()}</option
+								>
+								<option class="mb-3" value={$LL.joinUsForm.position6()}
+									>{$LL.joinUsForm.position6()}</option
+								>
+								<option class="mb-3" value={$LL.joinUsForm.position7()}
+									>{$LL.joinUsForm.position7()}</option
+								>
+								<option class="mb-3" value={$LL.joinUsForm.position8()}
+									>{$LL.joinUsForm.position8()}</option
+								>
 							</select>
-							{#if $errors.position}<span class="text-warning-600">{$errors.position}</span>{/if}
+							{#if $errors.position}<span class="text-warning-500">{$errors.position}</span>{/if}
 						</div>
 						<!-- text area -->
 						<div>
@@ -274,7 +296,7 @@
 								class="w-full rounded-sm text-sm sm:text-base md:text-lg xl:text-xl bg-[#f6f6f9] border-none p-[24px]"
 								rows="4"
 								{...$constraints.textArea}
-								placeholder={$LL.form.textAreaPlaceholder()}
+								placeholder={$LL.joinUsForm.textAreaPlaceholder()}
 								bind:value={$form.textArea}
 								title="textarea"
 								name="textArea"
@@ -293,7 +315,9 @@
 											isChecked = !isChecked;
 										}}
 									/>
-									<p class="text-white">I agree to the terms & conditions</p>
+									<p class="text-white {$pageDirection === 'rtl' ? 'px-3' : 'px-1'}">
+										{$LL.joinUsForm.conditions()}
+									</p>
 								</label>
 							</div>
 							<!-- submit btn -->
@@ -302,7 +326,7 @@
 									disabled={!isChecked}
 									style="opacity: 1!important;"
 									class="btn bg-success-500 rounded-sm px-12 py-3 text-white text-sm sm:text-base md:text-lg xl:text-xl"
-									>Submit</button
+									>{$LL.joinUsForm.submit()}</button
 								>
 							</div>
 						</div>

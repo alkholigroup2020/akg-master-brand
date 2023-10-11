@@ -18,7 +18,7 @@
 	<div class="relative" dir={$pageDirection}>
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
 		<div
-			class="absolute inset-0 z-50 bg-black opacity-0"
+			class="absolute inset-0 z-50 bg-black opacity-10"
 			on:click={() => {
 				outsideClicked = true;
 			}}
@@ -68,38 +68,42 @@
 				<Menu {outsideClicked} on:message={handleMessage} />
 			</div>
 
-			{#if $currentAppLang === 'en'}
-				<!-- English -->
-
-				<div>
+			<div>
+				<div
+					class="absolute right-0 bottom-0 uppercase p-10 min-[350px]:p-16 min-[450px]:p-24
+					md:p-20 lg:p-36 xl:p-48 2xl:py-52 2xl:px-72 font-extrabold"
+				>
 					<div
-						class="absolute right-0 bottom-0 uppercase p-10 min-[350px]:p-16 min-[450px]:p-24
-						md:p-20 lg:p-36 xl:p-48 2xl:py-52 2xl:px-72 font-extrabold"
+						class="flex flex-col space-x-0 min-[380px]:space-x-2 space-y-2 min-[350px]:space-y-3 sm:space-y-8 2xl:space-y-12 {$currentAppLang ===
+						'ar'
+							? 'ar-font'
+							: ''}"
 					>
-						<div
-							class="flex flex-col space-x-0 min-[380px]:space-x-2 space-y-2 min-[350px]:space-y-3 sm:space-y-8 2xl:space-y-12"
-						>
-							<div>
-								<p
-									class="text-white text-2xl min-[380px]:text-3xl min-[550px]:text-4xl sm:text-5xl xl:text-6xl 2xl:text-7xl"
-								>
-									Connect
-								</p>
-							</div>
-							<div>
-								<p
-									class="text-white text-2xl min-[380px]:text-3xl min-[550px]:text-4xl sm:text-5xl xl:text-6xl 2xl:text-7xl"
-								>
-									With us
-								</p>
-							</div>
+						<div>
+							<p
+								class="text-white text-2xl min-[380px]:text-3xl min-[550px]:text-4xl sm:text-5xl xl:text-6xl 2xl:text-7xl"
+							>
+								{$LL.contact.title1()}
+							</p>
+						</div>
+						<div>
+							<p
+								class="text-white text-2xl min-[380px]:text-3xl min-[550px]:text-4xl sm:text-5xl xl:text-6xl 2xl:text-7xl"
+							>
+								{$LL.contact.title2()}
+							</p>
 						</div>
 					</div>
 				</div>
-			{:else}
-				<!-- ARABIC -->
+			</div>
 
-				<!-- <div>
+			<!-- {#if $currentAppLang === 'en'} -->
+			<!-- English -->
+
+			<!-- {:else} -->
+			<!-- ARABIC -->
+
+			<!-- <div>
 					<div
 						class="absolute right-0 bottom-0 space-y-10 sm:space-y-16 2xl:space-y-24 p-10 lg:p-16 xl:p-24 max-md:hidden"
 					>
@@ -124,7 +128,7 @@
 						</div>
 					</div>
 				</div> -->
-			{/if}
+			<!-- {/if} -->
 		</div>
 	</div>
 </section>

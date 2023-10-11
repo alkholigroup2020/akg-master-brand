@@ -86,7 +86,7 @@
 			<ul class="w-fit text-sm sm:text-base md:text-lg xl:text-xl text-primary-500">
 				<li class="border-b">
 					<a
-						href={`/`}
+						href={`/${$currentAppLang}/`}
 						style="border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;"
 					>
 						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center"

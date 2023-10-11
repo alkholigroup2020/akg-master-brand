@@ -70,18 +70,21 @@
 			if (result.status === 200) {
 				isChecked = false;
 				formSubmitMessage.show = true;
-				formSubmitMessage.message = 'Thank You!';
+				formSubmitMessage.message = `${$LL.form.successFeedback()}`;
 				formSubmitMessage.color = 'variant-filled-secondary';
 			} else {
 				formSubmitMessage.show = true;
-				formSubmitMessage.message = 'Something Went Wrong!';
+				formSubmitMessage.message = `${$LL.form.errorFeedback()}`;
 				formSubmitMessage.color = 'variant-filled-error';
 			}
 		}
 	});
 </script>
 
-<section class="container px-3 mx-auto">
+<section
+	class="container px-3 mx-auto {$currentAppLang === 'ar' ? 'ar-font font-semibold' : ''}"
+	dir={$pageDirection}
+>
 	<!-- <SuperDebug data={$form} /> -->
 
 	<form method="POST" action="?/form" use:enhance class="py-8 md:py-16 2xl:py-20">
@@ -94,7 +97,7 @@
 					<input
 						type="text"
 						name="name"
-						placeholder="Full Name*"
+						placeholder={$LL.form.fullName()}
 						class="w-full h-16 rounded-sm text-sm sm:text-base md:text-lg xl:text-xl bg-[#f6f6f9] border-none"
 						aria-invalid={$errors.name ? 'true' : undefined}
 						bind:value={$form.name}
@@ -111,7 +114,7 @@
 						type="tel"
 						title="Input (number)"
 						name="mobile"
-						placeholder="Mobile Number"
+						placeholder={$LL.form.mobilePlaceholder()}
 						{...$constraints.mobile}
 					/>
 					{#if $errors.mobile}<span class="invalid">{$errors.mobile}</span>{/if}
@@ -122,7 +125,7 @@
 					<input
 						type="email"
 						name="email"
-						placeholder="Email*"
+						placeholder={$LL.form.emailPlaceholder()}
 						class="w-full h-16 rounded-sm text-sm sm:text-base md:text-lg xl:text-xl bg-[#f6f6f9] border-none"
 						aria-invalid={$errors.email ? 'true' : undefined}
 						bind:value={$form.email}
@@ -136,7 +139,7 @@
 					<input
 						type="text"
 						name="project"
-						placeholder="Type of Project"
+						placeholder={$LL.form.typeOfProject()}
 						aria-invalid={$errors.project ? 'true' : undefined}
 						class="w-full h-16 rounded-sm text-sm sm:text-base md:text-lg xl:text-xl bg-[#f6f6f9] border-none"
 						bind:value={$form.project}
@@ -177,7 +180,9 @@
 								isChecked = !isChecked;
 							}}
 						/>
-						<p>I agree to the terms & conditions</p>
+						<p class={$pageDirection === 'rtl' ? 'px-3' : 'px-1'}>
+							{$LL.form.conditions()}
+						</p>
 					</label>
 				</div>
 			</div>
@@ -188,7 +193,7 @@
 						disabled={!isChecked}
 						style="opacity: 1!important;"
 						class="btn bg-primary-500 rounded-sm px-12 py-3 text-white text-sm sm:text-base md:text-lg xl:text-xl"
-						>Submit</button
+						>{$LL.form.submit()}</button
 					>
 				</div>
 			</div>

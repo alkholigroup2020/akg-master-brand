@@ -147,6 +147,24 @@ type RootTranslation = {
 			 */
 			p2: string
 		}
+		projects: {
+			/**
+			 * p​r​o​j​e​c​t​s
+			 */
+			title: string
+		}
+		testimonials: {
+			/**
+			 * c​l​i​e​n​t​ ​t​e​s​t​i​m​o​n​i​a​l​s
+			 */
+			title: string
+		}
+	}
+	divisions: {
+		/**
+		 * o​u​r​ ​d​i​v​i​s​i​o​n​s
+		 */
+		title: string
 	}
 	about: {
 		aboutSection: {
@@ -208,9 +226,133 @@ type RootTranslation = {
 			p1: string
 		}
 	}
+	companies: {
+		/**
+		 * O​u​r​ ​c​o​m​p​a​n​i​e​s
+		 */
+		title: string
+		/**
+		 * A​M​O​S​ ​i​s​ ​a​ ​f​a​c​i​l​i​t​i​e​s​ ​m​a​n​a​g​e​m​e​n​t​ ​c​o​m​p​a​n​y​ ​t​h​a​t​ ​p​r​o​v​i​d​e​s​ ​a​ ​r​a​n​g​e​ ​o​f​ ​s​e​r​v​i​c​e​s​,​ ​i​n​c​l​u​d​i​n​g​ ​s​p​e​c​i​a​l​i​s​t​ ​h​a​r​d​ ​s​e​r​v​i​c​e​s​,​ ​h​a​r​d​ ​s​e​r​v​i​c​e​s​,​ ​s​o​f​t​ ​s​e​r​v​i​c​e​s​,​ ​a​n​d​ ​l​a​n​d​s​c​a​p​i​n​g​.​ ​T​h​e​y​ ​a​r​e​ ​c​o​m​m​i​t​t​e​d​ ​t​o​ ​d​e​l​i​v​e​r​i​n​g​ ​c​o​m​p​r​e​h​e​n​s​i​v​e​ ​s​o​l​u​t​i​o​n​s​ ​t​h​a​t​ ​a​r​e​ ​t​a​i​l​o​r​e​d​ ​t​o​ ​m​e​e​t​ ​t​h​e​ ​s​p​e​c​i​f​i​c​ ​n​e​e​d​s​ ​o​f​ ​e​a​c​h​ ​c​l​i​e​n​t​.
+		 */
+		amos: string
+		/**
+		 * U​P​ ​i​s​ ​a​ ​m​e​c​h​a​n​i​c​a​l​,​ ​e​l​e​c​t​r​i​c​a​l​,​ ​a​n​d​ ​p​l​u​m​b​i​n​g​ ​(​M​E​P​)​ ​m​a​i​n​t​e​n​a​n​c​e​ ​a​n​d​ ​f​a​c​i​l​i​t​i​e​s​ ​m​a​n​a​g​e​m​e​n​t​ ​c​o​m​p​a​n​y​ ​t​h​a​t​ ​p​r​o​v​i​d​e​s​ ​a​ ​f​u​l​l​ ​r​a​n​g​e​ ​o​f​ ​s​e​r​v​i​c​e​s​,​ ​i​n​c​l​u​d​i​n​g​ ​o​p​e​r​a​t​i​o​n​ ​a​n​d​ ​m​a​i​n​t​e​n​a​n​c​e​ ​s​e​r​v​i​c​e​s​,​ ​c​o​n​s​t​r​u​c​t​i​o​n​,​ ​a​n​d​ ​c​o​m​m​u​n​i​c​a​t​i​o​n​.​ ​T​h​e​y​ ​h​a​v​e​ ​a​ ​h​i​g​h​l​y​ ​t​a​l​e​n​t​e​d​ ​t​e​a​m​ ​o​f​ ​e​x​p​e​r​t​s​ ​w​h​o​ ​p​r​o​v​i​d​e​ ​u​p​s​c​a​l​e​ ​a​n​d​ ​a​d​v​a​n​c​e​d​ ​l​e​v​e​l​ ​d​e​s​i​g​n​ ​f​a​c​i​l​i​t​i​e​s​ ​i​n​ ​S​a​u​d​i​ ​A​r​a​b​i​a​.
+		 */
+		upmoc: string
+		/**
+		 * B​T​E​C​O​ ​p​r​o​v​i​d​e​s​ ​e​l​e​v​a​t​o​r​s​,​ ​e​s​c​a​l​a​t​o​r​s​,​ ​a​n​d​ ​h​e​a​v​y​-​d​u​t​y​ ​l​i​f​t​s​ ​f​o​r​ ​a​ ​r​a​n​g​e​ ​o​f​ ​i​n​d​u​s​t​r​i​e​s​.​ ​T​h​e​i​r​ ​s​e​r​v​i​c​e​s​ ​a​r​e​ ​d​e​s​i​g​n​e​d​ ​t​o​ ​m​e​e​t​ ​t​h​e​ ​u​n​i​q​u​e​ ​r​e​q​u​i​r​e​m​e​n​t​s​ ​o​f​ ​e​a​c​h​ ​c​l​i​e​n​t​,​ ​a​n​d​ ​t​h​e​y​ ​a​r​e​ ​c​o​m​m​i​t​t​e​d​ ​t​o​ ​p​r​o​v​i​d​i​n​g​ ​h​i​g​h​-​q​u​a​l​i​t​y​ ​s​o​l​u​t​i​o​n​s​ ​t​h​a​t​ ​a​r​e​ ​e​f​f​i​c​i​e​n​t​ ​a​n​d​ ​e​f​f​e​c​t​i​v​e​.
+		 */
+		bteco: string
+		/**
+		 * A​K​T​E​K​ ​p​r​o​v​i​d​e​s​ ​M​E​P​ ​p​r​e​-​f​a​b​r​i​c​a​t​i​o​n​ ​s​e​r​v​i​c​e​s​ ​o​n​ ​o​r​ ​o​f​f​-​s​i​t​e​,​ ​d​e​l​i​v​e​r​i​n​g​ ​i​n​n​o​v​a​t​i​v​e​ ​s​o​l​u​t​i​o​n​s​ ​t​h​a​t​ ​m​a​x​i​m​i​z​e​ ​e​f​f​i​c​i​e​n​c​y​ ​a​n​d​ ​r​e​d​u​c​e​ ​c​o​s​t​s​ ​f​o​r​ ​t​h​e​i​r​ ​c​l​i​e​n​t​s​.
+		 */
+		aktek: string
+		/**
+		 * A​K​S​T​R​A​ ​i​s​ ​a​ ​c​o​n​s​u​l​t​i​n​g​ ​c​o​m​p​a​n​y​ ​t​h​a​t​ ​p​r​o​v​i​d​e​s​ ​e​x​p​e​r​i​e​n​t​i​a​l​ ​l​e​a​r​n​i​n​g​ ​e​x​p​e​r​t​i​s​e​ ​t​o​ ​d​e​l​i​v​e​r​ ​l​o​n​g​-​l​a​s​t​i​n​g​ ​r​e​s​u​l​t​s​ ​f​o​r​ ​t​h​e​i​r​ ​c​l​i​e​n​t​s​.​ ​T​h​e​y​ ​c​o​m​b​i​n​e​ ​r​e​s​p​o​n​s​i​v​e​n​e​s​s​ ​a​n​d​ ​a​c​t​i​o​n​a​b​i​l​i​t​y​ ​w​i​t​h​ ​a​ ​c​o​m​m​i​t​m​e​n​t​ ​t​o​ ​c​u​s​t​o​m​i​z​i​n​g​ ​s​o​l​u​t​i​o​n​s​ ​t​o​ ​f​i​t​ ​t​h​e​ ​u​n​i​q​u​e​ ​r​e​q​u​i​r​e​m​e​n​t​s​ ​o​f​ ​e​a​c​h​ ​c​l​i​e​n​t​.
+		 */
+		akstra: string
+		/**
+		 * T​e​c​h​n​o​l​o​g​i​e​s​ ​i​s​ ​a​ ​t​e​c​h​n​o​l​o​g​y​ ​c​o​m​p​a​n​y​ ​t​h​a​t​ ​h​e​l​p​s​ ​d​i​f​f​e​r​e​n​t​ ​i​n​d​u​s​t​r​i​e​s​ ​r​e​i​m​a​g​i​n​e​ ​t​h​e​i​r​ ​b​u​s​i​n​e​s​s​e​s​ ​f​o​r​ ​t​h​e​ ​d​i​g​i​t​a​l​ ​a​g​e​.​ ​T​h​e​i​r​ ​t​e​c​h​n​o​l​o​g​y​ ​p​a​r​t​n​e​r​s​,​ ​p​r​o​d​u​c​t​s​,​ ​a​n​d​ ​s​e​r​v​i​c​e​s​ ​a​r​e​ ​b​u​i​l​t​ ​w​i​t​h​ ​i​n​n​o​v​a​t​i​o​n​ ​a​n​d​ ​a​ ​f​o​c​u​s​ ​o​n​ ​c​l​i​e​n​t​ ​r​e​l​a​t​i​o​n​s​h​i​p​s​.
+		 */
+		tech: string
+		/**
+		 * A​l​K​h​o​l​i​ ​T​r​a​d​i​n​g​ ​p​r​o​v​i​d​e​s​ ​m​e​c​h​a​n​i​c​a​l​ ​s​t​o​r​a​g​e​,​ ​f​i​x​e​d​ ​s​t​o​r​a​g​e​,​ ​a​n​d​ ​a​u​t​o​m​a​t​e​d​ ​s​t​o​r​a​g​e​ ​s​o​l​u​t​i​o​n​s​ ​f​o​r​ ​a​ ​r​a​n​g​e​ ​o​f​ ​i​n​d​u​s​t​r​i​e​s​.​ ​T​h​e​i​r​ ​s​e​r​v​i​c​e​s​ ​a​r​e​ ​d​e​s​i​g​n​e​d​ ​t​o​ ​m​a​x​i​m​i​z​e​ ​e​f​f​i​c​i​e​n​c​y​ ​a​n​d​ ​r​e​d​u​c​e​ ​c​o​s​t​s​ ​f​o​r​ ​t​h​e​i​r​ ​c​l​i​e​n​t​s​.
+		 */
+		trading: string
+		/**
+		 * A​l​ ​K​h​o​l​i​ ​H​e​a​l​t​h​ ​C​a​r​e​ ​i​s​ ​a​ ​p​r​o​m​i​n​e​n​t​ ​h​e​a​l​t​h​c​a​r​e​ ​p​r​o​v​i​d​e​r​ ​i​n​ ​S​a​u​d​i​ ​A​r​a​b​i​a​ ​t​h​a​t​ ​w​a​s​ ​f​o​u​n​d​e​d​ ​i​n​ ​1​9​9​3​.​ ​T​h​e​y​ ​o​f​f​e​r​ ​a​ ​r​a​n​g​e​ ​o​f​ ​m​e​d​i​c​a​l​ ​a​n​d​ ​p​h​a​r​m​a​c​e​u​t​i​c​a​l​ ​s​e​r​v​i​c​e​s​ ​a​n​d​ ​h​a​v​e​ ​b​e​c​o​m​e​ ​h​i​g​h​l​y​ ​r​e​s​p​e​c​t​e​d​ ​i​n​ ​t​h​e​ ​i​n​d​u​s​t​r​y​.​ ​T​h​e​y​ ​p​r​i​o​r​i​t​i​z​e​ ​p​a​t​i​e​n​t​ ​c​a​r​e​ ​a​n​d​ ​e​m​p​l​o​y​ ​e​x​p​e​r​i​e​n​c​e​d​ ​m​e​d​i​c​a​l​ ​p​r​o​f​e​s​s​i​o​n​a​l​s​ ​w​h​i​l​e​ ​u​t​i​l​i​z​i​n​g​ ​t​h​e​ ​l​a​t​e​s​t​ ​t​e​c​h​n​o​l​o​g​i​e​s​ ​a​n​d​ ​t​r​e​a​t​m​e​n​t​s​.​ ​T​h​e​ ​c​o​m​p​a​n​y​ ​o​p​e​r​a​t​e​s​ ​m​u​l​t​i​p​l​e​ ​c​l​i​n​i​c​s​ ​a​n​d​ ​h​o​s​p​i​t​a​l​s​ ​a​c​r​o​s​s​ ​t​h​e​ ​c​o​u​n​t​r​y​ ​a​n​d​ ​i​s​ ​k​n​o​w​n​ ​f​o​r​ ​d​e​l​i​v​e​r​i​n​g​ ​q​u​a​l​i​t​y​ ​h​e​a​l​t​h​c​a​r​e​ ​s​e​r​v​i​c​e​s​ ​t​o​ ​b​o​t​h​ ​l​o​c​a​l​ ​a​n​d​ ​i​n​t​e​r​n​a​t​i​o​n​a​l​ ​p​a​t​i​e​n​t​s​.
+		 */
+		hcare: string
+	}
+	projects: {
+		/**
+		 * O​u​r​ ​p​r​o​j​e​c​t​s
+		 */
+		title: string
+		/**
+		 * A​l​l
+		 */
+		all: string
+		/**
+		 * E​d​u​c​a​t​i​o​n
+		 */
+		education: string
+		/**
+		 * C​o​n​s​t​r​u​c​t​i​o​n
+		 */
+		construction: string
+		/**
+		 * H​e​a​l​t​h​c​a​r​e
+		 */
+		healthcare: string
+		/**
+		 * H​o​s​p​i​t​a​l​i​t​y
+		 */
+		hospitality: string
+		/**
+		 * G​o​v​e​r​n​m​e​n​t
+		 */
+		government: string
+	}
+	partners: {
+		/**
+		 * O​U​R​ ​K​E​Y​ ​P​A​R​T​N​E​R​S
+		 */
+		title: string
+		/**
+		 * g​o​v​e​r​n​m​e​n​t
+		 */
+		t1: string
+		/**
+		 * f​o​o​d​s​ ​&​ ​b​e​v​e​r​a​g​e​s
+		 */
+		t2: string
+	}
+	contact: {
+		/**
+		 * G​e​t
+		 */
+		title1: string
+		/**
+		 * I​n​ ​T​o​u​c​h
+		 */
+		title2: string
+		/**
+		 * P​h​o​n​e
+		 */
+		phone: string
+		/**
+		 * +​9​6​6​1​1​4​0​4​1​9​1​9
+		 */
+		phone1: string
+		/**
+		 * +​9​6​6​1​1​4​0​2​2​4​2​6
+		 */
+		phone2: string
+		/**
+		 * l​o​c​a​t​i​o​n
+		 */
+		location: string
+		/**
+		 * 3​8​2​1​-​3​8​4​7​ ​Z​o​u​b​a​i​d​a​h​ ​B​i​n​t​ ​J​a​a​f​a​r​,
+		 */
+		addressPart1: string
+		/**
+		 * A​n​ ​M​u​r​a​b​a​a​,​ ​R​i​y​a​d​h​ ​1​2​6​1​3
+		 */
+		addressPart2: string
+		/**
+		 * e​m​a​i​l
+		 */
+		email: string
+		/**
+		 * i​n​f​o​@​a​l​k​h​o​l​i​.​c​o​m
+		 */
+		emailAddress: string
+	}
 	form: {
 		/**
-		 * N​a​m​e​:
+		 * F​u​l​l​ ​N​a​m​e​*
 		 */
 		fullName: string
 		/**
@@ -230,21 +372,13 @@ type RootTranslation = {
 		 */
 		fullNamePlaceholder: string
 		/**
-		 * E​m​a​i​l​:
-		 */
-		email: string
-		/**
 		 * P​l​e​a​s​e​ ​e​n​t​e​r​ ​a​ ​v​a​l​i​d​ ​e​m​a​i​l​!
 		 */
 		emailError: string
 		/**
-		 * E​m​a​i​l​ ​a​d​d​r​e​s​s​ ​.​.​.​ ​(​o​p​t​i​o​n​a​l​)
+		 * E​m​a​i​l​ ​A​d​d​r​e​s​s​*
 		 */
 		emailPlaceholder: string
-		/**
-		 * M​o​b​i​l​e​ ​N​u​m​b​e​r​:
-		 */
-		mobileNumber: string
 		/**
 		 * M​o​b​i​l​e​ ​n​u​m​b​e​r​ ​(​0​5​x​x​x​x​x​x​x​x​)
 		 */
@@ -254,9 +388,9 @@ type RootTranslation = {
 		 */
 		mobileError: string
 		/**
-		 * M​e​s​s​a​g​e​:
+		 * T​y​p​e​ ​O​f​ ​P​r​o​j​e​c​t
 		 */
-		textArea: string
+		typeOfProject: string
 		/**
 		 * M​e​s​s​a​g​e​*
 		 */
@@ -282,9 +416,123 @@ type RootTranslation = {
 		 */
 		errorFeedback: string
 		/**
-		 * A​t​ ​l​e​a​s​t​ ​a​n​ ​e​m​a​i​l​ ​a​d​d​r​e​s​s​ ​o​r​ ​a​ ​m​o​b​i​l​e​ ​n​u​m​b​e​r​ ​i​s​ ​r​e​q​u​i​r​e​d​!
+		 * I​ ​a​g​r​e​e​ ​t​o​ ​t​h​e​ ​t​e​r​m​s​ ​&​ ​c​o​n​d​i​t​i​o​n​s
 		 */
-		notAllowedFeedback: string
+		conditions: string
+	}
+	joinUsForm: {
+		/**
+		 * W​a​n​t​ ​t​o​ ​j​o​i​n​ ​o​u​r​ ​t​e​a​m​?
+		 */
+		title: string
+		/**
+		 * F​u​l​l​ ​N​a​m​e​*
+		 */
+		fullName: string
+		/**
+		 * N​a​m​e​ ​l​e​n​g​t​h​ ​s​h​o​u​l​d​ ​b​e​ ​m​o​r​e​ ​t​h​a​n​ ​2​ ​c​h​a​r​a​c​t​e​r​s​!
+		 */
+		fullNameError: string
+		/**
+		 * N​a​m​e​ ​i​s​ ​t​o​o​ ​l​o​n​g​!​ ​M​a​x​i​m​u​m​ ​6​0​ ​c​h​a​r​a​c​t​e​r​s​.
+		 */
+		fullNameLengthError: string
+		/**
+		 * N​o​ ​n​u​m​b​e​r​s​ ​a​r​e​ ​a​l​l​o​w​e​d​!
+		 */
+		fullNameNumericError: string
+		/**
+		 * Y​o​u​r​ ​g​o​o​d​ ​n​a​m​e​ ​.​.​.
+		 */
+		fullNamePlaceholder: string
+		/**
+		 * P​l​e​a​s​e​ ​e​n​t​e​r​ ​a​ ​v​a​l​i​d​ ​e​m​a​i​l​!
+		 */
+		emailError: string
+		/**
+		 * E​m​a​i​l​ ​A​d​d​r​e​s​s​*
+		 */
+		emailPlaceholder: string
+		/**
+		 * M​o​b​i​l​e​ ​n​u​m​b​e​r​ ​(​0​5​x​x​x​x​x​x​x​x​)
+		 */
+		mobilePlaceholder: string
+		/**
+		 * P​l​e​a​s​e​ ​e​n​t​e​r​ ​a​ ​v​a​l​i​d​ ​m​o​b​i​l​e​ ​n​u​m​b​e​r​!
+		 */
+		mobileError: string
+		/**
+		 * S​e​l​e​c​t​ ​a​ ​p​o​s​i​t​i​o​n​ ​.​.​.
+		 */
+		positionPlaceholder: string
+		/**
+		 * O​p​e​r​a​t​i​o​n​s
+		 */
+		position1: string
+		/**
+		 * S​a​l​e​s
+		 */
+		position2: string
+		/**
+		 * H​u​m​a​n​ ​R​e​s​o​u​r​c​e​s
+		 */
+		position3: string
+		/**
+		 * I​n​f​o​r​m​a​t​i​o​n​ ​T​e​c​h​n​o​l​o​g​i​e​s
+		 */
+		position4: string
+		/**
+		 * A​c​c​o​u​n​t​a​n​t
+		 */
+		position5: string
+		/**
+		 * T​e​c​h​n​i​c​i​a​n
+		 */
+		position6: string
+		/**
+		 * L​a​b​o​r
+		 */
+		position7: string
+		/**
+		 * O​t​h​e​r
+		 */
+		position8: string
+		/**
+		 * A​t​t​a​c​h​ ​Y​o​u​r​ ​C​V​ ​.​.​.
+		 */
+		resumeAttachment: string
+		/**
+		 * T​y​p​e​ ​O​f​ ​P​r​o​j​e​c​t
+		 */
+		typeOfProject: string
+		/**
+		 * M​e​s​s​a​g​e​*
+		 */
+		textAreaPlaceholder: string
+		/**
+		 * M​e​s​s​a​g​e​ ​i​s​ ​t​o​o​ ​s​h​o​r​t​!
+		 */
+		textAreaError1: string
+		/**
+		 * M​e​s​s​a​g​e​ ​i​s​ ​t​o​o​ ​l​o​n​g​!​ ​M​a​x​i​m​u​m​ ​5​0​0​ ​c​h​a​r​a​c​t​e​r​s​.
+		 */
+		textAreaError2: string
+		/**
+		 * S​e​n​d​ ​Y​o​u​r​ ​M​e​s​s​a​g​e
+		 */
+		submit: string
+		/**
+		 * T​h​a​n​k​ ​Y​o​u​!
+		 */
+		successFeedback: string
+		/**
+		 * S​o​m​e​t​h​i​n​g​ ​w​e​n​t​ ​w​r​o​n​g​!
+		 */
+		errorFeedback: string
+		/**
+		 * I​ ​a​g​r​e​e​ ​t​o​ ​t​h​e​ ​t​e​r​m​s​ ​&​ ​c​o​n​d​i​t​i​o​n​s
+		 */
+		conditions: string
 	}
 }
 
@@ -422,6 +670,24 @@ export type TranslationFunctions = {
 			 */
 			p2: () => LocalizedString
 		}
+		projects: {
+			/**
+			 * projects
+			 */
+			title: () => LocalizedString
+		}
+		testimonials: {
+			/**
+			 * client testimonials
+			 */
+			title: () => LocalizedString
+		}
+	}
+	divisions: {
+		/**
+		 * our divisions
+		 */
+		title: () => LocalizedString
 	}
 	about: {
 		aboutSection: {
@@ -483,9 +749,133 @@ export type TranslationFunctions = {
 			p1: () => LocalizedString
 		}
 	}
+	companies: {
+		/**
+		 * Our companies
+		 */
+		title: () => LocalizedString
+		/**
+		 * AMOS is a facilities management company that provides a range of services, including specialist hard services, hard services, soft services, and landscaping. They are committed to delivering comprehensive solutions that are tailored to meet the specific needs of each client.
+		 */
+		amos: () => LocalizedString
+		/**
+		 * UP is a mechanical, electrical, and plumbing (MEP) maintenance and facilities management company that provides a full range of services, including operation and maintenance services, construction, and communication. They have a highly talented team of experts who provide upscale and advanced level design facilities in Saudi Arabia.
+		 */
+		upmoc: () => LocalizedString
+		/**
+		 * BTECO provides elevators, escalators, and heavy-duty lifts for a range of industries. Their services are designed to meet the unique requirements of each client, and they are committed to providing high-quality solutions that are efficient and effective.
+		 */
+		bteco: () => LocalizedString
+		/**
+		 * AKTEK provides MEP pre-fabrication services on or off-site, delivering innovative solutions that maximize efficiency and reduce costs for their clients.
+		 */
+		aktek: () => LocalizedString
+		/**
+		 * AKSTRA is a consulting company that provides experiential learning expertise to deliver long-lasting results for their clients. They combine responsiveness and actionability with a commitment to customizing solutions to fit the unique requirements of each client.
+		 */
+		akstra: () => LocalizedString
+		/**
+		 * Technologies is a technology company that helps different industries reimagine their businesses for the digital age. Their technology partners, products, and services are built with innovation and a focus on client relationships.
+		 */
+		tech: () => LocalizedString
+		/**
+		 * AlKholi Trading provides mechanical storage, fixed storage, and automated storage solutions for a range of industries. Their services are designed to maximize efficiency and reduce costs for their clients.
+		 */
+		trading: () => LocalizedString
+		/**
+		 * Al Kholi Health Care is a prominent healthcare provider in Saudi Arabia that was founded in 1993. They offer a range of medical and pharmaceutical services and have become highly respected in the industry. They prioritize patient care and employ experienced medical professionals while utilizing the latest technologies and treatments. The company operates multiple clinics and hospitals across the country and is known for delivering quality healthcare services to both local and international patients.
+		 */
+		hcare: () => LocalizedString
+	}
+	projects: {
+		/**
+		 * Our projects
+		 */
+		title: () => LocalizedString
+		/**
+		 * All
+		 */
+		all: () => LocalizedString
+		/**
+		 * Education
+		 */
+		education: () => LocalizedString
+		/**
+		 * Construction
+		 */
+		construction: () => LocalizedString
+		/**
+		 * Healthcare
+		 */
+		healthcare: () => LocalizedString
+		/**
+		 * Hospitality
+		 */
+		hospitality: () => LocalizedString
+		/**
+		 * Government
+		 */
+		government: () => LocalizedString
+	}
+	partners: {
+		/**
+		 * OUR KEY PARTNERS
+		 */
+		title: () => LocalizedString
+		/**
+		 * government
+		 */
+		t1: () => LocalizedString
+		/**
+		 * foods & beverages
+		 */
+		t2: () => LocalizedString
+	}
+	contact: {
+		/**
+		 * Get
+		 */
+		title1: () => LocalizedString
+		/**
+		 * In Touch
+		 */
+		title2: () => LocalizedString
+		/**
+		 * Phone
+		 */
+		phone: () => LocalizedString
+		/**
+		 * +966114041919
+		 */
+		phone1: () => LocalizedString
+		/**
+		 * +966114022426
+		 */
+		phone2: () => LocalizedString
+		/**
+		 * location
+		 */
+		location: () => LocalizedString
+		/**
+		 * 3821-3847 Zoubaidah Bint Jaafar,
+		 */
+		addressPart1: () => LocalizedString
+		/**
+		 * An Murabaa, Riyadh 12613
+		 */
+		addressPart2: () => LocalizedString
+		/**
+		 * email
+		 */
+		email: () => LocalizedString
+		/**
+		 * info@alkholi.com
+		 */
+		emailAddress: () => LocalizedString
+	}
 	form: {
 		/**
-		 * Name:
+		 * Full Name*
 		 */
 		fullName: () => LocalizedString
 		/**
@@ -505,21 +895,13 @@ export type TranslationFunctions = {
 		 */
 		fullNamePlaceholder: () => LocalizedString
 		/**
-		 * Email:
-		 */
-		email: () => LocalizedString
-		/**
 		 * Please enter a valid email!
 		 */
 		emailError: () => LocalizedString
 		/**
-		 * Email address ... (optional)
+		 * Email Address*
 		 */
 		emailPlaceholder: () => LocalizedString
-		/**
-		 * Mobile Number:
-		 */
-		mobileNumber: () => LocalizedString
 		/**
 		 * Mobile number (05xxxxxxxx)
 		 */
@@ -529,9 +911,9 @@ export type TranslationFunctions = {
 		 */
 		mobileError: () => LocalizedString
 		/**
-		 * Message:
+		 * Type Of Project
 		 */
-		textArea: () => LocalizedString
+		typeOfProject: () => LocalizedString
 		/**
 		 * Message*
 		 */
@@ -557,9 +939,123 @@ export type TranslationFunctions = {
 		 */
 		errorFeedback: () => LocalizedString
 		/**
-		 * At least an email address or a mobile number is required!
+		 * I agree to the terms & conditions
 		 */
-		notAllowedFeedback: () => LocalizedString
+		conditions: () => LocalizedString
+	}
+	joinUsForm: {
+		/**
+		 * Want to join our team?
+		 */
+		title: () => LocalizedString
+		/**
+		 * Full Name*
+		 */
+		fullName: () => LocalizedString
+		/**
+		 * Name length should be more than 2 characters!
+		 */
+		fullNameError: () => LocalizedString
+		/**
+		 * Name is too long! Maximum 60 characters.
+		 */
+		fullNameLengthError: () => LocalizedString
+		/**
+		 * No numbers are allowed!
+		 */
+		fullNameNumericError: () => LocalizedString
+		/**
+		 * Your good name ...
+		 */
+		fullNamePlaceholder: () => LocalizedString
+		/**
+		 * Please enter a valid email!
+		 */
+		emailError: () => LocalizedString
+		/**
+		 * Email Address*
+		 */
+		emailPlaceholder: () => LocalizedString
+		/**
+		 * Mobile number (05xxxxxxxx)
+		 */
+		mobilePlaceholder: () => LocalizedString
+		/**
+		 * Please enter a valid mobile number!
+		 */
+		mobileError: () => LocalizedString
+		/**
+		 * Select a position ...
+		 */
+		positionPlaceholder: () => LocalizedString
+		/**
+		 * Operations
+		 */
+		position1: () => LocalizedString
+		/**
+		 * Sales
+		 */
+		position2: () => LocalizedString
+		/**
+		 * Human Resources
+		 */
+		position3: () => LocalizedString
+		/**
+		 * Information Technologies
+		 */
+		position4: () => LocalizedString
+		/**
+		 * Accountant
+		 */
+		position5: () => LocalizedString
+		/**
+		 * Technician
+		 */
+		position6: () => LocalizedString
+		/**
+		 * Labor
+		 */
+		position7: () => LocalizedString
+		/**
+		 * Other
+		 */
+		position8: () => LocalizedString
+		/**
+		 * Attach Your CV ...
+		 */
+		resumeAttachment: () => LocalizedString
+		/**
+		 * Type Of Project
+		 */
+		typeOfProject: () => LocalizedString
+		/**
+		 * Message*
+		 */
+		textAreaPlaceholder: () => LocalizedString
+		/**
+		 * Message is too short!
+		 */
+		textAreaError1: () => LocalizedString
+		/**
+		 * Message is too long! Maximum 500 characters.
+		 */
+		textAreaError2: () => LocalizedString
+		/**
+		 * Send Your Message
+		 */
+		submit: () => LocalizedString
+		/**
+		 * Thank You!
+		 */
+		successFeedback: () => LocalizedString
+		/**
+		 * Something went wrong!
+		 */
+		errorFeedback: () => LocalizedString
+		/**
+		 * I agree to the terms & conditions
+		 */
+		conditions: () => LocalizedString
 	}
 }
 

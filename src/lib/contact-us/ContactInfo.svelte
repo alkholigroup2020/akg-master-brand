@@ -5,8 +5,9 @@
 </script>
 
 <section>
-	<div class="container mx-auto px-3 uppercase">
+	<div class="container mx-auto px-3">
 		<div
+			dir={$pageDirection}
 			class="grid gap-4 sm:gap-2 md:gap-4 min-[420px]:grid-cols-2 sm:grid-cols-3 pt-8 md:pt-16 2xl:pt-20 max-[420px]:space-y-4"
 		>
 			<div class="flex space-x-2 lg:space-x-6">
@@ -17,11 +18,22 @@
 						alt="phone"
 					/>
 				</div>
-				<div>
+				<div class={$pageDirection === 'rtl' ? 'pr-5' : ''}>
 					<div class="flex flex-col">
-						<p class="pb-1 text-sm sm:text-base md:text-lg xl:text-xl font-bold">Phone</p>
-						<p class="text-xs sm:text-sm md:text-base">+2423423423423</p>
-						<p class="text-xs sm:text-sm md:text-base">+2342934237878</p>
+						<p
+							class="pb-1 text-sm sm:text-base md:text-lg xl:text-xl font-bold uppercase {$currentAppLang ===
+							'ar'
+								? 'ar-font'
+								: ''}"
+						>
+							{$LL.contact.phone()}
+						</p>
+						<a type="button" href="tel:00966114041919" aria-label="Riyadh branch phone number">
+							<p class="text-xs sm:text-sm md:text-base">{$LL.contact.phone1()}</p>
+						</a>
+						<a type="button" href="tel:00966114022426" aria-label="Riyadh branch phone number">
+							<p class="text-xs sm:text-sm md:text-base">{$LL.contact.phone2()}</p>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -35,13 +47,22 @@
 					/>
 				</div>
 
-				<div>
-					<div class="flex flex-col capitalize">
-						<p class="pb-1 text-sm sm:text-base md:text-lg xl:text-xl font-bold uppercase">
-							Location
+				<div class={$pageDirection === 'rtl' ? 'pr-5' : ''}>
+					<div class="flex flex-col">
+						<p
+							class="pb-1 text-sm sm:text-base md:text-lg xl:text-xl font-bold uppercase {$currentAppLang ===
+							'ar'
+								? 'ar-font'
+								: ''}"
+						>
+							{$LL.contact.location()}
 						</p>
-						<p class="text-xs sm:text-sm md:text-base">Address ...</p>
-						<p class="text-xs sm:text-sm md:text-base">+2342934237878</p>
+						<p class="text-xs sm:text-sm md:text-base {$currentAppLang === 'ar' ? 'ar-font' : ''}">
+							{$LL.contact.addressPart1()}
+						</p>
+						<p class="text-xs sm:text-sm md:text-base {$currentAppLang === 'ar' ? 'ar-font' : ''}">
+							{$LL.contact.addressPart2()}
+						</p>
 					</div>
 				</div>
 			</div>
@@ -54,10 +75,19 @@
 						alt="phone"
 					/>
 				</div>
-				<div>
+				<div class={$pageDirection === 'rtl' ? 'pr-5' : ''}>
 					<div class="flex flex-col">
-						<p class="pb-1 text-sm sm:text-base md:text-lg xl:text-xl font-bold uppercase">email</p>
-						<p class="text-xs sm:text-sm md:text-base capitalize">info@alkholi.com</p>
+						<p
+							class="pb-1 text-sm sm:text-base md:text-lg xl:text-xl font-bold uppercase {$currentAppLang ===
+							'ar'
+								? 'ar-font'
+								: ''}"
+						>
+							{$LL.contact.email()}
+						</p>
+						<a href="mailto:info@alkholi.com" aria-label="a mail link">
+							<p class="text-xs sm:text-sm md:text-base">{$LL.contact.emailAddress()}</p>
+						</a>
 					</div>
 				</div>
 			</div>

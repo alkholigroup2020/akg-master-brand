@@ -5,6 +5,17 @@
 	import SectionSize from '$lib/generalComponents/SectionSize.svelte';
 	import { currentAppLang } from '$lib/stores/store';
 	import { pageDirection } from '$lib/stores/store';
+	import { fly } from 'svelte/transition';
+
+	import { onMount } from 'svelte';
+
+	let show = false;
+
+	onMount(() => {
+		setTimeout(() => {
+			show = true;
+		}, 100);
+	});
 
 	function handleMessage(event: { detail: any }) {
 		// Log or use the data sent from the child component
@@ -58,109 +69,85 @@
 			</div>
 
 			<!-- hamburger & logo -->
-			<div class="absolute left-0 top-12 sm:top-0 m-3 min-[370px]:m-5 sm:m-3 sm:mt-10" dir="ltr">
-				<Menu {outsideClicked} on:message={handleMessage} />
-			</div>
-
-			{#if $currentAppLang === 'en'}
-				<!-- English -->
-
-				<!-- main title on xs & sm -->
-
-				<!-- main title on md to 2xl -->
-				<!-- max-md:hidden -->
-				<div>
-					<!-- p-5 min-[350px]:p-6 min-[450px]:p-8 min-[550px]:p-12 md:p-20 xl:p-28 2xl:p-36 -->
-					<div
-						class="absolute right-3 bottom-3 min-[350px]:right-7 min-[350px]:bottom-7
-						min-[450px]:right-12 min-[450px]:bottom-12
-						sm:right-16 sm:bottom-16
-						md:right-20 md:bottom-20
-						2xl:right-32 2xl:bottom-32
-						
-						space-y-2 min-[350px]:space-y-3 min-[450px]:space-y-5 sm:space-y-8 xl:space-y-12"
-					>
-						<div class="flex space-x-0 min-[380px]:space-x-2">
-							<div>
-								<p
-									class="text-white heading text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
-								>
-									{$LL.hero.build()}
-								</p>
-							</div>
-							<div>
-								<p
-									class="text-white heading text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
-								>
-									{$LL.hero.optimize()}
-								</p>
-							</div>
-						</div>
-
-						<div>
-							<p
-								class="text-white heading 2xl:pb-3 text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
-							>
-								{$LL.hero.connect()}
-							</p>
-						</div>
-
-						<!-- <div>
-							<a
-								href="/"
-								class="btn !bg-transparent rounded-md text-white border text-sm sm:text-base md:text-lg xl:text-xl font-semibold px-2 py-1
-								min-[450px]:px-3 min-[450px]:py-2 md:px-8 md:py-4">{$LL.hero.more()}</a
-							>
-						</div> -->
-					</div>
+			{#if show}
+				<div
+					in:fly={{ x: 100, delay: 3000, duration: 2000 }}
+					class="absolute left-0 top-12 sm:top-0 m-3 min-[370px]:m-5 sm:m-3 sm:mt-10"
+					dir="ltr"
+				>
+					<Menu {outsideClicked} on:message={handleMessage} />
 				</div>
-			{:else}
-				<!-- ARABIC -->
+			{/if}
 
-				<!-- main title on xs & sm -->
+			{#if show}
+				{#if $currentAppLang === 'en'}
+					<!-- English -->
+					<div>
+						<div
+							class="absolute right-3 bottom-3 min-[350px]:right-7 min-[350px]:bottom-7 min-[450px]:right-12 min-[450px]:bottom-12 sm:right-16 sm:bottom-16 md:right-20 md:bottom-20 2xl:right-32 2xl:bottom-32 space-y-2 min-[350px]:space-y-3 min-[450px]:space-y-5 sm:space-y-8 xl:space-y-12"
+						>
+							<div class="flex space-x-0 min-[380px]:space-x-2">
+								<div>
+									<p
+										in:fly={{ x: 200, delay: 100, duration: 2000 }}
+										class="text-white heading text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
+									>
+										{$LL.hero.build()}
+									</p>
+								</div>
+								<div>
+									<p
+										in:fly={{ x: 200, delay: 1000, duration: 2000 }}
+										class="text-white heading text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
+									>
+										{$LL.hero.optimize()}
+									</p>
+								</div>
+							</div>
 
-				<!-- main title on md to 2xl -->
-				<div>
-					<div
-						class="absolute right-3 bottom-5 min-[350px]:right-7 min-[350px]:bottom-7
-						min-[450px]:right-10 min-[450px]:bottom-12
-						sm:right-12 sm:bottom-16
-						md:right-16 md:bottom-20
-						2xl:right-32 2xl:bottom-32 space-y-5 sm:space-y-12 2xl:space-y-20"
-					>
-						<div class="flex space-x-12">
 							<div>
 								<p
-									class="text-white font-extrabold text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl ml-3 xl:ml-5 ar-font"
+									in:fly={{ x: 200, delay: 2000, duration: 2000 }}
+									class="text-white heading 2xl:pb-3 text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
 								>
-									{$LL.hero.build()}
+									{$LL.hero.connect()}
 								</p>
 							</div>
+						</div>
+					</div>
+				{:else}
+					<!-- ARABIC -->
+					<div>
+						<div
+							class="absolute right-3 bottom-5 min-[350px]:right-7 min-[350px]:bottom-7 min-[450px]:right-10 min-[450px]:bottom-12 sm:right-12 sm:bottom-16 md:right-16 md:bottom-20 2xl:right-32 2xl:bottom-32 space-y-5 sm:space-y-12 2xl:space-y-20"
+						>
+							<div class="flex space-x-12">
+								<div>
+									<p
+										class="text-white font-extrabold text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl ml-3 xl:ml-5 ar-font"
+									>
+										{$LL.hero.build()}
+									</p>
+								</div>
+								<div>
+									<p
+										class="text-white font-extrabold text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl ar-font"
+									>
+										{$LL.hero.optimize()}
+									</p>
+								</div>
+							</div>
+
 							<div>
 								<p
 									class="text-white font-extrabold text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl ar-font"
 								>
-									{$LL.hero.optimize()}
+									{$LL.hero.connect()}
 								</p>
 							</div>
 						</div>
-
-						<div>
-							<p
-								class="text-white font-extrabold text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl ar-font"
-							>
-								{$LL.hero.connect()}
-							</p>
-						</div>
-						<!-- <div>
-							<a
-								href="/"
-								class="btn !bg-transparent text-white border rounded-none text-sm sm:text-base md:text-lg xl:text-xl px-5 py-3"
-								>{$LL.hero.more()}</a
-							>
-						</div> -->
 					</div>
-				</div>
+				{/if}
 			{/if}
 		</div>
 	</div>

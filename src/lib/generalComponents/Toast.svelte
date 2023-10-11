@@ -10,7 +10,7 @@
 		message: msg,
 		hideDismiss: true,
 		hoverable: true,
-		classes: 'ml-5 py-3 px-12 text-white',
+		classes: 'py-3 px-12 text-white',
 		background: color,
 		timeout: 3000
 	};
@@ -19,4 +19,5 @@
 	toastStore.trigger(t);
 </script>
 
-<Toast position="bl" />
+<!-- position="bl" -->
+<Toast />

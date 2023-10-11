@@ -8,9 +8,12 @@
 	<!-- title -->
 	<div class="text-center">
 		<h2
-			class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-semibold text-primary-500 mb-8 xl:mb-16"
+			class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-semibold text-primary-500 mb-8 xl:mb-16 {$currentAppLang ===
+			'ar'
+				? 'ar-font'
+				: ''}"
 		>
-			PROJECTS
+			{$LL.home.projects.title()}
 		</h2>
 	</div>
 	<!-- cards -->

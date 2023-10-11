@@ -4,13 +4,13 @@
 	import { pageDirection } from '$lib/stores/store';
 </script>
 
-<section>
+<section dir={$pageDirection}>
 	<div class="container px-3 mx-auto">
 		<div>
 			<p
 				class="uppercase pt-8 text-primary-500 font-semibold text-base sm:text-lg lg:text-xl xl:text-2xl"
 			>
-				government
+				{$LL.partners.t1()}
 			</p>
 		</div>
 		<div class="flex flex-col">
@@ -153,13 +153,13 @@
 	</div>
 </section>
 
-<section>
+<section dir={$pageDirection}>
 	<div class="container px-3 mx-auto">
 		<div>
 			<p
 				class="uppercase pt-8 text-primary-500 font-semibold text-base sm:text-lg lg:text-xl xl:text-2xl"
 			>
-				government
+				{$LL.partners.t2()}
 			</p>
 		</div>
 		<div class="flex flex-col pb-16">
