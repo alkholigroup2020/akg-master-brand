@@ -69,27 +69,27 @@
 			</div>
 
 			<!-- hamburger & logo -->
-			{#if show}
-				<div
-					in:fly={{ x: 100, delay: 3000, duration: 2000 }}
-					class="absolute left-0 top-12 sm:top-0 m-3 min-[370px]:m-5 sm:m-3 sm:mt-10"
-					dir="ltr"
-				>
-					<Menu {outsideClicked} on:message={handleMessage} />
-				</div>
-			{/if}
+			<div class="absolute left-0 top-12 sm:top-0 m-3 min-[370px]:m-5 sm:m-3 sm:mt-10" dir="ltr">
+				<Menu {outsideClicked} on:message={handleMessage} />
+			</div>
 
 			{#if show}
 				{#if $currentAppLang === 'en'}
 					<!-- English -->
+					<!-- 
+						in:fly={{ x: 200, delay: 200, duration: 2000 }}
+						in:fly={{ x: 200, delay: 1000, duration: 2000 }}
+						in:fly={{ x: 200, delay: 1800, duration: 2000 }}
+					-->
 					<div>
 						<div
-							class="absolute right-3 bottom-3 min-[350px]:right-7 min-[350px]:bottom-7 min-[450px]:right-12 min-[450px]:bottom-12 sm:right-16 sm:bottom-16 md:right-20 md:bottom-20 2xl:right-32 2xl:bottom-32 space-y-2 min-[350px]:space-y-3 min-[450px]:space-y-5 sm:space-y-8 xl:space-y-12"
+							class="absolute right-3 bottom-3 min-[350px]:right-9 min-[350px]:bottom-9 min-[450px]:right-12 min-[450px]:bottom-12
+							sm:right-16 sm:bottom-16 md:right-20 md:bottom-20 2xl:right-32 2xl:bottom-32 space-y-2 min-[350px]:space-y-3
+							min-[450px]:space-y-5 sm:space-y-8 xl:space-y-12"
 						>
 							<div class="flex space-x-0 min-[380px]:space-x-2">
 								<div>
 									<p
-										in:fly={{ x: 200, delay: 100, duration: 2000 }}
 										class="text-white heading text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
 									>
 										{$LL.hero.build()}
@@ -97,7 +97,6 @@
 								</div>
 								<div>
 									<p
-										in:fly={{ x: 200, delay: 1000, duration: 2000 }}
 										class="text-white heading text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
 									>
 										{$LL.hero.optimize()}
@@ -107,7 +106,6 @@
 
 							<div>
 								<p
-									in:fly={{ x: 200, delay: 2000, duration: 2000 }}
 									class="text-white heading 2xl:pb-3 text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
 								>
 									{$LL.hero.connect()}
@@ -117,9 +115,15 @@
 					</div>
 				{:else}
 					<!-- ARABIC -->
+					<!-- 
+						in:fly={{ x: -200, delay: 200, duration: 2000 }}
+						in:fly={{ x: -200, delay: 1000, duration: 2000 }}
+						in:fly={{ x: -200, delay: 1800, duration: 2000 }}
+					-->
 					<div>
 						<div
-							class="absolute right-3 bottom-5 min-[350px]:right-7 min-[350px]:bottom-7 min-[450px]:right-10 min-[450px]:bottom-12 sm:right-12 sm:bottom-16 md:right-16 md:bottom-20 2xl:right-32 2xl:bottom-32 space-y-5 sm:space-y-12 2xl:space-y-20"
+							class="absolute right-3 bottom-5 min-[350px]:right-10 min-[350px]:bottom-12 min-[450px]:right-10 min-[450px]:bottom-12
+							sm:right-12 sm:bottom-16 md:right-16 md:bottom-20 2xl:right-32 2xl:bottom-32 space-y-5 sm:space-y-12 2xl:space-y-20"
 						>
 							<div class="flex space-x-12">
 								<div>

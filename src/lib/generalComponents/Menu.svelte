@@ -2,6 +2,7 @@
 	import { createEventDispatcher } from 'svelte';
 	import { currentAppLang } from '$lib/stores/store';
 	import LL from '$i18n/i18n-svelte';
+	import { slide } from 'svelte/transition';
 
 	let navOpen = false;
 
@@ -79,6 +80,7 @@
 	<!-- hero nav list " -->
 	{#if navOpen}
 		<nav
+			in:slide={{ duration: 900 }}
 			class="list-nav bg-surface-50-900-token rounded-lg uppercase {$currentAppLang === 'ar'
 				? 'ar-font'
 				: ''}"

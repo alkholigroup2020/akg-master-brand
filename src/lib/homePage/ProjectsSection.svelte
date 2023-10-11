@@ -4,11 +4,11 @@
 	import { pageDirection } from '$lib/stores/store';
 </script>
 
-<section class="container px-3 mx-auto py-5 xl:py-8">
+<section class="container px-3 mx-auto py-5 xl:py-12">
 	<!-- title -->
 	<div class="text-center">
 		<h2
-			class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-semibold text-primary-500 mb-8 xl:mb-16 {$currentAppLang ===
+			class="text-2xl uppercase sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-semibold text-primary-500 mb-8 xl:mb-16 {$currentAppLang ===
 			'ar'
 				? 'ar-font'
 				: ''}"

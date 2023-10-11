@@ -8,25 +8,25 @@
 
 	const clientsTestimonials = [
 		{
-			title: 'The Flash',
+			title: 'Client Name',
 			testimonial:
 				'Lorem10 m ipsum dolor, sit amet consectetur adipisicing elit. Earum nisi fugiat exercitationem? Lorem, m, ipsum. Lorem ipsum dolor sit.',
 			stars: 4
 		},
 		{
-			title: 'The Flash',
+			title: 'Client Name',
 			testimonial:
 				'Lorem10 m ipsum dolor, sit amet consectetur adipisicing elit. Earum nisi fugiat exercitationem? Lorem, m, ipsum. Lorem ipsum dolor sit.',
 			stars: 3.5
 		},
 		{
-			title: 'The Flash',
+			title: 'Client Name',
 			testimonial:
 				'Lorem10 m ipsum dolor, sit amet consectetur adipisicing elit. Earum nisi fugiat exercitationem? Lorem, m, ipsum. Lorem ipsum dolor sit.',
 			stars: 3
 		},
 		{
-			title: 'The Flash',
+			title: 'Client Name',
 			testimonial:
 				'Lorem10 m ipsum dolor, sit amet consectetur adipisicing elit. Earum nisi fugiat exercitationem? Lorem, m, ipsum. Lorem ipsum dolor sit.',
 			stars: 3
@@ -58,7 +58,7 @@
 	<!-- title -->
 	<div class="text-center">
 		<h2
-			class="uppercase text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-semibold text-primary-500 mb-8 xl:mb-12 {$currentAppLang ===
+			class="uppercase text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-semibold text-primary-500 mb-3 xl:mb-10 {$currentAppLang ===
 			'ar'
 				? 'ar-font'
 				: ''}"

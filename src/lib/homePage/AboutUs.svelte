@@ -2,6 +2,7 @@
 	import LL from '$i18n/i18n-svelte';
 	import { currentAppLang } from '$lib/stores/store';
 	import { pageDirection } from '$lib/stores/store';
+	import { fly } from 'svelte/transition';
 
 	// Define a reactive variable to track the currently selected section.
 	// Let's initialize it with 'about' as default.
@@ -78,7 +79,7 @@
 			<!-- Text Section -->
 			<div class="sm:col-span-2 lg:col-span-3 pt-3 sm:pt-4">
 				{#if selected === 'about'}
-					<div>
+					<div in:fly={{ duration: 800, y: 200 }}>
 						<p
 							class="heading-en-2 px-3 lg:px-8 2xl:px-16 my-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-bold"
 						>
@@ -91,7 +92,7 @@
 						</p>
 					</div>
 				{:else if selected === 'vision'}
-					<div>
+					<div in:fly={{ duration: 800, y: 200 }}>
 						<p
 							class="heading-en-2 px-3 lg:px-8 2xl:px-16 my-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-bold"
 						>
@@ -104,7 +105,7 @@
 						</p>
 					</div>
 				{:else if selected === 'mission'}
-					<div>
+					<div in:fly={{ duration: 800, y: 200 }}>
 						<p
 							class="heading-en-2 px-3 lg:px-8 2xl:px-16 my-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-bold"
 						>

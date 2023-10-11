@@ -6,7 +6,7 @@
 </script>
 
 <section>
-	<div class="md:container md:mx-auto md:px-3 py-20">
+	<div class="md:container md:mx-auto md:px-3 pt-12 xl:pt-20 pb-8">
 		<div class="flex flex-col lg:flex-row bg-primary-500">
 			<!-- image -->
 			<div class="lg:w-[50%]">
@@ -18,7 +18,7 @@
 				/>
 			</div>
 			<!-- text -->
-			<div class="lg:w-[50%] p-3 sm:p-8 xl:p-12 space-y-3" dir={$pageDirection}>
+			<div class="lg:w-[50%] px-3 py-8 sm:p-8 xl:p-12 space-y-3" dir={$pageDirection}>
 				<!-- title -->
 				<p
 					class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl text-secondary-500 xl:mb-5 {$currentAppLang ===
@@ -52,7 +52,7 @@
 
 		<div class="flex flex-col-reverse lg:flex-row bg-primary-500">
 			<!-- text -->
-			<div class="lg:w-[50%] p-3 sm:p-8 xl:p-12 space-y-5" dir={$pageDirection}>
+			<div class="lg:w-[50%] px-3 py-8 sm:p-8 xl:p-12 space-y-5" dir={$pageDirection}>
 				<!-- title -->
 				<p
 					class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl text-secondary-500 xl:mb-5 {$currentAppLang ===
