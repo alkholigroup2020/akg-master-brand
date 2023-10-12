@@ -23,6 +23,10 @@ type RootTranslation = {
 		 * V​i​e​w​ ​M​o​r​e
 		 */
 		more: string
+		/**
+		 * V​i​s​i​t​ ​O​u​r​ ​P​a​g​e
+		 */
+		visit: string
 	}
 	nav: {
 		/**
@@ -546,6 +550,10 @@ export type TranslationFunctions = {
 		 * View More
 		 */
 		more: () => LocalizedString
+		/**
+		 * Visit Our Page
+		 */
+		visit: () => LocalizedString
 	}
 	nav: {
 		/**

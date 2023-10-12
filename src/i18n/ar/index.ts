@@ -3,7 +3,8 @@ import type { BaseTranslation } from '../i18n-types';
 const en: BaseTranslation = {
 	title: 'مجموعة الخولي',
 	generals: {
-		more: 'المــزيد'
+		more: 'المــزيد',
+		visit: 'زيارة موقعنا'
 	},
 	nav: {
 		welcomeMsg: 'مرحـباً بكم في مجموعة الخولي',

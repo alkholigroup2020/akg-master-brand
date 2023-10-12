@@ -32,6 +32,7 @@
 		{
 			imgURL: '/images/companies/logos/amos_300x150.webp',
 			text: `${$LL.companies.amos()}`,
+			// url: 'https://www.amos-sa.com/',
 			order: 6
 		},
 		{
@@ -42,6 +43,7 @@
 		{
 			imgURL: '/images/companies/logos/btech_300x150.webp',
 			text: `${$LL.companies.bteco()}`,
+			url: 'https://www.buildingtec-elevators.com/',
 			order: 8
 		}
 	];
@@ -76,26 +78,70 @@
 			class="grid sm:grid-cols-2 gap-0 {$currentAppLang === 'ar' ? 'ar-font' : ''}"
 			dir={$pageDirection}
 		>
+			<!-- logo -->
 			<div
 				class="flex items-center justify-center py-8 sm:py-0 {company.order % 2 === 0
 					? 'sm:order-last'
 					: ''}"
 			>
-				<img
-					src={company.imgURL}
-					class="w-[150px] md:w-[200px] xl:w-[300px] aspect-[1/0.5]"
-					alt="company logo"
-				/>
+				{#if company.url}
+					<a href={company.url} target="_blank" aria-label="the company webpage">
+						<img
+							src={company.imgURL}
+							class="w-[150px] md:w-[200px] xl:w-[300px] aspect-[1/0.5]"
+							alt="company logo"
+						/>
+					</a>
+				{:else}
+					<img
+						src={company.imgURL}
+						class="w-[150px] md:w-[200px] xl:w-[300px] aspect-[1/0.5]"
+						alt="company logo"
+					/>
+				{/if}
 			</div>
+
+			<!-- text -->
 			<div
 				class="flex items-center justify-center bg-primary-500 text-sm sm:text-base md:text-lg xl:text-xl"
 			>
-				<p
-					class="px-3 min-[350px]:px-6 min-[500px]:px-8 py-5 min-[350px]:py-8 sm:p-5 md:p-8 lg:p-12 xl:px-12 xl:py-20 2xl:py-28 text-white"
+				<div
+					class="px-3 min-[350px]:px-6 min-[500px]:px-8 py-5 min-[350px]:py-8 sm:p-5 md:p-8 lg:p-12 xl:px-12 xl:py-20 2xl:py-20 text-white"
 				>
-					{company.text}
-				</p>
-				<!-- <p class="h1 text-white">{company.order}</p> -->
+					<p>
+						{company.text}
+					</p>
+					{#if company.url}
+						<a href={company.url} target="_blank" aria-label="the company webpage">
+							<div class="pt-8 {$currentAppLang === 'ar' ? 'ar-font' : ''}">
+								<div>
+									<button
+										class=" btn !bg-transparent flex-col text-white border-none text-xs sm:text-sm md:text-base font-semibold px-2 py-1"
+									>
+										<div class="flex space-x-2 items-center">
+											<span>
+												<p>{$LL.generals.visit()}</p>
+											</span>
+											<span class={$currentAppLang === 'ar' ? 'rotate-180 px-2' : ''}>
+												<svg
+													viewBox="0 0 1024 1024"
+													class="icon w-4 h-4"
+													version="1.1"
+													xmlns="http://www.w3.org/2000/svg"
+													><path
+														d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z"
+														fill="#FFF"
+													/></svg
+												>
+											</span>
+										</div>
+									</button>
+								</div>
+								<div />
+							</div>
+						</a>
+					{/if}
+				</div>
 			</div>
 		</div>
 	{/each}

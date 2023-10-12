@@ -3,7 +3,8 @@ import type { BaseTranslation } from '../i18n-types';
 const en: BaseTranslation = {
 	title: 'Alkholi Group',
 	generals: {
-		more: 'View More'
+		more: 'View More',
+		visit: 'Visit Our Page'
 	},
 	nav: {
 		welcomeMsg: 'Welcome To ALKHOLI',

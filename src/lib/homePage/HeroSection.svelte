@@ -101,9 +101,9 @@
 			<div class="sm:hidden my-3" dir="ltr">
 				<img
 					loading="lazy"
-					src="/images/nav/white_80x35.webp"
+					src="/images/nav/white_450x200.webp"
 					alt="company's logo"
-					class="w-[80px] h-[35px] aspect-[16/7]"
+					class="w-[75px] h-fit aspect-auto"
 				/>
 			</div>
 

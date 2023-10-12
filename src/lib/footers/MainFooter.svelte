@@ -17,12 +17,18 @@
 					<div>
 						<div class="flex flex-col items-center pt-5">
 							<div>
-								<img
+								<!-- <img
 									loading="lazy"
 									src="/images/nav/white_140x50.webp"
 									srcset="/images/nav/white_80x35.webp 1024w, /images/nav/white_140x50.webp 8000w"
 									alt="company's logo"
 									class="w-[80px] h-[35px] lg:w-[140px] lg:h-[50px] aspect-[16/7] lg:aspect-[14/5]"
+								/> -->
+								<img
+									loading="lazy"
+									src="/images/nav/white_450x200.webp"
+									alt="company's logo"
+									class="w-[90px] h-full aspect-auto"
 								/>
 							</div>
 						</div>
@@ -261,12 +267,18 @@
 					<div class="col-span-5">
 						<div class="flex flex-col items-end space-y-3">
 							<div>
-								<img
+								<!-- <img
 									loading="lazy"
 									src="/images/nav/white_140x50.webp"
 									srcset="/images/nav/white_80x35.webp 1024w, /images/nav/white_140x50.webp 8000w"
 									alt="company's logo"
 									class="w-[80px] h-[35px] lg:w-[140px] lg:h-[50px] aspect-[16/7] lg:aspect-[14/5]"
+								/> -->
+								<img
+									loading="lazy"
+									src="/images/nav/white_450x200.webp"
+									alt="company's logo"
+									class="w-[150px] h-full aspect-auto"
 								/>
 							</div>
 							<div>

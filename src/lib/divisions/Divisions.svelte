@@ -45,7 +45,7 @@
 		<!-- title -->
 		<div class="text-center">
 			<p
-				class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-semibold text-primary-500 uppercase py-12 xl:py-16 {$currentAppLang ===
+				class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-semibold text-primary-500 uppercase py-12 xl:py-20 {$currentAppLang ===
 				'ar'
 					? 'ar-font'
 					: ''}"
