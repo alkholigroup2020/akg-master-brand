@@ -1,6 +1,70 @@
 <script lang="ts">
+	import { writable } from 'svelte/store';
+	import { gsap } from 'gsap';
+	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import { currentAppLang } from '$lib/stores/store';
 	import LL from '$i18n/i18n-svelte';
+	import { onMount } from 'svelte';
+
+	// Register the ScrollTrigger plugin
+	gsap.registerPlugin(ScrollTrigger);
+
+	// Counter object
+	let counter = { value: 0 };
+	let counterStore = writable(counter);
+
+	// Second counter object
+	let secondCounter = { value: 0 };
+	let secondCounterStore = writable(secondCounter);
+
+	// Third counter object
+	let thirdCounter = { value: 0 };
+	let thirdCounterStore = writable(thirdCounter);
+
+	// Animate the first counter
+	onMount(() => {
+		gsap.to(counter, {
+			value: 2100,
+			duration: 1,
+			round: 1,
+			scrollTrigger: {
+				trigger: '.animated-number',
+				start: 'top bottom-=35%',
+				markers: false
+			},
+			onUpdate: () => counterStore.set(counter)
+		});
+	});
+
+	// Animate the second counter
+	onMount(() => {
+		gsap.to(secondCounter, {
+			value: 21,
+			duration: 1,
+			round: 1,
+			scrollTrigger: {
+				trigger: '.animated-number-second',
+				start: 'top bottom-=35%',
+				markers: false
+			},
+			onUpdate: () => secondCounterStore.set(secondCounter)
+		});
+	});
+
+	// Animate the third counter
+	onMount(() => {
+		gsap.to(thirdCounter, {
+			value: 450,
+			duration: 1,
+			round: 1,
+			scrollTrigger: {
+				trigger: '.animated-number-third',
+				start: 'top bottom-=35%',
+				markers: false
+			},
+			onUpdate: () => thirdCounterStore.set(thirdCounter)
+		});
+	});
 </script>
 
 <section class="max-w-[1920px] mx-auto">
@@ -31,10 +95,10 @@
 					/>
 					<!-- number -->
 					<p
-						class="text-secondary-500 text-4xl lg:text-5xl 2xl:text-6xl my-1 lg:my-3 2xl:my-5"
+						class="text-secondary-500 text-4xl lg:text-5xl 2xl:text-6xl my-1 lg:my-3 2xl:my-5 animated-number"
 						style="font-family: 'Gotham-Bold';"
 					>
-						2100
+						{Math.round($counterStore.value)}
 					</p>
 					<!-- text -->
 					<p
@@ -57,10 +121,10 @@
 					/>
 					<!-- number -->
 					<p
-						class="text-secondary-500 text-4xl lg:text-5xl 2xl:text-6xl my-1 lg:my-3 2xl:my-5"
+						class="text-secondary-500 text-4xl lg:text-5xl 2xl:text-6xl my-1 lg:my-3 2xl:my-5 animated-number-second"
 						style="font-family: 'Gotham-Bold';"
 					>
-						21
+						{Math.round($secondCounterStore.value)}
 					</p>
 					<!-- text -->
 					<p
@@ -83,10 +147,10 @@
 					/>
 					<!-- number -->
 					<p
-						class="text-secondary-500 text-4xl lg:text-5xl 2xl:text-6xl my-1 lg:my-3 2xl:my-5"
+						class="text-secondary-500 text-4xl lg:text-5xl 2xl:text-6xl my-1 lg:my-3 2xl:my-5 animated-number-third"
 						style="font-family: 'Gotham-Bold';"
 					>
-						450
+						{Math.round($thirdCounterStore.value)}
 					</p>
 					<!-- text -->
 					<p

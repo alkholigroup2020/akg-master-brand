@@ -18,8 +18,8 @@ const en: BaseTranslation = {
 		}
 	},
 	hero: {
-		build: 'نَبنــــي.',
-		optimize: 'نُطــــور.',
+		build: 'نبنــــي.',
+		optimize: 'نطــــور.',
 		connect: 'نتواصــل.',
 		more: 'إعرف المزيد'
 	},

@@ -55,7 +55,7 @@
 
 					<div class="py-2">
 						<div class="flex justify-center space-x-2 text-xs sm:text-sm md:text-base">
-							<a type="button" href="tel:00114041919" aria-label="Riyadh branch mobile number">
+							<a type="button" href="tel:00966114041919" aria-label="Riyadh branch mobile number">
 								<div class="flex flex-col items-center space-y-2 space-x-1">
 									<div>
 										<span>

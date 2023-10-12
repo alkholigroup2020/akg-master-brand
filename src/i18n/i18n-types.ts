@@ -404,7 +404,7 @@ type RootTranslation = {
 		 */
 		textAreaError2: string
 		/**
-		 * S​e​n​d​ ​Y​o​u​r​ ​M​e​s​s​a​g​e
+		 * S​e​n​d
 		 */
 		submit: string
 		/**
@@ -518,7 +518,7 @@ type RootTranslation = {
 		 */
 		textAreaError2: string
 		/**
-		 * S​e​n​d​ ​Y​o​u​r​ ​M​e​s​s​a​g​e
+		 * S​e​n​d
 		 */
 		submit: string
 		/**
@@ -927,7 +927,7 @@ export type TranslationFunctions = {
 		 */
 		textAreaError2: () => LocalizedString
 		/**
-		 * Send Your Message
+		 * Send
 		 */
 		submit: () => LocalizedString
 		/**
@@ -1041,7 +1041,7 @@ export type TranslationFunctions = {
 		 */
 		textAreaError2: () => LocalizedString
 		/**
-		 * Send Your Message
+		 * Send
 		 */
 		submit: () => LocalizedString
 		/**

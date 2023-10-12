@@ -41,7 +41,7 @@
 </script>
 
 <section class="max-w-[1920px] mx-auto">
-	<div class="container mx-auto px-3 pb-8 lg:pb-12">
+	<div class="container mx-auto px-3 pb-5 lg:pb-12">
 		<!-- title -->
 		<div class="text-center">
 			<p
@@ -75,7 +75,7 @@
 									src={`https://cms.alkholi.com${division.attributes.divisionImage_620x620.data.attributes.url}`}
 									srcset={`https://cms.alkholi.com${division.attributes.divisionImage_620x310.data.attributes.url} 640w, https://cms.alkholi.com${division.attributes.divisionImage_620x620.data.attributes.url} 2000w`}
 									alt="division"
-									class="w-full aspect-[1/0.5] sm:aspect-[1/1]"
+									class="w-full aspect-[1/0.65] sm:aspect-[1/1]"
 								/>
 							</div>
 						</div>
@@ -124,7 +124,7 @@
 									src={`https://cms.alkholi.com${division.attributes.divisionImage_620x620.data.attributes.url}`}
 									srcset={`https://cms.alkholi.com${division.attributes.divisionImage_620x310.data.attributes.url} 640w, https://cms.alkholi.com${division.attributes.divisionImage_620x620.data.attributes.url} 2000w`}
 									alt="division"
-									class="w-full aspect-[1/0.5] sm:aspect-[1/1]"
+									class="w-full aspect-[1/0.65] sm:aspect-[1/1]"
 								/>
 							</div>
 						</div>

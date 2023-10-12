@@ -18,7 +18,7 @@
 
 <AboutUs sectionData={data.aboutSectionData} />
 
-<Timeline />
+<!-- <Timeline /> -->
 
 <TimelineImage />
 

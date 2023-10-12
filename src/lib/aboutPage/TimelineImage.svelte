@@ -43,7 +43,7 @@
 					>
 						<p class="mb-2 min-[350px]:mb-3 md:mb-5 lg:mb-8 2xl:mb-12">AlKholi Group</p>
 					</div>
-					<div
+					<!-- <div
 						class="hidden min-[300px]:block pl-3 min-[450px]:pl-[10%] lg:pl-[25%] 2xl:pl-[50%] text-xs sm:text-sm md:text-base"
 					>
 						<p>
@@ -51,6 +51,13 @@
 							pariatur fuga dolor corporis omnis doloremque temporibus soluta. Aliquid quisquam
 							suscipit dolore accusamus omnis repellat tenetur consectetur, ea totam, officiis
 							voluptatum. Possimus quod quaerat voluptatibus,
+						</p>
+					</div> -->
+					<div
+						class="hidden min-[300px]:block pl-3 min-[450px]:pl-[10%] lg:pl-[25%] 2xl:pl-[30%] text-sm sm:text-base md:text-lg xl:text-xl"
+					>
+						<p class=" {$currentAppLang === 'ar' ? 'ar-font' : ''}">
+							{$LL.about.timeline.p1()}
 						</p>
 					</div>
 				</div>
@@ -87,8 +94,8 @@
 					<!-- <li>2021</li> -->
 					<li>
 						<div
-							class="flex items-center -ml-[18px] min-[450px]:-ml-[20px] min-[550px]:-ml-[28px] min-[600px]:-ml-[29px]
-							sm:-ml-[33px] md:-ml-[47px] lg:-ml-[65px] xl:-ml-[68px] 2xl:-ml-[73px]"
+							class="flex items-center -ml-[18px] min-[400px]:-ml-[19px] min-[510px]:-ml-[20px] min-[550px]:-ml-[28px] min-[600px]:-ml-[29px]
+							sm:-ml-[33px] md:-ml-[47px] lg:-ml-[65px] xl:-ml-[68px] 2xl:-ml-[70px] min-[1700px]:-ml-[73px]"
 						>
 							<div class="pr-2 min-[550px]:pr-5 md:pr-8 lg:pr-12 2xl:pr-14">
 								<div class="w-2 sm:w-4 h-2 sm:h-4 bg-success-500 rounded-full" />

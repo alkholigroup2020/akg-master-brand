@@ -139,7 +139,7 @@ const en: BaseTranslation = {
 		textAreaPlaceholder: 'Message*',
 		textAreaError1: 'Message is too short!',
 		textAreaError2: 'Message is too long! Maximum 500 characters.',
-		submit: 'Send Your Message',
+		submit: 'Send',
 		successFeedback: 'Thank You!',
 		errorFeedback: 'Something went wrong!',
 		conditions: 'I agree to the terms & conditions'
@@ -169,7 +169,7 @@ const en: BaseTranslation = {
 		textAreaPlaceholder: 'Message*',
 		textAreaError1: 'Message is too short!',
 		textAreaError2: 'Message is too long! Maximum 500 characters.',
-		submit: 'Send Your Message',
+		submit: 'Send',
 		successFeedback: 'Thank You!',
 		errorFeedback: 'Something went wrong!',
 		conditions: 'I agree to the terms & conditions'

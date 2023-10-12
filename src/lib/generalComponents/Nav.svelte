@@ -15,15 +15,17 @@
 	<svelte:fragment slot="lead">
 		<div class="flex space-x-4 items-center">
 			<!-- company's logo -->
-			<div class="-mt-1">
-				<img
-					loading="lazy"
-					src="/images/nav/white_140x50.webp"
-					srcset="/images/nav/white_80x35.webp 1024w, /images/nav/white_140x50.webp 8000w"
-					alt="company's logo"
-					class="w-[80px] h-[35px] lg:w-[140px] lg:h-[50px] aspect-[16/7] lg:aspect-[14/5]"
-				/>
-			</div>
+			<a aria-label="home page link" href={`/${$currentAppLang}/`}>
+				<div class="-mt-1">
+					<img
+						loading="lazy"
+						src="/images/nav/white_140x50.webp"
+						srcset="/images/nav/white_80x35.webp 1024w, /images/nav/white_140x50.webp 8000w"
+						alt="company's logo"
+						class="w-[80px] h-[35px] lg:w-[140px] lg:h-[50px] aspect-[16/7] lg:aspect-[14/5]"
+					/>
+				</div>
+			</a>
 
 			<!-- welcome message -->
 			<p

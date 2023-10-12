@@ -13,7 +13,7 @@
 		{#each projectsData as project}
 			{#if tabSet === 'All' || tabSet === project.attributes.projectCategory}
 				<div
-					class="card bg-[#f6f6f9] hover:bg-primary-500 hover:p-3 hover:cursor-pointer hover:text-white rounded-none"
+					class="card bg-[#f6f6f9] hover:bg-primary-500 hover:p-1 md:hover:p-2 hover:cursor-pointer hover:text-white rounded-none"
 				>
 					<div>
 						<img

@@ -80,7 +80,7 @@
 	<!-- hero nav list " -->
 	{#if navOpen}
 		<nav
-			in:slide={{ duration: 900 }}
+			in:slide={{ duration: 750 }}
 			class="list-nav bg-surface-50-900-token rounded-lg uppercase {$currentAppLang === 'ar'
 				? 'ar-font'
 				: ''}"

@@ -321,11 +321,11 @@
 								</label>
 							</div>
 							<!-- submit btn -->
-							<div>
+							<div class="mt-8 sm:mt-0">
 								<button
 									disabled={!isChecked}
 									style="opacity: 1!important;"
-									class="btn bg-success-500 rounded-sm px-12 py-3 text-white text-sm sm:text-base md:text-lg xl:text-xl"
+									class="btn bg-success-500 rounded-sm px-12 py-3 text-white text-sm sm:text-base md:text-lg xl:text-xl font-medium"
 									>{$LL.joinUsForm.submit()}</button
 								>
 							</div>

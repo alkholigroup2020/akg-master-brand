@@ -2,19 +2,58 @@
 	import LL from '$i18n/i18n-svelte';
 	import LocaleSwitcher from '$lib/LocaleSwitcher.svelte';
 	import Menu from '$lib/generalComponents/Menu.svelte';
-	import SectionSize from '$lib/generalComponents/SectionSize.svelte';
 	import { currentAppLang } from '$lib/stores/store';
 	import { pageDirection } from '$lib/stores/store';
-	import { fly } from 'svelte/transition';
 
 	import { onMount } from 'svelte';
+	import { gsap } from 'gsap';
 
-	let show = false;
+	// let titleElement: gsap.TweenTarget;
 
 	onMount(() => {
-		setTimeout(() => {
-			show = true;
-		}, 100);
+		const words = document.querySelectorAll('.wordAnimation');
+		let observer = new IntersectionObserver(function (entries, self) {
+			let targets = entries.map((entry) => {
+				if (entry.isIntersecting) {
+					self.unobserve(entry.target);
+					return entry.target;
+				}
+			});
+			gsap.from(targets, {
+				duration: 0.8,
+				y: 300,
+				opacity: 0.2,
+				// ease: 'sine',
+				stagger: {
+					each: 0.8
+				}
+			});
+		});
+		words.forEach((word) => {
+			observer.observe(word);
+		});
+		// arabic animation
+		const wordsAr = document.querySelectorAll('.ar-wordAnimation');
+		let observerAr = new IntersectionObserver(function (entries, self) {
+			let targets = entries.map((entry) => {
+				if (entry.isIntersecting) {
+					self.unobserve(entry.target);
+					return entry.target;
+				}
+			});
+			gsap.from(targets, {
+				duration: 1.2,
+				y: 300,
+				opacity: 0.2,
+				// ease: 'sine',
+				stagger: {
+					each: 0.8
+				}
+			});
+		});
+		wordsAr.forEach((word) => {
+			observerAr.observe(word);
+		});
 	});
 
 	function handleMessage(event: { detail: any }) {
@@ -73,85 +112,85 @@
 				<Menu {outsideClicked} on:message={handleMessage} />
 			</div>
 
-			{#if show}
-				{#if $currentAppLang === 'en'}
-					<!-- English -->
-					<!-- 
+			{#if $currentAppLang === 'en'}
+				<!-- English -->
+				<!-- 
 						in:fly={{ x: 200, delay: 200, duration: 2000 }}
 						in:fly={{ x: 200, delay: 1000, duration: 2000 }}
 						in:fly={{ x: 200, delay: 1800, duration: 2000 }}
 					-->
-					<div>
-						<div
-							class="absolute right-3 bottom-3 min-[350px]:right-9 min-[350px]:bottom-9 min-[450px]:right-12 min-[450px]:bottom-12
+				<div>
+					<div
+						style="overflow-x: hidden; overflow-y: hidden"
+						class="absolute right-3 bottom-3 min-[350px]:right-9 min-[350px]:bottom-9 min-[450px]:right-12 min-[450px]:bottom-12
 							sm:right-16 sm:bottom-16 md:right-20 md:bottom-20 2xl:right-32 2xl:bottom-32 space-y-2 min-[350px]:space-y-3
 							min-[450px]:space-y-5 sm:space-y-8 xl:space-y-12"
-						>
-							<div class="flex space-x-0 min-[380px]:space-x-2">
-								<div>
-									<p
-										class="text-white heading text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
-									>
-										{$LL.hero.build()}
-									</p>
-								</div>
-								<div>
-									<p
-										class="text-white heading text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
-									>
-										{$LL.hero.optimize()}
-									</p>
-								</div>
-							</div>
-
+					>
+						<div class="flex space-x-0 min-[380px]:space-x-2">
 							<div>
 								<p
-									class="text-white heading 2xl:pb-3 text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
+									class="text-white heading md:mr-2 text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl wordAnimation"
 								>
-									{$LL.hero.connect()}
+									{$LL.hero.build()}
+								</p>
+							</div>
+							<div>
+								<p
+									class="text-white heading text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl wordAnimation"
+								>
+									{$LL.hero.optimize()}
 								</p>
 							</div>
 						</div>
+
+						<div>
+							<p
+								class="text-white heading 2xl:pb-3 text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl wordAnimation"
+							>
+								{$LL.hero.connect()}
+							</p>
+						</div>
 					</div>
-				{:else}
-					<!-- ARABIC -->
-					<!-- 
+				</div>
+			{:else}
+				<!-- ARABIC -->
+				<!-- 
 						in:fly={{ x: -200, delay: 200, duration: 2000 }}
 						in:fly={{ x: -200, delay: 1000, duration: 2000 }}
 						in:fly={{ x: -200, delay: 1800, duration: 2000 }}
 					-->
-					<div>
-						<div
-							class="absolute right-3 bottom-5 min-[350px]:right-10 min-[350px]:bottom-12 min-[450px]:right-10 min-[450px]:bottom-12
+				<div>
+					<div
+						style="overflow-x: hidden; overflow-y: hidden"
+						class="absolute right-3 bottom-5 min-[350px]:right-10 min-[350px]:bottom-12 min-[450px]:right-10 min-[450px]:bottom-12
 							sm:right-12 sm:bottom-16 md:right-16 md:bottom-20 2xl:right-32 2xl:bottom-32 space-y-5 sm:space-y-12 2xl:space-y-20"
-						>
-							<div class="flex space-x-12">
-								<div>
-									<p
-										class="text-white font-extrabold text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl ml-3 xl:ml-5 ar-font"
-									>
-										{$LL.hero.build()}
-									</p>
-								</div>
-								<div>
-									<p
-										class="text-white font-extrabold text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl ar-font"
-									>
-										{$LL.hero.optimize()}
-									</p>
-								</div>
-							</div>
-
+					>
+						<div class="flex space-x-12">
 							<div>
 								<p
-									class="text-white font-extrabold text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl ar-font"
+									class="text-white font-extrabold text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl ml-3 xl:ml-5 ar-font ar-wordAnimation"
 								>
-									{$LL.hero.connect()}
+									{$LL.hero.build()}
+								</p>
+							</div>
+							<div>
+								<p
+									class="text-white font-extrabold text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl ar-font ar-wordAnimation"
+								>
+									{$LL.hero.optimize()}
 								</p>
 							</div>
 						</div>
+
+						<div>
+							<p
+								class="text-white font-extrabold text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl ar-font ar-wordAnimation"
+							>
+								{$LL.hero.connect()}
+							</p>
+						</div>
 					</div>
-				{/if}
+				</div>
 			{/if}
 		</div>
 	</div>

@@ -34,7 +34,7 @@
 </svelte:head>
 
 {#if devOrProduction}
-	<!-- <WindowSize /> -->
+	<WindowSize />
 {/if}
 
 {#if $navigating}
@@ -56,6 +56,6 @@
 	/* h2: text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] */
 	/* h3: text-lg sm:text-2xl lg:text-2xl xl:text-3xl */
 	/* h4: text-base sm:text-lg lg:text-xl xl:text-2xl */
-	/* normal: text-sm sm:text-base md:text-lg ==> text-sm sm:text-base md:text-lg xl:text-xl */
+	/* normal: text-sm sm:text-base md:text-lg xl:text-xl */
 	/* sub-normal: text-xs sm:text-sm md:text-base */
 </style>

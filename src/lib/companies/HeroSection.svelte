@@ -41,14 +41,16 @@
 			dir="ltr"
 		>
 			<div class="flex justify-between items-center">
-				<div>
-					<img
-						loading="lazy"
-						src="/images/nav/white_80x35.webp"
-						alt="company's logo"
-						class="  mt-1 w-[80px] h-[35px] aspect-[16/7]"
-					/>
-				</div>
+				<a aria-label="home page link" href={`/${$currentAppLang}/`}>
+					<div>
+						<img
+							loading="lazy"
+							src="/images/nav/white_80x35.webp"
+							alt="company's logo"
+							class="  mt-1 w-[80px] h-[35px] aspect-[16/7]"
+						/>
+					</div>
+				</a>
 
 				<div>
 					<LocaleSwitcher />
