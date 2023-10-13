@@ -80,7 +80,9 @@
 		>
 			<!-- logo -->
 			<div
-				class="flex items-center justify-center py-8 sm:py-0 {company.order % 2 === 0
+				class="min-h-[180px] md:min-h-[300px] flex items-center justify-center py-8 sm:py-0 {company.order %
+					2 ===
+				0
 					? 'sm:order-last'
 					: ''}"
 			>
@@ -103,7 +105,7 @@
 
 			<!-- text -->
 			<div
-				class="flex items-center justify-center bg-primary-500 text-sm sm:text-base md:text-lg xl:text-xl"
+				class="lg:min-h-[350px] flex items-center justify-center bg-primary-500 text-sm sm:text-base md:text-lg xl:text-xl"
 			>
 				<div
 					class="px-3 min-[350px]:px-6 min-[500px]:px-8 py-5 min-[350px]:py-8 sm:p-5 md:p-8 lg:p-12 xl:px-12 xl:py-20 2xl:py-20 text-white"

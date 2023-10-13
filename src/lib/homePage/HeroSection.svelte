@@ -103,7 +103,7 @@
 					loading="lazy"
 					src="/images/nav/white_450x200.webp"
 					alt="company's logo"
-					class="w-[75px] h-fit aspect-auto"
+					class="w-[75px] h-10 aspect-auto"
 				/>
 			</div>
 

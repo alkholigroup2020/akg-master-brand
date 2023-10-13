@@ -214,8 +214,11 @@
 						/>
 						<div>
 							<!-- number -->
-							<p class="text-secondary-500 px-2 text-2xl" style="font-family: 'Gotham-Bold'">
-								2100
+							<p
+								class="text-secondary-500 px-2 text-2xl animated-number"
+								style="font-family: 'Gotham-Bold'"
+							>
+								{Math.round($counterStore.value)}
 							</p>
 							<!-- text -->
 							<p
@@ -237,8 +240,11 @@
 						/>
 						<div>
 							<!-- number -->
-							<p class="text-secondary-500 px-2 text-2xl" style="font-family: 'Gotham-Bold'">
-								2100
+							<p
+								class="text-secondary-500 px-2 text-2xl animated-number-second"
+								style="font-family: 'Gotham-Bold'"
+							>
+								{Math.round($secondCounterStore.value)}
 							</p>
 							<!-- text -->
 							<p
@@ -260,8 +266,11 @@
 						/>
 						<div>
 							<!-- number -->
-							<p class="text-secondary-500 px-2 text-2xl" style="font-family: 'Gotham-Bold'">
-								2100
+							<p
+								class="text-secondary-500 px-2 text-2xl animated-number-third"
+								style="font-family: 'Gotham-Bold'"
+							>
+								{Math.round($thirdCounterStore.value)}
 							</p>
 							<!-- text -->
 							<p

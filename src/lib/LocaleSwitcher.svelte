@@ -58,7 +58,7 @@
 {#if $currentAppLang === 'en'}
 	<button
 		type="button"
-		class="btn !bg-transparent px-0 text-xs sm:text-sm md:text-base xl:text-lg text-white ar-font"
+		class="btn !bg-transparent px-0 text-xs pt-5 md:pt-2 sm:text-sm md:text-base xl:text-lg text-white ar-font"
 	>
 		<a href={`${replaceLocaleInUrl($page.url, 'ar')}`} aria-label="language switch link"
 			>العــربية</a
@@ -69,7 +69,7 @@
 {#if $currentAppLang === 'ar'}
 	<button
 		type="button"
-		class="btn !bg-transparent px-0 pt-4 text-xs sm:text-sm md:text-base text-white uppercase"
+		class="btn !bg-transparent px-0 pt-5 md:pt-3 text-xs sm:text-sm md:text-base text-white uppercase"
 	>
 		<a href={`${replaceLocaleInUrl($page.url, 'en')}`} aria-label="language switch link">English</a>
 	</button>

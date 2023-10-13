@@ -5,7 +5,7 @@
 </script>
 
 <section class="max-w-[1920px] mx-auto">
-	<div class="text-white bg-primary-500 flex flex-col py-8 xl:py-12 uppercase">
+	<div class="text-white text-center bg-primary-500 flex flex-col py-8 xl:py-12 uppercase">
 		<!-- title -->
 		<div class="py-3">
 			<p
@@ -63,9 +63,9 @@
 
 		<!-- directors level #1 -->
 		<div
-			class="grid grid-cols-2 gap-y-10 md:flex justify-center md:space-x-6 lg:space-x-16 xl:space-x-20 2xl:space-x-24 py-8 min-[400px]:px-10 min-[550px]:px-24 min-[650px]:px-32 md:px-0"
+			class="grid grid-cols-2 md:grid-cols-3 gap-y-10 md:gap-y-16 py-10 md:py-16 min-[400px]:px-10 min-[550px]:px-24 min-[650px]:px-32 md:px-12 lg:px-36 xl:px-52 2xl:px-96"
 		>
-			<div class="flex flex-col items-center">
+			<!-- <div class="flex flex-col items-center">
 				<div>
 					<img
 						src="/images/about/team/asset-20_180x180.webp"
@@ -75,10 +75,9 @@
 					/>
 				</div>
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Mohamed Ghoniem</p>
-			</div>
-			<div class="flex flex-col items-center">
+			</div> -->
+			<!-- <div class="flex flex-col items-center">
 				<div>
-					<!-- srcset="/images/about/team/asset-21_120x120.webp 768w, /images/about/team/asset-21_180x180.webp 2000w" -->
 					<img
 						src="/images/profile.png"
 						alt="chairman"
@@ -86,7 +85,7 @@
 					/>
 				</div>
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Unknown</p>
-			</div>
+			</div> -->
 			<div class="flex flex-col items-center">
 				<div>
 					<img
@@ -97,45 +96,6 @@
 					/>
 				</div>
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Nasser Al-Dowsary</p>
-			</div>
-			<div class="flex flex-col items-center">
-				<div>
-					<img
-						src="/images/about/team/asset-23_180x180.webp"
-						srcset="/images/about/team/asset-23_120x120.webp 768w, /images/about/team/asset-23_180x180.webp 2000w"
-						alt="chairman"
-						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
-					/>
-				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Saeed Al-Ghamdy</p>
-			</div>
-		</div>
-
-		<!-- directors level #2 -->
-		<div
-			class="grid grid-cols-2 gap-y-10 md:flex justify-center md:space-x-6 lg:space-x-16 xl:space-x-20 2xl:space-x-24 py-8 min-[400px]:px-10 min-[550px]:px-24 min-[650px]:px-32 md:px-0"
-		>
-			<div class="flex flex-col items-center">
-				<div>
-					<img
-						src="/images/about/team/asset-24_180x180.webp"
-						srcset="/images/about/team/asset-24_120x120.webp 768w, /images/about/team/asset-24_180x180.webp 2000w"
-						alt="chairman"
-						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
-					/>
-				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Waleed Jaafar</p>
-			</div>
-			<div class="flex flex-col items-center">
-				<div>
-					<!-- srcset="/images/about/team/asset-25_120x120.webp 768w, /images/about/team/asset-25_180x180.webp 2000w" -->
-					<img
-						src="/images/profile.png"
-						alt="chairman"
-						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36 rounded-full"
-					/>
-				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Unknown</p>
 			</div>
 			<div class="flex flex-col items-center">
 				<div>
@@ -151,6 +111,41 @@
 			<div class="flex flex-col items-center">
 				<div>
 					<img
+						src="/images/about/team/asset-19_180x180.webp"
+						srcset="/images/about/team/asset-19_120x120.webp 768w, /images/about/team/asset-19_180x180.webp 2000w"
+						alt="chairman"
+						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
+					/>
+				</div>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Ayman Elgabbar</p>
+			</div>
+
+			<div class="flex flex-col items-center">
+				<div>
+					<img
+						src="/images/about/team/asset-24_180x180.webp"
+						srcset="/images/about/team/asset-24_120x120.webp 768w, /images/about/team/asset-24_180x180.webp 2000w"
+						alt="chairman"
+						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
+					/>
+				</div>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Waleed Jaafar</p>
+			</div>
+
+			<div class="flex flex-col items-center">
+				<div>
+					<img
+						src="/images/about/team/asset-23_180x180.webp"
+						srcset="/images/about/team/asset-23_120x120.webp 768w, /images/about/team/asset-23_180x180.webp 2000w"
+						alt="chairman"
+						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
+					/>
+				</div>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Saeed Al-Ghamdy</p>
+			</div>
+			<div class="flex flex-col items-center">
+				<div>
+					<img
 						src="/images/about/team/asset-27_180x180.webp"
 						srcset="/images/about/team/asset-27_120x120.webp 768w, /images/about/team/asset-27_180x180.webp 2000w"
 						alt="chairman"
@@ -161,24 +156,28 @@
 			</div>
 		</div>
 
-		<!-- directors level #3 -->
-		<div
+		<!-- directors level #2 -->
+		<!-- <div
 			class="grid grid-cols-2 gap-y-10 md:flex justify-center md:space-x-6 lg:space-x-16 xl:space-x-20 2xl:space-x-24 py-8 min-[400px]:px-10 min-[550px]:px-24 min-[650px]:px-32 md:px-0"
 		>
 			<div class="flex flex-col items-center">
 				<div>
 					<img
-						src="/images/about/team/asset-19_180x180.webp"
-						srcset="/images/about/team/asset-19_120x120.webp 768w, /images/about/team/asset-19_180x180.webp 2000w"
+						src="/images/profile.png"
 						alt="chairman"
-						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
+						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36 rounded-full"
 					/>
 				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Ayman Elgabbar</p>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Unknown</p>
 			</div>
+		</div> -->
+
+		<!-- directors level #3 -->
+		<!-- <div
+			class="grid grid-cols-2 gap-y-10 md:flex justify-center md:space-x-6 lg:space-x-16 xl:space-x-20 2xl:space-x-24 py-8 min-[400px]:px-10 min-[550px]:px-24 min-[650px]:px-32 md:px-0"
+		>
 			<div class="flex flex-col items-center">
 				<div>
-					<!-- srcset="/images/about/team/asset-28_120x120.webp 768w, /images/about/team/asset-28_180x180.webp 2000w" -->
 					<img
 						src="/images/profile.png"
 						alt="chairman"
@@ -189,7 +188,6 @@
 			</div>
 			<div class="flex flex-col items-center">
 				<div>
-					<!-- srcset="/images/about/team/asset-29_120x120.webp 768w, /images/about/team/asset-29_180x180.webp 2000w" -->
 					<img
 						src="/images/profile.png"
 						alt="chairman"
@@ -198,6 +196,6 @@
 				</div>
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Unknown</p>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </section>
