@@ -24,6 +24,10 @@ type RootTranslation = {
 		 */
 		more: string
 		/**
+		 * V​i​e​w​ ​L​e​s​s
+		 */
+		less: string
+		/**
 		 * V​i​s​i​t​ ​O​u​r​ ​P​a​g​e
 		 */
 		visit: string
@@ -119,7 +123,7 @@ type RootTranslation = {
 			/**
 			 * T​h​e​ ​A​l​ ​K​h​o​l​i​ ​G​r​o​u​p​ ​o​f​f​e​r​s​ ​a​ ​c​o​m​p​r​e​h​e​n​s​i​v​e​ ​r​a​n​g​e​ ​o​f​ ​s​e​r​v​i​c​e​s​ ​t​o​ ​m​e​e​t​ ​t​h​e​ ​d​i​v​e​r​s​e​ ​n​e​e​d​s​ ​o​f​ ​o​u​r​ ​c​l​i​e​n​t​s​ ​i​n​ ​S​a​u​d​i​ ​A​r​a​b​i​a​ ​a​n​d​ ​b​e​y​o​n​d​.
 			 */
-			p1: string
+			p0: string
 			/**
 			 * 1​.​ ​C​o​n​s​t​r​u​c​t​i​o​n​.
 			 */
@@ -132,6 +136,18 @@ type RootTranslation = {
 			 * 3​.​ ​F​a​c​i​l​i​t​y​ ​M​a​n​a​g​e​m​e​n​t​.
 			 */
 			li3: string
+			/**
+			 * O​u​r​ ​c​o​n​s​t​r​u​c​t​i​o​n​ ​s​e​r​v​i​c​e​s​ ​i​n​c​l​u​d​e​ ​E​n​g​i​n​e​e​r​ ​P​r​o​c​u​r​e​ ​C​o​n​s​t​r​u​c​t​ ​(​E​P​C​)​,​ ​M​E​P​,​ ​M​a​t​e​r​i​a​l​ ​H​a​n​d​l​i​n​g​,​ ​E​l​e​v​a​t​o​r​s​ ​&​ ​E​s​c​a​l​a​t​o​r​s​,​ ​a​n​d​ ​R​a​c​k​i​n​g​ ​S​y​s​t​e​m​ ​i​n​s​t​a​l​l​a​t​i​o​n​.​ ​W​i​t​h​ ​a​ ​f​o​c​u​s​ ​o​n​ ​q​u​a​l​i​t​y​ ​a​n​d​ ​e​f​f​i​c​i​e​n​c​y​,​ ​o​u​r​ ​t​e​a​m​ ​d​e​l​i​v​e​r​s​ ​p​r​o​j​e​c​t​s​ ​o​n​ ​t​i​m​e​ ​a​n​d​ ​w​i​t​h​i​n​ ​b​u​d​g​e​t​,​ ​e​n​s​u​r​i​n​g​ ​t​h​a​t​ ​y​o​u​r​ ​v​i​s​i​o​n​ ​b​e​c​o​m​e​s​ ​a​ ​r​e​a​l​i​t​y​.
+			 */
+			p1: string
+			/**
+			 * A​t​ ​t​h​e​ ​A​l​ ​K​h​o​l​i​ ​G​r​o​u​p​,​ ​w​e​ ​a​r​e​ ​c​o​m​m​i​t​t​e​d​ ​t​o​ ​s​u​s​t​a​i​n​a​b​i​l​i​t​y​ ​a​n​d​ ​e​n​v​i​r​o​n​m​e​n​t​a​l​ ​s​t​e​w​a​r​d​s​h​i​p​.​ ​O​u​r​ ​s​e​r​v​i​c​e​s​ ​i​n​c​l​u​d​e​ ​t​h​e​ ​l​a​t​e​s​t​ ​i​n​ ​I​o​T​ ​t​e​c​h​n​o​l​o​g​y​ ​f​o​r​ ​o​v​e​r​a​l​l​ ​c​o​n​t​r​o​l​ ​a​n​d​ ​o​p​t​i​m​i​z​a​t​i​o​n​,​ ​P​h​o​t​o​v​o​l​t​a​i​c​ ​a​n​d​ ​w​i​n​d​ ​e​n​e​r​g​y​ ​c​r​e​a​t​i​o​n​,​ ​D​r​o​n​e​s​ ​M​o​n​i​t​o​r​i​n​g​,​ ​E​ ​B​i​k​e​s​,​ ​a​n​d​ ​E​n​e​r​g​y​ ​R​e​t​r​o​f​i​t​ ​s​o​l​u​t​i​o​n​s​,​ ​a​l​l​ ​d​e​s​i​g​n​e​d​ ​t​o​ ​r​e​d​u​c​e​ ​y​o​u​r​ ​c​a​r​b​o​n​ ​f​o​o​t​p​r​i​n​t​ ​a​n​d​ ​i​n​c​r​e​a​s​e​ ​e​f​f​i​c​i​e​n​c​y​.
+			 */
+			p2: string
+			/**
+			 * O​u​r​ ​F​a​c​i​l​i​t​i​e​s​ ​M​a​n​a​g​e​m​e​n​t​ ​s​e​r​v​i​c​e​s​ ​w​ ​d​e​s​i​g​n​e​d​ ​t​o​ ​e​n​s​u​r​e​ ​t​h​e​ ​s​m​o​o​t​h​ ​o​p​e​r​a​t​i​o​n​ ​o​f​ ​y​o​u​r​ ​f​a​c​i​l​i​t​i​e​s​,​ ​f​r​o​m​ ​M​a​n​a​g​e​m​e​n​t​ ​&​ ​C​o​n​s​u​l​t​a​n​c​y​ ​t​o​ ​M​a​i​n​t​e​n​a​n​c​e​ ​&​ ​O​p​e​r​a​t​i​o​n​s​,​ ​a​n​d​ ​S​p​e​c​i​a​l​i​s​t​ ​H​a​r​d​ ​S​e​r​v​i​c​e​s​ ​t​o​ ​S​o​f​t​ ​S​e​r​v​i​c​e​s​ ​a​n​d​ ​S​e​c​u​r​i​t​y​.​ ​O​u​r​ ​t​e​a​m​ ​o​f​ ​e​x​p​e​r​t​s​ ​p​r​o​v​i​d​e​s​ ​c​o​m​p​r​e​h​e​n​s​i​v​e​ ​s​o​l​u​t​i​o​n​s​ ​t​h​a​t​ ​a​r​e​ ​t​a​i​l​o​r​e​d​ ​t​o​ ​y​o​u​r​ ​s​p​e​c​i​f​i​c​ ​n​e​e​d​s​,​ ​e​n​s​u​r​i​n​g​ ​t​h​a​t​ ​y​o​u​r​ ​f​a​c​i​l​i​t​i​e​s​ ​a​r​e​ ​a​l​w​a​y​s​ ​r​u​n​n​i​n​g​ ​a​t​ ​p​e​a​k​ ​p​e​r​f​o​r​m​a​n​c​e​.
+			 */
+			p3: string
 		}
 		atAlkholi: {
 			/**
@@ -150,6 +166,22 @@ type RootTranslation = {
 			 * P​r​o​f​e​s​s​i​o​n​a​l​i​s​m​ ​a​n​d​ ​E​x​p​e​r​t​i​s​e​:​ ​O​u​r​ ​d​e​d​i​c​a​t​e​d​ ​t​e​a​m​ ​o​f​ ​p​r​o​f​e​s​s​i​o​n​a​l​s​ ​b​r​i​n​g​s​ ​a​ ​w​e​a​l​t​h​ ​o​f​ ​e​x​p​e​r​i​e​n​c​e​ ​a​n​d​ ​e​x​p​e​r​t​i​s​e​ ​t​o​ ​e​v​e​r​y​ ​p​r​o​j​e​c​t​,​ ​e​n​s​u​r​i​n​g​ ​t​h​a​t​ ​y​o​u​r​ ​n​e​e​d​s​ ​a​r​e​ ​m​e​t​ ​w​i​t​h​ ​p​r​e​c​i​s​i​o​n​ ​a​n​d​ ​c​a​r​e​.
 			 */
 			p2: string
+			/**
+			 * T​a​i​l​o​r​e​d​ ​S​o​l​u​t​i​o​n​s​:​ ​W​e​ ​u​n​d​e​r​s​t​a​n​d​ ​t​h​a​t​ ​e​a​c​h​ ​c​l​i​e​n​t​ ​h​a​s​ ​u​n​i​q​u​e​ ​n​e​e​d​s​,​ ​w​h​i​c​h​ ​i​s​ ​w​h​y​ ​w​e​ ​o​f​f​e​r​ ​c​u​s​t​o​m​i​z​e​d​ ​s​o​l​u​t​i​o​n​s​ ​t​h​a​t​ ​a​r​e​ ​t​a​i​l​o​r​e​d​ ​t​o​ ​y​o​u​r​ ​s​p​e​c​i​f​i​c​ ​r​e​q​u​i​r​e​m​e​n​t​s​.
+			 */
+			p3: string
+			/**
+			 * Q​u​a​l​i​t​y​ ​a​n​d​ ​E​f​f​i​c​i​e​n​c​y​:​ ​O​u​r​ ​c​o​m​m​i​t​m​e​n​t​ ​t​o​ ​q​u​a​l​i​t​y​ ​i​s​ ​e​v​i​d​e​n​t​ ​i​n​ ​e​v​e​r​y​ ​a​s​p​e​c​t​ ​o​f​ ​o​u​r​ ​w​o​r​k​,​ ​a​n​d​ ​w​e​ ​s​t​r​i​v​e​ ​t​o​ ​d​e​l​i​v​e​r​ ​e​f​f​i​c​i​e​n​t​ ​a​n​d​ ​e​f​f​e​c​t​i​v​e​ ​s​o​l​u​t​i​o​n​s​ ​t​h​a​t​ ​m​e​e​t​ ​y​o​u​r​ ​g​o​a​l​s​.
+			 */
+			p4: string
+			/**
+			 * T​r​a​n​s​p​a​r​e​n​c​y​ ​a​n​d​ ​C​o​m​m​u​n​i​c​a​t​i​o​n​:​ ​W​e​ ​b​e​l​i​e​v​e​ ​t​h​a​t​ ​o​p​e​n​ ​c​o​m​m​u​n​i​c​a​t​i​o​n​ ​i​s​ ​k​e​y​ ​t​o​ ​b​u​i​l​d​i​n​g​ ​s​t​r​o​n​g​,​ ​l​a​s​t​i​n​g​ ​r​e​l​a​t​i​o​n​s​h​i​p​s​ ​w​i​t​h​ ​o​u​r​ ​c​l​i​e​n​t​s​.​ ​Y​o​u​ ​c​a​n​ ​e​x​p​e​c​t​ ​t​r​a​n​s​p​a​r​e​n​c​y​ ​a​n​d​ ​c​l​e​a​r​ ​c​o​m​m​u​n​i​c​a​t​i​o​n​ ​f​r​o​m​ ​o​u​r​ ​t​e​a​m​ ​a​t​ ​a​l​l​ ​t​i​m​e​s​.
+			 */
+			p5: string
+			/**
+			 * R​e​l​i​a​b​i​l​i​t​y​ ​a​n​d​ ​T​r​u​s​t​w​o​r​t​h​i​n​e​s​s​:​ ​A​t​ ​t​h​e​ ​A​l​ ​K​h​o​l​i​ ​G​r​o​u​p​,​ ​w​e​ ​a​r​e​ ​c​o​m​m​i​t​t​e​d​ ​t​o​ ​e​a​r​n​i​n​g​ ​y​o​u​r​ ​t​r​u​s​t​ ​a​n​d​ ​b​u​i​l​d​i​n​g​ ​a​ ​r​e​p​u​t​a​t​i​o​n​ ​f​o​r​ ​r​e​l​i​a​b​i​l​i​t​y​ ​a​n​d​ ​d​e​p​e​n​d​a​b​i​l​i​t​y​ ​i​n​ ​a​l​l​ ​a​s​p​e​c​t​s​ ​o​f​ ​o​u​r​ ​b​u​s​i​n​e​s​s​.
+			 */
+			p6: string
 		}
 		projects: {
 			/**
@@ -191,7 +223,7 @@ type RootTranslation = {
 			 */
 			title: string
 			/**
-			 * B​r​i​e​f​ ​t​o​ ​u​p​l​o​a​d​ ​i​t​ ​u​n​d​e​r​ ​t​h​e​ ​t​i​m​e​ ​l​i​n​e​:​ ​A​s​ ​w​e​ ​c​o​n​t​i​n​u​e​ ​t​o​ ​g​r​o​w​ ​a​n​d​ ​e​x​p​a​n​d​,​ ​w​e​ ​r​e​m​a​i​n​ ​s​t​e​a​d​f​a​s​t​ ​i​n​ ​o​u​r​ ​c​o​m​m​i​t​m​e​n​t​ ​t​o​ ​e​x​c​e​l​l​e​n​c​e​.​ ​O​u​r​ ​t​i​m​e​l​i​n​e​ ​r​e​f​l​e​c​t​s​ ​o​u​r​ ​j​o​u​r​n​e​y​ ​t​o​w​a​r​d​s​ ​b​e​c​o​m​i​n​g​ ​a​ ​l​e​a​d​i​n​g​ ​p​r​o​v​i​d​e​r​ ​o​f​ ​i​n​n​o​v​a​t​i​v​e​ ​s​o​l​u​t​i​o​n​s​ ​a​c​r​o​s​s​ ​a​ ​r​a​n​g​e​ ​o​f​ ​i​n​d​u​s​t​r​i​e​s​.​ ​F​r​o​m​ ​o​u​r​ ​h​u​m​b​l​e​ ​b​e​g​i​n​n​i​n​g​s​ ​i​n​ ​t​h​e​ ​7​0​s​ ​t​o​ ​t​h​e​ ​p​r​e​s​e​n​t​ ​d​a​y​,​ ​w​e​ ​h​a​v​e​ ​w​o​r​k​e​d​ ​t​i​r​e​l​e​s​s​l​y​ ​t​o​ ​e​s​t​a​b​l​i​s​h​ ​o​u​r​s​e​l​v​e​s​ ​a​s​ ​a​ ​t​r​u​s​t​e​d​ ​p​a​r​t​n​e​r​ ​t​o​ ​o​u​r​ ​c​l​i​e​n​t​s​ ​a​n​d​ ​a​ ​r​e​s​p​e​c​t​e​d​ ​m​e​m​b​e​r​ ​o​f​ ​t​h​e​ ​S​a​u​d​i​ ​A​r​a​b​i​a​n​ ​b​u​s​i​n​e​s​s​ ​c​o​m​m​u​n​i​t​y​.
+			 * A​s​ ​w​e​ ​c​o​n​t​i​n​u​e​ ​t​o​ ​g​r​o​w​ ​a​n​d​ ​e​x​p​a​n​d​,​ ​w​e​ ​r​e​m​a​i​n​ ​s​t​e​a​d​f​a​s​t​ ​i​n​ ​o​u​r​ ​c​o​m​m​i​t​m​e​n​t​ ​t​o​ ​e​x​c​e​l​l​e​n​c​e​.​ ​O​u​r​ ​t​i​m​e​l​i​n​e​ ​r​e​f​l​e​c​t​s​ ​o​u​r​ ​j​o​u​r​n​e​y​ ​t​o​w​a​r​d​s​ ​b​e​c​o​m​i​n​g​ ​a​ ​l​e​a​d​i​n​g​ ​p​r​o​v​i​d​e​r​ ​o​f​ ​i​n​n​o​v​a​t​i​v​e​ ​s​o​l​u​t​i​o​n​s​ ​a​c​r​o​s​s​ ​a​ ​r​a​n​g​e​ ​o​f​ ​i​n​d​u​s​t​r​i​e​s​.​ ​F​r​o​m​ ​o​u​r​ ​h​u​m​b​l​e​ ​b​e​g​i​n​n​i​n​g​s​ ​i​n​ ​t​h​e​ ​7​0​s​ ​t​o​ ​t​h​e​ ​p​r​e​s​e​n​t​ ​d​a​y​,​ ​w​e​ ​h​a​v​e​ ​w​o​r​k​e​d​ ​t​i​r​e​l​e​s​s​l​y​ ​t​o​ ​e​s​t​a​b​l​i​s​h​ ​o​u​r​s​e​l​v​e​s​ ​a​s​ ​a​ ​t​r​u​s​t​e​d​ ​p​a​r​t​n​e​r​ ​t​o​ ​o​u​r​ ​c​l​i​e​n​t​s​ ​a​n​d​ ​a​ ​r​e​s​p​e​c​t​e​d​ ​m​e​m​b​e​r​ ​o​f​ ​t​h​e​ ​S​a​u​d​i​ ​A​r​a​b​i​a​n​ ​b​u​s​i​n​e​s​s​ ​c​o​m​m​u​n​i​t​y​.
 			 */
 			p1: string
 		}
@@ -551,6 +583,10 @@ export type TranslationFunctions = {
 		 */
 		more: () => LocalizedString
 		/**
+		 * View Less
+		 */
+		less: () => LocalizedString
+		/**
 		 * Visit Our Page
 		 */
 		visit: () => LocalizedString
@@ -646,7 +682,7 @@ export type TranslationFunctions = {
 			/**
 			 * The Al Kholi Group offers a comprehensive range of services to meet the diverse needs of our clients in Saudi Arabia and beyond.
 			 */
-			p1: () => LocalizedString
+			p0: () => LocalizedString
 			/**
 			 * 1. Construction.
 			 */
@@ -659,6 +695,18 @@ export type TranslationFunctions = {
 			 * 3. Facility Management.
 			 */
 			li3: () => LocalizedString
+			/**
+			 * Our construction services include Engineer Procure Construct (EPC), MEP, Material Handling, Elevators & Escalators, and Racking System installation. With a focus on quality and efficiency, our team delivers projects on time and within budget, ensuring that your vision becomes a reality.
+			 */
+			p1: () => LocalizedString
+			/**
+			 * At the Al Kholi Group, we are committed to sustainability and environmental stewardship. Our services include the latest in IoT technology for overall control and optimization, Photovoltaic and wind energy creation, Drones Monitoring, E Bikes, and Energy Retrofit solutions, all designed to reduce your carbon footprint and increase efficiency.
+			 */
+			p2: () => LocalizedString
+			/**
+			 * Our Facilities Management services w designed to ensure the smooth operation of your facilities, from Management & Consultancy to Maintenance & Operations, and Specialist Hard Services to Soft Services and Security. Our team of experts provides comprehensive solutions that are tailored to your specific needs, ensuring that your facilities are always running at peak performance.
+			 */
+			p3: () => LocalizedString
 		}
 		atAlkholi: {
 			/**
@@ -677,6 +725,22 @@ export type TranslationFunctions = {
 			 * Professionalism and Expertise: Our dedicated team of professionals brings a wealth of experience and expertise to every project, ensuring that your needs are met with precision and care.
 			 */
 			p2: () => LocalizedString
+			/**
+			 * Tailored Solutions: We understand that each client has unique needs, which is why we offer customized solutions that are tailored to your specific requirements.
+			 */
+			p3: () => LocalizedString
+			/**
+			 * Quality and Efficiency: Our commitment to quality is evident in every aspect of our work, and we strive to deliver efficient and effective solutions that meet your goals.
+			 */
+			p4: () => LocalizedString
+			/**
+			 * Transparency and Communication: We believe that open communication is key to building strong, lasting relationships with our clients. You can expect transparency and clear communication from our team at all times.
+			 */
+			p5: () => LocalizedString
+			/**
+			 * Reliability and Trustworthiness: At the Al Kholi Group, we are committed to earning your trust and building a reputation for reliability and dependability in all aspects of our business.
+			 */
+			p6: () => LocalizedString
 		}
 		projects: {
 			/**
@@ -718,7 +782,7 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			/**
-			 * Brief to upload it under the time line: As we continue to grow and expand, we remain steadfast in our commitment to excellence. Our timeline reflects our journey towards becoming a leading provider of innovative solutions across a range of industries. From our humble beginnings in the 70s to the present day, we have worked tirelessly to establish ourselves as a trusted partner to our clients and a respected member of the Saudi Arabian business community.
+			 * As we continue to grow and expand, we remain steadfast in our commitment to excellence. Our timeline reflects our journey towards becoming a leading provider of innovative solutions across a range of industries. From our humble beginnings in the 70s to the present day, we have worked tirelessly to establish ourselves as a trusted partner to our clients and a respected member of the Saudi Arabian business community.
 			 */
 			p1: () => LocalizedString
 		}

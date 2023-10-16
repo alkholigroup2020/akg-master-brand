@@ -18,7 +18,7 @@
 			/images/about/timeLine/asset-03_1400x700.webp 1280w,
 			/images/about/timeLine/asset-03_1800x810.webp 1536w,
 			/images/about/timeLine/asset-03_2000x800.webp 2000w"
-			class="w-full aspect-[1/0.9] min-[450px]:aspect-[1/0.8] sm:aspect-[1/0.7] md:aspect-[1/0.6] lg:aspect-[1/0.5] xl:aspect-[1/0.45] 2xl:aspect-[1/0.4]"
+			class="w-full aspect-[1/1.1] min-[330px]:aspect-[1/0.9] min-[450px]:aspect-[1/0.8] min-[500px]:aspect-[1/0.7] sm:aspect-[1/0.7] md:aspect-[1/0.6] lg:aspect-[1/0.5] xl:aspect-[1/0.45] 2xl:aspect-[1/0.4]"
 		/>
 
 		<div class=" absolute inset-0 w-[100%] flex" dir="ltr">
@@ -43,18 +43,9 @@
 					>
 						<p class="mb-2 min-[350px]:mb-3 md:mb-5 lg:mb-8 2xl:mb-12">AlKholi Group</p>
 					</div>
-					<!-- <div
-						class="hidden min-[300px]:block pl-3 min-[450px]:pl-[10%] lg:pl-[25%] 2xl:pl-[50%] text-xs sm:text-sm md:text-base"
-					>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet obcaecati tempore
-							pariatur fuga dolor corporis omnis doloremque temporibus soluta. Aliquid quisquam
-							suscipit dolore accusamus omnis repellat tenetur consectetur, ea totam, officiis
-							voluptatum. Possimus quod quaerat voluptatibus,
-						</p>
-					</div> -->
 					<div
-						class="hidden min-[300px]:block pl-3 min-[450px]:pl-[10%] lg:pl-[25%] 2xl:pl-[30%] text-sm sm:text-base md:text-lg xl:text-xl"
+						class="hidden min-[300px]:block pl-3 min-[450px]:pl-[10%] lg:pl-[25%] 2xl:pl-[30%]
+						text-xs sm:text-base md:text-lg xl:text-xl"
 					>
 						<p class=" {$currentAppLang === 'ar' ? 'ar-font' : ''}">
 							{$LL.about.timeline.p1()}

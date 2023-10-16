@@ -3,6 +3,9 @@
 	import SectionSize from '$lib/generalComponents/SectionSize.svelte';
 	import { currentAppLang } from '$lib/stores/store';
 	import { pageDirection } from '$lib/stores/store';
+	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
+
+	let showMore = false;
 </script>
 
 <section>
@@ -34,10 +37,36 @@
 						? 'ar-font'
 						: 'normal-thin'} text-sm sm:text-base md:text-lg xl:text-xl xl:leading-8 text-white"
 				>
-					{$LL.home.services.p1()}
+					{$LL.home.services.p0()}
 				</p>
+				<!-- accordion -->
+				<div class="text-white {$currentAppLang === 'ar' ? 'ar-font' : 'normal-thin'}">
+					<Accordion autocollapse>
+						<AccordionItem regionControl={$currentAppLang === 'ar' ? 'text-right' : ''}>
+							<svelte:fragment slot="summary"
+								><span class="font-bold">{$LL.home.services.li1()}</span></svelte:fragment
+							>
+							<svelte:fragment slot="content">
+								<span>{$LL.home.services.p1()}</span>
+							</svelte:fragment>
+						</AccordionItem>
+						<AccordionItem regionControl={$currentAppLang === 'ar' ? 'text-right' : ''}>
+							<svelte:fragment slot="summary"
+								><span class="font-bold">{$LL.home.services.li2()}</span></svelte:fragment
+							>
+							<svelte:fragment slot="content">{$LL.home.services.p2()}</svelte:fragment>
+						</AccordionItem>
+						<AccordionItem regionControl={$currentAppLang === 'ar' ? 'text-right' : ''}>
+							<svelte:fragment slot="summary"
+								><span class="font-bold">{$LL.home.services.li3()}</span></svelte:fragment
+							>
+							<svelte:fragment slot="content">{$LL.home.services.p3()}</svelte:fragment>
+						</AccordionItem>
+					</Accordion>
+				</div>
+
 				<!-- list -->
-				<ul
+				<!-- <ul
 					class="space-y-1 xl:space-y-5 text-sm sm:text-base md:text-lg xl:text-xl text-white {$currentAppLang ===
 					'ar'
 						? 'ar-font'
@@ -46,7 +75,7 @@
 					<li>{$LL.home.services.li1()}</li>
 					<li>{$LL.home.services.li2()}</li>
 					<li>{$LL.home.services.li3()}</li>
-				</ul>
+				</ul> -->
 			</div>
 		</div>
 
@@ -87,11 +116,100 @@
 				>
 					{$LL.home.atAlkholi.p2()}
 				</p>
-				<!-- more -->
-				<!-- <div>
-					<button class="btn !bg-transparent text-white text-xs sm:text-sm md:text-base px-0"
-						>VIEW MORE
-						<span class="mx-3">
+
+				<!-- more btn -->
+				{#if !showMore}
+					<div>
+						<button
+							on:click={() => {
+								showMore = true;
+							}}
+							class="btn !bg-transparent text-white text-xs sm:text-sm md:text-base px-0 uppercase {$currentAppLang ===
+							'ar'
+								? 'ar-font'
+								: ''}"
+							>{$LL.generals.more()}
+							<span class="mx-3 {$currentAppLang === 'ar' ? 'rotate-180' : ''} ">
+								<svg
+									viewBox="0 0 1024 1024"
+									class="icon w-4 h-4"
+									version="1.1"
+									xmlns="http://www.w3.org/2000/svg"
+									><path
+										d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z"
+										fill="#FFF"
+									/></svg
+								>
+							</span>
+						</button>
+					</div>
+				{/if}
+			</div>
+
+			<!-- image -->
+			<div class="lg:w-[50%]">
+				<img
+					src="images/home/servicesSection/asset-06_800x480.webp"
+					srcset="images/home/servicesSection/asset-06_800x400.webp 1024w, images/home/servicesSection/asset-06_800x800.webp 1280w, images/home/servicesSection/asset-06_800x640.webp 1536w, images/home/servicesSection/asset-06_800x480.webp 2000w"
+					alt="an IT person working in data center"
+					class="w-full aspect-[1/0.5] lg:aspect-[1/1] xl:aspect-[1/0.8] 2xl:aspect-[1/0.6]"
+				/>
+			</div>
+		</div>
+
+		<!-- the view more result -->
+		{#if showMore}
+			<div
+				class="bg-primary-500 grid lg:grid-cols-2 gap-5 xl:gap-8 px-3 sm:px-8 xl:px-12 lg:pt-8 xl:pt-12 2xl:pt-16 pb-5 xl:pb-12"
+				dir={$pageDirection}
+			>
+				<p
+					class="normal-thin text-sm sm:text-base md:text-lg xl:text-xl xl:leading-8 text-white {$currentAppLang ===
+					'ar'
+						? 'ar-font'
+						: ''}"
+				>
+					{$LL.home.atAlkholi.p3()}
+				</p>
+				<p
+					class="normal-thin text-sm sm:text-base md:text-lg xl:text-xl xl:leading-8 text-white {$currentAppLang ===
+					'ar'
+						? 'ar-font'
+						: ''}"
+				>
+					{$LL.home.atAlkholi.p4()}
+				</p>
+				<p
+					class="normal-thin text-sm sm:text-base md:text-lg xl:text-xl xl:leading-8 text-white {$currentAppLang ===
+					'ar'
+						? 'ar-font'
+						: ''}"
+				>
+					{$LL.home.atAlkholi.p5()}
+				</p>
+				<p
+					class="normal-thin text-sm sm:text-base md:text-lg xl:text-xl xl:leading-8 text-white {$currentAppLang ===
+					'ar'
+						? 'ar-font'
+						: ''}"
+				>
+					{$LL.home.atAlkholi.p6()}
+				</p>
+			</div>
+
+			<!-- less btn -->
+			{#if showMore}
+				<div class="bg-primary-500 px-3 sm:px-8 xl:px-12 pb-8 xl:pb-12" dir={$pageDirection}>
+					<button
+						on:click={() => {
+							showMore = false;
+						}}
+						class="btn !bg-transparent text-white text-xs sm:text-sm md:text-base px-0 uppercase {$currentAppLang ===
+						'ar'
+							? 'ar-font'
+							: ''}"
+						>{$LL.generals.less()}
+						<span class="mx-3 {$currentAppLang === 'ar' ? 'rotate-180' : ''} ">
 							<svg
 								viewBox="0 0 1024 1024"
 								class="icon w-4 h-4"
@@ -104,17 +222,8 @@
 							>
 						</span>
 					</button>
-				</div> -->
-			</div>
-			<!-- image -->
-			<div class="lg:w-[50%]">
-				<img
-					src="images/home/servicesSection/asset-06_800x480.webp"
-					srcset="images/home/servicesSection/asset-06_800x400.webp 1024w, images/home/servicesSection/asset-06_800x800.webp 1280w, images/home/servicesSection/asset-06_800x640.webp 1536w, images/home/servicesSection/asset-06_800x480.webp 2000w"
-					alt="an IT person working in data center"
-					class="w-full aspect-[1/0.5] lg:aspect-[1/1] xl:aspect-[1/0.8] 2xl:aspect-[1/0.6]"
-				/>
-			</div>
-		</div>
+				</div>
+			{/if}
+		{/if}
 	</div>
 </section>

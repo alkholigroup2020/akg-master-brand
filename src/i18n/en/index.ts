@@ -4,6 +4,7 @@ const en: BaseTranslation = {
 	title: 'Alkholi Group',
 	generals: {
 		more: 'View More',
+		less: 'View Less',
 		visit: 'Visit Our Page'
 	},
 	nav: {
@@ -37,16 +38,23 @@ const en: BaseTranslation = {
 		},
 		services: {
 			title: 'OUR SERVICES',
-			p1: 'The Al Kholi Group offers a comprehensive range of services to meet the diverse needs of our clients in Saudi Arabia and beyond.',
+			p0: 'The Al Kholi Group offers a comprehensive range of services to meet the diverse needs of our clients in Saudi Arabia and beyond.',
 			li1: '1. Construction.',
 			li2: '2. Sustainability.',
-			li3: '3. Facility Management.'
+			li3: '3. Facility Management.',
+			p1: 'Our construction services include Engineer Procure Construct (EPC), MEP, Material Handling, Elevators & Escalators, and Racking System installation. With a focus on quality and efficiency, our team delivers projects on time and within budget, ensuring that your vision becomes a reality.',
+			p2: 'At the Al Kholi Group, we are committed to sustainability and environmental stewardship. Our services include the latest in IoT technology for overall control and optimization, Photovoltaic and wind energy creation, Drones Monitoring, E Bikes, and Energy Retrofit solutions, all designed to reduce your carbon footprint and increase efficiency.',
+			p3: 'Our Facilities Management services w designed to ensure the smooth operation of your facilities, from Management & Consultancy to Maintenance & Operations, and Specialist Hard Services to Soft Services and Security. Our team of experts provides comprehensive solutions that are tailored to your specific needs, ensuring that your facilities are always running at peak performance.'
 		},
 		atAlkholi: {
 			title: 'AT AL KHOLI GROUP',
 			q1: 'WHAT CAN YOU EXPECT FROM US?',
 			p1: 'As an established and reputable organization, the Al Kholi Group is committed to delivering exceptional services to our valued clients. When you partner with us, you can expect:',
-			p2: 'Professionalism and Expertise: Our dedicated team of professionals brings a wealth of experience and expertise to every project, ensuring that your needs are met with precision and care.'
+			p2: 'Professionalism and Expertise: Our dedicated team of professionals brings a wealth of experience and expertise to every project, ensuring that your needs are met with precision and care.',
+			p3: 'Tailored Solutions: We understand that each client has unique needs, which is why we offer customized solutions that are tailored to your specific requirements.',
+			p4: 'Quality and Efficiency: Our commitment to quality is evident in every aspect of our work, and we strive to deliver efficient and effective solutions that meet your goals.',
+			p5: 'Transparency and Communication: We believe that open communication is key to building strong, lasting relationships with our clients. You can expect transparency and clear communication from our team at all times.',
+			p6: 'Reliability and Trustworthiness: At the Al Kholi Group, we are committed to earning your trust and building a reputation for reliability and dependability in all aspects of our business.'
 		},
 		projects: {
 			title: 'projects'
@@ -66,7 +74,7 @@ const en: BaseTranslation = {
 		},
 		timeline: {
 			title: 'Time line',
-			p1: 'Brief to upload it under the time line: As we continue to grow and expand, we remain steadfast in our commitment to excellence. Our timeline reflects our journey towards becoming a leading provider of innovative solutions across a range of industries. From our humble beginnings in the 70s to the present day, we have worked tirelessly to establish ourselves as a trusted partner to our clients and a respected member of the Saudi Arabian business community.'
+			p1: 'As we continue to grow and expand, we remain steadfast in our commitment to excellence. Our timeline reflects our journey towards becoming a leading provider of innovative solutions across a range of industries. From our humble beginnings in the 70s to the present day, we have worked tirelessly to establish ourselves as a trusted partner to our clients and a respected member of the Saudi Arabian business community.'
 		},
 		missionVision: {
 			missionT: 'Mission',

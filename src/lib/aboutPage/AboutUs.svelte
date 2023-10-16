@@ -4,6 +4,7 @@
 	import { pageDirection } from '$lib/stores/store';
 	import { currentAppLang } from '$lib/stores/store';
 	export let sectionData: any;
+	console.log(sectionData.data.attributes.storyParagraph);
 </script>
 
 <!-- <pre>{sectionData.data.attributes.aboutTitle}</pre>
@@ -97,7 +98,12 @@
 						<p
 							class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
 						>
-							{sectionData.data.attributes.storyParagraph}
+							{sectionData.data.attributes.storyParagraph[0].paragraphText}
+						</p>
+						<p
+							class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify pt-3 lg:pt-5"
+						>
+							{sectionData.data.attributes.storyParagraph[1].paragraphText}
 						</p>
 					</div>
 				{:else if selected === 'values'}
@@ -107,15 +113,45 @@
 						>
 							{sectionData.data.attributes.valuesTitle}
 						</p>
-						<p
-							class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
-						>
-							{sectionData.data.attributes.valuesParagraph}
-						</p>
+						<div class="space-y-2">
+							<p
+								class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
+							>
+								<span class="font-bold"
+									>{sectionData.data.attributes.valuesParagraphs[0].paragraphTitle}</span
+								>
+								<span>{sectionData.data.attributes.valuesParagraphs[0].paragraphText}</span>
+							</p>
+							<p
+								class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
+							>
+								<span class="font-bold"
+									>{sectionData.data.attributes.valuesParagraphs[1].paragraphTitle}</span
+								>
+								<span>{sectionData.data.attributes.valuesParagraphs[1].paragraphText}</span>
+							</p>
+							<p
+								class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
+							>
+								<span class="font-bold"
+									>{sectionData.data.attributes.valuesParagraphs[2].paragraphTitle}</span
+								>
+								<span>{sectionData.data.attributes.valuesParagraphs[2].paragraphText}</span>
+							</p>
+							<p
+								class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
+							>
+								<span class="font-bold"
+									>{sectionData.data.attributes.valuesParagraphs[3].paragraphTitle}</span
+								>
+								<span>{sectionData.data.attributes.valuesParagraphs[3].paragraphText}</span>
+							</p>
+						</div>
 					</div>
 				{/if}
 			</div>
 		{:else}
+			<!-- Arabic -->
 			<!-- Buttons Section before sm -->
 			<div
 				class="w-screen flex sm:hidden text-lg sm:text-2xl lg:text-2xl xl:text-3xl text-white ar-font"
@@ -201,7 +237,14 @@
 						<p
 							class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
 						>
-							{sectionData.data.attributes.localizations.data[0].attributes.storyParagraph}
+							{sectionData.data.attributes.localizations.data[0].attributes.ourHistoryContent[0]
+								.theFirst}
+						</p>
+						<p
+							class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify pt-3 xl:pt-5"
+						>
+							{sectionData.data.attributes.localizations.data[0].attributes.ourHistoryContent[1]
+								.theSecond}
 						</p>
 					</div>
 				{:else if selected === 'values'}
@@ -211,11 +254,56 @@
 						>
 							{sectionData.data.attributes.localizations.data[0].attributes.valuesTitle}
 						</p>
-						<p
-							class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
-						>
-							{sectionData.data.attributes.localizations.data[0].attributes.valuesParagraph}
-						</p>
+						<div class="space-y-2">
+							<p
+								class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
+							>
+								<span class="font-bold"
+									>{sectionData.data.attributes.localizations.data[0].attributes.valuesParagraphs[0]
+										.paragraphTitle}</span
+								>
+								<span
+									>{sectionData.data.attributes.localizations.data[0].attributes.valuesParagraphs[0]
+										.paragraphText}</span
+								>
+							</p>
+							<p
+								class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
+							>
+								<span class="font-bold"
+									>{sectionData.data.attributes.localizations.data[0].attributes.valuesParagraphs[1]
+										.paragraphTitle}</span
+								>
+								<span
+									>{sectionData.data.attributes.localizations.data[0].attributes.valuesParagraphs[1]
+										.paragraphText}</span
+								>
+							</p>
+							<p
+								class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
+							>
+								<span class="font-bold"
+									>{sectionData.data.attributes.localizations.data[0].attributes.valuesParagraphs[2]
+										.paragraphTitle}</span
+								>
+								<span
+									>{sectionData.data.attributes.localizations.data[0].attributes.valuesParagraphs[2]
+										.paragraphText}</span
+								>
+							</p>
+							<p
+								class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
+							>
+								<span class="font-bold"
+									>{sectionData.data.attributes.localizations.data[0].attributes.valuesParagraphs[3]
+										.paragraphTitle}</span
+								>
+								<span
+									>{sectionData.data.attributes.localizations.data[0].attributes.valuesParagraphs[3]
+										.paragraphText}</span
+								>
+							</p>
+						</div>
 					</div>
 				{/if}
 			</div>

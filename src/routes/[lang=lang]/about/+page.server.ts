@@ -19,19 +19,29 @@ export const load = (async () => {
 								attributes {
 									aboutTitle
 									aboutParagraph
-									storyTitle
-									storyParagraph
 									valuesTitle
-									valuesParagraph
+									valuesParagraphs {
+										paragraphTitle
+										paragraphText
+									}
+									storyTitle
+									storyParagraph {
+										paragraphText
+									}
 								}
 							}
 						}
 						aboutTitle
 						aboutParagraph
-						storyTitle
-						storyParagraph
 						valuesTitle
-						valuesParagraph
+						valuesParagraphs {
+							paragraphTitle
+							paragraphText
+						}
+						storyTitle
+						storyParagraph {
+							paragraphText
+						}
 					}
 				}
 			}
