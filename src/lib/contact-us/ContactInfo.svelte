@@ -8,7 +8,7 @@
 	<div class="container mx-auto px-3">
 		<div
 			dir={$pageDirection}
-			class="grid gap-4 sm:gap-2 md:gap-4 min-[420px]:grid-cols-2 sm:grid-cols-3 pt-8 md:pt-16 2xl:pt-20 max-[420px]:space-y-4"
+			class="grid gap-4 min-[520px]:grid-cols-2 lg:grid-cols-3 pt-8 md:pt-16 2xl:pt-20 max-[520px]:space-y-4"
 		>
 			<div class="flex space-x-2 lg:space-x-6">
 				<div>

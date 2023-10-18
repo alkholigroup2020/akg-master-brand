@@ -4,7 +4,6 @@
 	import { pageDirection } from '$lib/stores/store';
 	import { currentAppLang } from '$lib/stores/store';
 	export let sectionData: any;
-	console.log(sectionData.data.attributes.storyParagraph);
 </script>
 
 <!-- <pre>{sectionData.data.attributes.aboutTitle}</pre>
@@ -14,7 +13,7 @@
 	<div class="grid sm:grid-cols-3 lg:grid-cols-4 py-8 sm:py-16">
 		{#if $currentAppLang === 'en'}
 			<!-- Buttons Section before sm -->
-			<div class="w-screen flex sm:hidden text-lg sm:text-2xl lg:text-2xl xl:text-3xl text-white">
+			<div class="w-screen flex sm:hidden text-base sm:text-2xl lg:text-2xl xl:text-3xl text-white">
 				<button
 					class="path-small w-1/3 h-16 mx-2 hover:cursor-pointer {selected === 'about'
 						? 'bg-success-500'
@@ -74,7 +73,7 @@
 			</div>
 
 			<!-- Text Section -->
-			<div class="sm:col-span-2 lg:col-span-3 pt-3 sm:pt-4">
+			<div class="sm:col-span-2 lg:col-span-3 pt-3 sm:pt-0">
 				{#if selected === 'about'}
 					<div>
 						<p
@@ -213,7 +212,7 @@
 			</div>
 
 			<!-- Text Section -->
-			<div class="sm:col-span-2 lg:col-span-3 pt-3 sm:pt-4 ar-font" dir={$pageDirection}>
+			<div class="sm:col-span-2 lg:col-span-3 pt-3 sm:pt-0 ar-font" dir={$pageDirection}>
 				{#if selected === 'about'}
 					<div>
 						<p
@@ -237,14 +236,14 @@
 						<p
 							class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
 						>
-							{sectionData.data.attributes.localizations.data[0].attributes.ourHistoryContent[0]
-								.theFirst}
+							{sectionData.data.attributes.localizations.data[0].attributes.storyParagraph[0]
+								.paragraphText}
 						</p>
 						<p
 							class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify pt-3 xl:pt-5"
 						>
-							{sectionData.data.attributes.localizations.data[0].attributes.ourHistoryContent[1]
-								.theSecond}
+							{sectionData.data.attributes.localizations.data[0].attributes.storyParagraph[1]
+								.paragraphText}
 						</p>
 					</div>
 				{:else if selected === 'values'}

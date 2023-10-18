@@ -14,9 +14,9 @@
 			>
 				<!-- mobile size only -->
 				<div class="flex flex-col gap-2 text-white md:hidden">
-					<div>
-						<div class="flex flex-col items-center pt-5">
-							<div>
+					<div class="">
+						<div class="flex flex-col items-center align-middle pt-5">
+							<div class="flex justify-center">
 								<!-- <img
 									loading="lazy"
 									src="/images/nav/white_140x50.webp"
@@ -24,11 +24,12 @@
 									alt="company's logo"
 									class="w-[80px] h-[35px] lg:w-[140px] lg:h-[50px] aspect-[16/7] lg:aspect-[14/5]"
 								/> -->
+
 								<img
 									loading="lazy"
 									src="/images/nav/white_450x200.webp"
 									alt="company's logo"
-									class="w-[90px] h-full aspect-auto"
+									class="w-1/4 h-full aspect-auto"
 								/>
 							</div>
 						</div>

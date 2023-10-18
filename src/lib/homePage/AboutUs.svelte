@@ -19,7 +19,7 @@
 	>
 		{#if $currentAppLang === 'en'}
 			<!-- Buttons Section before sm -->
-			<div class="w-screen flex sm:hidden text-lg sm:text-2xl lg:text-2xl xl:text-3xl text-white">
+			<div class="w-screen flex sm:hidden text-base sm:text-2xl lg:text-2xl xl:text-3xl text-white">
 				<button
 					class="path-small w-1/3 h-16 mx-2 hover:cursor-pointer {selected === 'about'
 						? 'bg-success-500'
@@ -77,7 +77,7 @@
 			</div>
 
 			<!-- Text Section -->
-			<div class="sm:col-span-2 lg:col-span-3 pt-3 sm:pt-4">
+			<div class="sm:col-span-2 lg:col-span-3 pt-3 sm:pt-0">
 				{#if selected === 'about'}
 					<div in:fly={{ duration: 1200, y: 200 }}>
 						<p
@@ -179,7 +179,7 @@
 			</div>
 
 			<!-- Text Section -->
-			<div class="sm:col-span-2 lg:col-span-3 pt-3 sm:pt-4" dir={$pageDirection}>
+			<div class="sm:col-span-2 lg:col-span-3 pt-3 sm:pt-0" dir={$pageDirection}>
 				{#if selected === 'about'}
 					<div in:fly={{ duration: 1200, y: 200 }}>
 						<p

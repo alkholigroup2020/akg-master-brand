@@ -16,13 +16,12 @@
 		<div class="flex space-x-4 items-center">
 			<!-- company's logo -->
 			<a aria-label="home page link" href={`/${$currentAppLang}/`}>
-				<div class="-mt-1">
-					<!-- srcset="/images/nav/white_240x105 1024w, /images/nav/white_420x150.webp 8000w" -->
+				<div class="-mt-1 w-[120px]">
 					<img
 						loading="lazy"
-						src="/images/nav/white_450x200.webp"
+						src="/images/nav/white_600x270.webp"
 						alt="company's logo"
-						class="w-[120px] h-fit aspect-auto"
+						class="w-full aspect-[1/0.45]"
 					/>
 				</div>
 			</a>
@@ -163,6 +162,7 @@
 			</div>
 		</div>
 	</svelte:fragment>
+
 	<svelte:fragment slot="trail">
 		<div class="flex items-center space-x-5">
 			<!-- language switcher -->

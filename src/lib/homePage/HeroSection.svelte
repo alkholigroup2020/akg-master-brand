@@ -98,17 +98,17 @@
 			</div>
 
 			<!-- logo on xs -->
-			<div class="sm:hidden my-3" dir="ltr">
+			<div class="sm:hidden my-3 w-[90px]" dir="ltr">
 				<img
 					loading="lazy"
-					src="/images/nav/white_450x200.webp"
+					src="/images/nav/white_450x225.webp"
 					alt="company's logo"
-					class="w-[75px] h-10 aspect-auto"
+					class="w-full aspect-[1/0.5]"
 				/>
 			</div>
 
 			<!-- hamburger & logo -->
-			<div class="absolute left-0 top-12 sm:top-0 m-3 min-[370px]:m-5 sm:m-3 sm:mt-10" dir="ltr">
+			<div class="absolute left-0 top-14 sm:top-0 m-3 min-[370px]:m-5 sm:m-3 sm:mt-10" dir="ltr">
 				<Menu {outsideClicked} on:message={handleMessage} />
 			</div>
 

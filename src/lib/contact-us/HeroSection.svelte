@@ -49,12 +49,12 @@
 			>
 				<div class="flex justify-between items-center">
 					<a aria-label="home page link" href={`/${$currentAppLang}/`}>
-						<div>
+						<div class="w-[90px]">
 							<img
 								loading="lazy"
-								src="/images/nav/white_450x200.webp"
+								src="/images/nav/white_450x225.webp"
 								alt="company's logo"
-								class="w-[75px] h-10 aspect-auto"
+								class="w-full aspect-[1/0.5]"
 							/>
 						</div>
 					</a>

@@ -22,7 +22,7 @@
 <IntroSection />
 <ServicesSection />
 <ProjectsSection />
-<ClientsTestimonials />
+<!-- <ClientsTestimonials /> -->
 <MainFooter />
 
 <!-- <div class="h-96 w-full" /> -->
