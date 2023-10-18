@@ -61,6 +61,9 @@ const en: BaseTranslation = {
 		},
 		testimonials: {
 			title: 'client testimonials'
+		},
+		companies: {
+			title: 'OUR Companies'
 		}
 	},
 	divisions: {

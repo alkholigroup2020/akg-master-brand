@@ -61,6 +61,9 @@ const en: BaseTranslation = {
 		},
 		testimonials: {
 			title: 'آراء العــملاء'
+		},
+		companies: {
+			title: 'شـــركاتنا'
 		}
 	},
 	divisions: {

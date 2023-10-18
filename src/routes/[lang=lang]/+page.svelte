@@ -7,6 +7,7 @@
 	import ClientsTestimonials from '$lib/homePage/ClientsTestimonials.svelte';
 	import HeroSection from '$lib/homePage/HeroSection.svelte';
 	import IntroSection from '$lib/homePage/IntroSection.svelte';
+	import OurCompanies from '$lib/homePage/OurCompanies.svelte';
 	import ProjectsSection from '$lib/homePage/ProjectsSection.svelte';
 	import ServicesSection from '$lib/homePage/ServicesSection.svelte';
 	import { currentAppLang } from '$lib/stores/store';
@@ -22,6 +23,7 @@
 <IntroSection />
 <ServicesSection />
 <ProjectsSection />
+<OurCompanies />
 <!-- <ClientsTestimonials /> -->
 <MainFooter />
 

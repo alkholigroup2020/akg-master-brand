@@ -195,6 +195,12 @@ type RootTranslation = {
 			 */
 			title: string
 		}
+		companies: {
+			/**
+			 * O​U​R​ ​C​o​m​p​a​n​i​e​s
+			 */
+			title: string
+		}
 	}
 	divisions: {
 		/**
@@ -751,6 +757,12 @@ export type TranslationFunctions = {
 		testimonials: {
 			/**
 			 * client testimonials
+			 */
+			title: () => LocalizedString
+		}
+		companies: {
+			/**
+			 * OUR Companies
 			 */
 			title: () => LocalizedString
 		}
