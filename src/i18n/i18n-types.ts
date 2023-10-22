@@ -185,7 +185,7 @@ type RootTranslation = {
 		}
 		projects: {
 			/**
-			 * p​r​o​j​e​c​t​s
+			 * o​u​r​ ​p​r​o​j​e​c​t​s
 			 */
 			title: string
 		}
@@ -750,7 +750,7 @@ export type TranslationFunctions = {
 		}
 		projects: {
 			/**
-			 * projects
+			 * our projects
 			 */
 			title: () => LocalizedString
 		}

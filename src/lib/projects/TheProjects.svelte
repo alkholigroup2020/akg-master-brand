@@ -7,6 +7,11 @@
 
 	import { onMount } from 'svelte';
 
+	import { gsap } from 'gsap';
+	import { TextPlugin } from 'gsap/dist/TextPlugin';
+	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+	gsap.registerPlugin(ScrollTrigger, TextPlugin);
+
 	import { ConicGradient } from '@skeletonlabs/skeleton';
 	import type { ConicStop } from '@skeletonlabs/skeleton';
 	const conicStops: ConicStop[] = [
@@ -39,8 +44,20 @@
 		}
 	};
 
+	let textElement: any;
+	const theText = $LL.projects.title();
+
 	onMount(() => {
 		getProjectsData();
+		gsap.to(textElement, {
+			scrollTrigger: {
+				trigger: textElement,
+				start: 'top center',
+				toggleActions: 'restart none none none'
+			},
+			text: theText,
+			duration: 0.8
+		});
 	});
 
 	let navOpen = false;
@@ -51,7 +68,7 @@
 
 <section class="max-w-[1920px] mx-auto">
 	<!-- title -->
-	<div class="text-center">
+	<!-- <div class="text-center">
 		<p
 			class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-semibold text-primary-500 py-12 xl:py-16 uppercase {$currentAppLang ===
 			'ar'
@@ -60,6 +77,16 @@
 		>
 			{$LL.projects.title()}
 		</p>
+	</div> -->
+
+	<div class="text-center">
+		<p
+			bind:this={textElement}
+			class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-semibold text-primary-500 py-12 xl:py-16 uppercase {$currentAppLang ===
+			'ar'
+				? 'ar-font'
+				: ''}"
+		/>
 	</div>
 
 	<!-- tabs bar on xs -->

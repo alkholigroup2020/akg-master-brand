@@ -21,8 +21,8 @@
 			});
 			gsap.from(targets, {
 				duration: 0.8,
-				y: 300,
-				opacity: 0.2,
+				y: 200,
+				opacity: 0,
 				// ease: 'sine',
 				stagger: {
 					each: 0.8
@@ -42,9 +42,9 @@
 				}
 			});
 			gsap.from(targets, {
-				duration: 1.2,
-				y: 300,
-				opacity: 0.2,
+				duration: 1,
+				y: 200,
+				opacity: 0,
 				// ease: 'sine',
 				stagger: {
 					each: 0.8
@@ -98,13 +98,15 @@
 			</div>
 
 			<!-- logo on xs -->
-			<div class="sm:hidden my-3 w-[90px]" dir="ltr">
-				<img
-					loading="lazy"
-					src="/images/nav/white_450x225.webp"
-					alt="company's logo"
-					class="w-full aspect-[1/0.5]"
-				/>
+			<div class="w-full" dir="ltr">
+				<div class="sm:hidden my-3 w-[90px]">
+					<img
+						loading="lazy"
+						src="/images/nav/white_450x225.webp"
+						alt="company's logo"
+						class="w-full aspect-[1/0.5]"
+					/>
+				</div>
 			</div>
 
 			<!-- hamburger & logo -->
@@ -154,11 +156,6 @@
 				</div>
 			{:else}
 				<!-- ARABIC -->
-				<!-- 
-						in:fly={{ x: -200, delay: 200, duration: 2000 }}
-						in:fly={{ x: -200, delay: 1000, duration: 2000 }}
-						in:fly={{ x: -200, delay: 1800, duration: 2000 }}
-					-->
 				<div>
 					<div
 						style="overflow-x: hidden; overflow-y: hidden"

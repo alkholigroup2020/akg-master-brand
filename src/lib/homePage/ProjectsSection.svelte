@@ -1,24 +1,76 @@
 <script lang="ts">
 	import LL from '$i18n/i18n-svelte';
 	import { currentAppLang } from '$lib/stores/store';
-	import { pageDirection } from '$lib/stores/store';
+
+	import { onMount } from 'svelte';
+
+	let cardRefs: any[] = [];
+	for (let index = 0; index < 3; index++) {
+		cardRefs[index] = null;
+	}
+
+	import { gsap } from 'gsap';
+	import { TextPlugin } from 'gsap/dist/TextPlugin';
+	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+	gsap.registerPlugin(ScrollTrigger, TextPlugin);
+
+	let textElement: any;
+	const theText = $LL.home.projects.title();
+	const placeholderText = new Array(theText.length).fill('\u00A0').join(''); // Using non-breaking spaces as placeholders
+
+	// title animation
+	onMount(() => {
+		gsap.to(textElement, {
+			scrollTrigger: {
+				trigger: textElement,
+				start: 'top+=100 bottom-=100',
+				toggleActions: 'play none none none',
+				markers: false
+			},
+			text: theText,
+			duration: 1.2
+		});
+	});
+
+	// cards animation
+	onMount(() => {
+		cardRefs.forEach((ref, index) => {
+			let timeline = gsap.timeline({
+				scrollTrigger: {
+					trigger: ref,
+					start: 'top bottom-=400',
+					end: 'bottom top',
+					markers: false,
+					scrub: false
+				}
+			});
+
+			timeline.from(ref, {
+				duration: 0.5,
+				y: '100px',
+				opacity: 0,
+				delay: index * 0.2
+			});
+		});
+	});
 </script>
 
 <section class="container px-3 mx-auto py-5 xl:py-12">
 	<!-- title -->
-	<div class="text-center">
-		<h2
+	<div class="text-center py-5 md:py-8">
+		<p
+			bind:this={textElement}
 			class="text-2xl uppercase sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-semibold text-primary-500 mb-8 xl:mb-16 {$currentAppLang ===
 			'ar'
 				? 'ar-font'
 				: ''}"
 		>
-			{$LL.home.projects.title()}
-		</h2>
+			{placeholderText}
+		</p>
 	</div>
 	<!-- cards -->
 	<div class="grid gap-4 xl:gap-8 md:grid-cols-2 xl:grid-cols-3">
-		<div class="card rounded-none bg-[#f6f6f9]">
+		<div class="card rounded-none bg-[#f6f6f9]" bind:this={cardRefs[0]}>
 			<div class="max-md:flex">
 				<!-- image -->
 				<div class="max-md:w-1/2">
@@ -54,7 +106,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="card rounded-none bg-[#f6f6f9]">
+		<div class="card rounded-none bg-[#f6f6f9]" bind:this={cardRefs[1]}>
 			<div class="max-md:flex">
 				<!-- image -->
 				<div class="max-md:w-1/2">
@@ -90,7 +142,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="card rounded-none bg-[#f6f6f9] md:hidden xl:block">
+		<div class="card rounded-none bg-[#f6f6f9] md:hidden xl:block" bind:this={cardRefs[2]}>
 			<div class="max-md:flex">
 				<!-- image -->
 				<div class="max-md:w-1/2">

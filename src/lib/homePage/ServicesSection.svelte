@@ -1,10 +1,9 @@
 <script lang="ts">
 	import LL from '$i18n/i18n-svelte';
-	import SectionSize from '$lib/generalComponents/SectionSize.svelte';
 	import { currentAppLang } from '$lib/stores/store';
 	import { pageDirection } from '$lib/stores/store';
 	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
-
+	import { fade } from 'svelte/transition';
 	let showMore = false;
 </script>
 
@@ -47,35 +46,31 @@
 								><span class="font-bold">{$LL.home.services.li1()}</span></svelte:fragment
 							>
 							<svelte:fragment slot="content">
-								<span>{$LL.home.services.p1()}</span>
+								<span transition:fade={{ duration: 1000 }}>{$LL.home.services.p1()}</span>
 							</svelte:fragment>
 						</AccordionItem>
 						<AccordionItem regionControl={$currentAppLang === 'ar' ? 'text-right' : ''}>
 							<svelte:fragment slot="summary"
 								><span class="font-bold">{$LL.home.services.li2()}</span></svelte:fragment
 							>
-							<svelte:fragment slot="content">{$LL.home.services.p2()}</svelte:fragment>
+							<svelte:fragment slot="content">
+								<span transition:fade={{ duration: 1000 }}>
+									{$LL.home.services.p2()}
+								</span>
+							</svelte:fragment>
 						</AccordionItem>
 						<AccordionItem regionControl={$currentAppLang === 'ar' ? 'text-right' : ''}>
 							<svelte:fragment slot="summary"
 								><span class="font-bold">{$LL.home.services.li3()}</span></svelte:fragment
 							>
-							<svelte:fragment slot="content">{$LL.home.services.p3()}</svelte:fragment>
+							<svelte:fragment slot="content">
+								<span transition:fade={{ duration: 1000 }}>
+									{$LL.home.services.p3()}
+								</span>
+							</svelte:fragment>
 						</AccordionItem>
 					</Accordion>
 				</div>
-
-				<!-- list -->
-				<!-- <ul
-					class="space-y-1 xl:space-y-5 text-sm sm:text-base md:text-lg xl:text-xl text-white {$currentAppLang ===
-					'ar'
-						? 'ar-font'
-						: 'normal-thin'}"
-				>
-					<li>{$LL.home.services.li1()}</li>
-					<li>{$LL.home.services.li2()}</li>
-					<li>{$LL.home.services.li3()}</li>
-				</ul> -->
 			</div>
 		</div>
 
@@ -109,10 +104,9 @@
 					{$LL.home.atAlkholi.p1()}
 				</p>
 				<p
-					class="normal-thin text-sm sm:text-base md:text-lg xl:text-xl xl:leading-8 text-white {$currentAppLang ===
-					'ar'
-						? 'ar-font'
-						: ''}"
+					class="normal-thin text-sm sm:text-base md:text-lg xl:text-xl xl:leading-8 text-white {showMore
+						? 'lg:pt-16 xl:pt-14'
+						: ''} {$currentAppLang === 'ar' ? 'ar-font' : ''}"
 				>
 					{$LL.home.atAlkholi.p2()}
 				</p>
@@ -164,6 +158,7 @@
 				dir={$pageDirection}
 			>
 				<p
+					in:fade={{ duration: 800, delay: 100 }}
 					class="normal-thin text-sm sm:text-base md:text-lg xl:text-xl xl:leading-8 text-white {$currentAppLang ===
 					'ar'
 						? 'ar-font'
@@ -172,6 +167,7 @@
 					{$LL.home.atAlkholi.p3()}
 				</p>
 				<p
+					in:fade={{ duration: 1000, delay: 600 }}
 					class="normal-thin text-sm sm:text-base md:text-lg xl:text-xl xl:leading-8 text-white {$currentAppLang ===
 					'ar'
 						? 'ar-font'
@@ -180,6 +176,7 @@
 					{$LL.home.atAlkholi.p4()}
 				</p>
 				<p
+					in:fade={{ duration: 1000, delay: 900 }}
 					class="normal-thin text-sm sm:text-base md:text-lg xl:text-xl xl:leading-8 text-white {$currentAppLang ===
 					'ar'
 						? 'ar-font'
@@ -188,6 +185,7 @@
 					{$LL.home.atAlkholi.p5()}
 				</p>
 				<p
+					in:fade={{ duration: 1000, delay: 1200 }}
 					class="normal-thin text-sm sm:text-base md:text-lg xl:text-xl xl:leading-8 text-white {$currentAppLang ===
 					'ar'
 						? 'ar-font'

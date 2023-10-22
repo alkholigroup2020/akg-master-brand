@@ -57,7 +57,7 @@ const en: BaseTranslation = {
 			p6: 'Reliability and Trustworthiness: At the Al Kholi Group, we are committed to earning your trust and building a reputation for reliability and dependability in all aspects of our business.'
 		},
 		projects: {
-			title: 'projects'
+			title: 'our projects'
 		},
 		testimonials: {
 			title: 'client testimonials'
