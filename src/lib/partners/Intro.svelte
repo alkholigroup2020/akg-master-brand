@@ -1,19 +1,47 @@
 <script lang="ts">
 	import { currentAppLang } from '$lib/stores/store';
 	import LL from '$i18n/i18n-svelte';
+
+	import { onMount } from 'svelte';
+	import { gsap } from 'gsap';
+	import { TextPlugin } from 'gsap/dist/TextPlugin';
+	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+	gsap.registerPlugin(ScrollTrigger, TextPlugin);
+
+	let textElement: any;
+
+	let theText: string;
+	if ($currentAppLang === 'en') {
+		theText = 'OUR KEY PARTNERS';
+	} else {
+		theText = 'شركاء النجاح';
+	}
+
+	// title animation
+	onMount(() => {
+		gsap.to(textElement, {
+			scrollTrigger: {
+				trigger: textElement,
+				start: 'top+=100 bottom-=100',
+				toggleActions: 'play none none none',
+				markers: false
+			},
+			text: theText,
+			duration: 1.2
+		});
+	});
 </script>
 
 <section class="container px-3 mx-auto pt-8 2xl:pt-20">
 	<!-- title -->
 	<div class="text-center xl:pt-5">
-		<h2
+		<p
+			bind:this={textElement}
 			class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-semibold uppercase text-primary-500 mb-3 xl:mb-12 {$currentAppLang ===
 			'ar'
 				? 'ar-font'
 				: ''}"
-		>
-			{$LL.partners.title()}
-		</h2>
+		/>
 	</div>
 
 	<div>

@@ -3,6 +3,7 @@
 	import LL from '$i18n/i18n-svelte';
 	import { pageDirection } from '$lib/stores/store';
 	import { currentAppLang } from '$lib/stores/store';
+	import { fly } from 'svelte/transition';
 	export let sectionData: any;
 </script>
 
@@ -75,7 +76,7 @@
 			<!-- Text Section -->
 			<div class="sm:col-span-2 lg:col-span-3 pt-3 sm:pt-0">
 				{#if selected === 'about'}
-					<div>
+					<div in:fly={{ duration: 1200, y: 200 }}>
 						<p
 							class="heading-en-2 px-3 lg:px-8 2xl:px-16 my-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-bold"
 						>
@@ -88,7 +89,7 @@
 						</p>
 					</div>
 				{:else if selected === 'story'}
-					<div>
+					<div in:fly={{ duration: 1200, y: 200 }}>
 						<p
 							class="heading-en-2 px-3 lg:px-8 2xl:px-16 my-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-bold"
 						>
@@ -106,7 +107,7 @@
 						</p>
 					</div>
 				{:else if selected === 'values'}
-					<div>
+					<div in:fly={{ duration: 1200, y: 200 }}>
 						<p
 							class="heading-en-2 px-3 lg:px-8 2xl:px-16 my-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-bold"
 						>
@@ -214,7 +215,7 @@
 			<!-- Text Section -->
 			<div class="sm:col-span-2 lg:col-span-3 pt-3 sm:pt-0 ar-font" dir={$pageDirection}>
 				{#if selected === 'about'}
-					<div>
+					<div in:fly={{ duration: 1200, y: 200 }}>
 						<p
 							class="heading-ar-2 px-3 lg:px-8 2xl:px-16 my-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-bold"
 						>
@@ -227,7 +228,7 @@
 						</p>
 					</div>
 				{:else if selected === 'story'}
-					<div>
+					<div in:fly={{ duration: 1200, y: 200 }}>
 						<p
 							class="heading-ar-2 px-3 lg:px-8 2xl:px-16 my-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-bold"
 						>
@@ -247,7 +248,7 @@
 						</p>
 					</div>
 				{:else if selected === 'values'}
-					<div>
+					<div in:fly={{ duration: 1200, y: 200 }}>
 						<p
 							class="heading-ar-2 px-3 lg:px-8 2xl:px-16 my-8 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-bold"
 						>

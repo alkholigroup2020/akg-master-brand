@@ -1,26 +1,74 @@
 <script lang="ts">
 	import LL from '$i18n/i18n-svelte';
+	import { onMount } from 'svelte';
 	import { currentAppLang } from '$lib/stores/store';
 	import { pageDirection } from '$lib/stores/store';
+	import { gsap } from 'gsap';
+	import { TextPlugin } from 'gsap/dist/TextPlugin';
+	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+	gsap.registerPlugin(ScrollTrigger, TextPlugin);
+
+	let textElement: any;
+	const theText = $LL.about.team.title();
+
+	let imageRefs: any[] = [];
+	// for (let index = 0; index < 3; index++) {
+	// 	imageRefs[index] = null;
+	// }
+
+	// title animation
+	onMount(() => {
+		gsap.to(textElement, {
+			scrollTrigger: {
+				trigger: textElement,
+				start: 'top+=100 bottom-=100',
+				toggleActions: 'play none none none',
+				markers: false
+			},
+			text: theText,
+			duration: 1.2
+		});
+	});
+
+	// cards animation
+	onMount(() => {
+		imageRefs.forEach((ref, index) => {
+			let timeline = gsap.timeline({
+				scrollTrigger: {
+					trigger: ref,
+					start: 'top bottom-=100',
+					// end: 'bottom top',
+					markers: false,
+					scrub: false
+				}
+			});
+
+			timeline.from(ref, {
+				duration: 0.5,
+				y: '25px',
+				opacity: 0,
+				delay: index * 0.2
+			});
+		});
+	});
 </script>
 
 <section class="max-w-[1920px] mx-auto">
 	<div class="text-white text-center bg-primary-500 flex flex-col py-8 xl:py-12 uppercase">
 		<!-- title -->
-		<div class="py-3">
+		<div class="py-5 md:py-8">
 			<p
+				bind:this={textElement}
 				class="text-center text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-semibold {$currentAppLang ===
 				'ar'
 					? 'ar-font '
 					: ''}"
-			>
-				{$LL.about.team.title()}
-			</p>
+			/>
 		</div>
 
 		<!-- chairman level -->
 		<div class="flex justify-center py-12">
-			<div class="flex flex-col items-center">
+			<div class="flex flex-col items-center" bind:this={imageRefs[0]}>
 				<div>
 					<img
 						src="/images/about/team/asset-16_180x180.webp"
@@ -37,7 +85,7 @@
 		<div
 			class="grid grid-cols-2 md:flex justify-center md:space-x-6 lg:space-x-16 xl:space-x-20 2xl:space-x-24 py-3 min-[400px]:px-10 min-[550px]:px-24 min-[650px]:px-32 md:px-0"
 		>
-			<div class="flex flex-col items-center">
+			<div class="flex flex-col items-center" bind:this={imageRefs[1]}>
 				<div>
 					<img
 						src="/images/about/team/asset-17_180x180.webp"
@@ -48,7 +96,7 @@
 				</div>
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">FAISAL AL KHOLI</p>
 			</div>
-			<div class="flex flex-col items-center">
+			<div class="flex flex-col items-center" bind:this={imageRefs[2]}>
 				<div>
 					<img
 						src="/images/about/team/asset-18_180x180.webp"
@@ -86,7 +134,7 @@
 				</div>
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Unknown</p>
 			</div> -->
-			<div class="flex flex-col items-center">
+			<div class="flex flex-col items-center" bind:this={imageRefs[3]}>
 				<div>
 					<img
 						src="/images/about/team/asset-22_180x180.webp"
@@ -97,7 +145,7 @@
 				</div>
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Nasser Al-Dowsary</p>
 			</div>
-			<div class="flex flex-col items-center">
+			<div class="flex flex-col items-center" bind:this={imageRefs[4]}>
 				<div>
 					<img
 						src="/images/about/team/asset-26_180x180.webp"
@@ -108,7 +156,7 @@
 				</div>
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Amr Bahi ElDeen</p>
 			</div>
-			<div class="flex flex-col items-center">
+			<div class="flex flex-col items-center" bind:this={imageRefs[5]}>
 				<div>
 					<img
 						src="/images/about/team/asset-19_180x180.webp"
@@ -120,7 +168,7 @@
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Ayman Elgabbar</p>
 			</div>
 
-			<div class="flex flex-col items-center">
+			<div class="flex flex-col items-center" bind:this={imageRefs[6]}>
 				<div>
 					<img
 						src="/images/about/team/asset-24_180x180.webp"
@@ -132,7 +180,7 @@
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Waleed Jaafar</p>
 			</div>
 
-			<div class="flex flex-col items-center">
+			<div class="flex flex-col items-center" bind:this={imageRefs[7]}>
 				<div>
 					<img
 						src="/images/about/team/asset-23_180x180.webp"
@@ -143,7 +191,7 @@
 				</div>
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Saeed Al-Ghamdy</p>
 			</div>
-			<div class="flex flex-col items-center">
+			<div class="flex flex-col items-center" bind:this={imageRefs[8]}>
 				<div>
 					<img
 						src="/images/about/team/asset-27_180x180.webp"

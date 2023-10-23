@@ -36,7 +36,7 @@
 	};
 
 	// update `lang` attribute
-	// ===> $: browser && document.querySelector('html').setAttribute('lang', $locale);
+	// $: browser && document.querySelector('html').setAttribute('lang', $locale);
 
 	// update locale when navigating via browser back/forward buttons
 	const handlePopStateEvent = async ({ state }: PopStateEvent) => switchLocale(state.locale, false);

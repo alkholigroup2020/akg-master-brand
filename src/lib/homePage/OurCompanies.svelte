@@ -10,14 +10,19 @@
 	gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
 	let companiesRefs: any[] = [];
-	for (let index = 0; index < 3; index++) {
-		companiesRefs[index] = null;
-	}
+	// for (let index = 0; index < 10; index++) {
+	// 	companiesRefs[index] = null;
+	// }
 
 	let textElement: any;
-	const theText = $LL.home.companies.title();
+	// const theText = $LL.home.companies.title();
 
-	const placeholderText = new Array(theText.length).fill('\u00A0').join(''); // Using non-breaking spaces as placeholders
+	let theText: string;
+	if ($currentAppLang === 'en') {
+		theText = 'OUR COMPANIES';
+	} else {
+		theText = 'شـــركاتنا';
+	}
 
 	onMount(() => {
 		gsap.to(textElement, {
@@ -64,9 +69,7 @@
 			'ar'
 				? 'ar-font'
 				: ''}"
-		>
-			{placeholderText}
-		</p>
+		/>
 	</div>
 
 	<!-- logos -->

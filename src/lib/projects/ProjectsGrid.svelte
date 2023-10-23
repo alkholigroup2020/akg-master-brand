@@ -1,18 +1,43 @@
 <script lang="ts">
-	import LL from '$i18n/i18n-svelte';
-	import { currentAppLang } from '$lib/stores/store';
-	import { pageDirection } from '$lib/stores/store';
-	import type { Script } from 'svelte/types/compiler/interfaces';
-
 	export let projectsData: any;
 	export let tabSet: string;
+
+	import { onMount } from 'svelte';
+	import { gsap } from 'gsap';
+	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+	gsap.registerPlugin(ScrollTrigger);
+
+	let cardRefs: any[] = [];
+
+	// cards animation
+	onMount(() => {
+		cardRefs.forEach((ref, index) => {
+			let timeline = gsap.timeline({
+				scrollTrigger: {
+					trigger: ref,
+					start: 'top bottom-=200',
+					end: 'bottom top',
+					markers: false,
+					scrub: false
+				}
+			});
+
+			timeline.from(ref, {
+				duration: 0.6,
+				y: '50px',
+				opacity: 0,
+				delay: index * 0.2
+			});
+		});
+	});
 </script>
 
 <div>
 	<div class="grid min-[350px]:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6 lg:gap-12">
-		{#each projectsData as project}
+		{#each projectsData as project, index (project.id)}
 			{#if tabSet === 'All' || tabSet === project.attributes.projectCategory}
 				<div
+					bind:this={cardRefs[index]}
 					class="card bg-[#f6f6f9] hover:bg-primary-500 hover:p-1 md:hover:p-2 hover:cursor-pointer hover:text-white rounded-none"
 				>
 					<div>
@@ -38,8 +63,4 @@
 			{/if}
 		{/each}
 	</div>
-	<!-- <pre>{tabSet}</pre>
-	{#each projectsData as project}
-		<pre>{project.attributes.projectYear}</pre>
-	{/each} -->
 </div>

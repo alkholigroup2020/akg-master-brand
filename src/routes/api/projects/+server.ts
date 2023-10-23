@@ -6,6 +6,7 @@ const query = gql`
 	{
 		projects {
 			data {
+				id
 				attributes {
 					localizations {
 						data {

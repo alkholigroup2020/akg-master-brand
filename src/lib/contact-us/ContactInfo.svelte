@@ -2,6 +2,34 @@
 	import LL from '$i18n/i18n-svelte';
 	import { currentAppLang } from '$lib/stores/store';
 	import { pageDirection } from '$lib/stores/store';
+
+	import { onMount } from 'svelte';
+	import { gsap } from 'gsap';
+	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+	gsap.registerPlugin(ScrollTrigger);
+
+	let cardRefs: any[] = [];
+	// cards animation
+	onMount(() => {
+		cardRefs.forEach((ref, index) => {
+			let timeline = gsap.timeline({
+				scrollTrigger: {
+					trigger: ref,
+					start: 'top bottom-=200',
+					end: 'bottom top',
+					markers: false,
+					scrub: false
+				}
+			});
+
+			timeline.from(ref, {
+				duration: 0.5,
+				y: '50px',
+				opacity: 0,
+				delay: index * 0.2
+			});
+		});
+	});
 </script>
 
 <section>
@@ -10,7 +38,7 @@
 			dir={$pageDirection}
 			class="grid gap-4 min-[520px]:grid-cols-2 lg:grid-cols-3 pt-8 md:pt-16 2xl:pt-20 max-[520px]:space-y-4"
 		>
-			<div class="flex space-x-2 lg:space-x-6">
+			<div class="flex space-x-2 lg:space-x-6" bind:this={cardRefs[0]}>
 				<div>
 					<img
 						src="/images/contact-us/info/asset-53.png"
@@ -38,7 +66,7 @@
 				</div>
 			</div>
 
-			<div class="flex space-x-2 lg:space-x-6">
+			<div class="flex space-x-2 lg:space-x-6" bind:this={cardRefs[1]}>
 				<div>
 					<img
 						src="/images/contact-us/info/asset-54.png"
@@ -67,7 +95,7 @@
 				</div>
 			</div>
 
-			<div class="flex space-x-2 lg:space-x-6">
+			<div class="flex space-x-2 lg:space-x-6" bind:this={cardRefs[2]}>
 				<div>
 					<img
 						src="/images/contact-us/info/asset-55.png"

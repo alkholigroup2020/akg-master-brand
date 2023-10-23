@@ -6,6 +6,7 @@ const query = gql`
 	{
 		divisions {
 			data {
+				id
 				attributes {
 					divisionTitle
 					divisionParagraph

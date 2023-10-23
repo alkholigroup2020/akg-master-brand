@@ -1,8 +1,11 @@
 <script lang="ts">
 	import LL from '$i18n/i18n-svelte';
 	import { currentAppLang } from '$lib/stores/store';
-	import { pageDirection } from '$lib/stores/store';
 	import { onMount } from 'svelte';
+	import { gsap } from 'gsap';
+	import { TextPlugin } from 'gsap/dist/TextPlugin';
+	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+	gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
 	import { ConicGradient } from '@skeletonlabs/skeleton';
 	import type { ConicStop } from '@skeletonlabs/skeleton';
@@ -11,7 +14,7 @@
 		{ color: 'rgb(var(--color-primary-500))', start: 75, end: 100 }
 	];
 
-	let divisionsData: any;
+	let divisionsData: any[] = [];
 
 	const getDivisionsData = async () => {
 		try {
@@ -38,6 +41,84 @@
 	onMount(() => {
 		getDivisionsData();
 	});
+
+	let textElement: any;
+
+	let theText: string;
+
+	if ($currentAppLang === 'en') {
+		theText = 'OUR DIVISIONS';
+	} else {
+		theText = 'أقسام المجموعة';
+	}
+
+	// title animation
+	onMount(() => {
+		gsap.to(textElement, {
+			scrollTrigger: {
+				trigger: textElement,
+				start: 'top+=100 bottom-=100',
+				toggleActions: 'play none none none',
+				markers: false
+			},
+			text: theText,
+			duration: 1.2
+		});
+	});
+
+	// Declaring divisions array to bind to the division containers
+	let divisions: any[] = [];
+	let divisionsText: any[] = [];
+
+	// images animation
+	onMount(() => {
+		// Wait for the divisionsData array to be updated
+		const interval = setInterval(() => {
+			if (divisionsData.length >= 1) {
+				clearInterval(interval);
+				divisions.forEach((ref, index) => {
+					let timeline = gsap.timeline({
+						scrollTrigger: {
+							trigger: ref,
+							markers: false,
+							scrub: false
+						}
+					});
+
+					timeline.from(ref, {
+						duration: 0.5,
+						y: '100px',
+						opacity: 0,
+						delay: index * 0.2
+					});
+				});
+			}
+		}, 250);
+	});
+
+	onMount(() => {
+		const interval = setInterval(() => {
+			if (divisionsData.length >= 1) {
+				clearInterval(interval);
+				divisionsText.forEach((ref, index) => {
+					let timeline = gsap.timeline({
+						scrollTrigger: {
+							trigger: ref,
+							markers: false,
+							scrub: false
+						}
+					});
+
+					timeline.from(ref, {
+						duration: 0.5,
+						x: '100px',
+						opacity: 0,
+						delay: index * 0.2
+					});
+				});
+			}
+		}, 250);
+	});
 </script>
 
 <section class="max-w-[1920px] mx-auto">
@@ -45,13 +126,12 @@
 		<!-- title -->
 		<div class="text-center">
 			<p
+				bind:this={textElement}
 				class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-semibold text-primary-500 uppercase py-12 xl:py-20 {$currentAppLang ===
 				'ar'
 					? 'ar-font'
 					: ''}"
-			>
-				{$LL.divisions.title()}
-			</p>
+			/>
 		</div>
 
 		<!-- divisions -->
@@ -62,7 +142,7 @@
 				</div>
 			</div>
 		{:else}
-			{#each divisionsData as division}
+			{#each divisionsData as division, index (division.id)}
 				{#if $currentAppLang === 'en'}
 					<div class="grid sm:grid-cols-2 xl:grid-cols-6 sm:gap-6 lg:gap-12 xl:gap-12 pb-12">
 						<div
@@ -70,7 +150,7 @@
 								? 'sm:order-last'
 								: ''}"
 						>
-							<div>
+							<div bind:this={divisions[index]}>
 								<img
 									src={`https://cms.alkholi.com${division.attributes.divisionImage_620x620.data.attributes.url}`}
 									srcset={`https://cms.alkholi.com${division.attributes.divisionImage_620x310.data.attributes.url} 640w, https://cms.alkholi.com${division.attributes.divisionImage_620x620.data.attributes.url} 2000w`}
@@ -80,11 +160,13 @@
 							</div>
 						</div>
 						<div
+							style="overflow-x: hidden;"
 							class="xl:col-span-4 {division.attributes.divisionOrder % 2 === 0
 								? 'text-right'
 								: ''}"
 						>
 							<div
+								bind:this={divisionsText[index]}
 								class="flex flex-col h-full justify-center pt-5 sm:pt-0 space-y-3 sm:space-y-5 lg:space-y-8"
 							>
 								<div>
@@ -119,7 +201,7 @@
 								? 'sm:order-last'
 								: ''}"
 						>
-							<div>
+							<div bind:this={divisions[index]}>
 								<img
 									src={`https://cms.alkholi.com${division.attributes.divisionImage_620x620.data.attributes.url}`}
 									srcset={`https://cms.alkholi.com${division.attributes.divisionImage_620x310.data.attributes.url} 640w, https://cms.alkholi.com${division.attributes.divisionImage_620x620.data.attributes.url} 2000w`}
@@ -129,11 +211,13 @@
 							</div>
 						</div>
 						<div
+							style="overflow-x: hidden;"
 							class="xl:col-span-4 {division.attributes.divisionOrder % 2 === 0
 								? 'text-right'
 								: ''}"
 						>
 							<div
+								bind:this={divisionsText[index]}
 								class="flex flex-col h-full justify-center pt-5 sm:pt-0 space-y-3 sm:space-y-5 lg:space-y-8"
 							>
 								<div>

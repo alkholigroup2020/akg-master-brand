@@ -3,20 +3,26 @@
 	import { currentAppLang } from '$lib/stores/store';
 
 	import { onMount } from 'svelte';
-
-	let cardRefs: any[] = [];
-	for (let index = 0; index < 3; index++) {
-		cardRefs[index] = null;
-	}
-
 	import { gsap } from 'gsap';
 	import { TextPlugin } from 'gsap/dist/TextPlugin';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
+	let cardRefs: any[] = [];
+	// for (let index = 0; index < 3; index++) {
+	// 	cardRefs[index] = null;
+	// }
+
 	let textElement: any;
-	const theText = $LL.home.projects.title();
-	const placeholderText = new Array(theText.length).fill('\u00A0').join(''); // Using non-breaking spaces as placeholders
+
+	let theText: string;
+	if ($currentAppLang === 'en') {
+		theText = 'OUR PROJECTS';
+	} else {
+		theText = 'أعمالـنا السابقة';
+	}
+
+	// $: theText = `${$LL.home.projects.title()}`;
 
 	// title animation
 	onMount(() => {
@@ -64,9 +70,7 @@
 			'ar'
 				? 'ar-font'
 				: ''}"
-		>
-			{placeholderText}
-		</p>
+		/>
 	</div>
 	<!-- cards -->
 	<div class="grid gap-4 xl:gap-8 md:grid-cols-2 xl:grid-cols-3">

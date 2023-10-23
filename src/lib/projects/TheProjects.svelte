@@ -45,40 +45,46 @@
 	};
 
 	let textElement: any;
-	const theText = $LL.projects.title();
+
+	let theText: string;
+	if ($currentAppLang === 'en') {
+		theText = 'OUR Projects';
+	} else {
+		theText = 'أعمالنــا السابقة';
+	}
 
 	onMount(() => {
 		getProjectsData();
 		gsap.to(textElement, {
 			scrollTrigger: {
 				trigger: textElement,
-				start: 'top center',
-				toggleActions: 'restart none none none'
+				start: 'top+=100 bottom-=100',
+				toggleActions: 'play none none none',
+				markers: false
 			},
 			text: theText,
-			duration: 0.8
+			duration: 1.2
 		});
 	});
 
 	let navOpen = false;
+	let showIt = true;
 
 	let tabSet: string = 'All';
+	$: {
+		if (tabSet) {
+			showIt = false;
+			setTimeout(() => {
+				showIt = true;
+			}, 100);
+		}
+	}
+
 	$: btnText = `${$LL.projects.all()}`;
 </script>
 
 <section class="max-w-[1920px] mx-auto">
 	<!-- title -->
-	<!-- <div class="text-center">
-		<p
-			class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-semibold text-primary-500 py-12 xl:py-16 uppercase {$currentAppLang ===
-			'ar'
-				? 'ar-font'
-				: ''}"
-		>
-			{$LL.projects.title()}
-		</p>
-	</div> -->
-
 	<div class="text-center">
 		<p
 			bind:this={textElement}
@@ -285,7 +291,9 @@
 					</div>
 				{:else}
 					<div class="py-12">
-						<ProjectsGrid projectsData={projects} {tabSet} />
+						{#if showIt}
+							<ProjectsGrid projectsData={projects} {tabSet} />
+						{/if}
 					</div>
 				{/if}
 			</svelte:fragment>

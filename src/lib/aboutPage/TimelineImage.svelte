@@ -1,7 +1,37 @@
 <script lang="ts">
 	import LL from '$i18n/i18n-svelte';
+	import { onMount } from 'svelte';
 	import { currentAppLang } from '$lib/stores/store';
-	import { pageDirection } from '$lib/stores/store';
+	import { gsap } from 'gsap';
+	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+	gsap.registerPlugin(ScrollTrigger);
+
+	let numbersRefs: any[] = [];
+	// for (let index = 0; index < 3; index++) {
+	// 	numbersRefs[index] = null;
+	// }
+
+	// numbers animation
+	onMount(() => {
+		numbersRefs.forEach((ref, index) => {
+			let timeline = gsap.timeline({
+				scrollTrigger: {
+					trigger: ref,
+					// start: 'top bottom-=400',
+					// end: 'bottom top',
+					markers: false,
+					scrub: false
+				}
+			});
+
+			timeline.from(ref, {
+				duration: 0.2,
+				y: '50px',
+				opacity: 0,
+				delay: index * 0.1
+			});
+		});
+	});
 </script>
 
 <section class="max-w-[1920px] mx-auto">
@@ -61,7 +91,7 @@
 					class="space-y-3 min-[380px]:space-y-5 min-[550px]:space-y-7 xl:space-y-10 2xl:space-y-12
 					text-base min-[400px]:text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-semibold text-primary-500 hidden min-[300px]:block"
 				>
-					<li>
+					<li bind:this={numbersRefs[0]}>
 						<span>
 							<span class="flex justify-center rotate-180">
 								<svg
@@ -77,13 +107,12 @@
 							</span>
 						</span>
 					</li>
-					<li>1992</li>
-					<li>2013</li>
-					<li>2016</li>
-					<li>2017</li>
-					<li>2019</li>
-					<!-- <li>2021</li> -->
-					<li>
+					<li bind:this={numbersRefs[1]}>1992</li>
+					<li bind:this={numbersRefs[2]}>2013</li>
+					<li bind:this={numbersRefs[3]}>2016</li>
+					<li bind:this={numbersRefs[4]}>2017</li>
+					<li bind:this={numbersRefs[5]}>2019</li>
+					<li bind:this={numbersRefs[6]}>
 						<div
 							class="flex items-center -ml-[18px] min-[400px]:-ml-[19px] min-[510px]:-ml-[20px] min-[550px]:-ml-[28px] min-[600px]:-ml-[29px]
 							sm:-ml-[33px] md:-ml-[47px] lg:-ml-[65px] xl:-ml-[68px] 2xl:-ml-[70px] min-[1700px]:-ml-[73px]"
@@ -94,7 +123,7 @@
 							<p class="heading">2021</p>
 						</div>
 					</li>
-					<li>
+					<li bind:this={numbersRefs[7]}>
 						<span class=" flex justify-center">
 							<svg
 								viewBox="0 0 1024 1024"

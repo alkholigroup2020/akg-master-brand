@@ -1,13 +1,45 @@
 <script lang="ts">
 	import LL from '$i18n/i18n-svelte';
-	import { currentAppLang } from '$lib/stores/store';
 	import { pageDirection } from '$lib/stores/store';
+	import { onMount } from 'svelte';
+	import { currentAppLang } from '$lib/stores/store';
+	import { gsap } from 'gsap';
+	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+	gsap.registerPlugin(ScrollTrigger);
+
+	let itemsRefs: any[] = [];
+	// for (let index = 0; index < 3; index++) {
+	// 	itemsRefs[index] = null;
+	// }
+
+	// items animation
+	onMount(() => {
+		itemsRefs.forEach((ref, index) => {
+			let timeline = gsap.timeline({
+				scrollTrigger: {
+					trigger: ref,
+					start: 'top bottom-=200',
+					end: 'bottom top',
+					markers: false,
+					scrub: false
+				}
+			});
+
+			timeline.from(ref, {
+				duration: 1,
+				y: '50px',
+				opacity: 0,
+				delay: index * 0.4
+			});
+		});
+	});
 </script>
 
 <section>
 	<div class="container mx-auto px-3 py-5 xl:py-12 {$currentAppLang === 'ar' ? 'ar-font' : ''}">
 		<div class="sm:flex">
 			<div
+				bind:this={itemsRefs[0]}
 				class="sm:w-1/2 min-[400px]:px-12 min-[550px]:px-16 sm:px-5 md:px-8 xl:px-24 2xl:px-36 py-5"
 			>
 				<div class="flex flex-col items-center">
@@ -34,6 +66,7 @@
 				</div>
 			</div>
 			<div
+				bind:this={itemsRefs[1]}
 				class="sm:w-1/2 min-[400px]:px-12 min-[550px]:px-16 sm:px-5 md:px-8 xl:px-24 2xl:px-36 py-5"
 			>
 				<div class="flex flex-col items-center">

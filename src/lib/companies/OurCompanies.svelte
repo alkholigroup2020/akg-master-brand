@@ -47,19 +47,80 @@
 			order: 8
 		}
 	];
+
+	import { onMount } from 'svelte';
+
+	import { gsap } from 'gsap';
+	import { TextPlugin } from 'gsap/dist/TextPlugin';
+	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+	gsap.registerPlugin(ScrollTrigger, TextPlugin);
+
+	let companiesRefs: any[] = [];
+	// for (let index = 0; index < 1; index++) {
+	// 	companiesRefs[index] = null;
+	// }
+
+	let textElement: any;
+	let theText: string;
+	if ($currentAppLang === 'en') {
+		theText = 'OUR COMPANIES';
+	} else {
+		theText = 'شـــركاتنا';
+	}
+	onMount(() => {
+		gsap.to(textElement, {
+			scrollTrigger: {
+				trigger: textElement,
+				start: 'top+=100 bottom-=100',
+				toggleActions: 'play none none none',
+				markers: false
+			},
+			text: theText,
+			duration: 1.2
+		});
+	});
+	// companies animation
+	onMount(() => {
+		companiesRefs.forEach((ref, index) => {
+			let timeline = gsap.timeline({
+				scrollTrigger: {
+					trigger: ref,
+					start: 'top bottom-=150',
+					end: 'bottom top',
+					markers: false,
+					scrub: false
+				}
+			});
+
+			if (index % 2 === 0) {
+				timeline.from(ref, {
+					duration: 0.8,
+					x: '80px',
+					opacity: 0,
+					delay: index * 0.1
+				});
+			} else {
+				timeline.from(ref, {
+					duration: 0.8,
+					x: '-80px',
+					opacity: 0,
+					delay: index * 0.1
+				});
+			}
+		});
+	});
 </script>
 
 <section class="container px-3 mx-auto pt-8 2xl:pt-20 pb-32">
 	<!-- title -->
 	<div class="text-center xl:pt-5">
-		<h2
+		<p
+			bind:this={textElement}
 			class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-semibold uppercase text-primary-500 mb-3 xl:mb-12 {$currentAppLang ===
 			'ar'
 				? 'ar-font'
-				: ''}"
-		>
-			{$LL.companies.title()}
-		</h2>
+				: ' '}"
+		/>
 	</div>
 
 	<div>
@@ -73,13 +134,14 @@
 		</p>
 	</div>
 
-	{#each companies as company}
+	{#each companies as company, index (company.order)}
 		<div
 			class="grid sm:grid-cols-2 gap-0 {$currentAppLang === 'ar' ? 'ar-font' : ''}"
 			dir={$pageDirection}
 		>
 			<!-- logo -->
 			<div
+				bind:this={companiesRefs[index]}
 				class="min-h-[180px] md:min-h-[300px] flex items-center justify-center py-8 sm:py-0 {company.order %
 					2 ===
 				0
