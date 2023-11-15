@@ -97,6 +97,8 @@ const en: BaseTranslation = {
 	companies: {
 		title: 'Our companies',
 		amos: 'AMOS is a facilities management company that provides a range of services, including specialist hard services, hard services, soft services, and landscaping. They are committed to delivering comprehensive solutions that are tailored to meet the specific needs of each client.',
+		sbtmc:
+			'Saudi Building Technique & Maintenance Company is specialized in providing construction, MEP, management services, facility management. SBTMC  is a 100% Saudi Company with a management and workforce of various nationalities. SBTMC provides a full range of specialized services that reflect the upscale and advanced level of design facilities in Saudi Arabia.',
 		upmoc:
 			'UP is a mechanical, electrical, and plumbing (MEP) maintenance and facilities management company that provides a full range of services, including operation and maintenance services, construction, and communication. They have a highly talented team of experts who provide upscale and advanced level design facilities in Saudi Arabia.',
 		bteco:

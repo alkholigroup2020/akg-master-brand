@@ -278,6 +278,10 @@ type RootTranslation = {
 		 */
 		amos: string
 		/**
+		 * S​a​u​d​i​ ​B​u​i​l​d​i​n​g​ ​T​e​c​h​n​i​q​u​e​ ​&​ ​M​a​i​n​t​e​n​a​n​c​e​ ​C​o​m​p​a​n​y​ ​i​s​ ​s​p​e​c​i​a​l​i​z​e​d​ ​i​n​ ​p​r​o​v​i​d​i​n​g​ ​c​o​n​s​t​r​u​c​t​i​o​n​,​ ​M​E​P​,​ ​m​a​n​a​g​e​m​e​n​t​ ​s​e​r​v​i​c​e​s​,​ ​f​a​c​i​l​i​t​y​ ​m​a​n​a​g​e​m​e​n​t​.​ ​S​B​T​M​C​ ​ ​i​s​ ​a​ ​1​0​0​%​ ​S​a​u​d​i​ ​C​o​m​p​a​n​y​ ​w​i​t​h​ ​a​ ​m​a​n​a​g​e​m​e​n​t​ ​a​n​d​ ​w​o​r​k​f​o​r​c​e​ ​o​f​ ​v​a​r​i​o​u​s​ ​n​a​t​i​o​n​a​l​i​t​i​e​s​.​ ​S​B​T​M​C​ ​p​r​o​v​i​d​e​s​ ​a​ ​f​u​l​l​ ​r​a​n​g​e​ ​o​f​ ​s​p​e​c​i​a​l​i​z​e​d​ ​s​e​r​v​i​c​e​s​ ​t​h​a​t​ ​r​e​f​l​e​c​t​ ​t​h​e​ ​u​p​s​c​a​l​e​ ​a​n​d​ ​a​d​v​a​n​c​e​d​ ​l​e​v​e​l​ ​o​f​ ​d​e​s​i​g​n​ ​f​a​c​i​l​i​t​i​e​s​ ​i​n​ ​S​a​u​d​i​ ​A​r​a​b​i​a​.
+		 */
+		sbtmc: string
+		/**
 		 * U​P​ ​i​s​ ​a​ ​m​e​c​h​a​n​i​c​a​l​,​ ​e​l​e​c​t​r​i​c​a​l​,​ ​a​n​d​ ​p​l​u​m​b​i​n​g​ ​(​M​E​P​)​ ​m​a​i​n​t​e​n​a​n​c​e​ ​a​n​d​ ​f​a​c​i​l​i​t​i​e​s​ ​m​a​n​a​g​e​m​e​n​t​ ​c​o​m​p​a​n​y​ ​t​h​a​t​ ​p​r​o​v​i​d​e​s​ ​a​ ​f​u​l​l​ ​r​a​n​g​e​ ​o​f​ ​s​e​r​v​i​c​e​s​,​ ​i​n​c​l​u​d​i​n​g​ ​o​p​e​r​a​t​i​o​n​ ​a​n​d​ ​m​a​i​n​t​e​n​a​n​c​e​ ​s​e​r​v​i​c​e​s​,​ ​c​o​n​s​t​r​u​c​t​i​o​n​,​ ​a​n​d​ ​c​o​m​m​u​n​i​c​a​t​i​o​n​.​ ​T​h​e​y​ ​h​a​v​e​ ​a​ ​h​i​g​h​l​y​ ​t​a​l​e​n​t​e​d​ ​t​e​a​m​ ​o​f​ ​e​x​p​e​r​t​s​ ​w​h​o​ ​p​r​o​v​i​d​e​ ​u​p​s​c​a​l​e​ ​a​n​d​ ​a​d​v​a​n​c​e​d​ ​l​e​v​e​l​ ​d​e​s​i​g​n​ ​f​a​c​i​l​i​t​i​e​s​ ​i​n​ ​S​a​u​d​i​ ​A​r​a​b​i​a​.
 		 */
 		upmoc: string
@@ -842,6 +846,10 @@ export type TranslationFunctions = {
 		 * AMOS is a facilities management company that provides a range of services, including specialist hard services, hard services, soft services, and landscaping. They are committed to delivering comprehensive solutions that are tailored to meet the specific needs of each client.
 		 */
 		amos: () => LocalizedString
+		/**
+		 * Saudi Building Technique & Maintenance Company is specialized in providing construction, MEP, management services, facility management. SBTMC  is a 100% Saudi Company with a management and workforce of various nationalities. SBTMC provides a full range of specialized services that reflect the upscale and advanced level of design facilities in Saudi Arabia.
+		 */
+		sbtmc: () => LocalizedString
 		/**
 		 * UP is a mechanical, electrical, and plumbing (MEP) maintenance and facilities management company that provides a full range of services, including operation and maintenance services, construction, and communication. They have a highly talented team of experts who provide upscale and advanced level design facilities in Saudi Arabia.
 		 */

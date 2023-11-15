@@ -10,41 +10,48 @@
 			order: 1
 		},
 		{
+			imgURL: '/images/companies/logos/sbtmc.webp',
+			text: `${$LL.companies.sbtmc()}`,
+			order: 2
+		},
+		{
 			imgURL: '/images/companies/logos/AKG-Tech_300x150.webp',
 			text: `${$LL.companies.tech()}`,
-			order: 2
+			order: 3
 		},
 		{
 			imgURL: '/images/companies/logos/AKG-healthcare_300x150.webp',
 			text: `${$LL.companies.hcare()}`,
-			order: 3
-		},
-		{
-			imgURL: '/images/companies/logos/akstra_300x150.webp',
-			text: `${$LL.companies.akstra()}`,
 			order: 4
 		},
 		{
-			imgURL: '/images/companies/logos/aktek_300x150.webp',
-			text: `${$LL.companies.aktek()}`,
+			imgURL: '/images/companies/logos/up_300x150.webp',
+			text: `${$LL.companies.upmoc()}`,
 			order: 5
+		},
+
+		{
+			imgURL: '/images/companies/logos/btech_300x150.webp',
+			text: `${$LL.companies.bteco()}`,
+			url: 'https://www.buildingtec-elevators.com/',
+			order: 6
 		},
 		{
 			imgURL: '/images/companies/logos/amos_300x150.webp',
 			text: `${$LL.companies.amos()}`,
 			// url: 'https://www.amos-sa.com/',
-			order: 6
-		},
-		{
-			imgURL: '/images/companies/logos/up_300x150.webp',
-			text: `${$LL.companies.upmoc()}`,
 			order: 7
 		},
 		{
-			imgURL: '/images/companies/logos/btech_300x150.webp',
-			text: `${$LL.companies.bteco()}`,
-			url: 'https://www.buildingtec-elevators.com/',
+			imgURL: '/images/companies/logos/akstra_300x150.webp',
+			text: `${$LL.companies.akstra()}`,
 			order: 8
+		},
+
+		{
+			imgURL: '/images/companies/logos/aktek_300x150.webp',
+			text: `${$LL.companies.aktek()}`,
+			order: 9
 		}
 	];
 
