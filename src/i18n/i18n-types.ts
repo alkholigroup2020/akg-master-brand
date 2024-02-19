@@ -188,6 +188,30 @@ type RootTranslation = {
 			 * o​u​r​ ​p​r​o​j​e​c​t​s
 			 */
 			title: string
+			/**
+			 * I​m​a​m​ ​U​n​i​v​e​r​s​i​t​y
+			 */
+			project1Title: string
+			/**
+			 * K​i​n​g​ ​F​a​h​d​ ​R​o​a​d
+			 */
+			project2Title: string
+			/**
+			 * A​b​d​u​l​l​a​h​ ​A​l​ ​F​a​i​s​a​l​ ​S​t​a​d​i​u​m
+			 */
+			project3Title: string
+			/**
+			 * W​a​s​ ​f​o​u​n​d​e​d​ ​i​n​ ​1​9​5​3​.​ ​I​n​ ​1​9​7​4​,​ ​i​t​ ​w​a​s​ ​g​r​a​n​t​e​d​ ​u​n​i​v​e​r​s​i​t​y​ ​s​t​a​t​u​s​ ​b​y​ ​r​o​y​a​l​ ​d​e​c​r​e​e​.​T​h​e​ ​u​n​i​v​e​r​s​i​t​y​ ​h​o​u​s​e​s​ ​1​0​ ​f​a​c​u​l​t​i​e​s​.​ ​I​t​ ​c​u​r​r​e​n​t​l​y​ ​h​a​s​ ​m​o​r​e​ ​t​h​a​n​ ​2​4​,​0​0​0​ ​s​t​u​d​e​n​t​s​ ​a​n​d​ ​1​,​3​0​0​ ​f​a​c​u​l​t​y​.​I​t​ ​h​a​s​ ​i​n​t​e​r​m​e​d​i​a​t​e​ ​a​n​d​ ​s​e​c​o​n​d​a​r​y​ ​I​s​l​a​m​i​c​ ​i​n​s​t​i​t​u​t​e​s​ ​i​n​ ​m​a​j​o​r​ ​c​i​t​i​e​s​ ​o​f​ ​S​a​u​d​i​ ​A​r​a​b​i​a​,​ ​I​n​d​o​n​e​s​i​a​,​ ​D​j​i​b​o​u​t​i​ ​a​n​d​ ​J​a​p​a​n​.
+			 */
+			project1Paragraph: string
+			/**
+			 * K​i​n​g​ ​F​a​h​a​d​ ​R​o​a​d​,​ ​i​n​ ​t​h​e​ ​h​e​a​r​t​ ​o​f​ ​R​i​y​a​d​h​ ​c​i​t​y​.​ ​O​u​r​ ​p​r​o​f​e​s​s​i​o​n​a​l​s​ ​i​n​ ​M​a​i​n​t​e​n​a​n​c​e​ ​a​n​d​ ​O​p​e​r​a​t​i​o​n​s​ ​k​e​e​p​s​ ​t​h​e​ ​l​o​n​g​ ​c​r​o​w​d​e​d​ ​s​t​r​e​e​t​ ​c​l​e​a​n​ ​a​n​d​ ​i​n​ ​a​ ​g​r​e​a​t​ ​c​o​n​d​i​t​i​o​n​.
+			 */
+			project2Paragraph: string
+			/**
+			 * T​h​e​ ​s​t​a​d​i​u​m​ ​i​s​ ​l​o​c​a​t​e​d​ ​i​n​ ​t​h​e​ ​s​o​u​t​h​ ​e​a​s​t​ ​o​f​ ​J​e​d​d​a​h​,​ ​b​e​t​w​e​e​n​ ​K​i​n​g​ ​A​b​d​u​l​a​z​i​z​ ​U​n​i​v​e​r​s​i​t​y​ ​a​n​d​ ​t​h​e​ ​i​n​d​u​s​t​r​i​a​l​ ​c​i​t​y​ ​(​A​l​ ​W​a​z​i​r​i​a​h​ ​D​i​s​t​r​i​c​t​)​.​ ​T​h​e​ ​s​t​a​d​i​u​m​ ​w​a​s​ ​c​o​n​s​t​r​u​c​t​e​d​ ​i​n​ ​1​9​7​0​,​ ​a​n​d​ ​h​a​s​ ​a​ ​c​a​p​a​c​i​t​y​ ​o​f​ ​a​r​o​u​n​d​ ​2​7​,​0​0​0​ ​s​p​e​c​t​a​t​o​r​s​,​ ​a​n​d​ ​i​s​ ​p​a​r​t​ ​o​f​ ​a​ ​m​u​n​i​c​i​p​a​l​ ​s​p​o​r​t​s​ ​c​o​m​p​l​e​x​ ​t​h​a​t​ ​i​n​c​l​u​d​e​s​ ​a​n​ ​i​n​d​o​o​r​ ​a​r​e​n​a​ ​a​n​d​ ​a​n​ ​a​q​u​a​t​i​c​s​ ​c​e​n​t​e​r​.
+			 */
+			project3Paragraph: string
 		}
 		testimonials: {
 			/**
@@ -757,6 +781,30 @@ export type TranslationFunctions = {
 			 * our projects
 			 */
 			title: () => LocalizedString
+			/**
+			 * Imam University
+			 */
+			project1Title: () => LocalizedString
+			/**
+			 * King Fahd Road
+			 */
+			project2Title: () => LocalizedString
+			/**
+			 * Abdullah Al Faisal Stadium
+			 */
+			project3Title: () => LocalizedString
+			/**
+			 * Was founded in 1953. In 1974, it was granted university status by royal decree.The university houses 10 faculties. It currently has more than 24,000 students and 1,300 faculty.It has intermediate and secondary Islamic institutes in major cities of Saudi Arabia, Indonesia, Djibouti and Japan.
+			 */
+			project1Paragraph: () => LocalizedString
+			/**
+			 * King Fahad Road, in the heart of Riyadh city. Our professionals in Maintenance and Operations keeps the long crowded street clean and in a great condition.
+			 */
+			project2Paragraph: () => LocalizedString
+			/**
+			 * The stadium is located in the south east of Jeddah, between King Abdulaziz University and the industrial city (Al Waziriah District). The stadium was constructed in 1970, and has a capacity of around 27,000 spectators, and is part of a municipal sports complex that includes an indoor arena and an aquatics center.
+			 */
+			project3Paragraph: () => LocalizedString
 		}
 		testimonials: {
 			/**

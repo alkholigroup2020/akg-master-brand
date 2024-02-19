@@ -57,7 +57,16 @@ const en: BaseTranslation = {
 			p6: 'Reliability and Trustworthiness: At the Al Kholi Group, we are committed to earning your trust and building a reputation for reliability and dependability in all aspects of our business.'
 		},
 		projects: {
-			title: 'our projects'
+			title: 'our projects',
+			project1Title: 'Imam University',
+			project2Title: 'King Fahd Road',
+			project3Title: 'Abdullah Al Faisal Stadium',
+			project1Paragraph:
+				'Was founded in 1953. In 1974, it was granted university status by royal decree.The university houses 10 faculties. It currently has more than 24,000 students and 1,300 faculty.It has intermediate and secondary Islamic institutes in major cities of Saudi Arabia, Indonesia, Djibouti and Japan.',
+			project2Paragraph:
+				'King Fahad Road, in the heart of Riyadh city. Our professionals in Maintenance and Operations keeps the long crowded street clean and in a great condition.',
+			project3Paragraph:
+				'The stadium is located in the south east of Jeddah, between King Abdulaziz University and the industrial city (Al Waziriah District). The stadium was constructed in 1970, and has a capacity of around 27,000 spectators, and is part of a municipal sports complex that includes an indoor arena and an aquatics center.'
 		},
 		testimonials: {
 			title: 'client testimonials'

@@ -73,16 +73,20 @@
 		/>
 	</div>
 	<!-- cards -->
-	<div class="grid gap-4 xl:gap-8 md:grid-cols-2 xl:grid-cols-3">
+	<div
+		class="grid gap-4 xl:gap-8 md:grid-cols-2 xl:grid-cols-3 {$currentAppLang === 'ar'
+			? 'ar-font'
+			: ''}"
+	>
 		<div class="card rounded-none bg-[#f6f6f9]" bind:this={cardRefs[0]}>
 			<div class="max-md:flex">
 				<!-- image -->
 				<div class="max-md:w-1/2">
 					<img
-						src="images/home/projectsSection/project-2_500x300.webp"
-						srcset="images/home/projectsSection/project-2_300x300.webp 390w, 
-            images/home/projectsSection/project-2_400x280.webp 768w, 
-            images/home/projectsSection/project-2_500x300.webp 2000w"
+						src="images/home/projectsSection/imam_XPGqXdGoK_500x300.webp"
+						srcset="images/home/projectsSection/imam_XPGqXdGoK_300x300.webp 390w, 
+            images/home/projectsSection/imam_XPGqXdGoK_400x280.webp 768w, 
+            images/home/projectsSection/imam_XPGqXdGoK_500x300.webp 2000w"
 						alt="a working labor"
 						class="w-full max-[390px]:h-full min-[390px]:aspect-[1/0.7] md:aspect-[1/0.6]"
 					/>
@@ -93,16 +97,14 @@
 						<h4
 							class="text-primary-500 px-2 min-[480px]:px-4 md:px-0 pt-2 min-[480px]:pt-4 md:pt-6 xl:pt-8 2xl:pt-10 text-base sm:text-lg lg:text-xl xl:text-2xl font-bold"
 						>
-							LOREM IPSUM
+							{$LL.home.projects.project1Title()}
 						</h4>
 
 						<p
 							class="p-2 min-[480px]:p-4 md:p-6 2xl:py-6 2xl:px-16 text-sm sm:text-base md:text-lg xl:text-xl"
 						>
 							<span class="line-clamp-4">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nisi fugiat
-								exercitationem? Lorem, m, ipsum. Lorem ipsum dolor sit amet consectetur adipisicing
-								elit. Deserunt, harum?
+								{$LL.home.projects.project1Paragraph()}
 							</span>
 						</p>
 						<div class="md:h-2" />
@@ -115,10 +117,10 @@
 				<!-- image -->
 				<div class="max-md:w-1/2">
 					<img
-						src="images/home/projectsSection/project-3_500x300.webp"
-						srcset="images/home/projectsSection/project-3_300x300.webp 390w, 
-          images/home/projectsSection/project-3_400x280.webp 768w, 
-          images/home/projectsSection/project-3_500x300.webp 2000w"
+						src="images/home/projectsSection/kfr_Bh4Awf-CvR_500x300.webp"
+						srcset="images/home/projectsSection/kfr_Bh4Awf-CvR_300x300.webp 390w, 
+          images/home/projectsSection/kfr_Bh4Awf-CvR_400x280.webp 768w, 
+          images/home/projectsSection/kfr_Bh4Awf-CvR_500x300.webp 2000w"
 						alt="a working labor"
 						class="w-full max-[390px]:h-full min-[390px]:aspect-[1/0.7] md:aspect-[1/0.6]"
 					/>
@@ -129,16 +131,14 @@
 						<h4
 							class="text-primary-500 px-2 min-[480px]:px-4 md:px-0 pt-2 min-[480px]:pt-4 md:pt-6 xl:pt-8 2xl:pt-10 text-base sm:text-lg lg:text-xl xl:text-2xl font-bold"
 						>
-							LOREM IPSUM
+							{$LL.home.projects.project2Title()}
 						</h4>
 
 						<p
 							class="p-2 min-[480px]:p-4 md:p-6 2xl:py-6 2xl:px-16 text-sm sm:text-base md:text-lg xl:text-xl"
 						>
 							<span class="line-clamp-4">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nisi fugiat
-								exercitationem? Lorem, m, ipsum. Lorem ipsum dolor sit amet consectetur adipisicing
-								elit. Deserunt, harum?
+								{$LL.home.projects.project2Paragraph()}
 							</span>
 						</p>
 						<div class="md:h-2" />
@@ -151,10 +151,10 @@
 				<!-- image -->
 				<div class="max-md:w-1/2">
 					<img
-						src="images/home/projectsSection/project-4_500x300.webp"
-						srcset="images/home/projectsSection/project-4_300x300.webp 390w, 
-          images/home/projectsSection/project-4_400x280.webp 768w, 
-          images/home/projectsSection/project-4_500x300.webp 2000w"
+						src="images/home/projectsSection/pafs_d3YZ932WSn_500x300.webp"
+						srcset="images/home/projectsSection/pafs_d3YZ932WSn_300x300.webp 390w, 
+          images/home/projectsSection/pafs_d3YZ932WSn_400x280.webp 768w, 
+          images/home/projectsSection/pafs_d3YZ932WSn_500x300.webp 2000w"
 						alt="a working labor"
 						class="w-full max-[390px]:h-full min-[390px]:aspect-[1/0.7] md:aspect-[1/0.6]"
 					/>
@@ -165,16 +165,14 @@
 						<h4
 							class="text-primary-500 px-2 min-[480px]:px-4 md:px-0 pt-2 min-[480px]:pt-4 md:pt-6 xl:pt-8 2xl:pt-10 text-base sm:text-lg lg:text-xl xl:text-2xl font-bold"
 						>
-							LOREM IPSUM
+							{$LL.home.projects.project3Title()}
 						</h4>
 
 						<p
 							class="p-2 min-[480px]:p-4 md:p-6 2xl:py-6 2xl:px-16 text-sm sm:text-base md:text-lg xl:text-xl"
 						>
 							<span class="line-clamp-4">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nisi fugiat
-								exercitationem? Lorem, m, ipsum. Lorem ipsum dolor sit amet consectetur adipisicing
-								elit. Deserunt, harum?
+								{$LL.home.projects.project3Paragraph()}
 							</span>
 						</p>
 						<div class="md:h-2" />
@@ -186,7 +184,8 @@
 	<!-- view more button -->
 	<div class="text-center py-10 {$currentAppLang === 'ar' ? 'ar-font' : ''}">
 		<div>
-			<button
+			<a
+				href={`/${$currentAppLang}/projects`}
 				class="btn !bg-transparent flex-col text-primary-500 border-0 text-xs sm:text-sm md:text-base font-semibold px-2 py-1"
 			>
 				<span>
@@ -204,7 +203,7 @@
 						/></svg
 					>
 				</span>
-			</button>
+			</a>
 		</div>
 		<div />
 	</div>
