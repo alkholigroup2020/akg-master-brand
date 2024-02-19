@@ -98,7 +98,7 @@
 	<!-- tabs bar on xs -->
 	<div class="container mx-auto px-3 min-[450px]:px-8 sm:hidden">
 		<!-- menu btn -->
-		<div>
+		<div dir={$pageDirection}>
 			<button
 				class="btn variant-ringed-primary rounded-md py-2 px-8 min-[450px]:px-12"
 				type="button"
@@ -181,13 +181,13 @@
 							class="border-b hover:cursor-pointer"
 							style="margin-top: 0px !important;"
 							on:click={() => {
-								tabSet = 'Hospitality';
-								btnText = `${$LL.projects.hospitality()}`;
+								tabSet = 'Maintenance';
+								btnText = `${$LL.projects.maintenance()}`;
 								navOpen = !navOpen;
 							}}
 						>
 							<div style="border-radius:0px" class="py-3 text-center">
-								<span>{$LL.projects.hospitality()}</span>
+								<span>{$LL.projects.maintenance()}</span>
 							</div>
 						</li>
 						<!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -209,7 +209,7 @@
 			{/if}
 		</div>
 		<!-- projects grid -->
-		<div>
+		<div dir={$pageDirection}>
 			{#if !projects}
 				<div class="w-full h-[750px] flex justify-center items-top">
 					<div class="mt-32">
@@ -267,8 +267,8 @@
 				rounded="rounded-none"
 				class="py-2 sm:px-2 md:px-3 lg:px-6 text-sm sm:text-base md:text-lg"
 				name="tab5"
-				value={'Hospitality'}
-				><span class={$currentAppLang === 'ar' ? 'ar-font' : ''}>{$LL.projects.hospitality()}</span
+				value={'Maintenance'}
+				><span class={$currentAppLang === 'ar' ? 'ar-font' : ''}>{$LL.projects.maintenance()}</span
 				></Tab
 			>
 			<Tab

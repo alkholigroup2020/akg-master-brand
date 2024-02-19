@@ -1,5 +1,7 @@
 <script lang="ts">
 	export let projectsData: any;
+	import { currentAppLang } from '$lib/stores/store';
+
 	export let tabSet: string;
 
 	import { onMount } from 'svelte';
@@ -54,9 +56,15 @@
 							</p>
 						</div>
 						<div>
-							<p class="text-base sm:text-lg lg:text-xl xl:text-2xl font-bold">
-								{project.attributes.projectTitle}
-							</p>
+							{#if $currentAppLang === 'en'}
+								<p class="text-base sm:text-lg lg:text-xl xl:text-2xl font-bold">
+									{project.attributes.projectTitle}
+								</p>
+							{:else}
+								<p class="text-base sm:text-lg lg:text-xl xl:text-2xl font-bold">
+									{project.attributes.localizations.data[0].attributes.projectTitle}
+								</p>
+							{/if}
 						</div>
 					</div>
 				</div>

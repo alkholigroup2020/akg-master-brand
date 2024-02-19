@@ -119,7 +119,7 @@ const en: BaseTranslation = {
 		education: 'Education',
 		construction: 'Construction',
 		healthcare: 'Healthcare',
-		hospitality: 'Hospitality',
+		maintenance: 'Maintenance',
 		government: 'Government'
 	},
 	partners: {

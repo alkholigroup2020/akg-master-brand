@@ -118,7 +118,7 @@ const en: BaseTranslation = {
 		education: 'التعليم',
 		construction: 'البنـــاء',
 		healthcare: 'الرعاية الصحية',
-		hospitality: 'الضيــافة',
+		maintenance: 'الصــيانة',
 		government: 'الأعمال الحكومية'
 	},
 	partners: {

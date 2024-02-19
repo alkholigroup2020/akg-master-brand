@@ -332,9 +332,9 @@ type RootTranslation = {
 		 */
 		healthcare: string
 		/**
-		 * H​o​s​p​i​t​a​l​i​t​y
+		 * M​a​i​n​t​e​n​a​n​c​e
 		 */
-		hospitality: string
+		maintenance: string
 		/**
 		 * G​o​v​e​r​n​m​e​n​t
 		 */
@@ -901,9 +901,9 @@ export type TranslationFunctions = {
 		 */
 		healthcare: () => LocalizedString
 		/**
-		 * Hospitality
+		 * Maintenance
 		 */
-		hospitality: () => LocalizedString
+		maintenance: () => LocalizedString
 		/**
 		 * Government
 		 */
