@@ -1,6 +1,8 @@
 <script lang="ts">
 	import LL from '$i18n/i18n-svelte';
 	import AboutUs from '$lib/aboutPage/AboutUs.svelte';
+	import BoardMembers from '$lib/aboutPage/BoardMembers.svelte';
+	import ChairmanMessage from '$lib/aboutPage/ChairmanMessage.svelte';
 	import HeroSection from '$lib/aboutPage/HeroSection.svelte';
 	import MissionAndVision from '$lib/aboutPage/MissionAndVision.svelte';
 	import PartnersSection from '$lib/aboutPage/PartnersSection.svelte';
@@ -24,8 +26,12 @@
 
 <MissionAndVision />
 
+<ChairmanMessage />
+
+<BoardMembers />
+
 <TeamMembers />
 
-<PartnersSection />
+<!-- <PartnersSection /> -->
 
 <MainFooter />

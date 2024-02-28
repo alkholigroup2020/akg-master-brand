@@ -116,11 +116,6 @@
 
 			{#if $currentAppLang === 'en'}
 				<!-- English -->
-				<!-- 
-						in:fly={{ x: 200, delay: 200, duration: 2000 }}
-						in:fly={{ x: 200, delay: 1000, duration: 2000 }}
-						in:fly={{ x: 200, delay: 1800, duration: 2000 }}
-					-->
 				<div>
 					<div
 						style="overflow-x: hidden; overflow-y: hidden"

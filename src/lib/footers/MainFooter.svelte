@@ -1,20 +1,18 @@
 <script lang="ts">
-	import LL from '$i18n/i18n-svelte';
 	import { currentAppLang } from '$lib/stores/store';
-	import { pageDirection } from '$lib/stores/store';
 </script>
 
 <section class="max-w-[1920px] mx-auto">
 	<div class="relative">
-		<div class="absolute w-full h-[300px] md:h-[250px] lg:h-[300px] 2xl:h-[350px] bg-tertiary-50" />
+		<div class="absolute w-full h-[340px] md:h-[250px] lg:h-[300px] 2xl:h-[350px] bg-tertiary-50" />
 		<div class="absolute w-full -mt-16">
 			<div
-				class="bg-primary-500 max-w-[92%] md:max-w-[97%] lg:max-w-[85%] xl:max-w-[90%] sm:w-full h-[300px] md:h-[250px] lg:h-[300px] 2xl:h-[350px]
-				container mx-auto px-3"
+				class="bg-primary-500 max-w-[92%] md:max-w-[97%] lg:max-w-[85%] xl:max-w-[90%] sm:w-full
+				h-[340px] md:h-[250px] lg:h-[300px] 2xl:h-[350px] container mx-auto px-3"
 			>
 				<!-- mobile size only -->
 				<div class="flex flex-col gap-2 text-white md:hidden">
-					<div class="">
+					<div>
 						<div class="flex flex-col items-center align-middle pt-5">
 							<div class="flex justify-center">
 								<!-- <img
@@ -39,10 +37,13 @@
 						<div class="flex justify-center">
 							<div class="space-y-4 text-xs sm:text-sm md:text-base">
 								<div>
+									<a href={`/${$currentAppLang}/`}>Home</a>
+								</div>
+								<div>
 									<a href={`/${$currentAppLang}/about`}>About Us</a>
 								</div>
 								<div>
-									<a href={`/${$currentAppLang}/contact-us`}>Career</a>
+									<a href={`/${$currentAppLang}/contact-us/#career-section`}>Career</a>
 								</div>
 								<div>
 									<a href={`/${$currentAppLang}/contact-us`}>Contact Us</a>
@@ -51,10 +52,17 @@
 						</div>
 						<div class="flex justify-center">
 							<div class="space-y-4 text-xs sm:text-sm md:text-base">
-								<p>Privacy Policy</p>
-								<p>Terms of Use</p>
 								<div>
-									<a href={`/${$currentAppLang}/about`}>About</a>
+									<a href={`/${$currentAppLang}/divisions`}>Divisions</a>
+								</div>
+								<div>
+									<a href={`/${$currentAppLang}/companies`}>Companies</a>
+								</div>
+								<div>
+									<a href={`/${$currentAppLang}/projects`}>Projects</a>
+								</div>
+								<div>
+									<a href={`/${$currentAppLang}/partners`}>Partners</a>
 								</div>
 							</div>
 						</div>
@@ -87,27 +95,56 @@
 									</div>
 								</div>
 							</a>
-							<div class="flex flex-col items-center space-y-2 space-x-1">
-								<div>
-									<span>
-										<svg
-											fill="#FFF"
-											class="w-4 h-4"
-											viewBox="0 0 16 16"
-											xmlns="http://www.w3.org/2000/svg"
-											><path
-												d="M11.42 9.49c-.19-.09-1.1-.54-1.27-.61s-.29-.09-.42.1-.48.6-.59.73-.21.14-.4 0a5.13 5.13 0 0 1-1.49-.92 5.25 5.25 0 0 1-1-1.29c-.11-.18 0-.28.08-.38s.18-.21.28-.32a1.39 1.39 0 0 0 .18-.31.38.38 0 0 0 0-.33c0-.09-.42-1-.58-1.37s-.3-.32-.41-.32h-.4a.72.72 0 0 0-.5.23 2.1 2.1 0 0 0-.65 1.55A3.59 3.59 0 0 0 5 8.2 8.32 8.32 0 0 0 8.19 11c.44.19.78.3 1.05.39a2.53 2.53 0 0 0 1.17.07 1.93 1.93 0 0 0 1.26-.88 1.67 1.67 0 0 0 .11-.88c-.05-.07-.17-.12-.36-.21z"
-											/><path
-												d="M13.29 2.68A7.36 7.36 0 0 0 8 .5a7.44 7.44 0 0 0-6.41 11.15l-1 3.85 3.94-1a7.4 7.4 0 0 0 3.55.9H8a7.44 7.44 0 0 0 5.29-12.72zM8 14.12a6.12 6.12 0 0 1-3.15-.87l-.22-.13-2.34.61.62-2.28-.14-.23a6.18 6.18 0 0 1 9.6-7.65 6.12 6.12 0 0 1 1.81 4.37A6.19 6.19 0 0 1 8 14.12z"
-											/></svg
-										>
-									</span>
+							<!-- linkedIn -->
+							<a
+								type="button"
+								href="https://www.linkedin.com/company/alkholi-group-of-companies"
+								target="_blank"
+								aria-label="linkedin link"
+							>
+								<div class="flex flex-col items-center space-y-2 space-x-1">
+									<div>
+										<span>
+											<svg
+												class="w-4 h-4"
+												viewBox="0 0 20 20"
+												version="1.1"
+												xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink"
+											>
+												<title>linkedin [#161]</title>
+												<desc>Created with Sketch.</desc>
+												<defs />
+												<g
+													id="Page-1"
+													stroke="none"
+													stroke-width="1"
+													fill="none"
+													fill-rule="evenodd"
+												>
+													<g
+														id="Dribbble-Light-Preview"
+														transform="translate(-180.000000, -7479.000000)"
+														fill="#FFF"
+													>
+														<g id="icons" transform="translate(56.000000, 160.000000)">
+															<path
+																d="M144,7339 L140,7339 L140,7332.001 C140,7330.081 139.153,7329.01 137.634,7329.01 C135.981,7329.01 135,7330.126 135,7332.001 L135,7339 L131,7339 L131,7326 L135,7326 L135,7327.462 C135,7327.462 136.255,7325.26 139.083,7325.26 C141.912,7325.26 144,7326.986 144,7330.558 L144,7339 L144,7339 Z M126.442,7323.921 C125.093,7323.921 124,7322.819 124,7321.46 C124,7320.102 125.093,7319 126.442,7319 C127.79,7319 128.883,7320.102 128.883,7321.46 C128.884,7322.819 127.79,7323.921 126.442,7323.921 L126.442,7323.921 Z M124,7339 L129,7339 L129,7326 L124,7326 L124,7339 Z"
+																id="linkedin-[#161]"
+															/>
+														</g>
+													</g>
+												</g>
+											</svg>
+										</span>
+									</div>
+									<div>
+										<p>LinkedIn</p>
+									</div>
 								</div>
-								<div>
-									<p>+00000000</p>
-								</div>
-							</div>
-							<a href="mailto:info@alkholi.com" aria-label="a mail link">
+							</a>
+							<!-- email -->
+							<a href="mailto:sales@alkholi.com" aria-label="a mail link">
 								<div class="flex flex-col items-center space-y-2 space-x-1">
 									<div>
 										<span>
@@ -138,13 +175,13 @@
 										</span>
 									</div>
 									<div>
-										<p>info@alkholi.com</p>
+										<p>sales@alkholi.com</p>
 									</div>
 								</div>
 							</a>
 						</div>
 						<div>
-							<p class="text-xs sm:text-sm md:text-base normal-thin text-center pt-5">
+							<p class="text-xs sm:text-sm md:text-base normal-thin text-center pt-5 sm:pt-2">
 								&copy; Alkholi Group. All rights reserved.
 							</p>
 						</div>
@@ -159,16 +196,37 @@
 					<div class="col-span-2">
 						<div class="space-y-4">
 							<div>
+								<a href={`/${$currentAppLang}/companies`}>Companies</a>
+							</div>
+							<div>
+								<a href={`/${$currentAppLang}/divisions`}>Divisions</a>
+							</div>
+							<div>
+								<a href={`/${$currentAppLang}/projects`}>Projects</a>
+							</div>
+							<div>
+								<a href={`/${$currentAppLang}/partners`}>Partners</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-span-2">
+						<div class="space-y-4">
+							<div>
 								<a href={`/${$currentAppLang}/about`}>About Us</a>
 							</div>
 							<div>
-								<a href={`/${$currentAppLang}/contact-us`}>Career</a>
+								<a href={`/${$currentAppLang}/contact-us/#career-section`}>Career</a>
 							</div>
 							<div>
 								<a href={`/${$currentAppLang}/contact-us`}>Contact Us</a>
 							</div>
+							<div>
+								<a href="mailto:sales@alkholi.com" aria-label="an email link">Sales</a>
+							</div>
 						</div>
 					</div>
+
 					<div class="col-span-3">
 						<div class="flex flex-col space-y-4">
 							<a type="button" href="tel:00966114041919" aria-label="Riyadh branch mobile number">
@@ -197,26 +255,55 @@
 									</div>
 								</div>
 							</a>
-							<div class="flex items-center space-x-2">
-								<div>
-									<span>
-										<svg
-											fill="#FFF"
-											class="w-4 h-4"
-											viewBox="0 0 16 16"
-											xmlns="http://www.w3.org/2000/svg"
-											><path
-												d="M11.42 9.49c-.19-.09-1.1-.54-1.27-.61s-.29-.09-.42.1-.48.6-.59.73-.21.14-.4 0a5.13 5.13 0 0 1-1.49-.92 5.25 5.25 0 0 1-1-1.29c-.11-.18 0-.28.08-.38s.18-.21.28-.32a1.39 1.39 0 0 0 .18-.31.38.38 0 0 0 0-.33c0-.09-.42-1-.58-1.37s-.3-.32-.41-.32h-.4a.72.72 0 0 0-.5.23 2.1 2.1 0 0 0-.65 1.55A3.59 3.59 0 0 0 5 8.2 8.32 8.32 0 0 0 8.19 11c.44.19.78.3 1.05.39a2.53 2.53 0 0 0 1.17.07 1.93 1.93 0 0 0 1.26-.88 1.67 1.67 0 0 0 .11-.88c-.05-.07-.17-.12-.36-.21z"
-											/><path
-												d="M13.29 2.68A7.36 7.36 0 0 0 8 .5a7.44 7.44 0 0 0-6.41 11.15l-1 3.85 3.94-1a7.4 7.4 0 0 0 3.55.9H8a7.44 7.44 0 0 0 5.29-12.72zM8 14.12a6.12 6.12 0 0 1-3.15-.87l-.22-.13-2.34.61.62-2.28-.14-.23a6.18 6.18 0 0 1 9.6-7.65 6.12 6.12 0 0 1 1.81 4.37A6.19 6.19 0 0 1 8 14.12z"
-											/></svg
-										>
-									</span>
+							<!-- linkedIn -->
+							<a
+								type="button"
+								href="https://www.linkedin.com/company/alkholi-group-of-companies"
+								target="_blank"
+								aria-label="linkedin link"
+							>
+								<div class="flex items-center space-x-2">
+									<div>
+										<span>
+											<svg
+												class="w-4 h-4"
+												viewBox="0 0 20 20"
+												version="1.1"
+												xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink"
+											>
+												<title>linkedin [#161]</title>
+												<desc>Created with Sketch.</desc>
+												<defs />
+												<g
+													id="Page-1"
+													stroke="none"
+													stroke-width="1"
+													fill="none"
+													fill-rule="evenodd"
+												>
+													<g
+														id="Dribbble-Light-Preview"
+														transform="translate(-180.000000, -7479.000000)"
+														fill="#FFF"
+													>
+														<g id="icons" transform="translate(56.000000, 160.000000)">
+															<path
+																d="M144,7339 L140,7339 L140,7332.001 C140,7330.081 139.153,7329.01 137.634,7329.01 C135.981,7329.01 135,7330.126 135,7332.001 L135,7339 L131,7339 L131,7326 L135,7326 L135,7327.462 C135,7327.462 136.255,7325.26 139.083,7325.26 C141.912,7325.26 144,7326.986 144,7330.558 L144,7339 L144,7339 Z M126.442,7323.921 C125.093,7323.921 124,7322.819 124,7321.46 C124,7320.102 125.093,7319 126.442,7319 C127.79,7319 128.883,7320.102 128.883,7321.46 C128.884,7322.819 127.79,7323.921 126.442,7323.921 L126.442,7323.921 Z M124,7339 L129,7339 L129,7326 L124,7326 L124,7339 Z"
+																id="linkedin-[#161]"
+															/>
+														</g>
+													</g>
+												</g>
+											</svg>
+										</span>
+									</div>
+									<div>
+										<p class="pt-1">LinkedIn</p>
+									</div>
 								</div>
-								<div>
-									<p>+00000000</p>
-								</div>
-							</div>
+							</a>
+
 							<a href="mailto:info@alkholi.com" aria-label="a mail link">
 								<div class="flex items-center space-x-2">
 									<div>
@@ -254,17 +341,47 @@
 									</div>
 								</div>
 							</a>
+
+							<a href="mailto:sales@alkholi.com" aria-label="an email link">
+								<div class="flex items-center space-x-2">
+									<div>
+										<span>
+											<svg
+												class="w-4 h-4"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7"
+													stroke="#FFF"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+												<rect
+													x="3"
+													y="5"
+													width="18"
+													height="14"
+													rx="2"
+													stroke="#FFF"
+													stroke-width="2"
+													stroke-linecap="round"
+												/>
+											</svg>
+										</span>
+									</div>
+									<div>
+										<div>
+											<p>sales@alkholi.com</p>
+										</div>
+									</div>
+								</div>
+							</a>
 						</div>
 					</div>
-					<div class="col-span-2">
-						<div class="space-y-4">
-							<p>Privacy Policy</p>
-							<p>Terms of Use</p>
-							<div>
-								<a href={`/${$currentAppLang}/about`}>About</a>
-							</div>
-						</div>
-					</div>
+
 					<div class="col-span-5">
 						<div class="flex flex-col items-end space-y-3">
 							<div>

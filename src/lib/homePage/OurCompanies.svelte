@@ -75,29 +75,12 @@
 	<!-- logos -->
 	<div class="flex flex-col pt-5">
 		<div
-			class="grid grid-cols-2 min-[500px]:grid-cols-3 md:grid-cols-4 pt-6 md:pt-12 px-5 min-[400px]:px-12
-			min-[500px]:px-8 lg:px-24 2xl:px-40 gap-x-12 min-[400px]:gap-x-20 min-[500px]:gap-x-12 sm:gap-x-16
+			class="grid grid-cols-2 min-[500px]:grid-cols-3 xl:grid-cols-4
+			pt-6 md:pt-12 px-5 min-[400px]:px-12 min-[500px]:px-8 lg:px-24 2xl:px-40
+			gap-x-12 min-[400px]:gap-x-20 min-[500px]:gap-x-12 sm:gap-x-16
 			lg:gap-x-24 2xl:gap-x-36 gap-y-8 md:gap-y-12"
 		>
 			<div class="flex flex-col items-center justify-center" bind:this={companiesRefs[0]}>
-				<div>
-					<img
-						src="/images/home/companiesSection/AKG-healthcare_300x150.webp"
-						alt="chairman"
-						class="w-full aspect-[1/0.5]"
-					/>
-				</div>
-			</div>
-			<div class="flex flex-col items-center justify-center" bind:this={companiesRefs[1]}>
-				<div>
-					<img
-						src="/images/home/companiesSection/AKG-Tech_300x150.webp"
-						alt="chairman"
-						class="w-full aspect-[1/0.5]"
-					/>
-				</div>
-			</div>
-			<div class="flex flex-col items-center justify-center" bind:this={companiesRefs[2]}>
 				<div>
 					<img
 						src="/images/home/companiesSection/AKG-Trading_300x150.webp"
@@ -106,16 +89,16 @@
 					/>
 				</div>
 			</div>
-			<div class="flex flex-col items-center justify-center" bind:this={companiesRefs[3]}>
-				<div>
+			<div class="flex flex-col items-center justify-center" bind:this={companiesRefs[1]}>
+				<div class="p-2 xl:p-5">
 					<img
-						src="/images/home/companiesSection/akstra_300x150.webp"
+						src="/images/home/companiesSection/sbtmc_300x150.webp"
 						alt="chairman"
 						class="w-full aspect-[1/0.5]"
 					/>
 				</div>
 			</div>
-			<div class="flex flex-col items-center justify-center" bind:this={companiesRefs[4]}>
+			<div class="flex flex-col items-center justify-center" bind:this={companiesRefs[2]}>
 				<div class="p-2 xl:p-5">
 					<img
 						src="/images/home/companiesSection/aktek_300x150.webp"
@@ -124,7 +107,7 @@
 					/>
 				</div>
 			</div>
-			<div class="flex flex-col items-center justify-center" bind:this={companiesRefs[5]}>
+			<div class="flex flex-col items-center justify-center" bind:this={companiesRefs[3]}>
 				<div class="p-1 xl:p-3">
 					<img
 						src="/images/home/companiesSection/amos_300x150.webp"
@@ -133,6 +116,29 @@
 					/>
 				</div>
 			</div>
+			<div
+				class="hidden xl:flex flex-col items-center justify-center opacity-0"
+				bind:this={companiesRefs[4]}
+			>
+				<div class="p-1 xl:p-3">
+					<img
+						src="/images/home/companiesSection/amos_300x150.webp"
+						alt="chairman"
+						class="w-full aspect-[1/0.5]"
+					/>
+				</div>
+			</div>
+
+			<div class="flex flex-col items-center justify-center" bind:this={companiesRefs[5]}>
+				<div class="p-2 xl:p-5">
+					<img
+						src="/images/home/companiesSection/up_300x150.webp"
+						alt="chairman"
+						class="w-full aspect-[1/0.5]"
+					/>
+				</div>
+			</div>
+
 			<div class="flex flex-col items-center justify-center" bind:this={companiesRefs[6]}>
 				<a
 					href="https://www.buildingtec-elevators.com/"
@@ -147,15 +153,6 @@
 						/>
 					</div>
 				</a>
-			</div>
-			<div class="flex flex-col items-center justify-center" bind:this={companiesRefs[7]}>
-				<div class="p-2 xl:p-5">
-					<img
-						src="/images/home/companiesSection/up_300x150.webp"
-						alt="chairman"
-						class="w-full aspect-[1/0.5]"
-					/>
-				</div>
 			</div>
 		</div>
 	</div>

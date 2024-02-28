@@ -7,7 +7,7 @@ const schema = z.object({
 	name: z.string(),
 	mobile: z.string().min(10).max(10).optional(),
 	email: z.string().email(),
-	project: z.string().optional(),
+	project: z.string(),
 	textArea: z.string().min(3).max(500)
 });
 
@@ -68,10 +68,9 @@ export const actions = {
 			
 		`;
 
-		// amr.bahi@alkholi.com,
 		await sendEmail(
-			'fawzy.mohamed@alkholi.com,  info@alkholi.com',
-			'AKG Website Messages - Contact Us Form.',
+			'fawzy.mohamed@alkholi.com, info@alkholi.com, sales@alkholi.com',
+			`AKG Website Messages - ${form.data.project}`,
 			emailTemplate,
 			emailTemplate
 		);
@@ -142,7 +141,7 @@ export const actions = {
 		`;
 
 		await sendEmail(
-			'fawzy.mohamed@alkholi.com, recruitment@alkholi.com',
+			'fawzy.mohamed@alkholi.com, recruitment@alkholi.com, info@alkholi.com',
 			'AKG Website Messages - Join Us Form.',
 			emailTemplate,
 			emailTemplate,

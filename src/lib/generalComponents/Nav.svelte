@@ -38,10 +38,10 @@
 
 			<!-- social media links -->
 			<div class="flex items-center border-l pl-4">
-				<p class="text-sm sm:text-base md:text-lg xl:text-xl font-bold pr-3">Follow:</p>
+				<p class="text-sm sm:text-base md:text-lg xl:text-xl pr-3">Follow Us:</p>
 				<div class="flex items-center space-x-3">
 					<!-- facebook icon -->
-					<div>
+					<!-- <div>
 						<span>
 							<svg
 								fill="#FFF"
@@ -63,9 +63,9 @@
 								</g>
 							</svg>
 						</span>
-					</div>
+					</div> -->
 					<!-- instagram icon -->
-					<div>
+					<!-- <div>
 						<span>
 							<svg
 								class="w-4 h-4"
@@ -91,7 +91,7 @@
 								/>
 							</svg>
 						</span>
-					</div>
+					</div> -->
 					<!-- snapchat icon -->
 					<!-- <div>
 						<span>
@@ -122,6 +122,7 @@
 							</svg>
 						</span>
 					</div> -->
+
 					<!-- linkedin icon -->
 					<a
 						href="https://www.linkedin.com/company/alkholi-group-of-companies"

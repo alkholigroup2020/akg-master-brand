@@ -5,8 +5,6 @@
 	import JoinForm from '$lib/contact-us/JoinForm.svelte';
 	import Map from '$lib/contact-us/Map.svelte';
 	import MainFooter from '$lib/footers/MainFooter.svelte';
-	import Intro from '$lib/partners/Intro.svelte';
-	import PartnersLogos from '$lib/partners/PartnersLogos.svelte';
 
 	export let data;
 

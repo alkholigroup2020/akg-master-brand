@@ -76,7 +76,7 @@
 
 		<div class="flex flex-col-reverse lg:flex-row bg-primary-500">
 			<!-- text -->
-			<div class="lg:w-[50%] px-3 py-8 sm:p-8 xl:p-12 space-y-5" dir={$pageDirection}>
+			<div class="lg:w-[50%] px-3 py-8 sm:p-8 md:p-6 2xl:p-9 space-y-5" dir={$pageDirection}>
 				<!-- title -->
 				<p
 					class="text-lg sm:text-2xl lg:text-2xl xl:text-3xl text-secondary-500 xl:mb-5 {$currentAppLang ===
@@ -143,8 +143,8 @@
 			<!-- image -->
 			<div class="lg:w-[50%]">
 				<img
-					src="images/home/servicesSection/asset-06_800x480.webp"
-					srcset="images/home/servicesSection/asset-06_800x400.webp 1024w, images/home/servicesSection/asset-06_800x800.webp 1280w, images/home/servicesSection/asset-06_800x640.webp 1536w, images/home/servicesSection/asset-06_800x480.webp 2000w"
+					src="images/home/servicesSection/_abdulaziz_800x480.webp"
+					srcset="images/home/servicesSection/_abdulaziz_800x400.webp 1024w, images/home/servicesSection/_abdulaziz_800x800.webp 1280w, images/home/servicesSection/_abdulaziz_800x640.webp 1536w, images/home/servicesSection/_abdulaziz_800x480.webp 2000w"
 					alt="an IT person working in data center"
 					class="w-full aspect-[1/0.5] lg:aspect-[1/1] xl:aspect-[1/0.8] 2xl:aspect-[1/0.6]"
 				/>

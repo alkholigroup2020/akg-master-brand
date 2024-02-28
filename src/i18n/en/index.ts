@@ -95,6 +95,14 @@ const en: BaseTranslation = {
 			visionT: 'Vision',
 			visionP: 'To excel in the industry through constant innovation and reinvention.'
 		},
+		chairmanMsg: {
+			first:
+				'A legacy built over half a century, the Al Kholi Group has built its reputation in the Kingdom through means of sustainability, quality work delivered on time, and having experts on our team who diligently support each project. From the very beginning, our core focus has been on convenience of our Customers. Throughout the years, our hard work and commitment have resulted in the Al Kholi Group serving as gateway between Saudi Arabia and our international Partners that has allowed us to continue working towards our long term goals through innovation, clear direction, and meticulous organisation.',
+			second:
+				'Branching out and setting up subsidiaries that cater to various sectors of Technologies and Healthcare, Construction, Facilities Maintenance, Management Consulting, Energy Retrofit, Elevators and Escalators, and MEP Contracting as well as Pre-Fabrication, we have dedicated ourselves to enhancing the quality of life of our community.',
+			third:
+				'Our core success factors are our distinguished management, our diversified portfolio of services, products, Partners and Clients as well as our dedication to the goal of creating a sustainable environment for our employees and customers. We  are working towards a comprehensive approach to sustainability and the environmental safety that will set the precedence for the future. We lay the foundations today and begin the ground work for a better, healthier, and safer today, tomorrow, and the years to come. '
+		},
 		team: {
 			title: 'Meet the team'
 		},
@@ -105,6 +113,8 @@ const en: BaseTranslation = {
 	},
 	companies: {
 		title: 'Our companies',
+		contact: 'Contact Us',
+		profile: 'Company Profile',
 		amos: 'AMOS is a facilities management company that provides a range of services, including specialist hard services, hard services, soft services, and landscaping. They are committed to delivering comprehensive solutions that are tailored to meet the specific needs of each client.',
 		sbtmc:
 			'Saudi Building Technique & Maintenance Company is specialized in providing construction, MEP, management services, facility management. SBTMC  is a 100% Saudi Company with a management and workforce of various nationalities. SBTMC provides a full range of specialized services that reflect the upscale and advanced level of design facilities in Saudi Arabia.',
@@ -159,6 +169,7 @@ const en: BaseTranslation = {
 		mobilePlaceholder: 'Mobile number (05xxxxxxxx)',
 		mobileError: 'Please enter a valid mobile number!',
 		typeOfProject: 'Type Of Project',
+		projectError: 'Please chose a project type!',
 		textAreaPlaceholder: 'Message*',
 		textAreaError1: 'Message is too short!',
 		textAreaError2: 'Message is too long! Maximum 500 characters.',
@@ -169,6 +180,7 @@ const en: BaseTranslation = {
 	},
 	joinUsForm: {
 		title: 'Want to join our team?',
+		subTitle: 'Visit Our LinkedIn Page',
 		fullName: 'Full Name*',
 		fullNameError: 'Name length should be more than 2 characters!',
 		fullNameLengthError: 'Name is too long! Maximum 60 characters.',

@@ -40,11 +40,13 @@
 		>
 			<div class="flex space-x-2 lg:space-x-6" bind:this={cardRefs[0]}>
 				<div>
-					<img
-						src="/images/contact-us/info/asset-53.png"
-						class="rounded-full w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 xl:w-20 xl:h-20"
-						alt="phone"
-					/>
+					<a type="button" href="tel:00966114041919" aria-label="Riyadh branch phone number">
+						<img
+							src="/images/contact-us/info/asset-53.png"
+							class="rounded-full w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 xl:w-20 xl:h-20"
+							alt="phone"
+						/>
+					</a>
 				</div>
 				<div class={$pageDirection === 'rtl' ? 'pr-5' : ''}>
 					<div class="flex flex-col">
@@ -68,40 +70,64 @@
 
 			<div class="flex space-x-2 lg:space-x-6" bind:this={cardRefs[1]}>
 				<div>
-					<img
-						src="/images/contact-us/info/asset-54.png"
-						class="rounded-full w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 xl:w-20 xl:h-20"
-						alt="phone"
-					/>
+					<a
+						type="button"
+						href="https://maps.app.goo.gl/ejvgs1QSRA4y5JsaA"
+						aria-label="Riyadh branch location"
+						target="_blank"
+					>
+						<img
+							src="/images/contact-us/info/asset-54.png"
+							class="rounded-full w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 xl:w-20 xl:h-20"
+							alt="location"
+						/>
+					</a>
 				</div>
 
 				<div class={$pageDirection === 'rtl' ? 'pr-5' : ''}>
-					<div class="flex flex-col">
-						<p
-							class="pb-1 text-sm sm:text-base md:text-lg xl:text-xl font-bold uppercase {$currentAppLang ===
-							'ar'
-								? 'ar-font'
-								: ''}"
-						>
-							{$LL.contact.location()}
-						</p>
-						<p class="text-xs sm:text-sm md:text-base {$currentAppLang === 'ar' ? 'ar-font' : ''}">
-							{$LL.contact.addressPart1()}
-						</p>
-						<p class="text-xs sm:text-sm md:text-base {$currentAppLang === 'ar' ? 'ar-font' : ''}">
-							{$LL.contact.addressPart2()}
-						</p>
-					</div>
+					<a
+						type="button"
+						href="https://maps.app.goo.gl/ejvgs1QSRA4y5JsaA"
+						aria-label="Riyadh branch location"
+						target="_blank"
+					>
+						<div class="flex flex-col">
+							<p
+								class="pb-1 text-sm sm:text-base md:text-lg xl:text-xl font-bold uppercase {$currentAppLang ===
+								'ar'
+									? 'ar-font'
+									: ''}"
+							>
+								{$LL.contact.location()}
+							</p>
+							<p
+								class="text-xs sm:text-sm md:text-base {$currentAppLang === 'ar' ? 'ar-font' : ''}"
+							>
+								{$LL.contact.addressPart1()}
+							</p>
+							<p
+								class="text-xs sm:text-sm md:text-base {$currentAppLang === 'ar' ? 'ar-font' : ''}"
+							>
+								{$LL.contact.addressPart2()}
+							</p>
+						</div>
+					</a>
 				</div>
 			</div>
 
 			<div class="flex space-x-2 lg:space-x-6" bind:this={cardRefs[2]}>
 				<div>
-					<img
-						src="/images/contact-us/info/asset-55.png"
-						class="rounded-full w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 xl:w-20 xl:h-20"
-						alt="phone"
-					/>
+					<a
+						type="button"
+						href="mailto:info@alkholi.com;sales@alkholi.com"
+						aria-label="email address"
+					>
+						<img
+							src="/images/contact-us/info/asset-55.png"
+							class="rounded-full w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 xl:w-20 xl:h-20"
+							alt="phone"
+						/>
+					</a>
 				</div>
 				<div class={$pageDirection === 'rtl' ? 'pr-5' : ''}>
 					<div class="flex flex-col">
@@ -115,6 +141,9 @@
 						</p>
 						<a href="mailto:info@alkholi.com" aria-label="a mail link">
 							<p class="text-xs sm:text-sm md:text-base">{$LL.contact.emailAddress()}</p>
+						</a>
+						<a href="mailto:sales@alkholi.com" aria-label="a mail link">
+							<p class="text-xs sm:text-sm md:text-base">sales@alkholi.com</p>
 						</a>
 					</div>
 				</div>

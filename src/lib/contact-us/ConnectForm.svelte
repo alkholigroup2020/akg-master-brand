@@ -5,7 +5,18 @@
 	import { pageDirection } from '$lib/stores/store';
 
 	import { superForm } from 'sveltekit-superforms/client';
-	import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte';
+
+	import { onMount } from 'svelte';
+	import { page } from '$app/stores';
+	onMount(() => {
+		$page.url.hash && scrollToSection($page.url.hash);
+	});
+	function scrollToSection(hash: any) {
+		const target = document.querySelector(hash);
+		if (target) {
+			target.scrollIntoView({ behavior: 'smooth' });
+		}
+	}
 
 	$: isChecked = false;
 
@@ -42,9 +53,12 @@
 			},
 			project: (value) => {
 				if (value === undefined) {
-					// as a project is optional and if not filled in
 					return null;
 				}
+				// if (value === `${$LL.form.typeOfProject()}`) {
+				// 	// as a project is optional and if not filled in
+				// 	return `${$LL.form.projectError()}`;
+				// }
 			},
 			mobile: (value) => {
 				if (value === undefined) {
@@ -82,6 +96,7 @@
 </script>
 
 <section
+	id="contact-form"
 	class="container px-3 mx-auto {$currentAppLang === 'ar' ? 'ar-font font-semibold' : ''}"
 	dir={$pageDirection}
 >
@@ -109,6 +124,7 @@
 				<!-- mobile number -->
 				<div>
 					<input
+						dir={$pageDirection}
 						bind:value={$form.mobile}
 						class="w-full h-16 rounded-sm text-sm sm:text-base md:text-lg xl:text-xl bg-[#f6f6f9] border-none"
 						type="tel"
@@ -136,7 +152,7 @@
 
 				<!-- type of project -->
 				<div>
-					<input
+					<!-- <input
 						type="text"
 						name="project"
 						placeholder={$LL.form.typeOfProject()}
@@ -145,6 +161,27 @@
 						bind:value={$form.project}
 						{...$constraints.project}
 					/>
+					{#if $errors.project}<span class="invalid">{$errors.project}</span>{/if} -->
+					<label for="projectType" class="mb-1 -mt-2">{$LL.form.typeOfProject()}</label>
+					<select
+						id="projectType"
+						class="w-full h-16 rounded-sm text-sm sm:text-base md:text-lg xl:text-xl bg-[#f6f6f9] border-none"
+						name="project"
+						required
+						bind:value={$form.project}
+						{...$constraints.project}
+					>
+						<!-- <option selected>{$LL.form.typeOfProject()}</option> -->
+						<option value="Development" selected>Development</option>
+						<option value="Construction">Construction</option>
+						<option value="Facility Management">Facility Management</option>
+						<option value="Mechanical, Electrical and Plumbing (MEP)"
+							>Mechanical, Electrical and Plumbing (MEP)</option
+						>
+						<option value="General Construction">General Construction</option>
+						<option value="Sustainability">Sustainability</option>
+						<option value="Other">Other...</option>
+					</select>
 					{#if $errors.project}<span class="invalid">{$errors.project}</span>{/if}
 				</div>
 			</div>
@@ -155,7 +192,7 @@
 				<div>
 					<textarea
 						class="w-full rounded-sm text-sm sm:text-base md:text-lg xl:text-xl bg-[#f6f6f9] border-none p-5"
-						rows="11"
+						rows="12"
 						{...$constraints.textArea}
 						placeholder={$LL.form.textAreaPlaceholder()}
 						bind:value={$form.textArea}

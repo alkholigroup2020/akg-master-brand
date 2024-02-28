@@ -38,8 +38,8 @@
 <section>
 	<div class="container mx-auto px-3 py-5 xl:py-12 {$currentAppLang === 'ar' ? 'ar-font' : ''}">
 		<div class="sm:flex">
+			<!-- bind:this={itemsRefs[0]} -->
 			<div
-				bind:this={itemsRefs[0]}
 				class="sm:w-1/2 min-[400px]:px-12 min-[550px]:px-16 sm:px-5 md:px-8 xl:px-24 2xl:px-36 py-5"
 			>
 				<div class="flex flex-col items-center">
@@ -65,8 +65,8 @@
 					</p>
 				</div>
 			</div>
+			<!-- bind:this={itemsRefs[1]} -->
 			<div
-				bind:this={itemsRefs[1]}
 				class="sm:w-1/2 min-[400px]:px-12 min-[550px]:px-16 sm:px-5 md:px-8 xl:px-24 2xl:px-36 py-5"
 			>
 				<div class="flex flex-col items-center">

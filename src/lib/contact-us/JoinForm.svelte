@@ -1,11 +1,25 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+	import { page } from '$app/stores';
+
+	onMount(() => {
+		$page.url.hash && scrollToSection($page.url.hash);
+	});
+
+	function scrollToSection(hash: any) {
+		const target = document.querySelector(hash);
+		if (target) {
+			target.scrollIntoView({ behavior: 'smooth' });
+		}
+	}
+
 	import LL from '$i18n/i18n-svelte';
 	import { currentAppLang } from '$lib/stores/store';
 	import { pageDirection } from '$lib/stores/store';
 	import Toast from '$lib/generalComponents/Toast.svelte';
 
 	import { superForm } from 'sveltekit-superforms/client';
-	import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte';
+
 	$: isChecked = false;
 
 	import { FileDropzone } from '@skeletonlabs/skeleton';
@@ -136,7 +150,7 @@
 	});
 </script>
 
-<section class="max-w-[1920px] mx-auto">
+<section class="max-w-[1920px] mx-auto" id="career-section">
 	<div
 		class="bg-primary-500 text-white pb-36 px-3 {$currentAppLang === 'ar'
 			? 'ar-font font-medium'
@@ -150,12 +164,43 @@
 				</h2>
 			</div>
 
-			<div>
-				<p
-					class="text-sm sm:text-base md:text-lg xl:text-xl lg:px-8 2xl:px-24 leading-8 text-center py-3 md:py-5 xl:py-8"
+			<div class="flex justify-center lg:px-8 2xl:px-24 leading-8 py-3 md:py-5 xl:py-8">
+				<a
+					href="https://www.linkedin.com/company/alkholi-group-of-companies"
+					aria-label="a linkedIn link"
+					target="_blank"
 				>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-				</p>
+					<div class=" w-fit flex items-center space-x-3">
+						<p class="text-sm sm:text-base md:text-xl xl:text-2xl">{$LL.joinUsForm.subTitle()}</p>
+						<span>
+							<svg
+								class="w-3 h-3 md:w-5 md:h-5"
+								viewBox="0 0 20 20"
+								version="1.1"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+							>
+								<title>linkedin [#161]</title>
+								<desc>Created with Sketch.</desc>
+								<defs />
+								<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+									<g
+										id="Dribbble-Light-Preview"
+										transform="translate(-180.000000, -7479.000000)"
+										fill="#FFF"
+									>
+										<g id="icons" transform="translate(56.000000, 160.000000)">
+											<path
+												d="M144,7339 L140,7339 L140,7332.001 C140,7330.081 139.153,7329.01 137.634,7329.01 C135.981,7329.01 135,7330.126 135,7332.001 L135,7339 L131,7339 L131,7326 L135,7326 L135,7327.462 C135,7327.462 136.255,7325.26 139.083,7325.26 C141.912,7325.26 144,7326.986 144,7330.558 L144,7339 L144,7339 Z M126.442,7323.921 C125.093,7323.921 124,7322.819 124,7321.46 C124,7320.102 125.093,7319 126.442,7319 C127.79,7319 128.883,7320.102 128.883,7321.46 C128.884,7322.819 127.79,7323.921 126.442,7323.921 L126.442,7323.921 Z M124,7339 L129,7339 L129,7326 L124,7326 L124,7339 Z"
+												id="linkedin-[#161]"
+											/>
+										</g>
+									</g>
+								</g>
+							</svg>
+						</span>
+					</div>
+				</a>
 			</div>
 		</div>
 		<!-- form -->
@@ -189,6 +234,7 @@
 						<!-- mobile number -->
 						<div>
 							<input
+								dir={$pageDirection}
 								bind:value={$form.mobile}
 								class="w-full h-16 rounded-sm text-sm sm:text-base md:text-lg xl:text-xl bg-[#f6f6f9] border-none"
 								type="tel"

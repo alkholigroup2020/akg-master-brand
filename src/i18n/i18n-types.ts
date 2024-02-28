@@ -275,6 +275,20 @@ type RootTranslation = {
 			 */
 			visionP: string
 		}
+		chairmanMsg: {
+			/**
+			 * A​ ​l​e​g​a​c​y​ ​b​u​i​l​t​ ​o​v​e​r​ ​h​a​l​f​ ​a​ ​c​e​n​t​u​r​y​,​ ​t​h​e​ ​A​l​ ​K​h​o​l​i​ ​G​r​o​u​p​ ​h​a​s​ ​b​u​i​l​t​ ​i​t​s​ ​r​e​p​u​t​a​t​i​o​n​ ​i​n​ ​t​h​e​ ​K​i​n​g​d​o​m​ ​t​h​r​o​u​g​h​ ​m​e​a​n​s​ ​o​f​ ​s​u​s​t​a​i​n​a​b​i​l​i​t​y​,​ ​q​u​a​l​i​t​y​ ​w​o​r​k​ ​d​e​l​i​v​e​r​e​d​ ​o​n​ ​t​i​m​e​,​ ​a​n​d​ ​h​a​v​i​n​g​ ​e​x​p​e​r​t​s​ ​o​n​ ​o​u​r​ ​t​e​a​m​ ​w​h​o​ ​d​i​l​i​g​e​n​t​l​y​ ​s​u​p​p​o​r​t​ ​e​a​c​h​ ​p​r​o​j​e​c​t​.​ ​F​r​o​m​ ​t​h​e​ ​v​e​r​y​ ​b​e​g​i​n​n​i​n​g​,​ ​o​u​r​ ​c​o​r​e​ ​f​o​c​u​s​ ​h​a​s​ ​b​e​e​n​ ​o​n​ ​c​o​n​v​e​n​i​e​n​c​e​ ​o​f​ ​o​u​r​ ​C​u​s​t​o​m​e​r​s​.​ ​T​h​r​o​u​g​h​o​u​t​ ​t​h​e​ ​y​e​a​r​s​,​ ​o​u​r​ ​h​a​r​d​ ​w​o​r​k​ ​a​n​d​ ​c​o​m​m​i​t​m​e​n​t​ ​h​a​v​e​ ​r​e​s​u​l​t​e​d​ ​i​n​ ​t​h​e​ ​A​l​ ​K​h​o​l​i​ ​G​r​o​u​p​ ​s​e​r​v​i​n​g​ ​a​s​ ​g​a​t​e​w​a​y​ ​b​e​t​w​e​e​n​ ​S​a​u​d​i​ ​A​r​a​b​i​a​ ​a​n​d​ ​o​u​r​ ​i​n​t​e​r​n​a​t​i​o​n​a​l​ ​P​a​r​t​n​e​r​s​ ​t​h​a​t​ ​h​a​s​ ​a​l​l​o​w​e​d​ ​u​s​ ​t​o​ ​c​o​n​t​i​n​u​e​ ​w​o​r​k​i​n​g​ ​t​o​w​a​r​d​s​ ​o​u​r​ ​l​o​n​g​ ​t​e​r​m​ ​g​o​a​l​s​ ​t​h​r​o​u​g​h​ ​i​n​n​o​v​a​t​i​o​n​,​ ​c​l​e​a​r​ ​d​i​r​e​c​t​i​o​n​,​ ​a​n​d​ ​m​e​t​i​c​u​l​o​u​s​ ​o​r​g​a​n​i​s​a​t​i​o​n​.
+			 */
+			first: string
+			/**
+			 * B​r​a​n​c​h​i​n​g​ ​o​u​t​ ​a​n​d​ ​s​e​t​t​i​n​g​ ​u​p​ ​s​u​b​s​i​d​i​a​r​i​e​s​ ​t​h​a​t​ ​c​a​t​e​r​ ​t​o​ ​v​a​r​i​o​u​s​ ​s​e​c​t​o​r​s​ ​o​f​ ​T​e​c​h​n​o​l​o​g​i​e​s​ ​a​n​d​ ​H​e​a​l​t​h​c​a​r​e​,​ ​C​o​n​s​t​r​u​c​t​i​o​n​,​ ​F​a​c​i​l​i​t​i​e​s​ ​M​a​i​n​t​e​n​a​n​c​e​,​ ​M​a​n​a​g​e​m​e​n​t​ ​C​o​n​s​u​l​t​i​n​g​,​ ​E​n​e​r​g​y​ ​R​e​t​r​o​f​i​t​,​ ​E​l​e​v​a​t​o​r​s​ ​a​n​d​ ​E​s​c​a​l​a​t​o​r​s​,​ ​a​n​d​ ​M​E​P​ ​C​o​n​t​r​a​c​t​i​n​g​ ​a​s​ ​w​e​l​l​ ​a​s​ ​P​r​e​-​F​a​b​r​i​c​a​t​i​o​n​,​ ​w​e​ ​h​a​v​e​ ​d​e​d​i​c​a​t​e​d​ ​o​u​r​s​e​l​v​e​s​ ​t​o​ ​e​n​h​a​n​c​i​n​g​ ​t​h​e​ ​q​u​a​l​i​t​y​ ​o​f​ ​l​i​f​e​ ​o​f​ ​o​u​r​ ​c​o​m​m​u​n​i​t​y​.
+			 */
+			second: string
+			/**
+			 * O​u​r​ ​c​o​r​e​ ​s​u​c​c​e​s​s​ ​f​a​c​t​o​r​s​ ​a​r​e​ ​o​u​r​ ​d​i​s​t​i​n​g​u​i​s​h​e​d​ ​m​a​n​a​g​e​m​e​n​t​,​ ​o​u​r​ ​d​i​v​e​r​s​i​f​i​e​d​ ​p​o​r​t​f​o​l​i​o​ ​o​f​ ​s​e​r​v​i​c​e​s​,​ ​p​r​o​d​u​c​t​s​,​ ​P​a​r​t​n​e​r​s​ ​a​n​d​ ​C​l​i​e​n​t​s​ ​a​s​ ​w​e​l​l​ ​a​s​ ​o​u​r​ ​d​e​d​i​c​a​t​i​o​n​ ​t​o​ ​t​h​e​ ​g​o​a​l​ ​o​f​ ​c​r​e​a​t​i​n​g​ ​a​ ​s​u​s​t​a​i​n​a​b​l​e​ ​e​n​v​i​r​o​n​m​e​n​t​ ​f​o​r​ ​o​u​r​ ​e​m​p​l​o​y​e​e​s​ ​a​n​d​ ​c​u​s​t​o​m​e​r​s​.​ ​W​e​ ​ ​a​r​e​ ​w​o​r​k​i​n​g​ ​t​o​w​a​r​d​s​ ​a​ ​c​o​m​p​r​e​h​e​n​s​i​v​e​ ​a​p​p​r​o​a​c​h​ ​t​o​ ​s​u​s​t​a​i​n​a​b​i​l​i​t​y​ ​a​n​d​ ​t​h​e​ ​e​n​v​i​r​o​n​m​e​n​t​a​l​ ​s​a​f​e​t​y​ ​t​h​a​t​ ​w​i​l​l​ ​s​e​t​ ​t​h​e​ ​p​r​e​c​e​d​e​n​c​e​ ​f​o​r​ ​t​h​e​ ​f​u​t​u​r​e​.​ ​W​e​ ​l​a​y​ ​t​h​e​ ​f​o​u​n​d​a​t​i​o​n​s​ ​t​o​d​a​y​ ​a​n​d​ ​b​e​g​i​n​ ​t​h​e​ ​g​r​o​u​n​d​ ​w​o​r​k​ ​f​o​r​ ​a​ ​b​e​t​t​e​r​,​ ​h​e​a​l​t​h​i​e​r​,​ ​a​n​d​ ​s​a​f​e​r​ ​t​o​d​a​y​,​ ​t​o​m​o​r​r​o​w​,​ ​a​n​d​ ​t​h​e​ ​y​e​a​r​s​ ​t​o​ ​c​o​m​e​.​ 
+			 */
+			third: string
+		}
 		team: {
 			/**
 			 * M​e​e​t​ ​t​h​e​ ​t​e​a​m
@@ -297,6 +311,14 @@ type RootTranslation = {
 		 * O​u​r​ ​c​o​m​p​a​n​i​e​s
 		 */
 		title: string
+		/**
+		 * C​o​n​t​a​c​t​ ​U​s
+		 */
+		contact: string
+		/**
+		 * C​o​m​p​a​n​y​ ​P​r​o​f​i​l​e
+		 */
+		profile: string
 		/**
 		 * A​M​O​S​ ​i​s​ ​a​ ​f​a​c​i​l​i​t​i​e​s​ ​m​a​n​a​g​e​m​e​n​t​ ​c​o​m​p​a​n​y​ ​t​h​a​t​ ​p​r​o​v​i​d​e​s​ ​a​ ​r​a​n​g​e​ ​o​f​ ​s​e​r​v​i​c​e​s​,​ ​i​n​c​l​u​d​i​n​g​ ​s​p​e​c​i​a​l​i​s​t​ ​h​a​r​d​ ​s​e​r​v​i​c​e​s​,​ ​h​a​r​d​ ​s​e​r​v​i​c​e​s​,​ ​s​o​f​t​ ​s​e​r​v​i​c​e​s​,​ ​a​n​d​ ​l​a​n​d​s​c​a​p​i​n​g​.​ ​T​h​e​y​ ​a​r​e​ ​c​o​m​m​i​t​t​e​d​ ​t​o​ ​d​e​l​i​v​e​r​i​n​g​ ​c​o​m​p​r​e​h​e​n​s​i​v​e​ ​s​o​l​u​t​i​o​n​s​ ​t​h​a​t​ ​a​r​e​ ​t​a​i​l​o​r​e​d​ ​t​o​ ​m​e​e​t​ ​t​h​e​ ​s​p​e​c​i​f​i​c​ ​n​e​e​d​s​ ​o​f​ ​e​a​c​h​ ​c​l​i​e​n​t​.
 		 */
@@ -462,6 +484,10 @@ type RootTranslation = {
 		 */
 		typeOfProject: string
 		/**
+		 * P​l​e​a​s​e​ ​c​h​o​s​e​ ​a​ ​p​r​o​j​e​c​t​ ​t​y​p​e​!
+		 */
+		projectError: string
+		/**
 		 * M​e​s​s​a​g​e​*
 		 */
 		textAreaPlaceholder: string
@@ -495,6 +521,10 @@ type RootTranslation = {
 		 * W​a​n​t​ ​t​o​ ​j​o​i​n​ ​o​u​r​ ​t​e​a​m​?
 		 */
 		title: string
+		/**
+		 * V​i​s​i​t​ ​O​u​r​ ​L​i​n​k​e​d​I​n​ ​P​a​g​e
+		 */
+		subTitle: string
 		/**
 		 * F​u​l​l​ ​N​a​m​e​*
 		 */
@@ -868,6 +898,20 @@ export type TranslationFunctions = {
 			 */
 			visionP: () => LocalizedString
 		}
+		chairmanMsg: {
+			/**
+			 * A legacy built over half a century, the Al Kholi Group has built its reputation in the Kingdom through means of sustainability, quality work delivered on time, and having experts on our team who diligently support each project. From the very beginning, our core focus has been on convenience of our Customers. Throughout the years, our hard work and commitment have resulted in the Al Kholi Group serving as gateway between Saudi Arabia and our international Partners that has allowed us to continue working towards our long term goals through innovation, clear direction, and meticulous organisation.
+			 */
+			first: () => LocalizedString
+			/**
+			 * Branching out and setting up subsidiaries that cater to various sectors of Technologies and Healthcare, Construction, Facilities Maintenance, Management Consulting, Energy Retrofit, Elevators and Escalators, and MEP Contracting as well as Pre-Fabrication, we have dedicated ourselves to enhancing the quality of life of our community.
+			 */
+			second: () => LocalizedString
+			/**
+			 * Our core success factors are our distinguished management, our diversified portfolio of services, products, Partners and Clients as well as our dedication to the goal of creating a sustainable environment for our employees and customers. We  are working towards a comprehensive approach to sustainability and the environmental safety that will set the precedence for the future. We lay the foundations today and begin the ground work for a better, healthier, and safer today, tomorrow, and the years to come. 
+			 */
+			third: () => LocalizedString
+		}
 		team: {
 			/**
 			 * Meet the team
@@ -890,6 +934,14 @@ export type TranslationFunctions = {
 		 * Our companies
 		 */
 		title: () => LocalizedString
+		/**
+		 * Contact Us
+		 */
+		contact: () => LocalizedString
+		/**
+		 * Company Profile
+		 */
+		profile: () => LocalizedString
 		/**
 		 * AMOS is a facilities management company that provides a range of services, including specialist hard services, hard services, soft services, and landscaping. They are committed to delivering comprehensive solutions that are tailored to meet the specific needs of each client.
 		 */
@@ -1055,6 +1107,10 @@ export type TranslationFunctions = {
 		 */
 		typeOfProject: () => LocalizedString
 		/**
+		 * Please chose a project type!
+		 */
+		projectError: () => LocalizedString
+		/**
 		 * Message*
 		 */
 		textAreaPlaceholder: () => LocalizedString
@@ -1088,6 +1144,10 @@ export type TranslationFunctions = {
 		 * Want to join our team?
 		 */
 		title: () => LocalizedString
+		/**
+		 * Visit Our LinkedIn Page
+		 */
+		subTitle: () => LocalizedString
 		/**
 		 * Full Name*
 		 */

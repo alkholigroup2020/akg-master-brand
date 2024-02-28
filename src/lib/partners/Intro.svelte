@@ -32,7 +32,7 @@
 	});
 </script>
 
-<section class="container px-3 mx-auto pt-8 2xl:pt-20">
+<section class="container px-3 mx-auto pt-12 md:pt-20 2xl:pt-24">
 	<!-- title -->
 	<div class="text-center xl:pt-5">
 		<p
@@ -44,7 +44,7 @@
 		/>
 	</div>
 
-	<div>
+	<!-- <div>
 		<p
 			class="text-sm sm:text-base md:text-lg xl:text-xl lg:px-8 2xl:px-24 leading-8 text-justify md:text-center pb-2 sm:pb-16"
 		>
@@ -52,5 +52,5 @@
 			vel, aspernatur ab velit laborum rem dolorum rerum commodi facere sequi iusto tempora?
 			Necessitatibus, architecto.
 		</p>
-	</div>
+	</div> -->
 </section>
