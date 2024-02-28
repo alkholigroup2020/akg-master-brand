@@ -9,7 +9,7 @@
 	import IsoLogos from '$lib/homePage/ISOLogos.svelte';
 	import IntroSection from '$lib/homePage/IntroSection.svelte';
 	import OurCompanies from '$lib/homePage/OurCompanies.svelte';
-	import ProjectsSection from '$lib/homePage/ProjectsSection.svelte';
+	import OurClients from '$lib/homePage/OurClients.svelte';
 	import ServicesSection from '$lib/homePage/ServicesSection.svelte';
 	import { currentAppLang } from '$lib/stores/store';
 	import { pageDirection } from '$lib/stores/store';
@@ -26,7 +26,7 @@
 <IsoLogos />
 
 <ServicesSection />
-<ProjectsSection />
+<OurClients />
 <OurCompanies />
 <!-- <ClientsTestimonials /> -->
 <MainFooter />
