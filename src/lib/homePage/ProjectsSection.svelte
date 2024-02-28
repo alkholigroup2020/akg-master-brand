@@ -1,8 +1,21 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+	import { page } from '$app/stores';
+
+	onMount(() => {
+		$page.url.hash && scrollToSection($page.url.hash);
+	});
+
+	function scrollToSection(hash: any) {
+		const target = document.querySelector(hash);
+		if (target) {
+			target.scrollIntoView({ behavior: 'smooth' });
+		}
+	}
+
 	import LL from '$i18n/i18n-svelte';
 	import { currentAppLang } from '$lib/stores/store';
 
-	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
 	import { TextPlugin } from 'gsap/dist/TextPlugin';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
@@ -59,7 +72,7 @@
 	});
 </script>
 
-<section class="container px-3 mx-auto py-8 md:py-16 xl:py-20">
+<section class="container px-3 mx-auto py-8 md:py-16 xl:py-20" id="our-clients">
 	<!-- title -->
 	<div class="text-center md:mt-5 xl:mt-8 mb-16 xl:mb-24">
 		<p

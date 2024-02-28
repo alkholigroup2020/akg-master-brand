@@ -15,6 +15,7 @@ const en: BaseTranslation = {
 			divisions: 'الأقســام',
 			companies: 'الشركـات',
 			projects: 'مشاريعنـا',
+			clients: 'عمــلائنا',
 			partners: 'الشركــاء',
 			contactUs: 'تواصل معنا'
 		}

@@ -125,6 +125,13 @@
 					</a>
 				</li> -->
 				<li class="border-b" style="margin-top: 0px !important;">
+					<a href={`/${$currentAppLang}/#our-clients`} style="border-radius:0px">
+						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center"
+							>{$LL.nav.links.clients()}</span
+						>
+					</a>
+				</li>
+				<li class="border-b" style="margin-top: 0px !important;">
 					<a href={`/${$currentAppLang}/partners`} style="border-radius:0px">
 						<span class="flex-auto py-1 px-3 sm:py-2 sm:px-8 text-center"
 							>{$LL.nav.links.partners()}</span

@@ -59,6 +59,10 @@ type RootTranslation = {
 			 */
 			projects: string
 			/**
+			 * O​u​r​ ​C​l​i​e​n​t​s
+			 */
+			clients: string
+			/**
 			 * p​a​r​t​n​e​r​s
 			 */
 			partners: string
@@ -681,6 +685,10 @@ export type TranslationFunctions = {
 			 * projects
 			 */
 			projects: () => LocalizedString
+			/**
+			 * Our Clients
+			 */
+			clients: () => LocalizedString
 			/**
 			 * partners
 			 */
