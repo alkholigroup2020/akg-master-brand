@@ -6,6 +6,7 @@
 	import AboutUs from '$lib/homePage/AboutUs.svelte';
 	import ClientsTestimonials from '$lib/homePage/ClientsTestimonials.svelte';
 	import HeroSection from '$lib/homePage/HeroSection.svelte';
+	import IsoLogos from '$lib/homePage/ISOLogos.svelte';
 	import IntroSection from '$lib/homePage/IntroSection.svelte';
 	import OurCompanies from '$lib/homePage/OurCompanies.svelte';
 	import ProjectsSection from '$lib/homePage/ProjectsSection.svelte';
@@ -21,6 +22,9 @@
 <HeroSection />
 <AboutUs sectionData={data.data.aboutSectionData} />
 <IntroSection />
+
+<IsoLogos />
+
 <ServicesSection />
 <ProjectsSection />
 <OurCompanies />
