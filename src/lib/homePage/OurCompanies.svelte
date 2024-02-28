@@ -89,8 +89,9 @@
 					/>
 				</div>
 			</div>
+
 			<div class="flex flex-col items-center justify-center" bind:this={companiesRefs[1]}>
-				<div class="p-2 xl:p-5">
+				<div class="p-2 xl:p-3">
 					<img
 						src="/images/home/companiesSection/sbtmc_300x150.webp"
 						alt="chairman"
@@ -98,6 +99,7 @@
 					/>
 				</div>
 			</div>
+
 			<div class="flex flex-col items-center justify-center" bind:this={companiesRefs[2]}>
 				<div class="p-2 xl:p-5">
 					<img
@@ -107,6 +109,7 @@
 					/>
 				</div>
 			</div>
+
 			<div class="flex flex-col items-center justify-center" bind:this={companiesRefs[3]}>
 				<div class="p-1 xl:p-3">
 					<img
@@ -116,6 +119,7 @@
 					/>
 				</div>
 			</div>
+
 			<div
 				class="hidden xl:flex flex-col items-center justify-center opacity-0"
 				bind:this={companiesRefs[4]}

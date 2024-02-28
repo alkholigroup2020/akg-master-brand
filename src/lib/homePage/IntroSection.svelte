@@ -165,8 +165,10 @@
 			</div>
 		</div>
 
+		<div class="h-5 w-full" />
+
 		<!-- view more button -->
-		<div class="text-center pt-10 {$currentAppLang === 'ar' ? 'ar-font' : ''}">
+		<!-- <div class="text-center pt-10 {$currentAppLang === 'ar' ? 'ar-font' : ''}">
 			<div>
 				<button
 					class="btn !bg-transparent flex-col text-primary-500 border-0 text-xs sm:text-sm md:text-base font-semibold px-2 py-1"
@@ -188,8 +190,8 @@
 					</span>
 				</button>
 			</div>
-			<div />
-		</div>
+			<div /> 
+		</div>-->
 	</div>
 
 	<div class="sm:hidden">

@@ -69,6 +69,16 @@
 								</span>
 							</svelte:fragment>
 						</AccordionItem>
+						<AccordionItem regionControl={$currentAppLang === 'ar' ? 'text-right' : ''}>
+							<svelte:fragment slot="summary"
+								><span class="font-bold">{$LL.home.services.li4()}</span></svelte:fragment
+							>
+							<svelte:fragment slot="content">
+								<span transition:fade={{ duration: 1000 }}>
+									{$LL.home.services.p4()}
+								</span>
+							</svelte:fragment>
+						</AccordionItem>
 					</Accordion>
 				</div>
 			</div>

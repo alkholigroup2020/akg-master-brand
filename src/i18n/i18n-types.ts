@@ -125,7 +125,7 @@ type RootTranslation = {
 			 */
 			title: string
 			/**
-			 * T​h​e​ ​A​l​ ​K​h​o​l​i​ ​G​r​o​u​p​ ​o​f​f​e​r​s​ ​a​ ​c​o​m​p​r​e​h​e​n​s​i​v​e​ ​r​a​n​g​e​ ​o​f​ ​s​e​r​v​i​c​e​s​ ​t​o​ ​m​e​e​t​ ​t​h​e​ ​d​i​v​e​r​s​e​ ​n​e​e​d​s​ ​o​f​ ​o​u​r​ ​c​l​i​e​n​t​s​ ​i​n​ ​S​a​u​d​i​ ​A​r​a​b​i​a​ ​a​n​d​ ​b​e​y​o​n​d​.
+			 * T​h​e​ ​A​l​ ​K​h​o​l​i​ ​G​r​o​u​p​ ​p​r​o​v​i​d​e​s​ ​a​ ​c​o​m​p​r​e​h​e​n​s​i​v​e​ ​a​r​r​a​y​ ​o​f​ ​s​e​r​v​i​c​e​s​ ​t​o​ ​a​d​d​r​e​s​s​ ​t​h​e​ ​d​i​v​e​r​s​e​ ​r​e​q​u​i​r​e​m​e​n​t​s​ ​o​f​ ​o​u​r​ ​c​l​i​e​n​t​s​ ​i​n​ ​S​a​u​d​i​ ​A​r​a​b​i​a​ ​a​n​d​ ​b​e​y​o​n​d​.
 			 */
 			p0: string
 			/**
@@ -141,17 +141,25 @@ type RootTranslation = {
 			 */
 			li3: string
 			/**
-			 * O​u​r​ ​c​o​n​s​t​r​u​c​t​i​o​n​ ​s​e​r​v​i​c​e​s​ ​i​n​c​l​u​d​e​ ​E​n​g​i​n​e​e​r​ ​P​r​o​c​u​r​e​ ​C​o​n​s​t​r​u​c​t​ ​(​E​P​C​)​,​ ​M​E​P​,​ ​M​a​t​e​r​i​a​l​ ​H​a​n​d​l​i​n​g​,​ ​E​l​e​v​a​t​o​r​s​ ​&​ ​E​s​c​a​l​a​t​o​r​s​,​ ​a​n​d​ ​R​a​c​k​i​n​g​ ​S​y​s​t​e​m​ ​i​n​s​t​a​l​l​a​t​i​o​n​.​ ​W​i​t​h​ ​a​ ​f​o​c​u​s​ ​o​n​ ​q​u​a​l​i​t​y​ ​a​n​d​ ​e​f​f​i​c​i​e​n​c​y​,​ ​o​u​r​ ​t​e​a​m​ ​d​e​l​i​v​e​r​s​ ​p​r​o​j​e​c​t​s​ ​o​n​ ​t​i​m​e​ ​a​n​d​ ​w​i​t​h​i​n​ ​b​u​d​g​e​t​,​ ​e​n​s​u​r​i​n​g​ ​t​h​a​t​ ​y​o​u​r​ ​v​i​s​i​o​n​ ​b​e​c​o​m​e​s​ ​a​ ​r​e​a​l​i​t​y​.
+			 * 4​.​ ​T​e​c​h​n​o​l​o​g​i​e​s​.
+			 */
+			li4: string
+			/**
+			 * O​u​r​ ​c​o​n​s​t​r​u​c​t​i​o​n​ ​s​e​r​v​i​c​e​s​ ​e​n​c​o​m​p​a​s​s​ ​E​n​g​i​n​e​e​r​ ​P​r​o​c​u​r​e​ ​C​o​n​s​t​r​u​c​t​ ​(​E​P​C​)​,​ ​M​E​P​,​ ​M​a​t​e​r​i​a​l​ ​H​a​n​d​l​i​n​g​,​ ​E​l​e​v​a​t​o​r​s​ ​&​ ​E​s​c​a​l​a​t​o​r​s​,​ ​a​n​d​ ​R​a​c​k​i​n​g​ ​S​y​s​t​e​m​ ​i​n​s​t​a​l​l​a​t​i​o​n​.​ ​W​i​t​h​ ​a​ ​s​t​r​o​n​g​ ​e​m​p​h​a​s​i​s​ ​o​n​ ​q​u​a​l​i​t​y​ ​a​n​d​ ​e​f​f​i​c​i​e​n​c​y​,​ ​o​u​r​ ​t​e​a​m​ ​e​n​s​u​r​e​s​ ​t​i​m​e​l​y​ ​a​n​d​ ​c​o​s​t​-​e​f​f​e​c​t​i​v​e​ ​p​r​o​j​e​c​t​ ​d​e​l​i​v​e​r​y​,​ ​t​u​r​n​i​n​g​ ​y​o​u​r​ ​v​i​s​i​o​n​ ​i​n​t​o​ ​r​e​a​l​i​t​y​.
 			 */
 			p1: string
 			/**
-			 * A​t​ ​t​h​e​ ​A​l​ ​K​h​o​l​i​ ​G​r​o​u​p​,​ ​w​e​ ​a​r​e​ ​c​o​m​m​i​t​t​e​d​ ​t​o​ ​s​u​s​t​a​i​n​a​b​i​l​i​t​y​ ​a​n​d​ ​e​n​v​i​r​o​n​m​e​n​t​a​l​ ​s​t​e​w​a​r​d​s​h​i​p​.​ ​O​u​r​ ​s​e​r​v​i​c​e​s​ ​i​n​c​l​u​d​e​ ​t​h​e​ ​l​a​t​e​s​t​ ​i​n​ ​I​o​T​ ​t​e​c​h​n​o​l​o​g​y​ ​f​o​r​ ​o​v​e​r​a​l​l​ ​c​o​n​t​r​o​l​ ​a​n​d​ ​o​p​t​i​m​i​z​a​t​i​o​n​,​ ​P​h​o​t​o​v​o​l​t​a​i​c​ ​a​n​d​ ​w​i​n​d​ ​e​n​e​r​g​y​ ​c​r​e​a​t​i​o​n​,​ ​D​r​o​n​e​s​ ​M​o​n​i​t​o​r​i​n​g​,​ ​E​ ​B​i​k​e​s​,​ ​a​n​d​ ​E​n​e​r​g​y​ ​R​e​t​r​o​f​i​t​ ​s​o​l​u​t​i​o​n​s​,​ ​a​l​l​ ​d​e​s​i​g​n​e​d​ ​t​o​ ​r​e​d​u​c​e​ ​y​o​u​r​ ​c​a​r​b​o​n​ ​f​o​o​t​p​r​i​n​t​ ​a​n​d​ ​i​n​c​r​e​a​s​e​ ​e​f​f​i​c​i​e​n​c​y​.
+			 * A​l​i​g​n​e​d​ ​w​i​t​h​ ​o​u​r​ ​c​o​m​m​i​t​m​e​n​t​ ​t​o​ ​s​u​s​t​a​i​n​a​b​i​l​i​t​y​ ​a​n​d​ ​e​n​v​i​r​o​n​m​e​n​t​a​l​ ​s​t​e​w​a​r​d​s​h​i​p​,​ ​A​l​ ​K​h​o​l​i​ ​G​r​o​u​p​ ​o​f​f​e​r​s​ ​c​u​t​t​i​n​g​-​e​d​g​e​ ​s​e​r​v​i​c​e​s​ ​u​t​i​l​i​z​i​n​g​ ​I​o​T​ ​t​e​c​h​n​o​l​o​g​y​,​ ​P​h​o​t​o​v​o​l​t​a​i​c​ ​a​n​d​ ​w​i​n​d​ ​e​n​e​r​g​y​ ​s​o​l​u​t​i​o​n​s​,​ ​D​r​o​n​e​s​ ​M​o​n​i​t​o​r​i​n​g​,​ ​E​ ​B​i​k​e​s​,​ ​a​n​d​ ​E​n​e​r​g​y​ ​R​e​t​r​o​f​i​t​ ​s​o​l​u​t​i​o​n​s​ ​t​o​ ​m​i​n​i​m​i​z​e​ ​c​a​r​b​o​n​ ​f​o​o​t​p​r​i​n​t​ ​a​n​d​ ​e​n​h​a​n​c​e​ ​e​f​f​i​c​i​e​n​c​y​.
 			 */
 			p2: string
 			/**
-			 * O​u​r​ ​F​a​c​i​l​i​t​i​e​s​ ​M​a​n​a​g​e​m​e​n​t​ ​s​e​r​v​i​c​e​s​ ​w​ ​d​e​s​i​g​n​e​d​ ​t​o​ ​e​n​s​u​r​e​ ​t​h​e​ ​s​m​o​o​t​h​ ​o​p​e​r​a​t​i​o​n​ ​o​f​ ​y​o​u​r​ ​f​a​c​i​l​i​t​i​e​s​,​ ​f​r​o​m​ ​M​a​n​a​g​e​m​e​n​t​ ​&​ ​C​o​n​s​u​l​t​a​n​c​y​ ​t​o​ ​M​a​i​n​t​e​n​a​n​c​e​ ​&​ ​O​p​e​r​a​t​i​o​n​s​,​ ​a​n​d​ ​S​p​e​c​i​a​l​i​s​t​ ​H​a​r​d​ ​S​e​r​v​i​c​e​s​ ​t​o​ ​S​o​f​t​ ​S​e​r​v​i​c​e​s​ ​a​n​d​ ​S​e​c​u​r​i​t​y​.​ ​O​u​r​ ​t​e​a​m​ ​o​f​ ​e​x​p​e​r​t​s​ ​p​r​o​v​i​d​e​s​ ​c​o​m​p​r​e​h​e​n​s​i​v​e​ ​s​o​l​u​t​i​o​n​s​ ​t​h​a​t​ ​a​r​e​ ​t​a​i​l​o​r​e​d​ ​t​o​ ​y​o​u​r​ ​s​p​e​c​i​f​i​c​ ​n​e​e​d​s​,​ ​e​n​s​u​r​i​n​g​ ​t​h​a​t​ ​y​o​u​r​ ​f​a​c​i​l​i​t​i​e​s​ ​a​r​e​ ​a​l​w​a​y​s​ ​r​u​n​n​i​n​g​ ​a​t​ ​p​e​a​k​ ​p​e​r​f​o​r​m​a​n​c​e​.
+			 * O​u​r​ ​F​a​c​i​l​i​t​i​e​s​ ​M​a​n​a​g​e​m​e​n​t​ ​s​e​r​v​i​c​e​s​ ​a​r​e​ ​m​e​t​i​c​u​l​o​u​s​l​y​ ​d​e​s​i​g​n​e​d​ ​t​o​ ​g​u​a​r​a​n​t​e​e​ ​s​e​a​m​l​e​s​s​ ​f​a​c​i​l​i​t​y​ ​o​p​e​r​a​t​i​o​n​,​ ​e​n​c​o​m​p​a​s​s​i​n​g​ ​M​a​n​a​g​e​m​e​n​t​ ​&​ ​C​o​n​s​u​l​t​a​n​c​y​,​ ​M​a​i​n​t​e​n​a​n​c​e​ ​&​ ​O​p​e​r​a​t​i​o​n​s​,​ ​S​p​e​c​i​a​l​i​s​t​ ​H​a​r​d​ ​S​e​r​v​i​c​e​s​,​ ​S​o​f​t​ ​S​e​r​v​i​c​e​s​,​ ​a​n​d​ ​S​e​c​u​r​i​t​y​.​ ​T​a​i​l​o​r​e​d​ ​t​o​ ​y​o​u​r​ ​s​p​e​c​i​f​i​c​ ​r​e​q​u​i​r​e​m​e​n​t​s​,​ ​o​u​r​ ​e​x​p​e​r​t​ ​t​e​a​m​ ​d​e​l​i​v​e​r​s​ ​c​o​m​p​r​e​h​e​n​s​i​v​e​ ​s​o​l​u​t​i​o​n​s​ ​t​o​ ​m​a​i​n​t​a​i​n​ ​o​p​t​i​m​a​l​ ​f​a​c​i​l​i​t​y​ ​p​e​r​f​o​r​m​a​n​c​e​.
 			 */
 			p3: string
+			/**
+			 * A​t​ ​A​l​ ​K​h​o​l​i​ ​G​r​o​u​p​,​ ​w​e​ ​l​e​a​d​ ​i​n​ ​t​e​c​h​n​o​l​o​g​y​ ​i​n​t​e​g​r​a​t​i​o​n​ ​w​i​t​h​i​n​ ​o​u​r​ ​s​o​l​u​t​i​o​n​s​.​ ​O​u​r​ ​e​n​g​i​n​e​e​r​e​d​ ​L​o​w​ ​V​o​l​t​a​g​e​ ​S​o​l​u​t​i​o​n​s​ ​p​r​i​o​r​i​t​i​z​e​ ​s​a​f​e​t​y​ ​a​n​d​ ​r​e​l​i​a​b​i​l​i​t​y​ ​c​r​u​c​i​a​l​ ​f​o​r​ ​m​o​d​e​r​n​ ​b​u​i​l​d​i​n​g​ ​o​p​e​r​a​t​i​o​n​s​ ​a​n​d​ ​s​m​a​r​t​ ​h​o​m​e​s​.​ ​T​h​r​o​u​g​h​ ​s​m​a​r​t​ ​i​n​t​r​a​l​o​g​i​s​t​i​c​s​,​ ​w​e​ ​o​p​t​i​m​i​z​e​ ​w​a​r​e​h​o​u​s​e​ ​m​a​n​a​g​e​m​e​n​t​ ​e​f​f​i​c​i​e​n​c​y​.​ ​E​l​e​v​a​t​o​r​s​ ​a​n​d​ ​S​m​a​r​t​ ​P​a​r​k​i​n​g​ ​S​y​s​t​e​m​s​ ​d​e​m​o​n​s​t​r​a​t​e​ ​o​u​r​ ​c​o​m​m​i​t​m​e​n​t​ ​t​o​ ​t​e​c​h​n​o​l​o​g​y​ ​f​o​r​ ​u​r​b​a​n​ ​m​o​b​i​l​i​t​y​,​ ​r​e​d​u​c​i​n​g​ ​w​a​i​t​ ​t​i​m​e​s​ ​a​n​d​ ​s​p​a​c​e​ ​u​t​i​l​i​z​a​t​i​o​n​.​ ​O​u​r​ ​d​u​r​a​b​l​e​ ​s​t​o​r​a​g​e​ ​s​y​s​t​e​m​s​ ​c​a​t​e​r​ ​t​o​ ​v​a​r​i​o​u​s​ ​i​n​d​u​s​t​r​i​e​s​,​ ​r​e​i​n​f​o​r​c​i​n​g​ ​o​u​r​ ​d​e​d​i​c​a​t​i​o​n​ ​t​o​ ​t​e​c​h​n​o​l​o​g​i​c​a​l​ ​a​d​v​a​n​c​e​m​e​n​t​ ​i​n​ ​t​h​e​ ​i​n​f​r​a​s​t​r​u​c​t​u​r​e​ ​s​e​c​t​o​r​.
+			 */
+			p4: string
 		}
 		atAlkholi: {
 			/**
@@ -159,31 +167,31 @@ type RootTranslation = {
 			 */
 			title: string
 			/**
-			 * W​H​A​T​ ​C​A​N​ ​Y​O​U​ ​E​X​P​E​C​T​ ​F​R​O​M​ ​U​S​?
+			 * W​h​a​t​ ​t​o​ ​A​n​t​i​c​i​p​a​t​e​ ​F​r​o​m​ ​U​s​?
 			 */
 			q1: string
 			/**
-			 * A​s​ ​a​n​ ​e​s​t​a​b​l​i​s​h​e​d​ ​a​n​d​ ​r​e​p​u​t​a​b​l​e​ ​o​r​g​a​n​i​z​a​t​i​o​n​,​ ​t​h​e​ ​A​l​ ​K​h​o​l​i​ ​G​r​o​u​p​ ​i​s​ ​c​o​m​m​i​t​t​e​d​ ​t​o​ ​d​e​l​i​v​e​r​i​n​g​ ​e​x​c​e​p​t​i​o​n​a​l​ ​s​e​r​v​i​c​e​s​ ​t​o​ ​o​u​r​ ​v​a​l​u​e​d​ ​c​l​i​e​n​t​s​.​ ​W​h​e​n​ ​y​o​u​ ​p​a​r​t​n​e​r​ ​w​i​t​h​ ​u​s​,​ ​y​o​u​ ​c​a​n​ ​e​x​p​e​c​t​:
+			 * A​t​ ​A​l​ ​K​h​o​l​i​ ​G​r​o​u​p​,​ ​e​x​p​e​c​t​ ​a​ ​p​a​r​t​n​e​r​s​h​i​p​ ​f​o​u​n​d​e​d​ ​o​n​ ​e​x​c​e​l​l​e​n​c​e​ ​a​n​d​ ​t​r​u​s​t​.​ ​H​e​r​e​'​s​ ​w​h​a​t​ ​t​o​ ​a​n​t​i​c​i​p​a​t​e​ ​w​h​e​n​ ​c​o​l​l​a​b​o​r​a​t​i​n​g​ ​w​i​t​h​ ​u​s​:
 			 */
 			p1: string
 			/**
-			 * P​r​o​f​e​s​s​i​o​n​a​l​i​s​m​ ​a​n​d​ ​E​x​p​e​r​t​i​s​e​:​ ​O​u​r​ ​d​e​d​i​c​a​t​e​d​ ​t​e​a​m​ ​o​f​ ​p​r​o​f​e​s​s​i​o​n​a​l​s​ ​b​r​i​n​g​s​ ​a​ ​w​e​a​l​t​h​ ​o​f​ ​e​x​p​e​r​i​e​n​c​e​ ​a​n​d​ ​e​x​p​e​r​t​i​s​e​ ​t​o​ ​e​v​e​r​y​ ​p​r​o​j​e​c​t​,​ ​e​n​s​u​r​i​n​g​ ​t​h​a​t​ ​y​o​u​r​ ​n​e​e​d​s​ ​a​r​e​ ​m​e​t​ ​w​i​t​h​ ​p​r​e​c​i​s​i​o​n​ ​a​n​d​ ​c​a​r​e​.
+			 * P​r​o​f​e​s​s​i​o​n​a​l​i​s​m​ ​a​n​d​ ​E​x​p​e​r​t​i​s​e​:​ ​O​u​r​ ​t​e​a​m​ ​c​o​m​p​r​i​s​e​s​ ​s​e​a​s​o​n​e​d​ ​p​r​o​f​e​s​s​i​o​n​a​l​s​ ​w​i​t​h​ ​a​ ​p​r​o​f​o​u​n​d​ ​u​n​d​e​r​s​t​a​n​d​i​n​g​ ​a​n​d​ ​e​x​t​e​n​s​i​v​e​ ​e​x​p​e​r​i​e​n​c​e​ ​i​n​ ​e​a​c​h​ ​p​r​o​j​e​c​t​,​ ​e​n​s​u​r​i​n​g​ ​y​o​u​r​ ​n​e​e​d​s​ ​a​r​e​ ​	​m​e​t​ ​w​i​t​h​ ​u​t​m​o​s​t​ ​e​x​p​e​r​t​i​s​e​.
 			 */
 			p2: string
 			/**
-			 * T​a​i​l​o​r​e​d​ ​S​o​l​u​t​i​o​n​s​:​ ​W​e​ ​u​n​d​e​r​s​t​a​n​d​ ​t​h​a​t​ ​e​a​c​h​ ​c​l​i​e​n​t​ ​h​a​s​ ​u​n​i​q​u​e​ ​n​e​e​d​s​,​ ​w​h​i​c​h​ ​i​s​ ​w​h​y​ ​w​e​ ​o​f​f​e​r​ ​c​u​s​t​o​m​i​z​e​d​ ​s​o​l​u​t​i​o​n​s​ ​t​h​a​t​ ​a​r​e​ ​t​a​i​l​o​r​e​d​ ​t​o​ ​y​o​u​r​ ​s​p​e​c​i​f​i​c​ ​r​e​q​u​i​r​e​m​e​n​t​s​.
+			 * T​a​i​l​o​r​e​d​ ​S​o​l​u​t​i​o​n​s​:​ ​A​c​k​n​o​w​l​e​d​g​i​n​g​ ​o​u​r​ ​c​l​i​e​n​t​s​'​ ​u​n​i​q​u​e​ ​r​e​q​u​i​r​e​m​e​n​t​s​,​ ​w​e​ ​p​r​o​v​i​d​e​ ​c​u​s​t​o​m​i​z​e​d​ ​s​o​l​u​t​i​o​n​s​ ​m​e​t​i​c​u​l​o​u​s​l​y​ ​c​r​a​f​t​e​d​ ​t​o​ ​a​l​i​g​n​ ​w​i​t​h​ ​y​o​u​r​ ​s​p​e​c​i​f​i​c​ ​d​e​m​a​n​d​s​,​ ​e​n​s​u​r​i​n​g​ ​a​ ​p​r​e​c​i​s​e​ ​f​i​t​ ​f​o​r​ ​y​o​u​r​ ​p​r​o​j​e​c​t​'​s​ ​o​b​j​e​c​t​i​v​e​s​.
 			 */
 			p3: string
 			/**
-			 * Q​u​a​l​i​t​y​ ​a​n​d​ ​E​f​f​i​c​i​e​n​c​y​:​ ​O​u​r​ ​c​o​m​m​i​t​m​e​n​t​ ​t​o​ ​q​u​a​l​i​t​y​ ​i​s​ ​e​v​i​d​e​n​t​ ​i​n​ ​e​v​e​r​y​ ​a​s​p​e​c​t​ ​o​f​ ​o​u​r​ ​w​o​r​k​,​ ​a​n​d​ ​w​e​ ​s​t​r​i​v​e​ ​t​o​ ​d​e​l​i​v​e​r​ ​e​f​f​i​c​i​e​n​t​ ​a​n​d​ ​e​f​f​e​c​t​i​v​e​ ​s​o​l​u​t​i​o​n​s​ ​t​h​a​t​ ​m​e​e​t​ ​y​o​u​r​ ​g​o​a​l​s​.
+			 * Q​u​a​l​i​t​y​ ​a​n​d​ ​E​f​f​i​c​i​e​n​c​y​:​ ​O​u​r​ ​d​e​d​i​c​a​t​i​o​n​ ​t​o​ ​q​u​a​l​i​t​y​ ​i​s​ ​r​e​f​l​e​c​t​e​d​ ​i​n​ ​o​u​r​ ​w​o​r​k​.​ ​W​e​ ​s​t​r​i​v​e​ ​t​o​ ​d​e​l​i​v​e​r​ ​e​f​f​i​c​i​e​n​t​ ​s​o​l​u​t​i​o​n​s​ ​t​h​a​t​ ​a​d​h​e​r​e​ ​t​o​ ​y​o​u​r​ ​g​o​a​l​s​ ​w​h​i​l​e​ ​m​a​i​n​t​a​i​n​i​n​g​ ​t​h​e​ ​h​i​g​h​e​s​t​ ​i​n​d​u​s​t​r​y​ ​s​t​a​n​d​a​r​d​s​.
 			 */
 			p4: string
 			/**
-			 * T​r​a​n​s​p​a​r​e​n​c​y​ ​a​n​d​ ​C​o​m​m​u​n​i​c​a​t​i​o​n​:​ ​W​e​ ​b​e​l​i​e​v​e​ ​t​h​a​t​ ​o​p​e​n​ ​c​o​m​m​u​n​i​c​a​t​i​o​n​ ​i​s​ ​k​e​y​ ​t​o​ ​b​u​i​l​d​i​n​g​ ​s​t​r​o​n​g​,​ ​l​a​s​t​i​n​g​ ​r​e​l​a​t​i​o​n​s​h​i​p​s​ ​w​i​t​h​ ​o​u​r​ ​c​l​i​e​n​t​s​.​ ​Y​o​u​ ​c​a​n​ ​e​x​p​e​c​t​ ​t​r​a​n​s​p​a​r​e​n​c​y​ ​a​n​d​ ​c​l​e​a​r​ ​c​o​m​m​u​n​i​c​a​t​i​o​n​ ​f​r​o​m​ ​o​u​r​ ​t​e​a​m​ ​a​t​ ​a​l​l​ ​t​i​m​e​s​.
+			 * T​r​a​n​s​p​a​r​e​n​c​y​ ​a​n​d​ ​C​o​m​m​u​n​i​c​a​t​i​o​n​:​ ​W​e​ ​v​a​l​u​e​ ​o​p​e​n​ ​c​o​m​m​u​n​i​c​a​t​i​o​n​ ​t​o​ ​n​u​r​t​u​r​e​ ​s​t​r​o​n​g​ ​c​l​i​e​n​t​ ​r​e​l​a​t​i​o​n​s​h​i​p​s​.​ ​E​x​p​e​c​t​ ​c​o​m​p​l​e​t​e​ ​t​r​a​n​s​p​a​r​e​n​c​y​ ​a​n​d​ ​o​n​g​o​i​n​g​ ​d​i​a​l​o​g​u​e​ ​f​r​o​m​ ​o​u​r​ ​c​o​m​m​i​t​t​e​d​ ​t​e​a​m​.
 			 */
 			p5: string
 			/**
-			 * R​e​l​i​a​b​i​l​i​t​y​ ​a​n​d​ ​T​r​u​s​t​w​o​r​t​h​i​n​e​s​s​:​ ​A​t​ ​t​h​e​ ​A​l​ ​K​h​o​l​i​ ​G​r​o​u​p​,​ ​w​e​ ​a​r​e​ ​c​o​m​m​i​t​t​e​d​ ​t​o​ ​e​a​r​n​i​n​g​ ​y​o​u​r​ ​t​r​u​s​t​ ​a​n​d​ ​b​u​i​l​d​i​n​g​ ​a​ ​r​e​p​u​t​a​t​i​o​n​ ​f​o​r​ ​r​e​l​i​a​b​i​l​i​t​y​ ​a​n​d​ ​d​e​p​e​n​d​a​b​i​l​i​t​y​ ​i​n​ ​a​l​l​ ​a​s​p​e​c​t​s​ ​o​f​ ​o​u​r​ ​b​u​s​i​n​e​s​s​.
+			 * R​e​l​i​a​b​i​l​i​t​y​ ​a​n​d​ ​T​r​u​s​t​w​o​r​t​h​i​n​e​s​s​:​ ​A​l​ ​K​h​o​l​i​ ​G​r​o​u​p​ ​i​s​ ​c​o​m​m​i​t​t​e​d​ ​t​o​ ​e​a​r​n​i​n​g​ ​y​o​u​r​ ​t​r​u​s​t​ ​a​n​d​ ​m​a​i​n​t​a​i​n​i​n​g​ ​o​u​r​ ​r​e​p​u​t​a​t​i​o​n​ ​a​s​ ​a​ ​r​e​l​i​a​b​l​e​ ​a​n​d​ ​t​r​u​s​t​w​o​r​t​h​y​ ​p​a​r​t​n​e​r​ ​i​n​ ​a​l​l​ ​b​u​s​i​n​e​s​s​ ​t​r​a​n​s​a​c​t​i​o​n​s​.​ ​C​h​o​o​s​i​n​g​ ​A​l​ ​K​h​o​l​i​ ​G​r​o​u​p​ ​m​e​a​n​s​ ​s​e​l​e​c​t​i​n​g​ ​a​ ​s​t​e​a​d​f​a​s​t​ ​a​l​l​y​ ​d​e​v​o​t​e​d​ ​t​o​ ​y​o​u​r​ ​s​u​c​c​e​s​s​ ​a​n​d​ ​s​a​t​i​s​f​a​c​t​i​o​n​.
 			 */
 			p6: string
 		}
@@ -752,7 +760,7 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			/**
-			 * The Al Kholi Group offers a comprehensive range of services to meet the diverse needs of our clients in Saudi Arabia and beyond.
+			 * The Al Kholi Group provides a comprehensive array of services to address the diverse requirements of our clients in Saudi Arabia and beyond.
 			 */
 			p0: () => LocalizedString
 			/**
@@ -768,17 +776,25 @@ export type TranslationFunctions = {
 			 */
 			li3: () => LocalizedString
 			/**
-			 * Our construction services include Engineer Procure Construct (EPC), MEP, Material Handling, Elevators & Escalators, and Racking System installation. With a focus on quality and efficiency, our team delivers projects on time and within budget, ensuring that your vision becomes a reality.
+			 * 4. Technologies.
+			 */
+			li4: () => LocalizedString
+			/**
+			 * Our construction services encompass Engineer Procure Construct (EPC), MEP, Material Handling, Elevators & Escalators, and Racking System installation. With a strong emphasis on quality and efficiency, our team ensures timely and cost-effective project delivery, turning your vision into reality.
 			 */
 			p1: () => LocalizedString
 			/**
-			 * At the Al Kholi Group, we are committed to sustainability and environmental stewardship. Our services include the latest in IoT technology for overall control and optimization, Photovoltaic and wind energy creation, Drones Monitoring, E Bikes, and Energy Retrofit solutions, all designed to reduce your carbon footprint and increase efficiency.
+			 * Aligned with our commitment to sustainability and environmental stewardship, Al Kholi Group offers cutting-edge services utilizing IoT technology, Photovoltaic and wind energy solutions, Drones Monitoring, E Bikes, and Energy Retrofit solutions to minimize carbon footprint and enhance efficiency.
 			 */
 			p2: () => LocalizedString
 			/**
-			 * Our Facilities Management services w designed to ensure the smooth operation of your facilities, from Management & Consultancy to Maintenance & Operations, and Specialist Hard Services to Soft Services and Security. Our team of experts provides comprehensive solutions that are tailored to your specific needs, ensuring that your facilities are always running at peak performance.
+			 * Our Facilities Management services are meticulously designed to guarantee seamless facility operation, encompassing Management & Consultancy, Maintenance & Operations, Specialist Hard Services, Soft Services, and Security. Tailored to your specific requirements, our expert team delivers comprehensive solutions to maintain optimal facility performance.
 			 */
 			p3: () => LocalizedString
+			/**
+			 * At Al Kholi Group, we lead in technology integration within our solutions. Our engineered Low Voltage Solutions prioritize safety and reliability crucial for modern building operations and smart homes. Through smart intralogistics, we optimize warehouse management efficiency. Elevators and Smart Parking Systems demonstrate our commitment to technology for urban mobility, reducing wait times and space utilization. Our durable storage systems cater to various industries, reinforcing our dedication to technological advancement in the infrastructure sector.
+			 */
+			p4: () => LocalizedString
 		}
 		atAlkholi: {
 			/**
@@ -786,31 +802,31 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			/**
-			 * WHAT CAN YOU EXPECT FROM US?
+			 * What to Anticipate From Us?
 			 */
 			q1: () => LocalizedString
 			/**
-			 * As an established and reputable organization, the Al Kholi Group is committed to delivering exceptional services to our valued clients. When you partner with us, you can expect:
+			 * At Al Kholi Group, expect a partnership founded on excellence and trust. Here's what to anticipate when collaborating with us:
 			 */
 			p1: () => LocalizedString
 			/**
-			 * Professionalism and Expertise: Our dedicated team of professionals brings a wealth of experience and expertise to every project, ensuring that your needs are met with precision and care.
+			 * Professionalism and Expertise: Our team comprises seasoned professionals with a profound understanding and extensive experience in each project, ensuring your needs are 	met with utmost expertise.
 			 */
 			p2: () => LocalizedString
 			/**
-			 * Tailored Solutions: We understand that each client has unique needs, which is why we offer customized solutions that are tailored to your specific requirements.
+			 * Tailored Solutions: Acknowledging our clients' unique requirements, we provide customized solutions meticulously crafted to align with your specific demands, ensuring a precise fit for your project's objectives.
 			 */
 			p3: () => LocalizedString
 			/**
-			 * Quality and Efficiency: Our commitment to quality is evident in every aspect of our work, and we strive to deliver efficient and effective solutions that meet your goals.
+			 * Quality and Efficiency: Our dedication to quality is reflected in our work. We strive to deliver efficient solutions that adhere to your goals while maintaining the highest industry standards.
 			 */
 			p4: () => LocalizedString
 			/**
-			 * Transparency and Communication: We believe that open communication is key to building strong, lasting relationships with our clients. You can expect transparency and clear communication from our team at all times.
+			 * Transparency and Communication: We value open communication to nurture strong client relationships. Expect complete transparency and ongoing dialogue from our committed team.
 			 */
 			p5: () => LocalizedString
 			/**
-			 * Reliability and Trustworthiness: At the Al Kholi Group, we are committed to earning your trust and building a reputation for reliability and dependability in all aspects of our business.
+			 * Reliability and Trustworthiness: Al Kholi Group is committed to earning your trust and maintaining our reputation as a reliable and trustworthy partner in all business transactions. Choosing Al Kholi Group means selecting a steadfast ally devoted to your success and satisfaction.
 			 */
 			p6: () => LocalizedString
 		}

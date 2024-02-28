@@ -39,23 +39,25 @@ const en: BaseTranslation = {
 		},
 		services: {
 			title: 'OUR SERVICES',
-			p0: 'The Al Kholi Group offers a comprehensive range of services to meet the diverse needs of our clients in Saudi Arabia and beyond.',
+			p0: 'The Al Kholi Group provides a comprehensive array of services to address the diverse requirements of our clients in Saudi Arabia and beyond.',
 			li1: '1. Construction.',
 			li2: '2. Sustainability.',
 			li3: '3. Facility Management.',
-			p1: 'Our construction services include Engineer Procure Construct (EPC), MEP, Material Handling, Elevators & Escalators, and Racking System installation. With a focus on quality and efficiency, our team delivers projects on time and within budget, ensuring that your vision becomes a reality.',
-			p2: 'At the Al Kholi Group, we are committed to sustainability and environmental stewardship. Our services include the latest in IoT technology for overall control and optimization, Photovoltaic and wind energy creation, Drones Monitoring, E Bikes, and Energy Retrofit solutions, all designed to reduce your carbon footprint and increase efficiency.',
-			p3: 'Our Facilities Management services w designed to ensure the smooth operation of your facilities, from Management & Consultancy to Maintenance & Operations, and Specialist Hard Services to Soft Services and Security. Our team of experts provides comprehensive solutions that are tailored to your specific needs, ensuring that your facilities are always running at peak performance.'
+			li4: '4. Technologies.',
+			p1: 'Our construction services encompass Engineer Procure Construct (EPC), MEP, Material Handling, Elevators & Escalators, and Racking System installation. With a strong emphasis on quality and efficiency, our team ensures timely and cost-effective project delivery, turning your vision into reality.',
+			p2: 'Aligned with our commitment to sustainability and environmental stewardship, Al Kholi Group offers cutting-edge services utilizing IoT technology, Photovoltaic and wind energy solutions, Drones Monitoring, E Bikes, and Energy Retrofit solutions to minimize carbon footprint and enhance efficiency.',
+			p3: 'Our Facilities Management services are meticulously designed to guarantee seamless facility operation, encompassing Management & Consultancy, Maintenance & Operations, Specialist Hard Services, Soft Services, and Security. Tailored to your specific requirements, our expert team delivers comprehensive solutions to maintain optimal facility performance.',
+			p4: 'At Al Kholi Group, we lead in technology integration within our solutions. Our engineered Low Voltage Solutions prioritize safety and reliability crucial for modern building operations and smart homes. Through smart intralogistics, we optimize warehouse management efficiency. Elevators and Smart Parking Systems demonstrate our commitment to technology for urban mobility, reducing wait times and space utilization. Our durable storage systems cater to various industries, reinforcing our dedication to technological advancement in the infrastructure sector.'
 		},
 		atAlkholi: {
 			title: 'AT AL KHOLI GROUP',
-			q1: 'WHAT CAN YOU EXPECT FROM US?',
-			p1: 'As an established and reputable organization, the Al Kholi Group is committed to delivering exceptional services to our valued clients. When you partner with us, you can expect:',
-			p2: 'Professionalism and Expertise: Our dedicated team of professionals brings a wealth of experience and expertise to every project, ensuring that your needs are met with precision and care.',
-			p3: 'Tailored Solutions: We understand that each client has unique needs, which is why we offer customized solutions that are tailored to your specific requirements.',
-			p4: 'Quality and Efficiency: Our commitment to quality is evident in every aspect of our work, and we strive to deliver efficient and effective solutions that meet your goals.',
-			p5: 'Transparency and Communication: We believe that open communication is key to building strong, lasting relationships with our clients. You can expect transparency and clear communication from our team at all times.',
-			p6: 'Reliability and Trustworthiness: At the Al Kholi Group, we are committed to earning your trust and building a reputation for reliability and dependability in all aspects of our business.'
+			q1: 'What to Anticipate From Us?',
+			p1: "At Al Kholi Group, expect a partnership founded on excellence and trust. Here's what to anticipate when collaborating with us:",
+			p2: 'Professionalism and Expertise: Our team comprises seasoned professionals with a profound understanding and extensive experience in each project, ensuring your needs are 	met with utmost expertise.',
+			p3: "Tailored Solutions: Acknowledging our clients' unique requirements, we provide customized solutions meticulously crafted to align with your specific demands, ensuring a precise fit for your project's objectives.",
+			p4: 'Quality and Efficiency: Our dedication to quality is reflected in our work. We strive to deliver efficient solutions that adhere to your goals while maintaining the highest industry standards.',
+			p5: 'Transparency and Communication: We value open communication to nurture strong client relationships. Expect complete transparency and ongoing dialogue from our committed team.',
+			p6: 'Reliability and Trustworthiness: Al Kholi Group is committed to earning your trust and maintaining our reputation as a reliable and trustworthy partner in all business transactions. Choosing Al Kholi Group means selecting a steadfast ally devoted to your success and satisfaction.'
 		},
 		projects: {
 			title: 'our projects',
