@@ -58,9 +58,9 @@
 								<div>
 									<a href={`/${$currentAppLang}/companies`}>Companies</a>
 								</div>
-								<div>
+								<!-- <div>
 									<a href={`/${$currentAppLang}/projects`}>Projects</a>
-								</div>
+								</div> -->
 								<div>
 									<a href={`/${$currentAppLang}/partners`}>Partners</a>
 								</div>
@@ -201,9 +201,9 @@
 							<div>
 								<a href={`/${$currentAppLang}/divisions`}>Divisions</a>
 							</div>
-							<div>
+							<!-- <div>
 								<a href={`/${$currentAppLang}/projects`}>Projects</a>
-							</div>
+							</div> -->
 							<div>
 								<a href={`/${$currentAppLang}/partners`}>Partners</a>
 							</div>
