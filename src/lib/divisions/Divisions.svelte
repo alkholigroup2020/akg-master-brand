@@ -121,7 +121,7 @@
 	});
 </script>
 
-<section class="max-w-[1920px] mx-auto">
+<section class="max-w-[1920px] mx-auto min-h-screen">
 	<div class="container mx-auto px-3 pb-5 lg:pb-12">
 		<!-- title -->
 		<div class="text-center">

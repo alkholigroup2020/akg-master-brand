@@ -40,14 +40,14 @@ const en: BaseTranslation = {
 		services: {
 			title: 'OUR SERVICES',
 			p0: 'The Al Kholi Group provides a comprehensive array of services to address the diverse requirements of our clients in Saudi Arabia and beyond.',
-			li1: '1. Construction.',
-			li2: '2. Sustainability.',
+			li1: '1. Development.',
+			li2: '2. Contracting.',
 			li3: '3. Facility Management.',
-			li4: '4. Technologies.',
-			p1: 'Our construction services encompass Engineer Procure Construct (EPC), MEP, Material Handling, Elevators & Escalators, and Racking System installation. With a strong emphasis on quality and efficiency, our team ensures timely and cost-effective project delivery, turning your vision into reality.',
-			p2: 'Aligned with our commitment to sustainability and environmental stewardship, Al Kholi Group offers cutting-edge services utilizing IoT technology, Photovoltaic and wind energy solutions, Drones Monitoring, E Bikes, and Energy Retrofit solutions to minimize carbon footprint and enhance efficiency.',
-			p3: 'Our Facilities Management services are meticulously designed to guarantee seamless facility operation, encompassing Management & Consultancy, Maintenance & Operations, Specialist Hard Services, Soft Services, and Security. Tailored to your specific requirements, our expert team delivers comprehensive solutions to maintain optimal facility performance.',
-			p4: 'At Al Kholi Group, we lead in technology integration within our solutions. Our engineered Low Voltage Solutions prioritize safety and reliability crucial for modern building operations and smart homes. Through smart intralogistics, we optimize warehouse management efficiency. Elevators and Smart Parking Systems demonstrate our commitment to technology for urban mobility, reducing wait times and space utilization. Our durable storage systems cater to various industries, reinforcing our dedication to technological advancement in the infrastructure sector.'
+			li4: '4. Trading.',
+			p1: 'Real Estate and Development Division: The Real Estate and Development Division of Al Kholi Group is involved in the development and management of real estate properties, including commercial, residential, and industrial properties. They are committed to providing the highest quality developments that meet the needs of their clients and contribute to the growth and development of the communities they serve.',
+			p2: 'We provide a range of contracting services, including engineering, procurement, and construction (EPC) services, project management, and general contracting. They have a team of experts who are committed to delivering exceptional services and solutions that are tailored to meet the unique needs of each client.',
+			p3: 'We provide comprehensive facility management services, including maintenance, repair, and operations (MRO), energy management, and sustainability solutions. Their team of experts is dedicated to ensuring the smooth operation of facilities and maximizing their lifespan through efficient and effective maintenance.',
+			p4: 'AlKholi Trading provides mechanical storage, fixed storage, and automated storage solutions for a range of industries. Their services are designed to maximize efficiency and reduce costs for their clients.'
 		},
 		atAlkholi: {
 			title: 'AT AL KHOLI GROUP',
@@ -122,7 +122,7 @@ const en: BaseTranslation = {
 		sbtmc:
 			'Saudi Building Technique & Maintenance Company is specialized in providing construction, MEP, management services, facility management. SBTMC  is a 100% Saudi Company with a management and workforce of various nationalities. SBTMC provides a full range of specialized services that reflect the upscale and advanced level of design facilities in Saudi Arabia.',
 		upmoc:
-			'UP is a mechanical, electrical, and plumbing (MEP) maintenance and facilities management company that provides a full range of services, including operation and maintenance services, construction, and communication. They have a highly talented team of experts who provide upscale and advanced level design facilities in Saudi Arabia.',
+			'UP is a specialized in MEP contracting (mechanical, electrical, and plumbing), maintenance, and facilities management. The company provides a full range of services, including operation and maintenance services, construction, and communication. They have a highly talented team of experts who provide upscale and advanced level design facilities in Saudi Arabia.',
 		bteco:
 			'BTECO provides elevators, escalators, and heavy-duty lifts for a range of industries. Their services are designed to meet the unique requirements of each client, and they are committed to providing high-quality solutions that are efficient and effective.',
 		aktek:

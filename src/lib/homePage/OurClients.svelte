@@ -51,24 +51,23 @@
 
 	// cards animation
 	onMount(() => {
-		cardRefs.forEach((ref, index) => {
-			let timeline = gsap.timeline({
-				scrollTrigger: {
-					trigger: ref,
-					start: 'top bottom-=300',
-					end: 'bottom top',
-					markers: false,
-					scrub: false
-				}
-			});
-
-			timeline.from(ref, {
-				duration: 0.5,
-				y: '100px',
-				opacity: 0,
-				delay: index * 0
-			});
-		});
+		// cardRefs.forEach((ref, index) => {
+		// 	let timeline = gsap.timeline({
+		// 		scrollTrigger: {
+		// 			trigger: ref,
+		// 			start: 'top bottom-=300',
+		// 			end: 'bottom top',
+		// 			markers: false,
+		// 			scrub: false
+		// 		}
+		// 	});
+		// 	timeline.from(ref, {
+		// 		duration: 0.5,
+		// 		y: '100px',
+		// 		opacity: 0,
+		// 		delay: index * 0
+		// 	});
+		// });
 	});
 </script>
 
@@ -137,43 +136,57 @@
 				</div>
 			</div>
 
+			<!-- Satco -->
 			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[4]}>
-				<div>
+				<div class="md:p-3 xl:p-3 2xl:p-5">
 					<img
-						src="/images/home/clientsSection/aramco_180x180.webp"
-						srcset="/images/home/clientsSection/aramco_120x120.webp 768w, 
-          	/images/home/clientsSection/aramco_180x180.webp 2000w"
+						src="/images/home/clientsSection/_Satco_400x200.webp"
+						srcset="/images/home/clientsSection/_Satco_300x150.webp 1024w, 
+						/images/home/clientsSection/_Satco_400x200.webp 2000w"
 						alt="a client logo"
-						class="aspect-[1/1] w-28 h-28 lg:w-36 lg:h-36"
+						class="w-full aspect-[1/0.5]"
 					/>
 				</div>
 			</div>
 
+			<!-- neom -->
 			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[5]}>
-				<div>
+				<div class="sm:p-8 md:p-8 lg:p-12 xl:p-12">
 					<img
-						src="/images/home/clientsSection/Americana_180x180.webp"
-						srcset="/images/home/clientsSection/Americana_120x120.webp 768w, 
-          	/images/home/clientsSection/Americana_180x180.webp 2000w"
+						src="/images/home/clientsSection/neom_400x400.webp"
+						srcset="/images/home/clientsSection/neom_250x250.webp 1024w, 
+						/images/home/clientsSection/neom_400x400.webp 2000w"
 						alt="a client logo"
-						class="aspect-[1/1] w-20 h-20 lg:w-32 lg:h-32"
+						class="w-full aspect-[1/1]"
 					/>
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[6]}>
-				<div>
-					<img
-						src="/images/home/clientsSection/Almajdouie_180x180.webp"
-						srcset="/images/home/clientsSection/Almajdouie_120x120.webp 768w, 
-          	/images/home/clientsSection/Almajdouie_180x180.webp 2000w"
-						alt="a client logo"
-						class="aspect-[1/1] w-24 h-24 lg:w-36 lg:h-36"
-					/>
+			<!-- <div class="w-full h-full flex flex-col items-center justify-center" bind:this={cardRefs[8]}>
+				<div class="p-2 min-[400px]:p-7 sm:p-9 2xl:p-16">
+					<a href="https://www.novonor.com/" aria-label="a partner link" target="_blank">
+						<img
+							src="/images/partners/OEC_400x140.webp"
+							srcset="/images/partners/OEC_300x105.webp 1024w, /images/partners/OEC_400x140.webp 2000w"
+							alt="chairman"
+							class="w-full aspect-[1/0.35]"
+						/>
+					</a>
 				</div>
-			</div>
+			</div> -->
 
 			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[7]}>
+				<div class="sm:p-2 xl:p-4">
+					<img
+						src="/images/home/clientsSection/aramco_400x320.webp"
+						srcset="/images/home/clientsSection/aramco_300x240.webp 1024w, /images/home/clientsSection/aramco_400x320.webp 2000w"
+						alt="a client logo"
+						class="w-full aspect-[1/0.8]"
+					/>
+				</div>
+			</div>
+
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[9]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/souq_180x180.webp"
@@ -185,7 +198,30 @@
 				</div>
 			</div>
 
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[7]}>
+				<div class="md:p-3 lg:p-8 xl:p-10">
+					<img
+						src="/images/home/clientsSection/Americana_400x200.webp"
+						srcset="/images/home/clientsSection/Americana_300x150.webp 1024w, /images/home/clientsSection/Americana_400x200.webp 2000w"
+						alt="a client logo"
+						class="w-full aspect-[1/0.5]"
+					/>
+				</div>
+			</div>
+
 			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[8]}>
+				<div>
+					<img
+						src="/images/home/clientsSection/Almajdouie_180x180.webp"
+						srcset="/images/home/clientsSection/Almajdouie_120x120.webp 768w, 
+          	/images/home/clientsSection/Almajdouie_180x180.webp 2000w"
+						alt="a client logo"
+						class="aspect-[1/1] w-24 h-24 lg:w-36 lg:h-36"
+					/>
+				</div>
+			</div>
+
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[10]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/almunajem_180x180.webp"
@@ -197,7 +233,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[9]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[11]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/al-othaim_180x180.webp"
@@ -209,7 +245,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[10]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[12]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/adidas_180x180.webp"
@@ -221,7 +257,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[11]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[13]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/AJEX_180x180.webp"
@@ -233,7 +269,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[12]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[14]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/Amazon_180x180.webp"
@@ -245,7 +281,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[13]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[15]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/BASAMH_180x180.webp"
@@ -257,7 +293,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[14]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[16]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/BMW_180x180.webp"
@@ -269,7 +305,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[15]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[17]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/coca_180x180.webp"
@@ -282,7 +318,7 @@
 			</div>
 
 			<!-- DHL -->
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[16]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[18]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/DHL_180x90.webp"
@@ -294,7 +330,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[17]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[19]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/extra_180x180.webp"
@@ -307,7 +343,7 @@
 			</div>
 
 			<!-- ford -->
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[18]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[20]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/Ford_180x90.webp"
@@ -319,7 +355,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[19]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[21]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/ikea_180x180.webp"
@@ -331,7 +367,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[20]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[22]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/jaguar_180x180.webp"
@@ -344,7 +380,7 @@
 			</div>
 
 			<!-- Lufthansa -->
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[21]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[23]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/Lufthansa_180x90.webp"
@@ -356,7 +392,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[22]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[24]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/mercedes_180x180.webp"
@@ -368,7 +404,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[23]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[25]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/nike_180x180.webp"
@@ -380,7 +416,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[24]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[26]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/P&G_180x180.webp"
@@ -392,7 +428,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[25]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[27]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/pepsico_180x180.webp"
@@ -404,7 +440,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[26]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[28]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/petromin_180x180.webp"
@@ -416,7 +452,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[27]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[29]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/saco_180x180.webp"
@@ -428,7 +464,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[28]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[30]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/SADAFCO_180x180.webp"
@@ -440,7 +476,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[29]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[31]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/Samsung_180x180.webp"
@@ -453,7 +489,7 @@
 			</div>
 
 			<!-- Tamer -->
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[30]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[32]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/Tamer_180x90.webp"
@@ -466,7 +502,7 @@
 			</div>
 
 			<!-- tamer-logistics -->
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[31]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[33]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/tamer-logistics_180x90.webp"
@@ -478,7 +514,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[32]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[34]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/toyota_180x180.webp"
@@ -491,7 +527,7 @@
 			</div>
 
 			<!-- unilever -->
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[33]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[35]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/Unilever_180x180.webp"
@@ -506,7 +542,7 @@
 			<!-- the more clients logo is now moved here! -->
 			<!-- all logos will be shown on the homepage at once as requested!! -->
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[34]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[36]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/Alsafi_Danone_180x180.webp"
@@ -518,7 +554,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[35]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[37]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/almarai_180x180.webp"
@@ -530,7 +566,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[36]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[38]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/_Supreme Judicial Council - Riyadh_180x180.webp"
@@ -542,7 +578,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[37]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[39]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/Al-Baha University_180x180.webp"
@@ -554,7 +590,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[38]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[40]}>
 				<div>
 					<!-- <a
 					href="https://imamu.edu.sa/en/Pages/default.aspx"
@@ -572,7 +608,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[39]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[41]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/Diplomatic district - Riyadh_180x180.webp"
@@ -584,7 +620,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[40]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[42]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/Al-Jouf University_180x180.webp"
@@ -596,7 +632,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[41]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[43]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/King Saud University_180x180.webp"
@@ -608,7 +644,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[42]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[44]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/Egyptian embassy building in Riyadh_180x180.webp"
@@ -620,7 +656,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[43]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[45]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/King Fahd National Library_180x180.webp"
@@ -632,7 +668,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[44]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[46]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/Prince Sattam University_180x180.webp"
@@ -644,7 +680,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[45]}>
+			<div class="flex flex-col items-center justify-center" bind:this={cardRefs[47]}>
 				<div>
 					<img
 						src="/images/home/clientsSection/Al-Basateen_180x180.webp"

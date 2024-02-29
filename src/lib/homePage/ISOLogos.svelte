@@ -51,9 +51,9 @@
 
 			<div>
 				<img
-					src="/images/home/isoSection/BVC Logo_300x150.webp"
-					srcset="/images/home/isoSection/BVC Logo_200x100.webp 768w, 
-          /images/home/isoSection/BVC Logo_300x150.webp 2000w"
+					src="/images/home/isoSection/BV_Cert_ISO_300x150.webp"
+					srcset="/images/home/isoSection/BV_Cert_ISO_200x100.webp 768w, 
+          /images/home/isoSection/BV_Cert_ISO_300x150.webp 2000w"
 					alt="iso logo"
 					class="w-full aspect-[1/0.5] py-2"
 				/>

@@ -6,6 +6,7 @@
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+	import SectionSize from '$lib/generalComponents/SectionSize.svelte';
 	gsap.registerPlugin(ScrollTrigger);
 
 	let cardRefs: any[] = [];
@@ -21,7 +22,6 @@
 					scrub: false
 				}
 			});
-
 			timeline.from(ref, {
 				duration: 0.5,
 				// y: '100px',
@@ -180,6 +180,108 @@
 								srcset="/images/partners/urbancon_120x60.webp 768w, /images/partners/urbancon_180x90.webp 2000w"
 								alt="chairman"
 								class="aspect-[1/0.5] w-24 md:w-32 xl:w-40 h-12 md:h-16 xl:h-20"
+							/>
+						</a>
+					</div>
+				</div>
+
+				<!-- OEC -->
+				<div
+					class="w-full h-full flex flex-col items-center justify-center"
+					bind:this={cardRefs[8]}
+				>
+					<div class="p-2 min-[400px]:p-7 sm:p-9 2xl:p-16">
+						<a href="https://www.novonor.com/" aria-label="a partner link" target="_blank">
+							<img
+								src="/images/partners/OEC_400x140.webp"
+								srcset="/images/partners/OEC_300x105.webp 1024w, /images/partners/OEC_400x140.webp 2000w"
+								alt="chairman"
+								class="w-full aspect-[1/0.35]"
+							/>
+						</a>
+					</div>
+				</div>
+
+				<!-- sener -->
+				<div
+					class="w-full h-full flex flex-col items-center justify-center"
+					bind:this={cardRefs[9]}
+				>
+					<div class="p-2 min-[400px]:p-7 sm:p-9 2xl:p-16">
+						<a href="https://www.group.sener/" aria-label="a partner link" target="_blank">
+							<img
+								src="/images/partners/sener_400x140.webp"
+								srcset="/images/partners/sener_300x105.webp 1024w, /images/partners/sener_400x140.webp 2000w"
+								alt="chairman"
+								class="w-full aspect-[1/0.35]"
+							/>
+						</a>
+					</div>
+				</div>
+
+				<!-- Nidec -->
+				<div
+					class="w-full h-full flex flex-col items-center justify-center"
+					bind:this={cardRefs[10]}
+				>
+					<div class="p-2 min-[400px]:p-7 sm:p-12 lg:p-16 2xl:p-24">
+						<a href="https://www.nidec.com/" aria-label="a partner link" target="_blank">
+							<img
+								src="/images/partners/Nidec_400x140.webp"
+								srcset="/images/partners/Nidec_300x105.webp 1024w, /images/partners/Nidec_400x140.webp 2000w"
+								alt="chairman"
+								class="w-full aspect-[1/0.35]"
+							/>
+						</a>
+					</div>
+				</div>
+
+				<!-- Doppler -->
+				<div
+					class="w-full h-full flex flex-col items-center justify-center"
+					bind:this={cardRefs[11]}
+				>
+					<div class="p-0 sm:p-7 2xl:p-12">
+						<a href="https://doppler.gr/" aria-label="a partner link" target="_blank">
+							<img
+								src="/images/partners/Doppler_400x140.webp"
+								srcset="/images/partners/Doppler_300x105.webp 1024w, /images/partners/Doppler_400x140.webp 2000w"
+								alt="chairman"
+								class="w-full aspect-[1/0.35]"
+							/>
+						</a>
+					</div>
+				</div>
+
+				<!-- Kalea -->
+				<div
+					class="w-full h-full flex flex-col items-center justify-center"
+					bind:this={cardRefs[12]}
+				>
+					<div class="p-2 min-[400px]:p-7 sm:p-9 2xl:p-16">
+						<a href="https://www.kalealifts.com/" aria-label="a partner link" target="_blank">
+							<img
+								src="/images/partners/Kalea_400x140.webp"
+								srcset="/images/partners/Kalea_300x105.webp 1024w, /images/partners/Kalea_400x140.webp 2000w"
+								alt="chairman"
+								class="w-full aspect-[1/0.35]"
+							/>
+						</a>
+					</div>
+				</div>
+
+				<!-- indastria -->
+				<div
+					class="w-full h-full flex flex-col items-center justify-center"
+					bind:this={cardRefs[13]}
+				>
+					<div class="p-2 min-[400px]:p-9 sm:p-12 2xl:p-20">
+						<a href="http://www.indastriasrl.it" aria-label="a partner link" target="_blank">
+							<img
+								src="/images/partners/__indastria_400x140.webp"
+								srcset="/images/partners/__indastria_300x105.webp 1024w, /images/partners/__indastria_400x140.webp 2000w"
+								alt="chairman"
+								class="w-full aspect-[1/0.35]"
 							/>
 						</a>
 					</div>

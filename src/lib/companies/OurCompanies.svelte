@@ -133,7 +133,7 @@
 	});
 </script>
 
-<section class="container px-3 mx-auto pt-8 2xl:pt-20 pb-32">
+<section class="container px-3 mx-auto pt-8 2xl:pt-20 pb-32 min-h-screen">
 	<!-- title -->
 	<div class="text-center xl:pt-5">
 		<p

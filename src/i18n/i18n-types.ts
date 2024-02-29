@@ -129,11 +129,11 @@ type RootTranslation = {
 			 */
 			p0: string
 			/**
-			 * 1​.​ ​C​o​n​s​t​r​u​c​t​i​o​n​.
+			 * 1​.​ ​D​e​v​e​l​o​p​m​e​n​t​.
 			 */
 			li1: string
 			/**
-			 * 2​.​ ​S​u​s​t​a​i​n​a​b​i​l​i​t​y​.
+			 * 2​.​ ​C​o​n​t​r​a​c​t​i​n​g​.
 			 */
 			li2: string
 			/**
@@ -141,23 +141,23 @@ type RootTranslation = {
 			 */
 			li3: string
 			/**
-			 * 4​.​ ​T​e​c​h​n​o​l​o​g​i​e​s​.
+			 * 4​.​ ​T​r​a​d​i​n​g​.
 			 */
 			li4: string
 			/**
-			 * O​u​r​ ​c​o​n​s​t​r​u​c​t​i​o​n​ ​s​e​r​v​i​c​e​s​ ​e​n​c​o​m​p​a​s​s​ ​E​n​g​i​n​e​e​r​ ​P​r​o​c​u​r​e​ ​C​o​n​s​t​r​u​c​t​ ​(​E​P​C​)​,​ ​M​E​P​,​ ​M​a​t​e​r​i​a​l​ ​H​a​n​d​l​i​n​g​,​ ​E​l​e​v​a​t​o​r​s​ ​&​ ​E​s​c​a​l​a​t​o​r​s​,​ ​a​n​d​ ​R​a​c​k​i​n​g​ ​S​y​s​t​e​m​ ​i​n​s​t​a​l​l​a​t​i​o​n​.​ ​W​i​t​h​ ​a​ ​s​t​r​o​n​g​ ​e​m​p​h​a​s​i​s​ ​o​n​ ​q​u​a​l​i​t​y​ ​a​n​d​ ​e​f​f​i​c​i​e​n​c​y​,​ ​o​u​r​ ​t​e​a​m​ ​e​n​s​u​r​e​s​ ​t​i​m​e​l​y​ ​a​n​d​ ​c​o​s​t​-​e​f​f​e​c​t​i​v​e​ ​p​r​o​j​e​c​t​ ​d​e​l​i​v​e​r​y​,​ ​t​u​r​n​i​n​g​ ​y​o​u​r​ ​v​i​s​i​o​n​ ​i​n​t​o​ ​r​e​a​l​i​t​y​.
+			 * R​e​a​l​ ​E​s​t​a​t​e​ ​a​n​d​ ​D​e​v​e​l​o​p​m​e​n​t​ ​D​i​v​i​s​i​o​n​:​ ​T​h​e​ ​R​e​a​l​ ​E​s​t​a​t​e​ ​a​n​d​ ​D​e​v​e​l​o​p​m​e​n​t​ ​D​i​v​i​s​i​o​n​ ​o​f​ ​A​l​ ​K​h​o​l​i​ ​G​r​o​u​p​ ​i​s​ ​i​n​v​o​l​v​e​d​ ​i​n​ ​t​h​e​ ​d​e​v​e​l​o​p​m​e​n​t​ ​a​n​d​ ​m​a​n​a​g​e​m​e​n​t​ ​o​f​ ​r​e​a​l​ ​e​s​t​a​t​e​ ​p​r​o​p​e​r​t​i​e​s​,​ ​i​n​c​l​u​d​i​n​g​ ​c​o​m​m​e​r​c​i​a​l​,​ ​r​e​s​i​d​e​n​t​i​a​l​,​ ​a​n​d​ ​i​n​d​u​s​t​r​i​a​l​ ​p​r​o​p​e​r​t​i​e​s​.​ ​T​h​e​y​ ​a​r​e​ ​c​o​m​m​i​t​t​e​d​ ​t​o​ ​p​r​o​v​i​d​i​n​g​ ​t​h​e​ ​h​i​g​h​e​s​t​ ​q​u​a​l​i​t​y​ ​d​e​v​e​l​o​p​m​e​n​t​s​ ​t​h​a​t​ ​m​e​e​t​ ​t​h​e​ ​n​e​e​d​s​ ​o​f​ ​t​h​e​i​r​ ​c​l​i​e​n​t​s​ ​a​n​d​ ​c​o​n​t​r​i​b​u​t​e​ ​t​o​ ​t​h​e​ ​g​r​o​w​t​h​ ​a​n​d​ ​d​e​v​e​l​o​p​m​e​n​t​ ​o​f​ ​t​h​e​ ​c​o​m​m​u​n​i​t​i​e​s​ ​t​h​e​y​ ​s​e​r​v​e​.
 			 */
 			p1: string
 			/**
-			 * A​l​i​g​n​e​d​ ​w​i​t​h​ ​o​u​r​ ​c​o​m​m​i​t​m​e​n​t​ ​t​o​ ​s​u​s​t​a​i​n​a​b​i​l​i​t​y​ ​a​n​d​ ​e​n​v​i​r​o​n​m​e​n​t​a​l​ ​s​t​e​w​a​r​d​s​h​i​p​,​ ​A​l​ ​K​h​o​l​i​ ​G​r​o​u​p​ ​o​f​f​e​r​s​ ​c​u​t​t​i​n​g​-​e​d​g​e​ ​s​e​r​v​i​c​e​s​ ​u​t​i​l​i​z​i​n​g​ ​I​o​T​ ​t​e​c​h​n​o​l​o​g​y​,​ ​P​h​o​t​o​v​o​l​t​a​i​c​ ​a​n​d​ ​w​i​n​d​ ​e​n​e​r​g​y​ ​s​o​l​u​t​i​o​n​s​,​ ​D​r​o​n​e​s​ ​M​o​n​i​t​o​r​i​n​g​,​ ​E​ ​B​i​k​e​s​,​ ​a​n​d​ ​E​n​e​r​g​y​ ​R​e​t​r​o​f​i​t​ ​s​o​l​u​t​i​o​n​s​ ​t​o​ ​m​i​n​i​m​i​z​e​ ​c​a​r​b​o​n​ ​f​o​o​t​p​r​i​n​t​ ​a​n​d​ ​e​n​h​a​n​c​e​ ​e​f​f​i​c​i​e​n​c​y​.
+			 * W​e​ ​p​r​o​v​i​d​e​ ​a​ ​r​a​n​g​e​ ​o​f​ ​c​o​n​t​r​a​c​t​i​n​g​ ​s​e​r​v​i​c​e​s​,​ ​i​n​c​l​u​d​i​n​g​ ​e​n​g​i​n​e​e​r​i​n​g​,​ ​p​r​o​c​u​r​e​m​e​n​t​,​ ​a​n​d​ ​c​o​n​s​t​r​u​c​t​i​o​n​ ​(​E​P​C​)​ ​s​e​r​v​i​c​e​s​,​ ​p​r​o​j​e​c​t​ ​m​a​n​a​g​e​m​e​n​t​,​ ​a​n​d​ ​g​e​n​e​r​a​l​ ​c​o​n​t​r​a​c​t​i​n​g​.​ ​T​h​e​y​ ​h​a​v​e​ ​a​ ​t​e​a​m​ ​o​f​ ​e​x​p​e​r​t​s​ ​w​h​o​ ​a​r​e​ ​c​o​m​m​i​t​t​e​d​ ​t​o​ ​d​e​l​i​v​e​r​i​n​g​ ​e​x​c​e​p​t​i​o​n​a​l​ ​s​e​r​v​i​c​e​s​ ​a​n​d​ ​s​o​l​u​t​i​o​n​s​ ​t​h​a​t​ ​a​r​e​ ​t​a​i​l​o​r​e​d​ ​t​o​ ​m​e​e​t​ ​t​h​e​ ​u​n​i​q​u​e​ ​n​e​e​d​s​ ​o​f​ ​e​a​c​h​ ​c​l​i​e​n​t​.
 			 */
 			p2: string
 			/**
-			 * O​u​r​ ​F​a​c​i​l​i​t​i​e​s​ ​M​a​n​a​g​e​m​e​n​t​ ​s​e​r​v​i​c​e​s​ ​a​r​e​ ​m​e​t​i​c​u​l​o​u​s​l​y​ ​d​e​s​i​g​n​e​d​ ​t​o​ ​g​u​a​r​a​n​t​e​e​ ​s​e​a​m​l​e​s​s​ ​f​a​c​i​l​i​t​y​ ​o​p​e​r​a​t​i​o​n​,​ ​e​n​c​o​m​p​a​s​s​i​n​g​ ​M​a​n​a​g​e​m​e​n​t​ ​&​ ​C​o​n​s​u​l​t​a​n​c​y​,​ ​M​a​i​n​t​e​n​a​n​c​e​ ​&​ ​O​p​e​r​a​t​i​o​n​s​,​ ​S​p​e​c​i​a​l​i​s​t​ ​H​a​r​d​ ​S​e​r​v​i​c​e​s​,​ ​S​o​f​t​ ​S​e​r​v​i​c​e​s​,​ ​a​n​d​ ​S​e​c​u​r​i​t​y​.​ ​T​a​i​l​o​r​e​d​ ​t​o​ ​y​o​u​r​ ​s​p​e​c​i​f​i​c​ ​r​e​q​u​i​r​e​m​e​n​t​s​,​ ​o​u​r​ ​e​x​p​e​r​t​ ​t​e​a​m​ ​d​e​l​i​v​e​r​s​ ​c​o​m​p​r​e​h​e​n​s​i​v​e​ ​s​o​l​u​t​i​o​n​s​ ​t​o​ ​m​a​i​n​t​a​i​n​ ​o​p​t​i​m​a​l​ ​f​a​c​i​l​i​t​y​ ​p​e​r​f​o​r​m​a​n​c​e​.
+			 * W​e​ ​p​r​o​v​i​d​e​ ​c​o​m​p​r​e​h​e​n​s​i​v​e​ ​f​a​c​i​l​i​t​y​ ​m​a​n​a​g​e​m​e​n​t​ ​s​e​r​v​i​c​e​s​,​ ​i​n​c​l​u​d​i​n​g​ ​m​a​i​n​t​e​n​a​n​c​e​,​ ​r​e​p​a​i​r​,​ ​a​n​d​ ​o​p​e​r​a​t​i​o​n​s​ ​(​M​R​O​)​,​ ​e​n​e​r​g​y​ ​m​a​n​a​g​e​m​e​n​t​,​ ​a​n​d​ ​s​u​s​t​a​i​n​a​b​i​l​i​t​y​ ​s​o​l​u​t​i​o​n​s​.​ ​T​h​e​i​r​ ​t​e​a​m​ ​o​f​ ​e​x​p​e​r​t​s​ ​i​s​ ​d​e​d​i​c​a​t​e​d​ ​t​o​ ​e​n​s​u​r​i​n​g​ ​t​h​e​ ​s​m​o​o​t​h​ ​o​p​e​r​a​t​i​o​n​ ​o​f​ ​f​a​c​i​l​i​t​i​e​s​ ​a​n​d​ ​m​a​x​i​m​i​z​i​n​g​ ​t​h​e​i​r​ ​l​i​f​e​s​p​a​n​ ​t​h​r​o​u​g​h​ ​e​f​f​i​c​i​e​n​t​ ​a​n​d​ ​e​f​f​e​c​t​i​v​e​ ​m​a​i​n​t​e​n​a​n​c​e​.
 			 */
 			p3: string
 			/**
-			 * A​t​ ​A​l​ ​K​h​o​l​i​ ​G​r​o​u​p​,​ ​w​e​ ​l​e​a​d​ ​i​n​ ​t​e​c​h​n​o​l​o​g​y​ ​i​n​t​e​g​r​a​t​i​o​n​ ​w​i​t​h​i​n​ ​o​u​r​ ​s​o​l​u​t​i​o​n​s​.​ ​O​u​r​ ​e​n​g​i​n​e​e​r​e​d​ ​L​o​w​ ​V​o​l​t​a​g​e​ ​S​o​l​u​t​i​o​n​s​ ​p​r​i​o​r​i​t​i​z​e​ ​s​a​f​e​t​y​ ​a​n​d​ ​r​e​l​i​a​b​i​l​i​t​y​ ​c​r​u​c​i​a​l​ ​f​o​r​ ​m​o​d​e​r​n​ ​b​u​i​l​d​i​n​g​ ​o​p​e​r​a​t​i​o​n​s​ ​a​n​d​ ​s​m​a​r​t​ ​h​o​m​e​s​.​ ​T​h​r​o​u​g​h​ ​s​m​a​r​t​ ​i​n​t​r​a​l​o​g​i​s​t​i​c​s​,​ ​w​e​ ​o​p​t​i​m​i​z​e​ ​w​a​r​e​h​o​u​s​e​ ​m​a​n​a​g​e​m​e​n​t​ ​e​f​f​i​c​i​e​n​c​y​.​ ​E​l​e​v​a​t​o​r​s​ ​a​n​d​ ​S​m​a​r​t​ ​P​a​r​k​i​n​g​ ​S​y​s​t​e​m​s​ ​d​e​m​o​n​s​t​r​a​t​e​ ​o​u​r​ ​c​o​m​m​i​t​m​e​n​t​ ​t​o​ ​t​e​c​h​n​o​l​o​g​y​ ​f​o​r​ ​u​r​b​a​n​ ​m​o​b​i​l​i​t​y​,​ ​r​e​d​u​c​i​n​g​ ​w​a​i​t​ ​t​i​m​e​s​ ​a​n​d​ ​s​p​a​c​e​ ​u​t​i​l​i​z​a​t​i​o​n​.​ ​O​u​r​ ​d​u​r​a​b​l​e​ ​s​t​o​r​a​g​e​ ​s​y​s​t​e​m​s​ ​c​a​t​e​r​ ​t​o​ ​v​a​r​i​o​u​s​ ​i​n​d​u​s​t​r​i​e​s​,​ ​r​e​i​n​f​o​r​c​i​n​g​ ​o​u​r​ ​d​e​d​i​c​a​t​i​o​n​ ​t​o​ ​t​e​c​h​n​o​l​o​g​i​c​a​l​ ​a​d​v​a​n​c​e​m​e​n​t​ ​i​n​ ​t​h​e​ ​i​n​f​r​a​s​t​r​u​c​t​u​r​e​ ​s​e​c​t​o​r​.
+			 * A​l​K​h​o​l​i​ ​T​r​a​d​i​n​g​ ​p​r​o​v​i​d​e​s​ ​m​e​c​h​a​n​i​c​a​l​ ​s​t​o​r​a​g​e​,​ ​f​i​x​e​d​ ​s​t​o​r​a​g​e​,​ ​a​n​d​ ​a​u​t​o​m​a​t​e​d​ ​s​t​o​r​a​g​e​ ​s​o​l​u​t​i​o​n​s​ ​f​o​r​ ​a​ ​r​a​n​g​e​ ​o​f​ ​i​n​d​u​s​t​r​i​e​s​.​ ​T​h​e​i​r​ ​s​e​r​v​i​c​e​s​ ​a​r​e​ ​d​e​s​i​g​n​e​d​ ​t​o​ ​m​a​x​i​m​i​z​e​ ​e​f​f​i​c​i​e​n​c​y​ ​a​n​d​ ​r​e​d​u​c​e​ ​c​o​s​t​s​ ​f​o​r​ ​t​h​e​i​r​ ​c​l​i​e​n​t​s​.
 			 */
 			p4: string
 		}
@@ -340,7 +340,7 @@ type RootTranslation = {
 		 */
 		sbtmc: string
 		/**
-		 * U​P​ ​i​s​ ​a​ ​m​e​c​h​a​n​i​c​a​l​,​ ​e​l​e​c​t​r​i​c​a​l​,​ ​a​n​d​ ​p​l​u​m​b​i​n​g​ ​(​M​E​P​)​ ​m​a​i​n​t​e​n​a​n​c​e​ ​a​n​d​ ​f​a​c​i​l​i​t​i​e​s​ ​m​a​n​a​g​e​m​e​n​t​ ​c​o​m​p​a​n​y​ ​t​h​a​t​ ​p​r​o​v​i​d​e​s​ ​a​ ​f​u​l​l​ ​r​a​n​g​e​ ​o​f​ ​s​e​r​v​i​c​e​s​,​ ​i​n​c​l​u​d​i​n​g​ ​o​p​e​r​a​t​i​o​n​ ​a​n​d​ ​m​a​i​n​t​e​n​a​n​c​e​ ​s​e​r​v​i​c​e​s​,​ ​c​o​n​s​t​r​u​c​t​i​o​n​,​ ​a​n​d​ ​c​o​m​m​u​n​i​c​a​t​i​o​n​.​ ​T​h​e​y​ ​h​a​v​e​ ​a​ ​h​i​g​h​l​y​ ​t​a​l​e​n​t​e​d​ ​t​e​a​m​ ​o​f​ ​e​x​p​e​r​t​s​ ​w​h​o​ ​p​r​o​v​i​d​e​ ​u​p​s​c​a​l​e​ ​a​n​d​ ​a​d​v​a​n​c​e​d​ ​l​e​v​e​l​ ​d​e​s​i​g​n​ ​f​a​c​i​l​i​t​i​e​s​ ​i​n​ ​S​a​u​d​i​ ​A​r​a​b​i​a​.
+		 * U​P​ ​i​s​ ​a​ ​s​p​e​c​i​a​l​i​z​e​d​ ​i​n​ ​M​E​P​ ​c​o​n​t​r​a​c​t​i​n​g​ ​(​m​e​c​h​a​n​i​c​a​l​,​ ​e​l​e​c​t​r​i​c​a​l​,​ ​a​n​d​ ​p​l​u​m​b​i​n​g​)​,​ ​m​a​i​n​t​e​n​a​n​c​e​,​ ​a​n​d​ ​f​a​c​i​l​i​t​i​e​s​ ​m​a​n​a​g​e​m​e​n​t​.​ ​T​h​e​ ​c​o​m​p​a​n​y​ ​p​r​o​v​i​d​e​s​ ​a​ ​f​u​l​l​ ​r​a​n​g​e​ ​o​f​ ​s​e​r​v​i​c​e​s​,​ ​i​n​c​l​u​d​i​n​g​ ​o​p​e​r​a​t​i​o​n​ ​a​n​d​ ​m​a​i​n​t​e​n​a​n​c​e​ ​s​e​r​v​i​c​e​s​,​ ​c​o​n​s​t​r​u​c​t​i​o​n​,​ ​a​n​d​ ​c​o​m​m​u​n​i​c​a​t​i​o​n​.​ ​T​h​e​y​ ​h​a​v​e​ ​a​ ​h​i​g​h​l​y​ ​t​a​l​e​n​t​e​d​ ​t​e​a​m​ ​o​f​ ​e​x​p​e​r​t​s​ ​w​h​o​ ​p​r​o​v​i​d​e​ ​u​p​s​c​a​l​e​ ​a​n​d​ ​a​d​v​a​n​c​e​d​ ​l​e​v​e​l​ ​d​e​s​i​g​n​ ​f​a​c​i​l​i​t​i​e​s​ ​i​n​ ​S​a​u​d​i​ ​A​r​a​b​i​a​.
 		 */
 		upmoc: string
 		/**
@@ -764,11 +764,11 @@ export type TranslationFunctions = {
 			 */
 			p0: () => LocalizedString
 			/**
-			 * 1. Construction.
+			 * 1. Development.
 			 */
 			li1: () => LocalizedString
 			/**
-			 * 2. Sustainability.
+			 * 2. Contracting.
 			 */
 			li2: () => LocalizedString
 			/**
@@ -776,23 +776,23 @@ export type TranslationFunctions = {
 			 */
 			li3: () => LocalizedString
 			/**
-			 * 4. Technologies.
+			 * 4. Trading.
 			 */
 			li4: () => LocalizedString
 			/**
-			 * Our construction services encompass Engineer Procure Construct (EPC), MEP, Material Handling, Elevators & Escalators, and Racking System installation. With a strong emphasis on quality and efficiency, our team ensures timely and cost-effective project delivery, turning your vision into reality.
+			 * Real Estate and Development Division: The Real Estate and Development Division of Al Kholi Group is involved in the development and management of real estate properties, including commercial, residential, and industrial properties. They are committed to providing the highest quality developments that meet the needs of their clients and contribute to the growth and development of the communities they serve.
 			 */
 			p1: () => LocalizedString
 			/**
-			 * Aligned with our commitment to sustainability and environmental stewardship, Al Kholi Group offers cutting-edge services utilizing IoT technology, Photovoltaic and wind energy solutions, Drones Monitoring, E Bikes, and Energy Retrofit solutions to minimize carbon footprint and enhance efficiency.
+			 * We provide a range of contracting services, including engineering, procurement, and construction (EPC) services, project management, and general contracting. They have a team of experts who are committed to delivering exceptional services and solutions that are tailored to meet the unique needs of each client.
 			 */
 			p2: () => LocalizedString
 			/**
-			 * Our Facilities Management services are meticulously designed to guarantee seamless facility operation, encompassing Management & Consultancy, Maintenance & Operations, Specialist Hard Services, Soft Services, and Security. Tailored to your specific requirements, our expert team delivers comprehensive solutions to maintain optimal facility performance.
+			 * We provide comprehensive facility management services, including maintenance, repair, and operations (MRO), energy management, and sustainability solutions. Their team of experts is dedicated to ensuring the smooth operation of facilities and maximizing their lifespan through efficient and effective maintenance.
 			 */
 			p3: () => LocalizedString
 			/**
-			 * At Al Kholi Group, we lead in technology integration within our solutions. Our engineered Low Voltage Solutions prioritize safety and reliability crucial for modern building operations and smart homes. Through smart intralogistics, we optimize warehouse management efficiency. Elevators and Smart Parking Systems demonstrate our commitment to technology for urban mobility, reducing wait times and space utilization. Our durable storage systems cater to various industries, reinforcing our dedication to technological advancement in the infrastructure sector.
+			 * AlKholi Trading provides mechanical storage, fixed storage, and automated storage solutions for a range of industries. Their services are designed to maximize efficiency and reduce costs for their clients.
 			 */
 			p4: () => LocalizedString
 		}
@@ -975,7 +975,7 @@ export type TranslationFunctions = {
 		 */
 		sbtmc: () => LocalizedString
 		/**
-		 * UP is a mechanical, electrical, and plumbing (MEP) maintenance and facilities management company that provides a full range of services, including operation and maintenance services, construction, and communication. They have a highly talented team of experts who provide upscale and advanced level design facilities in Saudi Arabia.
+		 * UP is a specialized in MEP contracting (mechanical, electrical, and plumbing), maintenance, and facilities management. The company provides a full range of services, including operation and maintenance services, construction, and communication. They have a highly talented team of experts who provide upscale and advanced level design facilities in Saudi Arabia.
 		 */
 		upmoc: () => LocalizedString
 		/**
