@@ -16,7 +16,7 @@
 			let timeline = gsap.timeline({
 				scrollTrigger: {
 					trigger: ref,
-					start: 'top bottom-=100',
+					start: 'top bottom-=200',
 					end: 'bottom top',
 					markers: false,
 					scrub: false
@@ -24,7 +24,7 @@
 			});
 			timeline.from(ref, {
 				duration: 0.5,
-				// y: '100px',
+				y: '50px',
 				opacity: 0,
 				delay: index * 0.1
 			});
@@ -45,7 +45,7 @@
 			<div
 				class="grid grid-cols-2 min-[450px]:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-y-12 px-3 sm:px-0 pt-12 pb-32 2xl:pb-48"
 			>
-				<div class="flex flex-col items-center justify-center" bind:this={cardRefs[1]}>
+				<div class="flex flex-col items-center justify-center" bind:this={cardRefs[0]}>
 					<div>
 						<a
 							href="https://www.josephgallagher.co.uk/"
@@ -90,7 +90,7 @@
 					</div>
 				</div>
 
-				<div class="flex flex-col items-center justify-center" bind:this={cardRefs[0]}>
+				<div class="flex flex-col items-center justify-center" bind:this={cardRefs[1]}>
 					<div>
 						<a
 							href="https://balad.com.sa/en/index.html"

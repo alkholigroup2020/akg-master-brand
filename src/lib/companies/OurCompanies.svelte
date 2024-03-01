@@ -113,7 +113,6 @@
 					scrub: false
 				}
 			});
-
 			if (index % 2 === 0) {
 				timeline.from(ref, {
 					duration: 0.8,
@@ -133,15 +132,13 @@
 	});
 </script>
 
-<section class="container px-3 mx-auto pt-8 2xl:pt-20 pb-32 min-h-screen">
+<section class="container px-3 mx-auto pt-8 md:pt-20 pb-32 min-h-screen overflow-hidden">
 	<!-- title -->
 	<div class="text-center xl:pt-5">
 		<p
 			bind:this={textElement}
-			class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-semibold uppercase text-primary-500 mb-12 xl:mb-24 {$currentAppLang ===
-			'ar'
-				? 'ar-font'
-				: ' '}"
+			class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] font-semibold
+			uppercase text-primary-500 mb-5 md:mb-24 {$currentAppLang === 'ar' ? 'ar-font' : ' '}"
 		/>
 	</div>
 
