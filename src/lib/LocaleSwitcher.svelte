@@ -36,14 +36,15 @@
 	};
 
 	// update `lang` attribute
-	// $: browser && document.querySelector('html').setAttribute('lang', $locale);
+	$: browser && document.querySelector('html').setAttribute('lang', $locale);
 
 	// update locale when navigating via browser back/forward buttons
 	const handlePopStateEvent = async ({ state }: PopStateEvent) => switchLocale(state.locale, false);
 
 	// update locale when page store changes
 	$: if (browser) {
-		const lang = $page.params.lang as Locales;
+		// const lang = $page.params.lang as Locales;
+		const lang = 'en' as Locales;
 		switchLocale(lang, false);
 		history.replaceState(
 			{ ...history.state, locale: lang },
@@ -55,7 +56,7 @@
 
 <svelte:window on:popstate={handlePopStateEvent} />
 
-{#if $currentAppLang === 'en'}
+<!-- {#if $currentAppLang === 'en'}
 	<button
 		type="button"
 		class="btn !bg-transparent px-0 pt-3 sm:pt-1 text-sm sm:text-lg xl:text-xl text-white ar-font"
@@ -73,4 +74,4 @@
 	>
 		<a href={`${replaceLocaleInUrl($page.url, 'en')}`} aria-label="language switch link">English</a>
 	</button>
-{/if}
+{/if} -->
