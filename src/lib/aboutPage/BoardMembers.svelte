@@ -59,7 +59,7 @@
 
 <section class="max-w-[1920px] mx-auto">
 	<div
-		class="text-white text-center bg-primary-500 flex flex-col pt-8 xl:pt-12 pb-16 xl:pb-24 uppercase"
+		class="text-white text-center bg-primary-500 flex flex-col pt-8 xl:pt-12 pb-12 xl:pb-24 uppercase"
 	>
 		<!-- title -->
 		<div class="py-5 md:py-8">
@@ -73,7 +73,7 @@
 		</div>
 
 		<!-- chairman level -->
-		<div class="flex justify-center py-10 xl:py-12">
+		<div class="sm:flex justify-center py-10 gap-8 md:gap-24">
 			<div class="flex flex-col items-center" bind:this={imageRefs[0]}>
 				<div>
 					<img
@@ -88,10 +88,24 @@
 				</p>
 				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">Chairman</p>
 			</div>
+			<div class="mt-12 sm:mt-0 flex flex-col items-center" bind:this={imageRefs[1]}>
+				<div>
+					<img
+						src="/images/about/team/asset-17_180x180.webp"
+						srcset="/images/about/team/asset-17_120x120.webp 768w, /images/about/team/asset-17_180x180.webp 2000w"
+						alt="Vice chairman"
+						class="aspect-[1/1] w-28 h-28 md:w-36 md:h-36 xl:w-40 xl:h-40"
+					/>
+				</div>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl capitalize">
+					FAISAL AL KHOLI
+				</p>
+				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">Vice Chairman</p>
+			</div>
 		</div>
 
 		<!-- board level -->
-		<div
+		<!-- <div
 			class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 justify-center md:space-x-6 lg:space-x-16 xl:space-x-20 2xl:space-x-24
 			gap-8 xl:gap-8
 			min-[400px]:px-10 min-[550px]:px-24 min-[650px]:px-32 md:px-0 xl:px-16 2xl:px-48"
@@ -108,6 +122,7 @@
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">FAISAL AL KHOLI</p>
 				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">Vice Chairman</p>
 			</div>
+
 			<div class="flex flex-col items-center" bind:this={imageRefs[2]}>
 				<div>
 					<img
@@ -120,6 +135,7 @@
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">DARKO MACURA</p>
 				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">Group CEO</p>
 			</div>
+
 			<div class="flex flex-col items-center" bind:this={imageRefs[3]}>
 				<div>
 					<img
@@ -132,6 +148,7 @@
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Mohamed Alkholi</p>
 				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">Board Member</p>
 			</div>
+
 			<div class="flex flex-col items-center" bind:this={imageRefs[4]}>
 				<div>
 					<img
@@ -144,6 +161,7 @@
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Nagui Zaki</p>
 				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">Board Member</p>
 			</div>
+			
 			<div class="flex flex-col items-center" bind:this={imageRefs[5]}>
 				<div>
 					<img
@@ -156,6 +174,6 @@
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Saud ALTASSAN</p>
 				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">Board Member</p>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </section>

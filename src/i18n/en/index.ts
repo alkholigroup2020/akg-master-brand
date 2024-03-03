@@ -42,12 +42,12 @@ const en: BaseTranslation = {
 			p0: 'The Al Kholi Group provides a comprehensive array of services to address the diverse requirements of our clients in Saudi Arabia and beyond.',
 			li1: '1. Development.',
 			li2: '2. Contracting.',
-			li3: '3. Facility Management.',
+			li3: '3. Facilities Maintenance.',
 			li4: '4. Trading.',
-			p1: 'Real Estate and Development Division: The Real Estate and Development Division of Al Kholi Group is involved in the development and management of real estate properties, including commercial, residential, and industrial properties. They are committed to providing the highest quality developments that meet the needs of their clients and contribute to the growth and development of the communities they serve.',
-			p2: 'We provide a range of contracting services, including engineering, procurement, and construction (EPC) services, project management, and general contracting. They have a team of experts who are committed to delivering exceptional services and solutions that are tailored to meet the unique needs of each client.',
-			p3: 'We provide comprehensive facility management services, including maintenance, repair, and operations (MRO), energy management, and sustainability solutions. Their team of experts is dedicated to ensuring the smooth operation of facilities and maximizing their lifespan through efficient and effective maintenance.',
-			p4: 'AlKholi Trading provides mechanical storage, fixed storage, and automated storage solutions for a range of industries. Their services are designed to maximize efficiency and reduce costs for their clients.'
+			p1: 'Real Estate and Development Division: The Real Estate and Development Division of Al Kholi Group is involved in the development and management of real estate properties, including commercial, residential, and industrial properties. We are committed to provide the highest quality developments that meet the needs of our clients and contribute to the growth and development of the communities we serve.',
+			p2: 'We provide a range of contracting services, including engineering, procurement, and construction (EPC) services, project management, and general contracting. We have a team of experts who are committed to deliver exceptional services and solutions that are tailored to meet the unique needs of each client.',
+			p3: 'We provide comprehensive facility maintenance services, including maintenance, repair, and operations (MRO), energy management, and sustainability solutions. Our team of experts is dedicated to ensure the smooth operation of facilities and maximizing their lifespan through efficient and effective maintenance.',
+			p4: 'AlKholi Trading provides mechanical storage, fixed storage, and automated storage solutions for a range of industries. Our services are designed to maximize efficiency and reduce costs for our clients.'
 		},
 		atAlkholi: {
 			title: 'AT AL KHOLI GROUP',
@@ -118,22 +118,22 @@ const en: BaseTranslation = {
 		title: 'Our companies',
 		contact: 'Contact Us',
 		profile: 'Company Profile',
-		amos: 'AMOS is a facilities management company that provides a range of services, including specialist hard services, hard services, soft services, and landscaping. They are committed to delivering comprehensive solutions that are tailored to meet the specific needs of each client.',
+		amos: 'AMOS is a facilities management company that provides a range of services, including specialist hard services, hard services, soft services, and landscaping. We are committed to deliver comprehensive solutions that are tailored to meet the specific needs of each client.',
 		sbtmc:
-			'Saudi Building Technique & Maintenance Company is specialized in providing construction, MEP, management services, facility management. SBTMC  is a 100% Saudi Company with a management and workforce of various nationalities. SBTMC provides a full range of specialized services that reflect the upscale and advanced level of design facilities in Saudi Arabia.',
+			'Saudi Building Technique & Maintenance Company is specialized in providing construction, MEP, management services, facility maintenance. SBTMC  is a 100% Saudi Company with a management and workforce of various nationalities. SBTMC provides a full range of specialized services that reflect the upscale and advanced level of design facilities in Saudi Arabia.',
 		upmoc:
-			'UP is a specialized in MEP contracting (mechanical, electrical, and plumbing), maintenance, and facilities management. The company provides a full range of services, including operation and maintenance services, construction, and communication. They have a highly talented team of experts who provide upscale and advanced level design facilities in Saudi Arabia.',
+			'UP is a specialized in MEP contracting (mechanical, electrical, and plumbing), maintenance, and facilities maintenance. The company provides a full range of services, including operation and maintenance services, construction, and communication. We have a highly talented team of experts who provide upscale and advanced level design facilities in Saudi Arabia.',
 		bteco:
-			'BTECO provides elevators, escalators, and heavy-duty lifts for a range of industries. Their services are designed to meet the unique requirements of each client, and they are committed to providing high-quality solutions that are efficient and effective.',
+			'BTECO provides elevators, escalators, and heavy-duty lifts for a range of industries. Our services are designed to meet the unique requirements of each client, and we are committed to provide high-quality solutions that are efficient and effective.',
 		aktek:
-			'AKTEK provides MEP pre-fabrication services on or off-site, delivering innovative solutions that maximize efficiency and reduce costs for their clients.',
+			'AKTEK provides MEP pre-fabrication services on or off-site, delivering innovative solutions that maximize efficiency and reduce costs for our clients.',
 		akstra:
-			'AKSTRA is a consulting company that provides experiential learning expertise to deliver long-lasting results for their clients. They combine responsiveness and actionability with a commitment to customizing solutions to fit the unique requirements of each client.',
-		tech: 'Technologies is a technology company that helps different industries reimagine their businesses for the digital age. Their technology partners, products, and services are built with innovation and a focus on client relationships.',
+			'AKSTRA is a consulting company that provides experiential learning expertise to deliver long-lasting results for our clients. We combine responsiveness and actionability with a commitment to customizing solutions to fit the unique requirements of each client.',
+		tech: 'Technologies is a technology company that helps different industries re-imagine their businesses for the digital age. Our technology partners, products, and services are built with innovation and a focus on client relationships.',
 		trading:
-			'AlKholi Trading provides mechanical storage, fixed storage, and automated storage solutions for a range of industries. Their services are designed to maximize efficiency and reduce costs for their clients.',
+			'AlKholi Trading provides mechanical storage, fixed storage, and automated storage solutions for a range of industries. Our services are designed to maximize efficiency and reduce costs for our clients.',
 		hcare:
-			'Al Kholi Health Care is a prominent healthcare provider in Saudi Arabia that was founded in 1993. They offer a range of medical and pharmaceutical services and have become highly respected in the industry. They prioritize patient care and employ experienced medical professionals while utilizing the latest technologies and treatments. The company operates multiple clinics and hospitals across the country and is known for delivering quality healthcare services to both local and international patients.'
+			'Al Kholi Health Care is a prominent healthcare provider in Saudi Arabia that was founded in 1993. We offer a range of medical and pharmaceutical services and have become highly respected in the industry. We prioritize patient care and employ experienced medical professionals while utilizing the latest technologies and treatments. The company operates multiple clinics and hospitals across the country and is known for delivering quality healthcare services to both local and international patients.'
 	},
 	projects: {
 		title: 'Our projects',

@@ -32,24 +32,23 @@
 	let imageRefs: any[] = [];
 	// cards animation
 	onMount(() => {
-		imageRefs.forEach((ref, index) => {
-			let timeline = gsap.timeline({
-				scrollTrigger: {
-					trigger: ref,
-					start: 'top bottom-=100',
-					// end: 'bottom top',
-					markers: false,
-					scrub: false
-				}
-			});
-
-			timeline.from(ref, {
-				duration: 0.5,
-				y: '25px',
-				opacity: 0,
-				delay: index * 0.2
-			});
-		});
+		// imageRefs.forEach((ref, index) => {
+		// 	let timeline = gsap.timeline({
+		// 		scrollTrigger: {
+		// 			trigger: ref,
+		// 			start: 'top bottom-=100',
+		// 			// end: 'bottom top',
+		// 			markers: false,
+		// 			scrub: false
+		// 		}
+		// 	});
+		// 	timeline.from(ref, {
+		// 		duration: 0.5,
+		// 		y: '25px',
+		// 		opacity: 0,
+		// 		delay: index * 0.2
+		// 	});
+		// });
 	});
 </script>
 
@@ -67,9 +66,34 @@
 		</div>
 		<!-- team members -->
 		<div
-			class="container mx-auto grid grid-cols-2 min-[600px]:grid-cols-3 xl:grid-cols-5 gap-y-12 md:gap-y-16 xl:gap-y-24 py-16 xl:py-20"
+			class="container mx-auto grid grid-cols-1 min-[350px]:grid-cols-2 min-[600px]:grid-cols-3 xl:grid-cols-4
+			gap-y-12 md:gap-y-16 xl:gap-y-24 py-8 md:py-12 xl:py-20"
 		>
-			<!-- bind:this={imageRefs[4]} -->
+			<div class="flex flex-col items-center" bind:this={imageRefs[2]}>
+				<div class="border-2 rounded-full">
+					<img
+						src="/images/about/team/asset-18_180x180.webp"
+						srcset="/images/about/team/asset-18_120x120.webp 768w, /images/about/team/asset-18_180x180.webp 2000w"
+						alt="chairman"
+						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
+					/>
+				</div>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">DARKO MACURA</p>
+				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">Group CEO</p>
+			</div>
+
+			<div class="flex flex-col items-center" bind:this={imageRefs[6]}>
+				<div>
+					<img
+						src="/images/about/team/alsafty_180x180.webp"
+						srcset="/images/about/team/alsafty_120x120.webp 768w, /images/about/team/alsafty_180x180.webp 2000w"
+						alt="a team member"
+						class="rounded-full aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
+					/>
+				</div>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Mohamed ElSafty</p>
+				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">Group CFO</p>
+			</div>
 
 			<div class="flex flex-col items-center" bind:this={imageRefs[0]}>
 				<div class="border-2 rounded-full">
@@ -94,22 +118,9 @@
 					/>
 				</div>
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Ayman Elgabbar</p>
-				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">
-					Major Projects Director
+				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize px-8">
+					General Manager for Contracting and MEP
 				</p>
-			</div>
-
-			<div class="flex flex-col items-center" bind:this={imageRefs[2]}>
-				<div class="border-2 rounded-full">
-					<img
-						src="/images/about/team/asset-26_180x180.webp"
-						srcset="/images/about/team/asset-26_120x120.webp 768w, /images/about/team/asset-26_180x180.webp 2000w"
-						alt="a team member"
-						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
-					/>
-				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Amr Bahi ElDeen</p>
-				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">IT Director</p>
 			</div>
 
 			<div class="flex flex-col items-center" bind:this={imageRefs[3]}>
@@ -123,6 +134,19 @@
 				</div>
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Waleed Jaafar</p>
 				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">Managing Director</p>
+			</div>
+
+			<div class="flex flex-col items-center" bind:this={imageRefs[5]}>
+				<div>
+					<img
+						src="/images/about/team/asset-27_180x180.webp"
+						srcset="/images/about/team/asset-27_120x120.webp 768w, /images/about/team/asset-27_180x180.webp 2000w"
+						alt="a team member"
+						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
+					/>
+				</div>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">George Flamouropoulos</p>
+				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">General Manager</p>
 			</div>
 
 			<div class="flex flex-col items-center" bind:this={imageRefs[4]}>
@@ -140,30 +164,32 @@
 				</p>
 			</div>
 
-			<div class="flex flex-col items-center" bind:this={imageRefs[5]}>
+			<div class="flex flex-col items-center" bind:this={imageRefs[8]}>
 				<div>
 					<img
-						src="/images/about/team/asset-27_180x180.webp"
-						srcset="/images/about/team/asset-27_120x120.webp 768w, /images/about/team/asset-27_180x180.webp 2000w"
-						alt="a team member"
-						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
-					/>
-				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">George Flamouropoulos</p>
-				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">General Manager</p>
-			</div>
-
-			<div class="flex flex-col items-center" bind:this={imageRefs[6]}>
-				<div>
-					<img
-						src="/images/about/team/alsafty_180x180.webp"
-						srcset="/images/about/team/alsafty_120x120.webp 768w, /images/about/team/alsafty_180x180.webp 2000w"
+						src="/images/about/team/samer_180x180.webp"
+						srcset="/images/about/team/samer_120x120.webp 768w, /images/about/team/samer_180x180.webp 2000w"
 						alt="a team member"
 						class="rounded-full aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
 					/>
 				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Mohamed ElSafty</p>
-				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">Group CFO</p>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Samer Alkilani</p>
+				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">
+					Business Dev. Director
+				</p>
+			</div>
+
+			<div class="flex flex-col items-center" bind:this={imageRefs[2]}>
+				<div class="border-2 rounded-full">
+					<img
+						src="/images/about/team/asset-26_180x180.webp"
+						srcset="/images/about/team/asset-26_120x120.webp 768w, /images/about/team/asset-26_180x180.webp 2000w"
+						alt="a team member"
+						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
+					/>
+				</div>
+				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Amr Bahi ElDeen</p>
+				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">IT Director</p>
 			</div>
 
 			<div class="flex flex-col items-center" bind:this={imageRefs[7]}>
@@ -178,21 +204,6 @@
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Alhosam Alghamdi</p>
 				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">
 					HR & Admin Director
-				</p>
-			</div>
-
-			<div class="flex flex-col items-center" bind:this={imageRefs[8]}>
-				<div>
-					<img
-						src="/images/about/team/samer_180x180.webp"
-						srcset="/images/about/team/samer_120x120.webp 768w, /images/about/team/samer_180x180.webp 2000w"
-						alt="a team member"
-						class="rounded-full aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
-					/>
-				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Samer Alkilani</p>
-				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">
-					Business Dev. Director
 				</p>
 			</div>
 
