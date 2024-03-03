@@ -38,26 +38,26 @@
 	});
 
 	// companies animation
-	onMount(() => {
-		companiesRefs.forEach((ref, index) => {
-			let timeline = gsap.timeline({
-				scrollTrigger: {
-					trigger: ref,
-					start: 'top bottom-=400',
-					end: 'bottom top',
-					markers: false,
-					scrub: false
-				}
-			});
+	// onMount(() => {
+	// 	companiesRefs.forEach((ref, index) => {
+	// 		let timeline = gsap.timeline({
+	// 			scrollTrigger: {
+	// 				trigger: ref,
+	// 				start: 'top bottom-=400',
+	// 				end: 'bottom top',
+	// 				markers: false,
+	// 				scrub: false
+	// 			}
+	// 		});
 
-			timeline.from(ref, {
-				duration: 0.8,
-				// y: '100px',
-				opacity: 0,
-				delay: index * 0.2
-			});
-		});
-	});
+	// 		timeline.from(ref, {
+	// 			duration: 0.8,
+	// 			// y: '100px',
+	// 			opacity: 0,
+	// 			delay: index * 0.2
+	// 		});
+	// 	});
+	// });
 </script>
 
 <section class="container px-3 mx-auto mb-32 xl:mb-40">

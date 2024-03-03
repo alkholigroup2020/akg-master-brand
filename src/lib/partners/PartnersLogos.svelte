@@ -43,7 +43,7 @@
 		</div> -->
 		<div class="flex flex-col">
 			<div
-				class="grid grid-cols-2 min-[450px]:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-y-12 px-3 sm:px-0 pt-12 pb-32 2xl:pb-48"
+				class="grid grid-cols-2 min-[450px]:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-y-16 px-3 sm:px-0 pt-12 pb-32 2xl:pb-48"
 			>
 				<div class="flex flex-col items-center justify-center" bind:this={cardRefs[0]}>
 					<div>
@@ -241,7 +241,7 @@
 					class="w-full h-full flex flex-col items-center justify-center"
 					bind:this={cardRefs[11]}
 				>
-					<div class="p-0 sm:p-7 2xl:p-12">
+					<div class="w-full p-[15%]">
 						<a href="https://doppler.gr/" aria-label="a partner link" target="_blank">
 							<img
 								src="/images/partners/Doppler_400x140.webp"
@@ -284,6 +284,40 @@
 								class="w-full aspect-[1/0.35]"
 							/>
 						</a>
+					</div>
+				</div>
+
+				<!-- skyHigh -->
+				<div
+					class="w-full h-full flex flex-col items-center justify-center"
+					bind:this={cardRefs[14]}
+				>
+					<div class="w-full p-[20%]">
+						<!-- <a href="" aria-label="a partner link" target="_blank"> -->
+						<img
+							src="/images/partners/skyHigh_400x200.webp"
+							srcset="/images/partners/skyHigh_300x150.webp 1024w, /images/partners/skyHigh_400x200.webp 2000w"
+							alt="chairman"
+							class="w-full aspect-[1/0.5]"
+						/>
+						<!-- </a> -->
+					</div>
+				</div>
+
+				<!-- SSU -->
+				<div
+					class="w-full h-full flex flex-col items-center justify-center"
+					bind:this={cardRefs[15]}
+				>
+					<div class="w-full p-[20%]">
+						<!-- <a href="" aria-label="a partner link" target="_blank"> -->
+						<img
+							src="/images/partners/SSU_400x200.webp"
+							srcset="/images/partners/SSU_300x150.webp 1024w, /images/partners/SSU_400x200.webp 2000w"
+							alt="chairman"
+							class="w-full aspect-[1/0.5]"
+						/>
+						<!-- </a> -->
 					</div>
 				</div>
 			</div>

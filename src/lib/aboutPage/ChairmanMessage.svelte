@@ -35,12 +35,16 @@
 	<!-- title -->
 	<div
 		class="text-center text-xl sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-[45px]
-    font-semibold uppercase text-primary-500 py-8 xl:py-12
+    font-semibold uppercase text-primary-500 py-8 xl:py-20
     {$currentAppLang === 'ar' ? 'ar-font' : ''}"
 	>
 		<p bind:this={textElement} />
 	</div>
-	<div class="px-3 xl:px-0 pb-12 xl:pb-16 space-y-5 {$currentAppLang === 'ar' ? 'ar-font' : ''}">
+	<div
+		class="px-3 xl:px-0 pb-12 xl:pb-24 space-y-5 xl:space-y-7 {$currentAppLang === 'ar'
+			? 'ar-font'
+			: ''}"
+	>
 		<p class="text-justify text-sm sm:text-base md:text-lg xl:text-xl">
 			{$LL.about.chairmanMsg.first()}
 		</p>

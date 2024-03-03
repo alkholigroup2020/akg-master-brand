@@ -32,23 +32,23 @@
 	let imageRefs: any[] = [];
 	// cards animation
 	onMount(() => {
-		// imageRefs.forEach((ref, index) => {
-		// 	let timeline = gsap.timeline({
-		// 		scrollTrigger: {
-		// 			trigger: ref,
-		// 			start: 'top bottom-=100',
-		// 			// end: 'bottom top',
-		// 			markers: false,
-		// 			scrub: false
-		// 		}
-		// 	});
-		// 	timeline.from(ref, {
-		// 		duration: 0.5,
-		// 		y: '25px',
-		// 		opacity: 0,
-		// 		delay: index * 0.2
-		// 	});
-		// });
+		imageRefs.forEach((ref, index) => {
+			let timeline = gsap.timeline({
+				scrollTrigger: {
+					trigger: ref,
+					start: 'top bottom-=100',
+					// end: 'bottom top',
+					markers: false,
+					scrub: false
+				}
+			});
+			timeline.from(ref, {
+				duration: 0.5,
+				y: '25px',
+				opacity: 0,
+				delay: index * 0.2
+			});
+		});
 	});
 </script>
 
@@ -66,10 +66,10 @@
 		</div>
 		<!-- team members -->
 		<div
-			class="container mx-auto grid grid-cols-1 min-[350px]:grid-cols-2 min-[600px]:grid-cols-3 xl:grid-cols-4
-			gap-y-12 md:gap-y-16 xl:gap-y-24 py-8 md:py-12 xl:py-20"
+			class="min-[380px]:flex justify-around sm:justify-center items-center py-8 md:py-12 xl:py-20 max-[380px]:space-y-8
+			 sm:space-x-10 md:space-x-20 xl:space-x-40"
 		>
-			<div class="flex flex-col items-center" bind:this={imageRefs[2]}>
+			<div class="flex flex-col items-center" bind:this={imageRefs[0]}>
 				<div class="border-2 rounded-full">
 					<img
 						src="/images/about/team/asset-18_180x180.webp"
@@ -82,8 +82,8 @@
 				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">Group CEO</p>
 			</div>
 
-			<div class="flex flex-col items-center" bind:this={imageRefs[6]}>
-				<div>
+			<div class="flex flex-col items-center" bind:this={imageRefs[1]}>
+				<div class="border-2 rounded-full">
 					<img
 						src="/images/about/team/alsafty_180x180.webp"
 						srcset="/images/about/team/alsafty_120x120.webp 768w, /images/about/team/alsafty_180x180.webp 2000w"
@@ -94,8 +94,13 @@
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Mohamed ElSafty</p>
 				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">Group CFO</p>
 			</div>
+		</div>
 
-			<div class="flex flex-col items-center" bind:this={imageRefs[0]}>
+		<div
+			class="bg-primary-500 text-white grid grid-cols-1 min-[380px]:grid-cols-2 xl:grid-cols-4
+			gap-y-12 md:gap-y-16 xl:gap-y-24 py-16 md:py-20 xl:py-28 sm:px-16 md:px-24 lg:px-44 xl:px-20"
+		>
+			<div class="flex flex-col items-center" bind:this={imageRefs[2]}>
 				<div class="border-2 rounded-full">
 					<img
 						src="/images/about/team/asset-22_180x180.webp"
@@ -105,10 +110,12 @@
 					/>
 				</div>
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Nasser Al-Dowsary</p>
-				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">Managing Director</p>
+				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">
+					Managing Director O&M
+				</p>
 			</div>
 
-			<div class="flex flex-col items-center" bind:this={imageRefs[1]}>
+			<div class="flex flex-col items-center" bind:this={imageRefs[3]}>
 				<div class="border-2 rounded-full">
 					<img
 						src="/images/about/team/asset-19_180x180.webp"
@@ -119,11 +126,14 @@
 				</div>
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Ayman Elgabbar</p>
 				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize px-8">
-					General Manager for Contracting and MEP
+					General Manager for
+				</p>
+				<p class="pt-0 text-sm sm:text-base md:text-lg xl:text-xl capitalize px-8">
+					Contracting and MEP
 				</p>
 			</div>
 
-			<div class="flex flex-col items-center" bind:this={imageRefs[3]}>
+			<div class="flex flex-col items-center" bind:this={imageRefs[4]}>
 				<div class="border-2 rounded-full">
 					<img
 						src="/images/about/team/asset-24_180x180.webp"
@@ -133,7 +143,10 @@
 					/>
 				</div>
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Waleed Jaafar</p>
-				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">Managing Director</p>
+				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">
+					Managing Director For
+				</p>
+				<p class="pt-0 text-sm sm:text-base md:text-lg xl:text-xl capitalize">Aramco Projects</p>
 			</div>
 
 			<div class="flex flex-col items-center" bind:this={imageRefs[5]}>
@@ -148,8 +161,13 @@
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">George Flamouropoulos</p>
 				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">General Manager</p>
 			</div>
+		</div>
 
-			<div class="flex flex-col items-center" bind:this={imageRefs[4]}>
+		<div
+			class="grid grid-cols-1 min-[380px]:grid-cols-2 xl:grid-cols-5
+			gap-y-12 md:gap-y-16 xl:gap-y-24 py-16 md:py-20 xl:py-28 sm:px-16 md:px-24 lg:px-44 2xl:px-8"
+		>
+			<div class="flex flex-col items-center" bind:this={imageRefs[6]}>
 				<div class="border-2 rounded-full">
 					<img
 						src="/images/about/team/Saeed_180x180.webp"
@@ -164,7 +182,7 @@
 				</p>
 			</div>
 
-			<div class="flex flex-col items-center" bind:this={imageRefs[8]}>
+			<div class="flex flex-col items-center" bind:this={imageRefs[7]}>
 				<div>
 					<img
 						src="/images/about/team/samer_180x180.webp"
@@ -179,7 +197,7 @@
 				</p>
 			</div>
 
-			<div class="flex flex-col items-center" bind:this={imageRefs[2]}>
+			<div class="flex flex-col items-center" bind:this={imageRefs[8]}>
 				<div class="border-2 rounded-full">
 					<img
 						src="/images/about/team/asset-26_180x180.webp"
@@ -192,7 +210,7 @@
 				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">IT Director</p>
 			</div>
 
-			<div class="flex flex-col items-center" bind:this={imageRefs[7]}>
+			<div class="flex flex-col items-center" bind:this={imageRefs[9]}>
 				<div>
 					<img
 						src="/images/about/team/alhossam_180x180.webp"
@@ -207,14 +225,14 @@
 				</p>
 			</div>
 
-			<div class="flex flex-col items-center" bind:this={imageRefs[9]}>
+			<div class="flex flex-col items-center" bind:this={imageRefs[10]}>
 				<div class="rounded-full border-2 aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36">
-					<!-- <img
-						src="/images/about/team/samer_180x180.webp"
-						srcset="/images/about/team/samer_120x120.webp 768w, /images/about/team/samer_180x180.webp 2000w"
+					<img
+						src="/images/about/team/mostafa_180x180.webp"
+						srcset="/images/about/team/mostafa_120x120.webp 768w, /images/about/team/mostafa_180x180.webp 2000w"
 						alt="a team member"
 						class="rounded-full aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36"
-					/> -->
+					/>
 				</div>
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Mostafa Helmy</p>
 				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">

@@ -82,9 +82,7 @@
 						>
 							{sectionData.data.attributes.aboutTitle}
 						</p>
-						<p
-							class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
-						>
+						<p class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8">
 							{sectionData.data.attributes.aboutParagraph}
 						</p>
 						<!-- profile link -->
@@ -137,13 +135,11 @@
 						>
 							{sectionData.data.attributes.storyTitle}
 						</p>
-						<p
-							class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
-						>
+						<p class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8">
 							{sectionData.data.attributes.storyParagraph[0].paragraphText}
 						</p>
 						<p
-							class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify pt-3 lg:pt-5"
+							class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 pt-3 lg:pt-5"
 						>
 							{sectionData.data.attributes.storyParagraph[1].paragraphText}
 						</p>
@@ -157,7 +153,7 @@
 						</p>
 						<div class="space-y-2">
 							<p
-								class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
+								class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8"
 							>
 								<span class="font-bold"
 									>{sectionData.data.attributes.valuesParagraphs[0].paragraphTitle}</span
@@ -165,7 +161,7 @@
 								<span>{sectionData.data.attributes.valuesParagraphs[0].paragraphText}</span>
 							</p>
 							<p
-								class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
+								class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8"
 							>
 								<span class="font-bold"
 									>{sectionData.data.attributes.valuesParagraphs[1].paragraphTitle}</span
@@ -173,7 +169,7 @@
 								<span>{sectionData.data.attributes.valuesParagraphs[1].paragraphText}</span>
 							</p>
 							<p
-								class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
+								class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8"
 							>
 								<span class="font-bold"
 									>{sectionData.data.attributes.valuesParagraphs[2].paragraphTitle}</span
@@ -181,7 +177,7 @@
 								<span>{sectionData.data.attributes.valuesParagraphs[2].paragraphText}</span>
 							</p>
 							<p
-								class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
+								class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8"
 							>
 								<span class="font-bold"
 									>{sectionData.data.attributes.valuesParagraphs[3].paragraphTitle}</span
@@ -263,9 +259,7 @@
 						>
 							{sectionData.data.attributes.localizations.data[0].attributes.aboutTitle}
 						</p>
-						<p
-							class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
-						>
+						<p class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8">
 							{sectionData.data.attributes.localizations.data[0].attributes.aboutParagraph}
 						</p>
 						<!-- profile link -->
@@ -318,14 +312,12 @@
 						>
 							{sectionData.data.attributes.localizations.data[0].attributes.storyTitle}
 						</p>
-						<p
-							class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
-						>
+						<p class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8">
 							{sectionData.data.attributes.localizations.data[0].attributes.storyParagraph[0]
 								.paragraphText}
 						</p>
 						<p
-							class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify pt-3 xl:pt-5"
+							class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 pt-3 xl:pt-5"
 						>
 							{sectionData.data.attributes.localizations.data[0].attributes.storyParagraph[1]
 								.paragraphText}
@@ -340,7 +332,7 @@
 						</p>
 						<div class="space-y-2">
 							<p
-								class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
+								class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8"
 							>
 								<span class="font-bold"
 									>{sectionData.data.attributes.localizations.data[0].attributes.valuesParagraphs[0]
@@ -352,7 +344,7 @@
 								>
 							</p>
 							<p
-								class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
+								class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8"
 							>
 								<span class="font-bold"
 									>{sectionData.data.attributes.localizations.data[0].attributes.valuesParagraphs[1]
@@ -364,7 +356,7 @@
 								>
 							</p>
 							<p
-								class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
+								class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8"
 							>
 								<span class="font-bold"
 									>{sectionData.data.attributes.localizations.data[0].attributes.valuesParagraphs[2]
@@ -376,7 +368,7 @@
 								>
 							</p>
 							<p
-								class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
+								class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8"
 							>
 								<span class="font-bold"
 									>{sectionData.data.attributes.localizations.data[0].attributes.valuesParagraphs[3]

@@ -126,7 +126,7 @@
 						<div class="flex space-x-0 min-[380px]:space-x-2">
 							<div>
 								<p
-									class="text-white heading md:mr-2 text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl wordAnimation"
+									class="text-white heading md:mr-5 text-xl min-[380px]:text-2xl min-[550px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl wordAnimation"
 								>
 									{$LL.hero.build()}
 								</p>

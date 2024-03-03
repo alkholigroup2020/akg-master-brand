@@ -86,9 +86,7 @@
 						>
 							{sectionData.data.attributes.aboutTitle}
 						</p>
-						<p
-							class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
-						>
+						<p class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8">
 							{sectionData.data.attributes.aboutParagraph}
 						</p>
 
@@ -143,9 +141,7 @@
 						>
 							{sectionData.data.attributes.visionTitle}
 						</p>
-						<p
-							class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
-						>
+						<p class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8">
 							{sectionData.data.attributes.visionParagraph}
 						</p>
 					</div>
@@ -157,9 +153,7 @@
 						>
 							{sectionData.data.attributes.missionTitle}
 						</p>
-						<p
-							class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
-						>
+						<p class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8">
 							{sectionData.data.attributes.missionParagraph}
 						</p>
 					</div>
@@ -234,9 +228,7 @@
 						>
 							{sectionData.data.attributes.localizations.data[0].attributes.aboutTitle}
 						</p>
-						<p
-							class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
-						>
+						<p class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8">
 							{sectionData.data.attributes.localizations.data[0].attributes.aboutParagraph}
 						</p>
 
@@ -291,9 +283,7 @@
 						>
 							{sectionData.data.attributes.localizations.data[0].attributes.visionTitle}
 						</p>
-						<p
-							class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
-						>
+						<p class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8">
 							{sectionData.data.attributes.localizations.data[0].attributes.visionParagraph}
 						</p>
 					</div>
@@ -305,9 +295,7 @@
 						>
 							{sectionData.data.attributes.localizations.data[0].attributes.missionTitle}
 						</p>
-						<p
-							class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8 text-justify"
-						>
+						<p class="text-sm sm:text-base md:text-lg xl:text-xl px-3 lg:px-8 2xl:px-16 leading-8">
 							{sectionData.data.attributes.localizations.data[0].attributes.missionParagraph}
 						</p>
 					</div>

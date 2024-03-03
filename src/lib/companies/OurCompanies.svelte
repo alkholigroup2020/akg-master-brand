@@ -35,7 +35,9 @@
 		{
 			imgURL: '/images/companies/logos/btech_300x150.webp',
 			text: `${$LL.companies.bteco()}`,
-			profilePath: '/profiles/BTECO-Profile.pdf',
+			profilePath: `${
+				$currentAppLang === 'en' ? '/profiles/BTECO-Profile-en.pdf' : '/profiles/BTECO-Profile.pdf'
+			}`,
 			fileName: 'BTECO - Company Profile',
 			url: 'https://www.buildingtec-elevators.com/',
 			order: 5

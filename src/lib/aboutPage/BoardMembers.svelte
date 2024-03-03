@@ -73,36 +73,37 @@
 		</div>
 
 		<!-- chairman level -->
-		<div class="sm:flex justify-center py-10 gap-8 md:gap-24">
-			<div class="flex flex-col items-center" bind:this={imageRefs[0]}>
-				<div>
-					<img
-						src="/images/about/team/asset-16_180x180.webp"
-						srcset="/images/about/team/asset-16_120x120.webp 768w, /images/about/team/asset-16_180x180.webp 2000w"
-						alt="chairman"
-						class="aspect-[1/1] w-28 h-28 md:w-36 md:h-36 xl:w-40 xl:h-40"
-					/>
-				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl capitalize">
-					Dr. HAMZA AL KHOLI
-				</p>
-				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">Chairman</p>
+		<!-- <div class="sm:flex justify-center py-10 gap-8 md:gap-24"> -->
+		<div class="flex flex-col items-center" bind:this={imageRefs[0]}>
+			<div>
+				<img
+					src="/images/about/team/asset-16_180x180.webp"
+					srcset="/images/about/team/asset-16_120x120.webp 768w, /images/about/team/asset-16_180x180.webp 2000w"
+					alt="chairman"
+					class="aspect-[1/1] w-28 h-28 md:w-36 md:h-36 xl:w-48 xl:h-48"
+				/>
 			</div>
-			<div class="mt-12 sm:mt-0 flex flex-col items-center" bind:this={imageRefs[1]}>
-				<div>
-					<img
-						src="/images/about/team/asset-17_180x180.webp"
-						srcset="/images/about/team/asset-17_120x120.webp 768w, /images/about/team/asset-17_180x180.webp 2000w"
-						alt="Vice chairman"
-						class="aspect-[1/1] w-28 h-28 md:w-36 md:h-36 xl:w-40 xl:h-40"
-					/>
-				</div>
-				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl capitalize">
-					FAISAL AL KHOLI
-				</p>
-				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">Vice Chairman</p>
-			</div>
+			<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl capitalize">
+				Dr. HAMZA AL KHOLI
+			</p>
+			<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">Chairman</p>
 		</div>
+
+		<div class="flex flex-col items-center mt-8 md:mt-12" bind:this={imageRefs[1]}>
+			<div>
+				<img
+					src="/images/about/team/faisal_180x180.webp"
+					srcset="/images/about/team/faisal_120x120.webp 768w, /images/about/team/faisal_180x180.webp 2000w"
+					alt="Vice chairman"
+					class="aspect-[1/1] w-28 h-28 md:w-36 md:h-36 xl:w-44 xl:h-44 rounded-full"
+				/>
+			</div>
+			<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl capitalize">
+				FAISAL AL KHOLI
+			</p>
+			<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">Vice Chairman</p>
+		</div>
+		<!-- </div> -->
 
 		<!-- board level -->
 		<!-- <div
