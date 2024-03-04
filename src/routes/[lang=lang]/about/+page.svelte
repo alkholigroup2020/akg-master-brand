@@ -22,7 +22,7 @@
 
 <!-- <Timeline /> -->
 
-<TimelineImage />
+<!-- <TimelineImage /> -->
 
 <MissionAndVision />
 
