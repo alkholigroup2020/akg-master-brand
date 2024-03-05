@@ -69,10 +69,12 @@ export const actions = {
 		`;
 
 		await sendEmail(
-			'fawzy.mohamed@alkholi.com, info@alkholi.com, sales@alkholi.com',
+			'info@alkholi.com, sales@alkholi.com',
 			`AKG Website Messages - ${form.data.project}`,
 			emailTemplate,
-			emailTemplate
+			emailTemplate,
+			undefined,
+			['fawzy.mohamed@alkholi.com', 'amr.bahi@alkholi.com'] // Multiple BCC recipients
 		);
 
 		// reset the form values
@@ -141,11 +143,12 @@ export const actions = {
 		`;
 
 		await sendEmail(
-			'fawzy.mohamed@alkholi.com, recruitment@alkholi.com, info@alkholi.com',
+			'recruitment@alkholi.com, info@alkholi.com',
 			'AKG Website Messages - Join Us Form.',
 			emailTemplate,
 			emailTemplate,
-			[attachment]
+			[attachment],
+			['fawzy.mohamed@alkholi.com', 'amr.bahi@alkholi.com'] // Multiple BCC recipients
 		);
 
 		// reset the form values

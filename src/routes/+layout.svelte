@@ -22,8 +22,6 @@
 
 	import WindowSize from '$lib/generalComponents/WindowSize.svelte';
 
-	import Nav from '$lib/generalComponents/Nav.svelte';
-
 	$: devOrProduction = process.env.NODE_ENV === 'development' ? true : false;
 </script>
 
@@ -40,10 +38,6 @@
 {#if $navigating}
 	<LoadingSpinner />
 {:else}
-	<div class="max-sm:hidden">
-		<Nav />
-	</div>
-
 	<slot />
 {/if}
 

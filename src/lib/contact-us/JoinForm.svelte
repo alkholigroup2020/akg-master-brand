@@ -158,7 +158,7 @@
 	>
 		<!-- title -->
 		<div>
-			<div class="text-center pt-20">
+			<div class="text-center pt-14 lg:pt-20">
 				<h2 class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[55px] uppercase">
 					{$LL.joinUsForm.title()}
 				</h2>

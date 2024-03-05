@@ -25,16 +25,18 @@ export const sendEmail = async (
 	subject: string,
 	text: string,
 	html: string,
-	attachments: { filename: string; content: Buffer }[] = []
+	attachments: { filename: string; content: Buffer }[] = [],
+	bcc?: string | string[] // Add BCC parameter as an optional argument
 ): Promise<void> => {
 	// email options
 	const mailOptions: SendMailOptions = {
-		from: 'Info.Alkholi@alkholi.com',
+		from: 'info.alkholi@alkholi.com',
 		to: to,
 		subject: subject,
 		text: text,
 		html: html,
-		attachments: attachments
+		attachments: attachments,
+		bcc: bcc // Add the BCC field to the mail options
 	};
 	// send email with defined transport object
 	try {
