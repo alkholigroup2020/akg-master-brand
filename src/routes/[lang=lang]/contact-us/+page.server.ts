@@ -74,7 +74,7 @@ export const actions = {
 			emailTemplate,
 			emailTemplate,
 			undefined,
-			['fawzy.mohamed@alkholi.com', 'amr.bahi@alkholi.com'] // Multiple BCC recipients
+			['fawzy.mohamed@alkholi.com'] // Multiple BCC recipients
 		);
 
 		// reset the form values
@@ -143,12 +143,12 @@ export const actions = {
 		`;
 
 		await sendEmail(
-			'recruitment@alkholi.com, info@alkholi.com',
+			'recruitment@alkholi.com',
 			'AKG Website Messages - Join Us Form.',
 			emailTemplate,
 			emailTemplate,
 			[attachment],
-			['fawzy.mohamed@alkholi.com', 'amr.bahi@alkholi.com'] // Multiple BCC recipients
+			['fawzy.mohamed@alkholi.com'] // Multiple BCC recipients
 		);
 
 		// reset the form values

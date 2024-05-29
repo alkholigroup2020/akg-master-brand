@@ -27,7 +27,7 @@
 
 <svelte:head>
 	<title>{$LL.title()}</title>
-	<meta name="description" content="An Elevators Co." />
+	<meta name="description" content="Facilities Services" />
 	<HeadHrefLangs />
 </svelte:head>
 

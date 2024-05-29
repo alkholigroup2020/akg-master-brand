@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { currentAppLang } from '$lib/stores/store';
-	import { pageDirection } from '$lib/stores/store';
 	import { gsap } from 'gsap';
 	import { TextPlugin } from 'gsap/dist/TextPlugin';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
@@ -164,8 +163,8 @@
 		</div>
 
 		<div
-			class="grid grid-cols-1 min-[380px]:grid-cols-2 xl:grid-cols-5
-			gap-y-12 md:gap-y-16 xl:gap-y-24 py-16 md:py-20 xl:py-28 sm:px-16 md:px-24 lg:px-44 2xl:px-8"
+			class="grid grid-cols-1 min-[380px]:grid-cols-2 xl:grid-cols-3
+			gap-y-12 md:gap-y-16 xl:gap-y-24 py-16 md:py-20 xl:py-28 sm:px-16 md:px-24 lg:px-40 xl:px-48 2xl:px-56"
 		>
 			<div class="flex flex-col items-center" bind:this={imageRefs[6]}>
 				<div class="border-2 rounded-full">
@@ -182,7 +181,7 @@
 				</p>
 			</div>
 
-			<div class="flex flex-col items-center" bind:this={imageRefs[7]}>
+			<!-- <div class="flex flex-col items-center" bind:this={imageRefs[7]}>
 				<div>
 					<img
 						src="/images/about/team/samer_180x180.webp"
@@ -195,9 +194,9 @@
 				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">
 					Business Dev. Director
 				</p>
-			</div>
+			</div> -->
 
-			<div class="flex flex-col items-center" bind:this={imageRefs[8]}>
+			<div class="flex flex-col items-center" bind:this={imageRefs[7]}>
 				<div class="border-2 rounded-full">
 					<img
 						src="/images/about/team/asset-26_180x180.webp"
@@ -210,7 +209,7 @@
 				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">IT Director</p>
 			</div>
 
-			<div class="flex flex-col items-center" bind:this={imageRefs[9]}>
+			<!-- <div class="flex flex-col items-center" bind:this={imageRefs[9]}>
 				<div>
 					<img
 						src="/images/about/team/alhossam_180x180.webp"
@@ -223,9 +222,9 @@
 				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">
 					HR & Admin Director
 				</p>
-			</div>
+			</div> -->
 
-			<div class="flex flex-col items-center" bind:this={imageRefs[10]}>
+			<div class="flex flex-col items-center" bind:this={imageRefs[8]}>
 				<div class="rounded-full border-2 aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36">
 					<img
 						src="/images/about/team/mostafa_180x180.webp"
