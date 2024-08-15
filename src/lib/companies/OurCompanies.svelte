@@ -8,7 +8,7 @@
 			imgURL: '/images/companies/logos/sbtmc_300x150.webp',
 			text: `${$LL.companies.sbtmc()}`,
 			profilePath: '',
-			fileName: 'Saudi Building Technique - Company Profile',
+			fileName: 'Saudi Building Technic - Company Profile',
 			order: 1
 		},
 		{
@@ -236,7 +236,7 @@
 									<a
 										role="button"
 										href="/profiles/SBTMC-Profile-FM.pdf"
-										download="Saudi Building Technique - Facility Management"
+										download="Saudi Building Technic - Facility Management"
 										class=" btn bg-primary-400 flex-col text-white rounded-md text-xs sm:text-sm md:text-base font-semibold px-0 py-1"
 									>
 										<div class="flex space-x-2 items-center py-[1px] px-2 md:px-3">
@@ -273,7 +273,7 @@
 									<a
 										role="button"
 										href="/profiles/SBTMC-Profile-Const.pdf"
-										download="Saudi Building Technique - Construction"
+										download="Saudi Building Technic - Construction"
 										class=" btn bg-primary-400 flex-col text-white rounded-md text-xs sm:text-sm md:text-base font-semibold px-0 py-1"
 									>
 										<div class="flex space-x-2 items-center py-[1px] px-2 md:px-3">

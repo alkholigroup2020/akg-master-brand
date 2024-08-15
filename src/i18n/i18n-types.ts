@@ -336,7 +336,7 @@ type RootTranslation = {
 		 */
 		amos: string
 		/**
-		 * S​a​u​d​i​ ​B​u​i​l​d​i​n​g​ ​T​e​c​h​n​i​q​u​e​ ​&​ ​M​a​i​n​t​e​n​a​n​c​e​ ​C​o​m​p​a​n​y​ ​i​s​ ​s​p​e​c​i​a​l​i​z​e​d​ ​i​n​ ​p​r​o​v​i​d​i​n​g​ ​c​o​n​s​t​r​u​c​t​i​o​n​,​ ​M​E​P​,​ ​m​a​n​a​g​e​m​e​n​t​ ​s​e​r​v​i​c​e​s​,​ ​f​a​c​i​l​i​t​y​ ​m​a​i​n​t​e​n​a​n​c​e​.​ ​S​B​T​M​C​ ​ ​i​s​ ​a​ ​1​0​0​%​ ​S​a​u​d​i​ ​C​o​m​p​a​n​y​ ​w​i​t​h​ ​a​ ​m​a​n​a​g​e​m​e​n​t​ ​a​n​d​ ​w​o​r​k​f​o​r​c​e​ ​o​f​ ​v​a​r​i​o​u​s​ ​n​a​t​i​o​n​a​l​i​t​i​e​s​.​ ​S​B​T​M​C​ ​p​r​o​v​i​d​e​s​ ​a​ ​f​u​l​l​ ​r​a​n​g​e​ ​o​f​ ​s​p​e​c​i​a​l​i​z​e​d​ ​s​e​r​v​i​c​e​s​ ​t​h​a​t​ ​r​e​f​l​e​c​t​ ​t​h​e​ ​u​p​s​c​a​l​e​ ​a​n​d​ ​a​d​v​a​n​c​e​d​ ​l​e​v​e​l​ ​o​f​ ​d​e​s​i​g​n​ ​f​a​c​i​l​i​t​i​e​s​ ​i​n​ ​S​a​u​d​i​ ​A​r​a​b​i​a​.
+		 * S​a​u​d​i​ ​B​u​i​l​d​i​n​g​ ​T​e​c​h​n​i​c​ ​&​ ​M​a​i​n​t​e​n​a​n​c​e​ ​C​o​m​p​a​n​y​ ​i​s​ ​s​p​e​c​i​a​l​i​z​e​d​ ​i​n​ ​p​r​o​v​i​d​i​n​g​ ​c​o​n​s​t​r​u​c​t​i​o​n​,​ ​M​E​P​,​ ​m​a​n​a​g​e​m​e​n​t​ ​s​e​r​v​i​c​e​s​,​ ​f​a​c​i​l​i​t​y​ ​m​a​i​n​t​e​n​a​n​c​e​.​ ​S​B​T​M​C​ ​ ​i​s​ ​a​ ​1​0​0​%​ ​S​a​u​d​i​ ​C​o​m​p​a​n​y​ ​w​i​t​h​ ​a​ ​m​a​n​a​g​e​m​e​n​t​ ​a​n​d​ ​w​o​r​k​f​o​r​c​e​ ​o​f​ ​v​a​r​i​o​u​s​ ​n​a​t​i​o​n​a​l​i​t​i​e​s​.​ ​S​B​T​M​C​ ​p​r​o​v​i​d​e​s​ ​a​ ​f​u​l​l​ ​r​a​n​g​e​ ​o​f​ ​s​p​e​c​i​a​l​i​z​e​d​ ​s​e​r​v​i​c​e​s​ ​t​h​a​t​ ​r​e​f​l​e​c​t​ ​t​h​e​ ​u​p​s​c​a​l​e​ ​a​n​d​ ​a​d​v​a​n​c​e​d​ ​l​e​v​e​l​ ​o​f​ ​d​e​s​i​g​n​ ​f​a​c​i​l​i​t​i​e​s​ ​i​n​ ​S​a​u​d​i​ ​A​r​a​b​i​a​.
 		 */
 		sbtmc: string
 		/**
@@ -971,7 +971,7 @@ export type TranslationFunctions = {
 		 */
 		amos: () => LocalizedString
 		/**
-		 * Saudi Building Technique & Maintenance Company is specialized in providing construction, MEP, management services, facility maintenance. SBTMC  is a 100% Saudi Company with a management and workforce of various nationalities. SBTMC provides a full range of specialized services that reflect the upscale and advanced level of design facilities in Saudi Arabia.
+		 * Saudi Building Technic & Maintenance Company is specialized in providing construction, MEP, management services, facility maintenance. SBTMC  is a 100% Saudi Company with a management and workforce of various nationalities. SBTMC provides a full range of specialized services that reflect the upscale and advanced level of design facilities in Saudi Arabia.
 		 */
 		sbtmc: () => LocalizedString
 		/**
