@@ -70,6 +70,7 @@ export const actions = {
 
 		await sendEmail(
 			'info@alkholi.com, sales@alkholi.com',
+			// 'fawzy.mohamed@alkholi.com',
 			`AKG Website Messages - ${form.data.project}`,
 			emailTemplate,
 			emailTemplate,

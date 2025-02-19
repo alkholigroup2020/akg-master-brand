@@ -174,8 +174,8 @@
 			<div class="flex flex-col items-center" bind:this={imageRefs[5]}>
 				<div>
 					<img
-						src="/images/about/team/Kerolos_180x180.webp"
-						srcset="/images/about/team/Kerolos_120x120.webp 768w, /images/about/team/Kerolos_180x180.webp 2000w"
+						src="/images/about/team/kerolos_180x180.webp"
+						srcset="/images/about/team/kerolos_120x120.webp 768w, /images/about/team/kerolos_180x180.webp 2000w"
 						alt="a team member"
 						class="aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36 rounded-full border-2"
 					/>
@@ -189,11 +189,6 @@
 				</p>
 			</div>
 		</div>
-
-		<!-- 
-			class="grid grid-cols-1 min-[380px]:grid-cols-2 xl:grid-cols-3
-			gap-y-12 md:gap-y-16 xl:gap-y-24 py-16 md:py-20 xl:py-28 sm:px-16 md:px-24 lg:px-40 xl:px-48 2xl:px-56"
-		-->
 
 		<div
 			class="grid grid-cols-1 min-[380px]:grid-cols-2 xl:grid-cols-4
