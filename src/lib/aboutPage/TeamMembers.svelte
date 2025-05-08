@@ -191,8 +191,8 @@
 		</div>
 
 		<div
-			class="grid grid-cols-1 min-[380px]:grid-cols-2 xl:grid-cols-4
-			gap-y-12 md:gap-y-16 xl:gap-y-24 py-16 md:py-20 xl:py-28 sm:px-16 md:px-24 lg:px-44 xl:px-20"
+			class="grid grid-cols-1 min-[380px]:grid-cols-2 xl:grid-cols-3
+			gap-y-12 md:gap-y-16 xl:gap-y-24 py-16 md:py-20 xl:py-28 sm:px-16 md:px-24 lg:px-44 xl:px-44 2xl:px-72"
 		>
 			<!-- Samer -->
 			<div class="flex flex-col items-center" bind:this={imageRefs[6]}>
@@ -226,7 +226,7 @@
 			</div>
 
 			<!-- Saud -->
-			<div class="flex flex-col items-center" bind:this={imageRefs[8]}>
+			<!-- <div class="flex flex-col items-center" bind:this={imageRefs[8]}>
 				<div>
 					<img
 						src="/images/about/team/saud-hr_180x180.webp"
@@ -237,10 +237,10 @@
 				</div>
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Saud Alzahrani</p>
 				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">Chief HR Officer</p>
-			</div>
+			</div> -->
 
 			<!-- M Helmy -->
-			<div class="flex flex-col items-center" bind:this={imageRefs[9]}>
+			<div class="flex flex-col items-center" bind:this={imageRefs[8]}>
 				<div class="rounded-full border-2 aspect-[1/1] w-24 h-24 md:w-32 md:h-32 xl:w-36 xl:h-36">
 					<img
 						src="/images/about/team/mostafa_180x180.webp"

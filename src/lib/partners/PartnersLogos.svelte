@@ -120,7 +120,7 @@
 					</div>
 				</div>
 
-				<div class="flex flex-col items-center justify-center" bind:this={cardRefs[3]}>
+				<!-- <div class="flex flex-col items-center justify-center" bind:this={cardRefs[3]}>
 					<div>
 						<a href="https://mindmaze.com/" aria-label="a partner link" target="_blank">
 							<img
@@ -131,9 +131,9 @@
 							/>
 						</a>
 					</div>
-				</div>
+				</div> -->
 
-				<div class="flex flex-col items-center justify-center" bind:this={cardRefs[4]}>
+				<div class="flex flex-col items-center justify-center" bind:this={cardRefs[3]}>
 					<div>
 						<a href="https://orascom.com/" aria-label="a partner link" target="_blank">
 							<img
@@ -146,7 +146,7 @@
 					</div>
 				</div>
 
-				<div class="flex flex-col items-center justify-center" bind:this={cardRefs[5]}>
+				<div class="flex flex-col items-center justify-center" bind:this={cardRefs[4]}>
 					<div>
 						<a href="https://rikaz.com/" aria-label="a partner link" target="_blank">
 							<img
@@ -159,7 +159,7 @@
 					</div>
 				</div>
 
-				<div class="flex flex-col items-center justify-center" bind:this={cardRefs[6]}>
+				<div class="flex flex-col items-center justify-center" bind:this={cardRefs[5]}>
 					<div>
 						<a href="https://smartlog-group.com/" aria-label="a partner link" target="_blank">
 							<img
@@ -172,7 +172,7 @@
 					</div>
 				</div>
 
-				<div class="flex flex-col items-center justify-center" bind:this={cardRefs[7]}>
+				<div class="flex flex-col items-center justify-center" bind:this={cardRefs[6]}>
 					<div>
 						<a href="https://uccholding.com/" aria-label="a partner link" target="_blank">
 							<img
@@ -188,7 +188,7 @@
 				<!-- OEC -->
 				<div
 					class="w-full h-full flex flex-col items-center justify-center"
-					bind:this={cardRefs[8]}
+					bind:this={cardRefs[7]}
 				>
 					<div class="p-2 min-[400px]:p-7 sm:p-9 2xl:p-16">
 						<a href="https://www.novonor.com/" aria-label="a partner link" target="_blank">
@@ -205,7 +205,7 @@
 				<!-- sener -->
 				<div
 					class="w-full h-full flex flex-col items-center justify-center"
-					bind:this={cardRefs[9]}
+					bind:this={cardRefs[8]}
 				>
 					<div class="p-2 min-[400px]:p-7 sm:p-9 2xl:p-16">
 						<a href="https://www.group.sener/" aria-label="a partner link" target="_blank">
@@ -222,7 +222,7 @@
 				<!-- Nidec -->
 				<div
 					class="w-full h-full flex flex-col items-center justify-center"
-					bind:this={cardRefs[10]}
+					bind:this={cardRefs[9]}
 				>
 					<div class="p-2 min-[400px]:p-7 sm:p-12 lg:p-16 2xl:p-24">
 						<a href="https://www.nidec.com/" aria-label="a partner link" target="_blank">
@@ -239,7 +239,7 @@
 				<!-- Doppler -->
 				<div
 					class="w-full h-full flex flex-col items-center justify-center"
-					bind:this={cardRefs[11]}
+					bind:this={cardRefs[10]}
 				>
 					<div class="w-full p-[15%]">
 						<a href="https://doppler.gr/" aria-label="a partner link" target="_blank">
@@ -256,7 +256,7 @@
 				<!-- Kalea -->
 				<div
 					class="w-full h-full flex flex-col items-center justify-center"
-					bind:this={cardRefs[12]}
+					bind:this={cardRefs[11]}
 				>
 					<div class="p-2 min-[400px]:p-7 sm:p-9 2xl:p-16">
 						<a href="https://www.kalealifts.com/" aria-label="a partner link" target="_blank">
@@ -273,7 +273,7 @@
 				<!-- indastria -->
 				<div
 					class="w-full h-full flex flex-col items-center justify-center"
-					bind:this={cardRefs[13]}
+					bind:this={cardRefs[12]}
 				>
 					<div class="p-2 min-[400px]:p-9 sm:p-12 2xl:p-20">
 						<a href="http://www.indastriasrl.it" aria-label="a partner link" target="_blank">
@@ -290,7 +290,7 @@
 				<!-- skyHigh -->
 				<div
 					class="w-full h-full flex flex-col items-center justify-center"
-					bind:this={cardRefs[14]}
+					bind:this={cardRefs[13]}
 				>
 					<div class="w-full p-[20%]">
 						<!-- <a href="" aria-label="a partner link" target="_blank"> -->
@@ -307,7 +307,7 @@
 				<!-- SSU -->
 				<div
 					class="w-full h-full flex flex-col items-center justify-center"
-					bind:this={cardRefs[15]}
+					bind:this={cardRefs[14]}
 				>
 					<div class="w-full p-[20%]">
 						<!-- <a href="" aria-label="a partner link" target="_blank"> -->
