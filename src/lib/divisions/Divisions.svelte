@@ -2,10 +2,7 @@
 	import LL from '$i18n/i18n-svelte';
 	import { currentAppLang } from '$lib/stores/store';
 	import { onMount } from 'svelte';
-	import { gsap } from 'gsap';
-	import { TextPlugin } from 'gsap/dist/TextPlugin';
-	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-	gsap.registerPlugin(ScrollTrigger, TextPlugin);
+	import { loadGsap } from '$lib/utils/gsap';
 
 	import { ConicGradient } from '@skeletonlabs/skeleton';
 	import type { ConicStop } from '@skeletonlabs/skeleton';
@@ -38,7 +35,7 @@
 		}
 	};
 
-	onMount(() => {
+	onMount(async () => {
 		getDivisionsData();
 	});
 
@@ -53,7 +50,8 @@
 	}
 
 	// title animation
-	onMount(() => {
+	onMount(async () => {
+		const { gsap } = await loadGsap({ scrollTrigger: true, textPlugin: true });
 		gsap.to(textElement, {
 			scrollTrigger: {
 				trigger: textElement,
@@ -71,7 +69,8 @@
 	let divisionsText: any[] = [];
 
 	// images animation
-	onMount(() => {
+	onMount(async () => {
+		const { gsap } = await loadGsap({ scrollTrigger: true, textPlugin: true });
 		// Wait for the divisionsData array to be updated
 		const interval = setInterval(() => {
 			if (divisionsData.length >= 1) {
@@ -96,7 +95,8 @@
 		}, 250);
 	});
 
-	onMount(() => {
+	onMount(async () => {
+		const { gsap } = await loadGsap({ scrollTrigger: true, textPlugin: true });
 		const interval = setInterval(() => {
 			if (divisionsData.length >= 1) {
 				clearInterval(interval);

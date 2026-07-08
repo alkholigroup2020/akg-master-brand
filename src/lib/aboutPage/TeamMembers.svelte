@@ -1,10 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { loadGsap } from '$lib/utils/gsap';
 	import { currentAppLang } from '$lib/stores/store';
-	import { gsap } from 'gsap';
-	import { TextPlugin } from 'gsap/dist/TextPlugin';
-	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-	gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
 	let textElement: any;
 	let theText: string;
@@ -15,7 +12,8 @@
 	}
 
 	// title animation
-	onMount(() => {
+	onMount(async () => {
+		const { gsap } = await loadGsap({ scrollTrigger: true, textPlugin: true });
 		gsap.to(textElement, {
 			scrollTrigger: {
 				trigger: textElement,
@@ -30,7 +28,8 @@
 
 	let imageRefs: any[] = [];
 	// cards animation
-	onMount(() => {
+	onMount(async () => {
+		const { gsap } = await loadGsap({ scrollTrigger: true, textPlugin: true });
 		imageRefs.forEach((ref, index) => {
 			let timeline = gsap.timeline({
 				scrollTrigger: {
@@ -98,7 +97,7 @@
 		</div>
 
 		<div
-			class="bg-primary-500 text-white grid grid-cols-1 min-[380px]:grid-cols-2 xl:grid-cols-4
+			class="bg-primary-500 text-white grid grid-cols-1 min-[380px]:grid-cols-2 xl:grid-cols-3
 			gap-y-12 md:gap-y-16 xl:gap-y-24 py-16 md:py-20 xl:py-28 sm:px-16 md:px-24 lg:px-44 xl:px-20"
 		>
 			<!-- Operations Department -->
@@ -112,8 +111,8 @@
 					/>
 				</div>
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Sami Alanazi</p>
-				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">Regional FM</p>
-				<p class="pt-0 text-sm sm:text-base md:text-lg xl:text-xl capitalize px-8">Director</p>
+				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">General Manager - FM</p>
+				<!-- <p class="pt-0 text-sm sm:text-base md:text-lg xl:text-xl capitalize px-8">Director</p> -->
 			</div>
 
 			<!-- Nasser -->
@@ -133,7 +132,7 @@
 			</div> -->
 
 			<!-- Ayman -->
-			<div class="flex flex-col items-center" bind:this={imageRefs[3]}>
+			<!-- <div class="flex flex-col items-center" bind:this={imageRefs[3]}>
 				<div class="border-2 rounded-full">
 					<img
 						src="/images/about/team/asset-19_180x180.webp"
@@ -149,7 +148,7 @@
 				<p class="pt-0 text-sm sm:text-base md:text-lg xl:text-xl capitalize px-8">
 					Contracting and MEP
 				</p>
-			</div>
+			</div> -->
 
 			<!-- Waleed -->
 			<div class="flex flex-col items-center" bind:this={imageRefs[4]}>

@@ -1,15 +1,13 @@
 <script lang="ts">
 	import { currentAppLang } from '$lib/stores/store';
 	import { onMount } from 'svelte';
-	import { gsap } from 'gsap';
-	import { TextPlugin } from 'gsap/dist/TextPlugin';
-	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-	gsap.registerPlugin(ScrollTrigger, TextPlugin);
+	import { loadGsap } from '$lib/utils/gsap';
 
 	let cardRefs: any[] = [];
 
 	// cards animation
-	onMount(() => {
+	onMount(async () => {
+		const { gsap } = await loadGsap({ scrollTrigger: true, textPlugin: true });
 		cardRefs.forEach((ref, index) => {
 			let timeline = gsap.timeline({
 				scrollTrigger: {

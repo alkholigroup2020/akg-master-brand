@@ -1,11 +1,8 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { loadGsap } from '$lib/utils/gsap';
 	import { currentAppLang } from '$lib/stores/store';
 	import { pageDirection } from '$lib/stores/store';
-	import { gsap } from 'gsap';
-	import { TextPlugin } from 'gsap/dist/TextPlugin';
-	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-	gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
 	let textElement: any;
 	let theText: string;
@@ -21,7 +18,8 @@
 	// }
 
 	// title animation
-	onMount(() => {
+	onMount(async () => {
+		const { gsap } = await loadGsap({ scrollTrigger: true, textPlugin: true });
 		gsap.to(textElement, {
 			scrollTrigger: {
 				trigger: textElement,
@@ -35,7 +33,8 @@
 	});
 
 	// cards animation
-	onMount(() => {
+	onMount(async () => {
+		const { gsap } = await loadGsap({ scrollTrigger: true, textPlugin: true });
 		imageRefs.forEach((ref, index) => {
 			let timeline = gsap.timeline({
 				scrollTrigger: {

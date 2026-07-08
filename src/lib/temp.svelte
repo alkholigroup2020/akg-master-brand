@@ -1,20 +1,19 @@
 <script lang="ts">
 	import { writable } from 'svelte/store';
-	import { gsap } from 'gsap';
-	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import { currentAppLang } from '$lib/stores/store';
 	import LL from '$i18n/i18n-svelte';
 	import { onMount } from 'svelte';
+	import { loadGsap } from '$lib/utils/gsap';
 
 	// Register the ScrollTrigger plugin
-	gsap.registerPlugin(ScrollTrigger);
 
 	// Counter object
 	let counter = { value: 0 };
 	let counterStore = writable(counter);
 
 	// Animate the counter
-	onMount(() => {
+	onMount(async () => {
+		const { gsap } = await loadGsap({ scrollTrigger: true });
 		gsap.to(counter, {
 			value: 2100,
 			duration: 1,

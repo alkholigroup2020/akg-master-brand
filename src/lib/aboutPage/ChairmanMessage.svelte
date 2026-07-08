@@ -1,12 +1,8 @@
 <script lang="ts">
 	import { currentAppLang, pageDirection } from '$lib/stores/store';
 	import { onMount } from 'svelte';
+	import { loadGsap } from '$lib/utils/gsap';
 	import LL from '$i18n/i18n-svelte';
-
-	import { gsap } from 'gsap';
-	import { TextPlugin } from 'gsap/dist/TextPlugin';
-	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-	gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
 	let textElement: any;
 
@@ -17,7 +13,8 @@
 		theText = 'رسالة رئيس مجلس الإدارة';
 	}
 
-	onMount(() => {
+	onMount(async () => {
+		const { gsap } = await loadGsap({ scrollTrigger: true, textPlugin: true });
 		gsap.to(textElement, {
 			scrollTrigger: {
 				trigger: textElement,

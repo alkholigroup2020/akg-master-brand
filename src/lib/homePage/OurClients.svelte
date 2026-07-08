@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { loadGsap } from '$lib/utils/gsap';
 	import { page } from '$app/stores';
 
-	onMount(() => {
+	onMount(async () => {
 		$page.url.hash && scrollToSection($page.url.hash);
 	});
 
@@ -15,15 +16,10 @@
 
 	import LL from '$i18n/i18n-svelte';
 	import { currentAppLang } from '$lib/stores/store';
-
-	import { gsap } from 'gsap';
-	import { TextPlugin } from 'gsap/dist/TextPlugin';
 	import AlOuthaimLogo from '$lib/generalComponents/AlOuthaimLogo.svelte';
 	import NiceLogo from '$lib/generalComponents/NiceLogo.svelte';
 	import PrinceSattamUni from '$lib/generalComponents/PrinceSattamUni.svelte';
-	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import MoreClients from './MoreClients.svelte';
-	gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
 	let cardRefs: any[] = [];
 
@@ -39,7 +35,8 @@
 	}
 
 	// title animation
-	onMount(() => {
+	onMount(async () => {
+		const { gsap } = await loadGsap({ scrollTrigger: true, textPlugin: true });
 		gsap.to(textElement, {
 			scrollTrigger: {
 				trigger: textElement,
@@ -53,7 +50,8 @@
 	});
 
 	// cards animation
-	onMount(() => {
+	onMount(async () => {
+		const { gsap } = await loadGsap({ scrollTrigger: true, textPlugin: true });
 		cardRefs.forEach((ref, index) => {
 			let timeline = gsap.timeline({
 				scrollTrigger: {

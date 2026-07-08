@@ -6,11 +6,7 @@
 	import ProjectsGrid from '$lib/projects/ProjectsGrid.svelte';
 
 	import { onMount } from 'svelte';
-
-	import { gsap } from 'gsap';
-	import { TextPlugin } from 'gsap/dist/TextPlugin';
-	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-	gsap.registerPlugin(ScrollTrigger, TextPlugin);
+	import { loadGsap } from '$lib/utils/gsap';
 
 	import { ConicGradient } from '@skeletonlabs/skeleton';
 	import type { ConicStop } from '@skeletonlabs/skeleton';
@@ -53,7 +49,8 @@
 		theText = 'أعمالنــا السابقة';
 	}
 
-	onMount(() => {
+	onMount(async () => {
+		const { gsap } = await loadGsap({ scrollTrigger: true, textPlugin: true });
 		getProjectsData();
 		gsap.to(textElement, {
 			scrollTrigger: {

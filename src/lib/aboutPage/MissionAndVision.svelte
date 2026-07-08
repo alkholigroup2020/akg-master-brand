@@ -2,10 +2,8 @@
 	import LL from '$i18n/i18n-svelte';
 	import { pageDirection } from '$lib/stores/store';
 	import { onMount } from 'svelte';
+	import { loadGsap } from '$lib/utils/gsap';
 	import { currentAppLang } from '$lib/stores/store';
-	import { gsap } from 'gsap';
-	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-	gsap.registerPlugin(ScrollTrigger);
 
 	let itemsRefs: any[] = [];
 	// for (let index = 0; index < 3; index++) {
@@ -13,7 +11,8 @@
 	// }
 
 	// items animation
-	onMount(() => {
+	onMount(async () => {
+		const { gsap } = await loadGsap({ scrollTrigger: true });
 		itemsRefs.forEach((ref, index) => {
 			let timeline = gsap.timeline({
 				scrollTrigger: {

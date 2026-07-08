@@ -6,11 +6,12 @@
 	import { pageDirection } from '$lib/stores/store';
 
 	import { onMount } from 'svelte';
-	import { gsap } from 'gsap';
+	import { loadGsap } from '$lib/utils/gsap';
 
 	// let titleElement: gsap.TweenTarget;
 
-	onMount(() => {
+	onMount(async () => {
+		const { gsap } = await loadGsap();
 		const words = document.querySelectorAll('.wordAnimation');
 		let observer = new IntersectionObserver(function (entries, self) {
 			let targets = entries.map((entry) => {

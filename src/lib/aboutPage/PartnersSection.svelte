@@ -4,11 +4,7 @@
 	import { pageDirection } from '$lib/stores/store';
 
 	import { onMount } from 'svelte';
-
-	import { gsap } from 'gsap';
-	import { TextPlugin } from 'gsap/dist/TextPlugin';
-	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-	gsap.registerPlugin(ScrollTrigger, TextPlugin);
+	import { loadGsap } from '$lib/utils/gsap';
 
 	let companiesRefs: any[] = [];
 	// for (let index = 0; index < 3; index++) {
@@ -18,7 +14,8 @@
 	let textElement: any;
 	const theText = $LL.about.partners.title();
 
-	onMount(() => {
+	onMount(async () => {
+		const { gsap } = await loadGsap({ scrollTrigger: true, textPlugin: true });
 		gsap.to(textElement, {
 			scrollTrigger: {
 				trigger: textElement,
@@ -32,7 +29,8 @@
 	});
 
 	// companies animation
-	onMount(() => {
+	onMount(async () => {
+		const { gsap } = await loadGsap({ scrollTrigger: true, textPlugin: true });
 		companiesRefs.forEach((ref, index) => {
 			let timeline = gsap.timeline({
 				scrollTrigger: {

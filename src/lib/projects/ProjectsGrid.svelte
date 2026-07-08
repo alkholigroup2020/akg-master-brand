@@ -5,14 +5,13 @@
 	export let tabSet: string;
 
 	import { onMount } from 'svelte';
-	import { gsap } from 'gsap';
-	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-	gsap.registerPlugin(ScrollTrigger);
+	import { loadGsap } from '$lib/utils/gsap';
 
 	let cardRefs: any[] = [];
 
 	// cards animation
-	onMount(() => {
+	onMount(async () => {
+		const { gsap } = await loadGsap({ scrollTrigger: true });
 		cardRefs.forEach((ref, index) => {
 			let timeline = gsap.timeline({
 				scrollTrigger: {

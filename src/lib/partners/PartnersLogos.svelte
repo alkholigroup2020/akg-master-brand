@@ -4,14 +4,13 @@
 	import { pageDirection } from '$lib/stores/store';
 
 	import { onMount } from 'svelte';
-	import { gsap } from 'gsap';
-	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+	import { loadGsap } from '$lib/utils/gsap';
 	import SectionSize from '$lib/generalComponents/SectionSize.svelte';
-	gsap.registerPlugin(ScrollTrigger);
 
 	let cardRefs: any[] = [];
 
-	onMount(() => {
+	onMount(async () => {
+		const { gsap } = await loadGsap({ scrollTrigger: true });
 		cardRefs.forEach((ref, index) => {
 			let timeline = gsap.timeline({
 				scrollTrigger: {
