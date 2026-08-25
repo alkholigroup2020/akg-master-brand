@@ -95,7 +95,7 @@
 							<a
 								class="w-fit"
 								role="button"
-								href="/profiles/AKG-Company-Profile.pdf"
+								href="/profiles/Al-Kholi-Group-Company-Profile.pdf"
 								download="Alkholi Group Profile"
 							>
 								<div class="flex items-center">
@@ -237,7 +237,7 @@
 							<a
 								class="w-fit"
 								role="button"
-								href="/profiles/AKG-Company-Profile.pdf"
+								href="/profiles/Al-Kholi-Group-Company-Profile.pdf"
 								download="Alkholi Group Profile"
 							>
 								<div class="flex items-center">

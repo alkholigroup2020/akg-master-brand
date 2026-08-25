@@ -125,7 +125,7 @@
 
 					<!-- linkedin icon -->
 					<a
-						href="https://www.linkedin.com/company/alkholi-group-of-companies"
+						href="https://www.linkedin.com/company/alkholi/"
 						target="_blank"
 						aria-label="linked in page"
 					>

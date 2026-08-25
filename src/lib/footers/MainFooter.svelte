@@ -101,7 +101,7 @@
 							<!-- linkedIn -->
 							<a
 								type="button"
-								href="https://www.linkedin.com/company/alkholi-group-of-companies"
+								href="https://www.linkedin.com/company/alkholi/"
 								target="_blank"
 								aria-label="linkedin link"
 							>
@@ -264,7 +264,7 @@
 							<!-- linkedIn -->
 							<a
 								type="button"
-								href="https://www.linkedin.com/company/alkholi-group-of-companies"
+								href="https://www.linkedin.com/company/alkholi/"
 								target="_blank"
 								aria-label="linkedin link"
 							>
