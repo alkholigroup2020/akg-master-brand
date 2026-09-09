@@ -23,7 +23,7 @@
 	onMount(async () => {
 		const { gsap } = await loadGsap({ scrollTrigger: true });
 		gsap.to(counter, {
-			value: 2100,
+			value: 2800,
 			duration: 1,
 			round: 1,
 			scrollTrigger: {
