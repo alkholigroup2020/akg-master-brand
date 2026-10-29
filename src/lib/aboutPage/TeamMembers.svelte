@@ -63,7 +63,7 @@
 			/>
 		</div>
 		<!-- team members -->
-		<div
+		<!-- <div
 			class="min-[380px]:flex justify-around sm:justify-center items-center py-8 md:py-12 xl:py-20 max-[380px]:space-y-8
 			 sm:space-x-10 md:space-x-20 xl:space-x-40"
 		>
@@ -80,7 +80,7 @@
 				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">Group CEO</p>
 			</div>
 
-			<!--
+			
 			<div class="flex flex-col items-center" bind:this={imageRefs[1]}>
 				<div class="border-2 rounded-full">
 					<img
@@ -93,8 +93,8 @@
 				<p class="pt-5 heading text-sm sm:text-base md:text-lg xl:text-xl">Mohamed ElSafty</p>
 				<p class="pt-2 text-sm sm:text-base md:text-lg xl:text-xl capitalize">Group CFO</p>
 			</div>
-			-->
-		</div>
+			
+		</div> -->
 
 		<div
 			class="bg-primary-500 text-white grid grid-cols-1 min-[380px]:grid-cols-2 xl:grid-cols-3
